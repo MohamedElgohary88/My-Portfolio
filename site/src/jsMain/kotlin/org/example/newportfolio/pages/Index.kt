@@ -1,18 +1,29 @@
 package org.example.newportfolio.pages
 
-import androidx.compose.runtime.*
-import com.varabyte.kobweb.compose.foundation.layout.Box
+import androidx.compose.runtime.Composable
+import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.core.Page
-import org.jetbrains.compose.web.dom.Text
+import org.example.newportfolio.components.layouts.DefaultPageLayout
+import org.example.newportfolio.components.sections.about.AboutSection
+import org.example.newportfolio.components.sections.contact.ContactSection
+import org.example.newportfolio.components.sections.start.StartSection
+import org.example.newportfolio.components.sections.works.WorksSection
 
 @Page
 @Composable
 fun HomePage() {
-    // TODO: Replace the following with your own content
-    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-        Text("THIS PAGE INTENTIONALLY LEFT BLANK")
+    DefaultPageLayout(title = "Home") {
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            StartSection()
+            WorksSection()
+            AboutSection()
+            ContactSection()
+        }
     }
 }

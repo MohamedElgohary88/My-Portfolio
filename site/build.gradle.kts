@@ -1,4 +1,4 @@
-import com.varabyte.kobweb.gradle.application.extensions.AppBlock.LegacyRouteRedirectStrategy
+import kotlinx.html.link
 import com.varabyte.kobweb.gradle.application.util.configAsKobwebApplication
 
 plugins {
@@ -15,16 +15,18 @@ kobweb {
     app {
         index {
             description.set("Powered by Kobweb")
-        }
 
-        // Only legacy sites need this set. Sites built after 0.16.0 should default to DISALLOW.
-        // See https://github.com/varabyte/kobweb#legacy-routes for more information.
-        legacyRouteRedirectStrategy.set(LegacyRouteRedirectStrategy.DISALLOW)
+            head.add {
+                link(rel = "stylesheet", href = "/fonts/faces.css")
+            }
+
+            faviconPath.set("images/logo_mini.svg")
+        }
     }
 }
 
 kotlin {
-    configAsKobwebApplication("newportfolio", includeServer = true)
+    configAsKobwebApplication("newportfolio")
 
     sourceSets {
         commonMain.dependencies {
@@ -35,12 +37,10 @@ kotlin {
             implementation(compose.html.core)
             implementation(libs.kobweb.core)
             implementation(libs.kobweb.silk)
+            implementation(libs.silk.icons.mdi)
             implementation(libs.silk.icons.fa)
             implementation(libs.kobwebx.markdown)
             
-        }
-        jvmMain.dependencies {
-            compileOnly(libs.kobweb.api) // Provided by Kobweb backend at runtime
         }
     }
 }
