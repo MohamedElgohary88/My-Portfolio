@@ -8,11 +8,23 @@ enum class Work(
     val link: String,
     val imageRes: String,
 ) {
+    HotelX(
+        workName = "Hotel Management System",
+        description = "Tablet & Android & Backend & Design",
+        link = "https://youtu.be/SLVSWdPvxeQ",
+        imageRes = Res.Images.HOTEL
+    ),
     HoneyMart(
         workName = "Honey Mart",
         description = "Android & Backend & Design",
         link = "https://github.com/MohamedElgohary88/Honey-Mart",
         imageRes = Res.Images.HONEY_MART
+    ),
+    Blog(
+        workName = "Blog Multi-Platform",
+        description = "Android & Backend & Design",
+        link = "https://github.com/MohamedElgohary88/BlogMultiplatform",
+        imageRes = Res.Images.BLOG
     ),
     Teamix(
         workName = "Teamix App",

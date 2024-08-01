@@ -64,6 +64,8 @@ object Res {
         const val TEAMIX = "images/teamix.svg"
         const val SKY_CAST = "images/weather.svg"
         const val MOVIE = "images/movie.svg"
+        const val BLOG = "images/blog.svg"
+        const val HOTEL = "images/hotel.svg"
     }
 
 }
