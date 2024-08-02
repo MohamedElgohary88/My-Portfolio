@@ -40,7 +40,7 @@ object Res {
         const val LOGO_LIGHT = "images/logo_light.svg"
         const val KOBWEB = "images/kobweb.png"
 
-        const val START_IMAGE = "images/start_image.svg"
+        const val START_IMAGE = "images/start_imagee.svg"
 
         const val ANDROID_STUDIO = "images/android_studio.svg"
         const val KOTLIN = "images/kotlin.svg"

@@ -4,6 +4,8 @@ import androidx.compose.runtime.Composable
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
+import com.varabyte.kobweb.compose.ui.graphics.Colors
+import com.varabyte.kobweb.compose.ui.modifiers.color
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.core.Page
 import org.example.newportfolio.components.layouts.DefaultPageLayout
@@ -17,7 +19,7 @@ import org.example.newportfolio.components.sections.works.WorksSection
 fun HomePage() {
     DefaultPageLayout(title = "Home") {
         Column(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier.fillMaxSize().color(Colors.Black),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             StartSection()

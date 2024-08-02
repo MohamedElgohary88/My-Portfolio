@@ -11,17 +11,17 @@ fun initSilkPalette(ctx: InitSilkContext) {
     ctx.apply {
         theme.palettes.apply {
             light.apply {
-                val brandPrimary = Color.rgb(r = 109, g = 66, b = 153)
-                background = Color.rgb(r = 230, g = 230, b = 230)
-                color = Color.rgb(r = 0, g = 0, b = 25)
-                overlay = Color.rgb(r = 218, g = 217, b = 227)
+                val brandPrimary = Color.rgb(r = 5, g = 151, b = 31) // #05A11F
+                background = Color.rgb(r = 240, g = 255, b = 240) // Light greenish background
+                color = Color.rgb(r = 0, g = 51, b = 25) // Darker green for text
+                overlay = Color.rgb(r = 213, g = 242, b = 213) // Slightly lighter green for overlay
                 brand.set(
                     primary = brandPrimary,
-                    onPrimary = Color.rgb(r = 217, g = 217, b = 217)
+                    onPrimary = Color.rgb(r = 255, g = 255, b = 255) // White for contrast
                 )
                 text.set(
-                    primary = Color.rgb(r = 0, g = 0, b = 25),
-                    secondary = Color.rgb(r = 46, g = 46, b = 66)
+                    primary = Color.rgb(r = 0, g = 51, b = 25), // Dark green text
+                    secondary = Color.rgb(r = 0, g = 102, b = 51) // Medium green for secondary text
                 )
                 button.set(
                     default = brandPrimary,
@@ -30,23 +30,23 @@ fun initSilkPalette(ctx: InitSilkContext) {
                     pressed = brandPrimary.darkened(byPercent = 0.2f)
                 )
                 tooltip.set(
-                    background = Color.rgb(r = 218, g = 217, b = 227),
-                    color = Color.rgb(r = 0, g = 0, b = 25),
+                    background = Color.rgb(r = 240, g = 255, b = 240), // Light green for tooltip background
+                    color = Color.rgb(r = 0, g = 51, b = 25) // Dark green for tooltip text
                 )
             }
 
             dark.apply {
-                val brandPrimary = Color.rgb(r = 77, g = 39, b = 118)
-                background = Color.rgb(r = 22, g = 21, b = 29)
-                color = Color.rgb(r = 204, g = 204, b = 204)
-                overlay = Color.rgb(r = 29, g = 28, b = 38)
+                val brandPrimary = Color.rgb(r = 5, g = 151, b = 31) // #05A11F
+                background = Color.rgb(r = 10, g = 20, b = 10) // Dark green background
+                color = Color.rgb(r = 204, g = 255, b = 204) // Light greenish text
+                overlay = Color.rgb(r = 29, g = 46, b = 29) // Darker green for overlay
                 brand.set(
                     primary = brandPrimary,
-                    onPrimary = Color.rgb(r = 217, g = 217, b = 217)
+                    onPrimary = Color.rgb(r = 240, g = 255, b = 240) // Light green for contrast
                 )
                 text.set(
-                    primary = Color.rgb(r = 204, g = 204, b = 204),
-                    secondary = Color.rgb(r = 171, g = 171, b = 171)
+                    primary = Color.rgb(r = 204, g = 255, b = 204), // Light green text
+                    secondary = Color.rgb(r = 153, g = 204, b = 153) // Medium light green for secondary text
                 )
                 button.set(
                     default = brandPrimary,
@@ -55,13 +55,14 @@ fun initSilkPalette(ctx: InitSilkContext) {
                     pressed = brandPrimary.lightened(byPercent = 0.2f)
                 )
                 tooltip.set(
-                    background = Color.rgb(r = 29, g = 28, b = 38),
-                    color = Color.rgb(r = 204, g = 204, b = 204)
+                    background = Color.rgb(r = 10, g = 20, b = 10), // Dark green for tooltip background
+                    color = Color.rgb(r = 204, g = 255, b = 204) // Light green for tooltip text
                 )
             }
         }
     }
 }
+
 
 // Custom Text colors for the Silk theme
 val Palette.text: Text get() = (this as MutablePalette).text
