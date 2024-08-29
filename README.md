@@ -1,53 +1,81 @@
-This is a [Kobweb](https://github.com/varabyte/kobweb) project bootstrapped with the `app/empty` template.
+# Awesome Portfolio Website
 
-This template is useful if you already know what you're doing and just want a clean slate. By default, it
-just creates a blank home page (which prints to the console so you can confirm it's working)
+Welcome to my **Awesome Portfolio Website**! This portfolio showcases my skills, projects, and achievements, built using Kotlin, Jetpack Compose, and the Kobweb framework.
 
-If you are still learning, consider instantiating the `app` template (or one of the examples) to see actual,
-working projects.
+## Live Demo
+
+Check out the live demo of my portfolio at: [https://mohamed-elgohary.onrender.com/](https://mohamed-elgohary.onrender.com/)
+
+## Project Overview
+
+This portfolio website is designed to highlight my work and expertise in software development. It features:
+
+- **Modern UI**: A clean and responsive design built with Jetpack Compose.
+- **Kotlin Backend**: Robust backend functionality using Kotlin and the Kobweb framework.
+- **Showcase of Projects**: A detailed presentation of my past projects and contributions.
+- **Contact Information**: Easy access to contact me for opportunities and collaborations.
+
+## Technologies Used
+
+- **Kotlin**: The primary programming language for both frontend and backend development.
+- **Jetpack Compose**: For building a dynamic and responsive user interface.
+- **Kobweb Framework**: For backend development and server-side logic.
+
+## Features
+
+- **Responsive Design**: Optimized for various devices and screen sizes.
+- **Interactive Elements**: Engaging user interactions and animations.
+- **Project Showcase**: A section dedicated to displaying my projects with descriptions and links.
+- **Contact Form**: A simple contact form to get in touch with me.
 
 ## Getting Started
 
-First, run the development server by typing the following command in a terminal under the `site` folder:
+To run this project locally, follow these steps:
 
-```bash
-$ cd site
-$ kobweb run
-```
+1. **Clone the Repository**:
 
-Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
+    ```bash
+    git clone https://github.com/MohamedElgohary88/awesome-portfolio.git
+    cd awesome-portfolio
+    ```
 
-You can use any editor you want for the project, but we recommend using **IntelliJ IDEA Community Edition** downloaded
-using the [Toolbox App](https://www.jetbrains.com/toolbox-app/).
+2. **Install Dependencies**:
 
-Press `Q` in the terminal to gracefully stop the server.
+    Ensure you have the required dependencies installed for both Kotlin and Jetpack Compose. Refer to the [Kobweb documentation](https://kobweb.io/docs/) for setup instructions.
 
-### Live Reload
+3. **Run the Application**:
 
-Feel free to edit / add / delete new components, pages, and API endpoints! When you make any changes, the site will
-indicate the status of the build and automatically reload when ready.
+    Start the application using your preferred IDE or the command line. For example, if using Gradle:
 
-## Exporting the Project
+    ```bash
+    ./gradlew run
+    ```
 
-When you are ready to ship, you should shutdown the development server and then export the project using:
+4. **View Locally**:
 
-```bash
-kobweb export
-```
+    Open your browser and navigate to `http://localhost:8080` to view the portfolio.
 
-When finished, you can run a Kobweb server in production mode:
+## Contributing
 
-```bash
-kobweb run --env prod
-```
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 
-If you want to run this command in the Cloud provider of your choice, consider disabling interactive mode since nobody
-is sitting around watching the console in that case anyway. To do that, use:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Create a new Pull Request.
 
-```bash
-kobweb run --env prod --notty
-```
+## License
 
-Kobweb also supports exporting to a static layout which is compatible with static hosting providers, such as GitHub
-Pages, Netlify, Firebase, any presumably all the others. You can read more about that approach here:
-https://bitspittle.dev/blog/2022/staticdeploy
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Feel free to reach out to me via:
+
+- **Email**: mohamed.abdelazim.elgohary@gmail.com
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/mohamed-elgohary8)
+- **GitHub**: [GitHub Profile](https://github.com/MohamedElgohary88)
+
+Thank you for visiting my portfolio!
