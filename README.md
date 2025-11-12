@@ -36,8 +36,8 @@ To run this project locally, follow these steps:
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/MohamedElgohary88/awesome-portfolio.git
-    cd awesome-portfolio
+    git clone https://github.com/MohamedElgohary88/My-Portfolio.git
+    cd My-Portfolio
     ```
 
 2. **Install Dependencies**:
@@ -49,7 +49,7 @@ To run this project locally, follow these steps:
     Start the development server using the Gradle wrapper:
 
     ```bash
-    ./gradlew kobwebStart
+    ./gradlew :site:kobwebStart
     ```
 
 4. **Stop the Application**:
@@ -57,12 +57,36 @@ To run this project locally, follow these steps:
     To stop the development server, run the following command:
 
     ```bash
-    ./gradlew kobwebStop
+    ./gradlew :site:kobwebStop
     ```
 
 5. **View Locally**:
 
     Open your browser and navigate to `http://localhost:8080` to view the portfolio.
+
+## Export and Deploy
+
+This project uses Kobweb's static export for deployment. The exported site is generated under `site/.kobweb/site`.
+
+- **Export the site**:
+
+    ```bash
+    ./gradlew :site:kobwebExport --warning-mode all
+    ```
+
+- **Commit the exported files** (required for platforms like Render when building locally):
+
+    ```bash
+    git add -A site/.kobweb/site
+    git commit -m "Update exported site"
+    git push
+    ```
+
+- **Render (Static Site) settings**:
+  - Publish directory: `site/.kobweb/site`
+  - Build command: none (prebuilt export pushed from local)
+
+Note: The root `.gitignore` is configured to allow committing the exported site. If you change ignore rules, ensure `site/.kobweb/site` is not ignored.
 
 ## Contributing
 
