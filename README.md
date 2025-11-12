@@ -15,6 +15,7 @@ This portfolio website is designed to highlight my work and expertise in softwar
 - **Showcase of Projects**: A detailed presentation of my past projects and contributions.
 - **Contact Information**: Easy access to contact me for opportunities and collaborations.
 
+
 ## Technologies Used
 
 - **Kotlin**: The primary programming language for both frontend and backend development.
