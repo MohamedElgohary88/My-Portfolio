@@ -26,6 +26,7 @@ fun ExperienceSection() {
     Box(
         modifier = Modifier
             .id("experience") // <-- ADDED THIS LINE
+            .classNames("section-container") // added so NavHeader can detect this section
             .fillMaxWidth()
             .padding(topBottom = 100.px)
             .position(Position.Relative),
