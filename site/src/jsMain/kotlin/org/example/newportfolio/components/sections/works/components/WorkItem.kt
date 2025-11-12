@@ -24,6 +24,7 @@ import com.varabyte.kobweb.silk.components.style.ComponentStyle
 import com.varabyte.kobweb.silk.components.style.hover
 import com.varabyte.kobweb.silk.components.style.toModifier
 import com.varabyte.kobweb.silk.components.text.SpanText
+import com.varabyte.kobweb.silk.style.breakpoint.Breakpoint
 import org.jetbrains.compose.web.css.*
 
 val WorkItemStyle by ComponentStyle {
@@ -33,6 +34,7 @@ val WorkItemStyle by ComponentStyle {
             .borderRadius(30.px)
             .overflow(Overflow.Hidden)
             .transition(CSSTransition("transform", 0.3.s, TransitionTimingFunction.EaseInOut))
+            .width(100.percent)
     }
     hover {
         Modifier.transform { scale(1.05) }
@@ -45,6 +47,11 @@ val WorkItemStyle by ComponentStyle {
     }
     cssRule(":hover .work-item-image") {
         Modifier.transform { scale(1.1) }
+    }
+    cssRule(".work-item-img") { // ensure image fills container
+        Modifier
+            .width(100.percent)
+            .height(100.percent)
     }
 }
 
@@ -63,12 +70,17 @@ val WorkItemShadowStyle by ComponentStyle {
     }
 }
 
-val WorkItemImageStyle by ComponentStyle {
+val WorkItemImageContainerStyle by ComponentStyle {
     base {
         Modifier
-            .fillMaxSize()
-            .transition(CSSTransition("transform", 0.3.s, TransitionTimingFunction.EaseInOut))
+            .width(100.percent)
+            .height(260.px) // increased from 210
+            .backgroundSize(BackgroundSize.Cover)
+            .backgroundRepeat(BackgroundRepeat.NoRepeat)
     }
+    Breakpoint.MD { Modifier.height(300.px) } // up from 240
+    Breakpoint.LG { Modifier.height(340.px) } // up from 260
+    Breakpoint.XL { Modifier.height(380.px) } // up from 280
 }
 
 val WorkItemOverlayStyle by ComponentStyle {
@@ -94,10 +106,12 @@ fun WorkItem(
         modifier = WorkItemStyle.toModifier().then(modifier),
         contentAlignment = Alignment.Center
     ) {
-        Image(
-            src = work.imageRes,
-            modifier = WorkItemImageStyle.toModifier().classNames("work-item-image")
-        )
+        Box(modifier = WorkItemImageContainerStyle.toModifier()) {
+            Image(
+                src = work.imageRes,
+                modifier = Modifier.fillMaxSize().classNames("work-item-img", "work-item-image")
+            )
+        }
         Box(
             modifier = WorkItemShadowStyle.toModifier().classNames("work-item-shadow")
         )

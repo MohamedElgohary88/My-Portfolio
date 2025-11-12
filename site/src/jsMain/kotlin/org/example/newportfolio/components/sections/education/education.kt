@@ -8,6 +8,7 @@ import com.varabyte.kobweb.compose.css.TextDecorationLine
 import com.varabyte.kobweb.compose.css.TransitionTimingFunction
 import com.varabyte.kobweb.compose.css.Transition
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
+import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.foundation.layout.Row
 import com.varabyte.kobweb.compose.ui.Alignment
@@ -242,11 +243,13 @@ fun EducationSection() {
         }
 
         Column(modifier = Modifier.fillMaxWidth().padding(top = 60.px)) {
-            SpanText("Licenses & Certifications", modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor)) // replaced HeadlineLargeTextStyle
+            SpanText("Licenses & Certifications", modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor))
             SpanText("Featured Certifications", modifier = TextStyle.toModifier(TitleTextStyle, TextStyleSecondaryColor).margin(top = 12.px, bottom = 24.px))
             SimpleGrid(numColumns(base = 1, sm = 2, md = 3, lg = 3)) {
                 featured.forEach { cert ->
-                    CertificationCard(entry = cert, modifier = Modifier.margin(bottom = 20.px))
+                    Box(modifier = Modifier.margin(10.px)) { // add spacing around each card
+                        CertificationCard(entry = cert, modifier = Modifier.fillMaxWidth())
+                    }
                 }
             }
             Column(modifier = Modifier.fillMaxWidth().padding(top = 20.px)) {

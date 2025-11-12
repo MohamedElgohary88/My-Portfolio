@@ -1,13 +1,11 @@
 package org.example.newportfolio.utils
 
-import com.varabyte.kobweb.silk.components.icons.fa.FaLinkedin
-import com.varabyte.kobweb.silk.components.icons.fa.IconSize
 
 object Res {
 
     object Strings {
-        const val START_SECTION_TITLE = "Software Engineer - Android Developer"
-        const val START_SECTION_SUBTITLE = "I’m a Native Android Developer, looking forward to helping people with my knowledge."
+        const val START_SECTION_TITLE = "Software Engineer - Mobile Developer"
+        const val START_SECTION_SUBTITLE = "Dedicated to turning your innovative idea into a high-quality mobile reality."
         const val START_SECTION_BUTTON_TEXT = "Explore my works"
         const val SCROLL_HINT = "Scroll"
 
@@ -15,7 +13,8 @@ object Res {
         const val WORKS_SECTION_SUBTITLE = "All projects are primarily developed with Kotlin. It's a powerful cross-platform language and Google's preferred language for Android development."
 
         const val ABOUT_SECTION_TITLE = "About me"
-        const val ABOUT_SECTION_SUBTITLE = "I'm Mohamed Elgohary, a dedicated Android developer skilled in Kotlin, Android Studio, and Git. I excel at turning designs into functional apps, work well both independently and in teams, and am committed to continuous learning."
+        // Updated summary: concise professional mobile developer summary
+        const val ABOUT_SECTION_SUBTITLE = "Mobile Developer specialized in performant Android & cross‑platform apps (Kotlin, Compose, Flutter, KMP). I focus on clean architecture, scalable code and solving real performance & UX problems."
 
         const val CONTACT_SECTION_TITLE = "Contact me"
 
@@ -38,7 +37,6 @@ object Res {
     object Images {
         const val LOGO_DARK = "images/logo_dark.svg"
         const val LOGO_LIGHT = "images/logo_light.svg"
-        const val KOBWEB = "images/kobweb.png"
 
         const val START_IMAGE = "images/start_imagee.svg"
 
@@ -67,5 +65,18 @@ object Res {
         const val BLOG = "images/blog.svg"
         const val HOTEL = "images/hotel.svg"
         const val BISMAR = "images/bismar.svg"
+        const val FLUTTER = "images/flutter.svg"
+        const val DART = "images/dart.svg"
+        const val GRADLE = "images/gradle.svg"
+        const val GRAPHQL = "images/graphql.svg"
+        const val REALM = "images/realm.svg"
+        const val SQLITE = "images/sqlite.svg"
+        const val MONGODB = "images/mongodb.svg"
+        const val POSTMAN = "images/postman.svg"
+        const val GITLAB = "images/git_lab.svg"
+        const val SWIFT = "images/swift.svg"
+        const val APPLE = "images/apple.svg"
+        const val ADOBE_XD = "images/adobe_xd.svg"
+        const val SLACK = "images/slack.svg"
     }
 }

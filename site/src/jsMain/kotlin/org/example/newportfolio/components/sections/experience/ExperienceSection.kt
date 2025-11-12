@@ -1,7 +1,7 @@
 package org.example.newportfolio.components.sections.experience
 
 import androidx.compose.runtime.*
-import com.varabyte.kobweb.compose.css.CSSTransition
+import com.varabyte.kobweb.compose.css.Transition
 import com.varabyte.kobweb.compose.css.TransitionTimingFunction
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -22,6 +22,7 @@ import org.w3c.dom.asList
 @Composable
 fun ExperienceSection() {
     var activeExperience by remember { mutableStateOf(Experience.First) }
+    val visibleStates = remember { mutableStateListOf<Boolean>().apply { repeat(Experience.entries.size) { add(false) } } }
 
     Box(
         modifier = Modifier
@@ -48,18 +49,39 @@ fun ExperienceSection() {
                 .top(0.px)
                 .left(50.percent)
                 .transform { translateX((-50).percent) }
-                .size(16.px)
+                .size(10.px)
                 .borderRadius(50.percent)
                 .backgroundColor(Colors.Green)
                 .border(2.px, LineStyle.Solid, Colors.White)
-                .margin(top = (35 + activeExperience.ordinal * 130).px) // Approximate card height
-                .transition(CSSTransition("margin-top", 0.3.s, TransitionTimingFunction.EaseInOut))
+                .margin(top = (35 + activeExperience.ordinal * 130).px)
+                .transition(Transition.of("margin-top", 0.3.s, TransitionTimingFunction.EaseInOut))
         )
         Column(
             modifier = Modifier.fillMaxWidth()
         ) {
-            Experience.entries.forEach { experience ->
-                ExperienceCard(experience = experience)
+            Experience.entries.forEachIndexed { index, experience ->
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .margin(bottom = if (index == Experience.entries.lastIndex) 0.px else 40.px) // added spacing
+                        .let {
+                            if (visibleStates[index]) {
+                                it
+                                    .opacity(1)
+                                    .transform { translateY(0.px) }
+                            } else {
+                                it
+                                    .opacity(0)
+                                    .transform { translateY(25.px) }
+                            }
+                        }
+                        .transition(
+                            Transition.of("opacity", 0.6.s, TransitionTimingFunction.Ease),
+                            Transition.of("transform", 0.6.s, TransitionTimingFunction.Ease)
+                        )
+                ) {
+                    ExperienceCard(experience = experience)
+                }
             }
         }
     }
@@ -67,23 +89,23 @@ fun ExperienceSection() {
     SideEffect {
         val onIntersection = { entries: Array<dynamic> ->
             entries.forEach { entry ->
-                if (entry.isIntersecting as Boolean) {
-                    val cardId = (entry.target as? Element)?.id
-                    if (cardId != null && cardId.startsWith("experience-card-")) {
-                        val experienceIndex = cardId.substringAfter("experience-card-").toIntOrNull()
-                        if (experienceIndex != null) {
-                            activeExperience = Experience.entries[experienceIndex]
+                val el = entry.target as? Element
+                if ((entry.isIntersecting as Boolean) && el != null && el.classList.contains("experience-card")) {
+                    val id = el.id
+                    if (id.startsWith("experience-card-")) {
+                        val idx = id.substringAfter("experience-card-").toIntOrNull()
+                        if (idx != null) {
+                            activeExperience = Experience.entries[idx]
+                            visibleStates[idx] = true
                         }
                     }
                 }
             }
         }
-
-        val observer = js("new IntersectionObserver(onIntersection, { threshold: 0.5 })")
+        // Observer with a bit earlier trigger for nicer animation
+        val observer = js("new IntersectionObserver(onIntersection, { threshold: 0.35 })")
         document.querySelectorAll(".experience-card").asList().forEach { node ->
-            (node as? Element)?.let {
-                observer.observe(it)
-            }
+            (node as? Element)?.let { observer.observe(it) }
         }
     }
 }

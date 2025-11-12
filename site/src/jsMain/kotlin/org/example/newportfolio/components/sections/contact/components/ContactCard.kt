@@ -8,6 +8,8 @@ import org.example.newportfolio.models.Social
 import org.example.newportfolio.theme.icons.IconStyle
 import org.example.newportfolio.theme.icons.MediumIconSize
 import org.example.newportfolio.utils.Res
+import com.varabyte.kobweb.compose.css.TransitionTimingFunction
+import com.varabyte.kobweb.compose.css.Transition
 import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -30,6 +32,7 @@ import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Text
+import org.jetbrains.compose.web.css.s // correct time unit import
 
 val ContactCardStyle by ComponentStyle(
     extraModifiers = {
@@ -43,9 +46,8 @@ val ContactCardStyle by ComponentStyle(
             .background(colors.overlay)
             .borderRadius(30.px)
             .padding(topBottom = 1.cssRem, leftRight = 1.cssRem)
-    }
-    Breakpoint.LG {
-        Modifier
+            .boxShadow(blurRadius = 20.px, spreadRadius = 2.px, color = colors.overlay)
+            .transition(Transition.of("box-shadow", 0.4.s, TransitionTimingFunction.EaseInOut))
             .fillMaxWidth(65.percent)
             .padding(topBottom = 2.cssRem, leftRight = 2.cssRem)
     }
@@ -76,27 +78,29 @@ fun ContactCard(
             attrs = TextStyle.toModifier(BodyLargeTextStyle, TextStyleSecondaryColor)
                 .textAlign(TextAlign.Center)
                 .margin(top = 0.6.em, leftRight = 0.6.em)
+                .lineHeight(1.6.em)
                 .toAttrs(),
         ) {
-            Text("If you have any questions, don't hesitate to contact me via email at ")
+            Text("Feel free to reach out about collaborations, performance audits, or just to say hi. Email ")
             SpanText(
                 text = Res.Strings.EMAIL_ADDRESS,
                 modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor)
                     .fontFamily(Res.FontFamilies.POPPINS_MEDIUM)
                     .textAlign(TextAlign.Center),
             )
-            Text(" or text me on Telegram at ")
+            Text(" or Telegram ")
             SpanText(
                 text = Res.Strings.TELEGRAM_USERNAME,
                 modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor)
                     .fontFamily(Res.FontFamilies.POPPINS_MEDIUM)
                     .textAlign(TextAlign.Center),
             )
+            Text(" — let’s build something impactful.")
         }
         Row(
             modifier = Modifier
-                .margin(top = 3.em)
-                .gap(1.5.em),
+                .margin(top = 2.5.em)
+                .gap(1.1.em),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Social.entries.forEach { social ->
@@ -104,6 +108,7 @@ fun ContactCard(
                     path = social.link,
                     iconRes = if (colorMode.isLight) social.iconResLight else social.iconResDark,
                     iconModifier = IconStyle.toModifier(MediumIconSize)
+                        .transition(Transition.of("transform", 0.3.s, TransitionTimingFunction.EaseInOut))
                 )
             }
         }

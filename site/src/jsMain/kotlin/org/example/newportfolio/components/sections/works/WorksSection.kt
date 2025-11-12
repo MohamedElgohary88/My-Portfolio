@@ -40,13 +40,13 @@ fun WorksSection() {
     ) {
         TextContent(breakpoint = breakpoint)
         SimpleGrid(
-            numColumns = numColumns(base = 1, sm = 2, lg = 3),
+            numColumns = numColumns(base = 1, sm = 2, md = 3, lg = 4, xl = 4),
             variant = WorkItemsSimpleGridVariant
         ) {
             Work.entries.forEach {
                 WorkItem(
                     work = it,
-                    modifier = Modifier.flex(1)
+                    modifier = Modifier // removed flex(1) to let grid manage sizing
                 )
             }
             MoreIsYetToCome()
