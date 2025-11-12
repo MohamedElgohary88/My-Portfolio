@@ -9,6 +9,8 @@ import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.silk.components.layout.breakpoint.displayIfAtLeast
+import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
 import kotlinx.browser.document
 import org.example.newportfolio.models.Experience
 import org.jetbrains.compose.web.css.LineStyle
@@ -33,7 +35,7 @@ fun ExperienceSection() {
             .position(Position.Relative),
         contentAlignment = Alignment.Center
     ) {
-        // The vertical timeline
+        // The vertical timeline (hidden on mobile)
         Box(
             modifier = Modifier
                 .position(Position.Absolute)
@@ -41,8 +43,9 @@ fun ExperienceSection() {
                 .bottom(0.px)
                 .width(2.px)
                 .backgroundColor(Colors.LightGray)
+                .displayIfAtLeast(Breakpoint.LG)
         )
-        // The moving dot
+        // The moving dot (hidden on mobile)
         Box(
             modifier = Modifier
                 .position(Position.Absolute)
@@ -55,6 +58,7 @@ fun ExperienceSection() {
                 .border(2.px, LineStyle.Solid, Colors.White)
                 .margin(top = (35 + activeExperience.ordinal * 130).px)
                 .transition(Transition.of("margin-top", 0.3.s, TransitionTimingFunction.EaseInOut))
+                .displayIfAtLeast(Breakpoint.LG)
         )
         Column(
             modifier = Modifier.fillMaxWidth()

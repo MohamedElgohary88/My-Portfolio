@@ -7,6 +7,7 @@ import org.example.newportfolio.components.widgets.button.IconButton
 import org.example.newportfolio.models.Section
 import org.example.newportfolio.theme.icons.HamburgerIcon
 import org.example.newportfolio.theme.icons.IconStyle
+import org.example.newportfolio.theme.icons.SmallIconSize
 import org.example.newportfolio.utils.UpdateEffect
 import com.varabyte.kobweb.compose.css.JustifyContent
 import com.varabyte.kobweb.compose.css.functions.blur
@@ -130,7 +131,7 @@ fun NavHeader() {
                     modifier = Modifier.padding(0.25.cssRem),
                     onClick = { sideMenuState = SideMenuState.OPEN }
                 ) {
-                    HamburgerIcon(modifier = IconStyle.toModifier().size(36.px))
+                    HamburgerIcon(modifier = IconStyle.toModifier(SmallIconSize))
                 }
             }
             Box(modifier = Modifier.flex(1), contentAlignment = Alignment.Center) {

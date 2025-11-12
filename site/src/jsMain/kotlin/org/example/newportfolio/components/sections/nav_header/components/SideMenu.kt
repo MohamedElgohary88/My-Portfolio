@@ -10,6 +10,7 @@ import org.example.newportfolio.theme.brand
 import org.example.newportfolio.theme.fonts.LabelLargeTextStyle
 import org.example.newportfolio.theme.fonts.TextStyle
 import org.example.newportfolio.theme.icons.IconStyle
+import org.example.newportfolio.theme.icons.SmallIconSize
 import org.example.newportfolio.theme.text
 import com.varabyte.kobweb.compose.css.TextDecorationLine
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -106,7 +107,7 @@ fun SideMenu(
                 horizontalAlignment = Alignment.Start
             ) {
                 IconButton(onClick = { onCloseRequest() }) {
-                    CloseIcon(modifier = IconStyle.toModifier())
+                    CloseIcon(modifier = IconStyle.toModifier(SmallIconSize))
                 }
                 Column(
                     modifier = Modifier.gap(1.5.cssRem),

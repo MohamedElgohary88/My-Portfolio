@@ -60,12 +60,13 @@ private fun MoreIsYetToCome() {
     Box(
         modifier = Modifier
             .backgroundColor(colorPalette.overlay)
-            .borderRadius(30.px),
+            .borderRadius(30.px)
+            .minHeight(260.px), // match WorkItem base height for visual consistency
         contentAlignment = Alignment.Center
     ) {
         SpanText(
             text = "More is yet to come...",
-            modifier = TextStyle.toModifier(TitleTextStyle)
+            modifier = TextStyle.toModifier(TitleTextStyleSmaller)
         )
     }
 }
