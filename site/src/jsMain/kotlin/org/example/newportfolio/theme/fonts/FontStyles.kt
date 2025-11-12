@@ -223,3 +223,97 @@ val BodySmallTextStyle by TextStyle.addVariant {
         Modifier.font { siteFont(fontsXL.bodySmall) }
     }
 }
+
+// Smaller title primarily for compact cards or placeholders on mobile.
+val TitleTextStyleSmaller by TextStyle.addVariant {
+    Breakpoint.ZERO {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.bodyLarge) } // downsize title on mobile
+    }
+    Breakpoint.SM {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.bodyLarge) }
+    }
+    Breakpoint.MD {
+        val fontsMD = Fonts[Breakpoint.MD]
+        Modifier.font { siteFont(fontsMD.title) }
+    }
+    Breakpoint.LG {
+        val fontsLG = Fonts[Breakpoint.LG]
+        Modifier.font { siteFont(fontsLG.title) }
+    }
+    Breakpoint.XL {
+        val fontsXL = Fonts[Breakpoint.XL]
+        Modifier.font { siteFont(fontsXL.title) }
+    }
+}
+
+// Experience section mobile-compact variants
+val ExperienceTitleTextStyle by TextStyle.addVariant {
+    Breakpoint.ZERO {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.bodyLarge) } // smaller than default title on mobile
+    }
+    Breakpoint.SM {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.bodyLarge) }
+    }
+    Breakpoint.MD {
+        val fontsMD = Fonts[Breakpoint.MD]
+        Modifier.font { siteFont(fontsMD.title) }
+    }
+    Breakpoint.LG {
+        val fontsLG = Fonts[Breakpoint.LG]
+        Modifier.font { siteFont(fontsLG.title) }
+    }
+    Breakpoint.XL {
+        val fontsXL = Fonts[Breakpoint.XL]
+        Modifier.font { siteFont(fontsXL.title) }
+    }
+}
+
+val ExperienceDateTextStyle by TextStyle.addVariant {
+    Breakpoint.ZERO {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.labelMedium) } // reduce dates on mobile
+    }
+    Breakpoint.SM {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.labelMedium) }
+    }
+    Breakpoint.MD {
+        val fontsMD = Fonts[Breakpoint.MD]
+        Modifier.font { siteFont(fontsMD.labelLarge) }
+    }
+    Breakpoint.LG {
+        val fontsLG = Fonts[Breakpoint.LG]
+        Modifier.font { siteFont(fontsLG.labelLarge) }
+    }
+    Breakpoint.XL {
+        val fontsXL = Fonts[Breakpoint.XL]
+        Modifier.font { siteFont(fontsXL.labelLarge) }
+    }
+}
+
+val ExperienceChipTextStyle by TextStyle.addVariant {
+    Breakpoint.ZERO {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.labelSmall) } // compact chip text for mobile
+    }
+    Breakpoint.SM {
+        val fontsSM = Fonts[Breakpoint.SM]
+        Modifier.font { siteFont(fontsSM.labelSmall) }
+    }
+    Breakpoint.MD {
+        val fontsMD = Fonts[Breakpoint.MD]
+        Modifier.font { siteFont(fontsMD.bodyLarge) }
+    }
+    Breakpoint.LG {
+        val fontsLG = Fonts[Breakpoint.LG]
+        Modifier.font { siteFont(fontsLG.bodyLarge) }
+    }
+    Breakpoint.XL {
+        val fontsXL = Fonts[Breakpoint.XL]
+        Modifier.font { siteFont(fontsXL.bodyLarge) }
+    }
+}

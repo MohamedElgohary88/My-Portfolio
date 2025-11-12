@@ -10,9 +10,7 @@ import org.example.newportfolio.theme.fonts.TitleTextStyle
 import org.example.newportfolio.theme.icons.ExternalLinkIcon
 import org.example.newportfolio.theme.icons.IconStyle
 import org.example.newportfolio.theme.icons.LargeIconSize
-import com.varabyte.kobweb.compose.css.CSSTransition
-import com.varabyte.kobweb.compose.css.Overflow
-import com.varabyte.kobweb.compose.css.TextAlign
+import com.varabyte.kobweb.compose.css.*
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -23,14 +21,11 @@ import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.silk.components.graphics.Image
 import com.varabyte.kobweb.silk.components.style.ComponentStyle
-import com.varabyte.kobweb.silk.components.style.before
 import com.varabyte.kobweb.silk.components.style.hover
 import com.varabyte.kobweb.silk.components.style.toModifier
 import com.varabyte.kobweb.silk.components.text.SpanText
-import org.jetbrains.compose.web.css.Position
-import org.jetbrains.compose.web.css.cssRem
-import org.jetbrains.compose.web.css.px
-import org.jetbrains.compose.web.css.s
+import com.varabyte.kobweb.silk.style.breakpoint.Breakpoint
+import org.jetbrains.compose.web.css.*
 
 val WorkItemStyle by ComponentStyle {
     base {
@@ -38,42 +33,67 @@ val WorkItemStyle by ComponentStyle {
             .position(Position.Relative)
             .borderRadius(30.px)
             .overflow(Overflow.Hidden)
+            .transition(CSSTransition("transform", 0.3.s, TransitionTimingFunction.EaseInOut))
+            .width(100.percent)
     }
-    before {
-        Modifier
-            .content("")
-            .backgroundColor(Color.rgb(r = 29, g = 28, b = 38))
-            .opacity(0.75)
-            .position(Position.Absolute)
-            .fillMaxWidth()
-            .height(0.px)
-            .transition(CSSTransition("ease-in-out", 0.4.s))
+    hover {
+        Modifier.transform { scale(1.05) }
     }
-    (hover + before) {
+    cssRule(":hover .work-item-shadow") {
         Modifier.fillMaxHeight()
     }
     cssRule(":hover .work-item-overlay") {
-        Modifier.opacity(1)
+        Modifier.opacity(1).transform { translateY(0.px) }
+    }
+    cssRule(":hover .work-item-image") {
+        Modifier.transform { scale(1.1) }
+    }
+    cssRule(".work-item-img") { // ensure image fills container
+        Modifier
+            .width(100.percent)
+            .height(100.percent)
     }
 }
 
-val WorkItemImageStyle by ComponentStyle {
+val WorkItemShadowStyle by ComponentStyle {
     base {
         Modifier
-            .fillMaxSize()
+            .position(Position.Absolute)
+            .zIndex(1)
+            .top(0.px)
+            .left(0.px)
+            .fillMaxWidth()
+            .height(0.px)
+            .backgroundColor(Color.rgb(r = 29, g = 28, b = 38))
+            .opacity(0.85)
+            .transition(CSSTransition("height", 0.4.s, TransitionTimingFunction.EaseInOut))
     }
+}
+
+val WorkItemImageContainerStyle by ComponentStyle {
+    base {
+        Modifier
+            .width(100.percent)
+            .height(260.px) // increased from 210
+            .backgroundSize(BackgroundSize.Cover)
+            .backgroundRepeat(BackgroundRepeat.NoRepeat)
+    }
+    Breakpoint.MD { Modifier.height(300.px) } // up from 240
+    Breakpoint.LG { Modifier.height(340.px) } // up from 260
+    Breakpoint.XL { Modifier.height(380.px) } // up from 280
 }
 
 val WorkItemOverlayStyle by ComponentStyle {
     base {
         Modifier
             .position(Position.Absolute)
+            .zIndex(2)
             .textAlign(TextAlign.Center)
-            .transition(CSSTransition("ease-in-out", 0.5.s))
+            .transition(CSSTransition("all", 0.5.s, TransitionTimingFunction.EaseInOut))
             .opacity(0)
-            .fillMaxWidth()
-            .fillMaxHeight()
+            .fillMaxSize()
             .color(Colors.White)
+            .transform { translateY(20.px) }
     }
 }
 
@@ -86,12 +106,17 @@ fun WorkItem(
         modifier = WorkItemStyle.toModifier().then(modifier),
         contentAlignment = Alignment.Center
     ) {
-        Image(
-            src = work.imageRes,
-            modifier = WorkItemImageStyle.toModifier()
+        Box(modifier = WorkItemImageContainerStyle.toModifier()) {
+            Image(
+                src = work.imageRes,
+                modifier = Modifier.fillMaxSize().classNames("work-item-img", "work-item-image")
+            )
+        }
+        Box(
+            modifier = WorkItemShadowStyle.toModifier().classNames("work-item-shadow")
         )
         Column(
-            modifier = WorkItemOverlayStyle.toModifier(),
+            modifier = WorkItemOverlayStyle.toModifier().classNames("work-item-overlay"),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {

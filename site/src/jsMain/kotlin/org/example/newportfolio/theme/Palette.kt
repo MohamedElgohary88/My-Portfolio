@@ -11,58 +11,39 @@ fun initSilkPalette(ctx: InitSilkContext) {
     ctx.apply {
         theme.palettes.apply {
             light.apply {
-                val brandPrimary = Color.rgb(r = 5, g = 151, b = 31) // #05A11F
-                background = Color.rgb(r = 240, g = 255, b = 240) // Light greenish background
-                color = Color.rgb(r = 0, g = 51, b = 25) // Darker green for text
-                overlay = Color.rgb(r = 213, g = 242, b = 213) // Slightly lighter green for overlay
-                brand.set(
-                    primary = brandPrimary,
-                    onPrimary = Color.rgb(r = 255, g = 255, b = 255) // White for contrast
-                )
-                text.set(
-                    primary = Color.rgb(r = 0, g = 51, b = 25), // Dark green text
-                    secondary = Color.rgb(r = 0, g = 102, b = 51) // Medium green for secondary text
-                )
+                val primary = Color.rgb(r = 159, g = 52, b = 240) // #9f34f0
+                val accent  = Color.rgb(r = 190, g = 25, b = 228) // #be19e4
+                val primaryHover = Color.rgb(r = 145, g = 47, b = 220)
+                val primaryPressed = Color.rgb(r = 132, g = 43, b = 201)
+                background = Color.rgb(r = 250, g = 248, b = 253) // subtle very light backdrop
+                color = Color.rgb(r = 24, g = 22, b = 30) // near-black text
+                overlay = Color.rgb(r = 240, g = 232, b = 250) // soft lavender wash
+                brand.set(primary = primary, onPrimary = Color.rgb(r = 255, g = 255, b = 255))
+                text.set(primary = Color.rgb(r = 24, g = 22, b = 30), secondary = Color.rgb(r = 102, g = 82, b = 140))
                 button.set(
-                    default = brandPrimary,
-                    hover = brandPrimary.darkened(byPercent = 0.1f),
-                    focus = brandPrimary,
-                    pressed = brandPrimary.darkened(byPercent = 0.2f)
+                    default = primary,
+                    hover = primaryHover,
+                    focus = primary,
+                    pressed = primaryPressed
                 )
-                tooltip.set(
-                    background = Color.rgb(r = 240, g = 255, b = 240), // Light green for tooltip background
-                    color = Color.rgb(r = 0, g = 51, b = 25) // Dark green for tooltip text
-                )
+                tooltip.set(background = Color.rgb(r = 255, g = 255, b = 255), color = Color.rgb(r = 24, g = 22, b = 30))
             }
-
             dark.apply {
-                val brandPrimary = Color.rgb(r = 5, g = 151, b = 31) // #05A11F
-                background = Color.rgb(r = 10, g = 20, b = 10) // Dark green background
-                color = Color.rgb(r = 204, g = 255, b = 204) // Light greenish text
-                overlay = Color.rgb(r = 29, g = 46, b = 29) // Darker green for overlay
-                brand.set(
-                    primary = brandPrimary,
-                    onPrimary = Color.rgb(r = 240, g = 255, b = 240) // Light green for contrast
-                )
-                text.set(
-                    primary = Color.rgb(r = 204, g = 255, b = 204), // Light green text
-                    secondary = Color.rgb(r = 153, g = 204, b = 153) // Medium light green for secondary text
-                )
-                button.set(
-                    default = brandPrimary,
-                    hover = brandPrimary.lightened(byPercent = 0.1f),
-                    focus = brandPrimary,
-                    pressed = brandPrimary.lightened(byPercent = 0.2f)
-                )
-                tooltip.set(
-                    background = Color.rgb(r = 10, g = 20, b = 10), // Dark green for tooltip background
-                    color = Color.rgb(r = 204, g = 255, b = 204) // Light green for tooltip text
-                )
+                val primary = Color.rgb(r = 159, g = 52, b = 240) // #9f34f0
+                val accent  = Color.rgb(r = 190, g = 25, b = 228) // #be19e4
+                val primaryHover = primary.lightened(byPercent = 0.10f)
+                val primaryPressed = primary.lightened(byPercent = 0.20f)
+                background = Color.rgb(r = 17, g = 14, b = 22) // deep neutral with purple hint
+                color = Color.rgb(r = 235, g = 230, b = 245)
+                overlay = Color.rgb(r = 46, g = 33, b = 70) // rich dark purple overlay
+                brand.set(primary = primary, onPrimary = Color.rgb(r = 250, g = 247, b = 255))
+                text.set(primary = Color.rgb(r = 235, g = 230, b = 245), secondary = Color.rgb(r = 177, g = 160, b = 205))
+                button.set(default = primary, hover = primaryHover, focus = primary, pressed = primaryPressed)
+                tooltip.set(background = Color.rgb(r = 28, g = 23, b = 35), color = Color.rgb(r = 235, g = 230, b = 245))
             }
         }
     }
 }
-
 
 // Custom Text colors for the Silk theme
 val Palette.text: Text get() = (this as MutablePalette).text
@@ -87,8 +68,7 @@ class MutableText(palette: MutablePalette) : MutablePalette.ColorGroup(palette =
     }
 }
 
-
-// Custom Brand colors for the Silk theme
+// Custom Brand colors
 val Palette.brand: Brand get() = (this as MutablePalette).brand
 val MutablePalette.brand: MutableBrand
     get() = MutableBrand(this)

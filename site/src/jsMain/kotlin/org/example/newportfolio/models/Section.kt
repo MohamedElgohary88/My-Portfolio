@@ -13,6 +13,14 @@ enum class Section(
         id = "works",
         text = "Works"
     ),
+    Experience(
+        id = "experience",
+        text = "Experience"
+    ),
+    Education(
+        id = "education",
+        text = "Education"
+    ),
     About(
         id = "about",
         text = "About me"

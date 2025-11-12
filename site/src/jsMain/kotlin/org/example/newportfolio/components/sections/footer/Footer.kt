@@ -116,16 +116,19 @@ private fun PoweredByKobweb() {
         SpanText(
             modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor)
                 .textAlign(TextAlign.Center),
-            text = "Powered by"
+            text = "Powered by "
         )
-        Link(path = "https://kobweb.varabyte.com/") {
+        SpanText(
+            modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor)
+                .textAlign(TextAlign.Center),
+            text = "Kotlin"
+        )
             Image(
-                src = Res.Images.KOBWEB,
+                src = Res.Images.KOTLIN,
                 modifier = Modifier
                     .display(DisplayStyle.Flex)
                     .height(1.25.cssRem)
                     .margin(left = 0.375.cssRem)
             )
-        }
     }
 }

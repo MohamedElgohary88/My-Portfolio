@@ -83,3 +83,14 @@ val MediumIconSize by IconStyle.addVariant {
         Modifier.size(2.5.cssRem)
     }
 }
+
+// Smaller icon size intended for compact controls (e.g., mobile nav icons)
+val SmallIconSize by IconStyle.addVariant {
+    Breakpoint.ZERO {
+        Modifier.size(1.2.cssRem)
+    }
+    Breakpoint.SM {
+        Modifier.size(1.3.cssRem)
+    }
+    // For md and above, fall back to IconStyle defaults (no override)
+}

@@ -45,13 +45,21 @@ To run this project locally, follow these steps:
 
 3. **Run the Application**:
 
-    Start the application using your preferred IDE or the command line. For example, if using Gradle:
+    Start the development server using the Gradle wrapper:
 
     ```bash
-    ./gradlew run
+    ./gradlew kobwebStart
     ```
 
-4. **View Locally**:
+4. **Stop the Application**:
+
+    To stop the development server, run the following command:
+
+    ```bash
+    ./gradlew kobwebStop
+    ```
+
+5. **View Locally**:
 
     Open your browser and navigate to `http://localhost:8080` to view the portfolio.
 

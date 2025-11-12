@@ -31,7 +31,7 @@ val IconButtonVariant by ButtonStyle.addVariant {
             .alignContent(AlignContent.Center)
             .justifyContent(JustifyContent.Center)
             .display(DisplayStyle.Flex)
-            .padding(0.5.cssRem)
+            .padding(0.35.cssRem) // reduced from 0.5rem to shrink circular button
             .borderRadius(50.percent)
     }
     hover {

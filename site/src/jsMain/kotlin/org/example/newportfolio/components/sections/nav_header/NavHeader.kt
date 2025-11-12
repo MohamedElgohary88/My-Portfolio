@@ -7,6 +7,7 @@ import org.example.newportfolio.components.widgets.button.IconButton
 import org.example.newportfolio.models.Section
 import org.example.newportfolio.theme.icons.HamburgerIcon
 import org.example.newportfolio.theme.icons.IconStyle
+import org.example.newportfolio.theme.icons.SmallIconSize
 import org.example.newportfolio.utils.UpdateEffect
 import com.varabyte.kobweb.compose.css.JustifyContent
 import com.varabyte.kobweb.compose.css.functions.blur
@@ -51,27 +52,30 @@ val NavHeaderStyle by ComponentStyle(extraModifiers = { SmoothColorStyle.toModif
             .zIndex(1)
     }
     Breakpoint.ZERO {
-        Modifier.padding(left = 12.px, right = 12.px, top = 6.px, bottom = 6.px)
+        Modifier.padding(left = 8.px, right = 8.px, top = 4.px, bottom = 4.px) // tightened
     }
     Breakpoint.SM {
-        Modifier.padding(left = 24.px, right = 24.px, top = 10.px, bottom = 10.px)
+        Modifier.padding(left = 16.px, right = 16.px, top = 8.px, bottom = 8.px) // tightened
     }
     Breakpoint.MD {
         Modifier
-            .padding(left = 34.px, right = 34.px, top = 15.px, bottom = 15.px)
-            .height(7.vh)
+            .padding(left = 24.px, right = 24.px, top = 10.px, bottom = 10.px) // tightened
+            .height(6.vh)
     }
     Breakpoint.LG {
         Modifier
-            .padding(left = 54.px, right = 54.px, top = 20.px, bottom = 20.px)
-            .height(10.vh)
+            .padding(left = 40.px, right = 40.px, top = 16.px, bottom = 16.px) // reduced horizontal & vertical padding
+            .height(9.vh) // slightly smaller height
     }
     Breakpoint.XL {
         Modifier
-            .padding(left = 104.px, right = 104.px, top = 20.px, bottom = 20.px)
-            .height(10.vh)
+            .padding(left = 80.px, right = 80.px, top = 16.px, bottom = 16.px) // reduced spacing
+            .height(9.vh)
     }
 }
+
+// NOTE: To shrink the green active indicator dot & reduce spacing between nav labels,
+// please provide the NavBar composable (where the indicator is rendered).
 
 @Composable
 fun NavHeader() {
@@ -127,7 +131,7 @@ fun NavHeader() {
                     modifier = Modifier.padding(0.25.cssRem),
                     onClick = { sideMenuState = SideMenuState.OPEN }
                 ) {
-                    HamburgerIcon(modifier = IconStyle.toModifier().size(36.px))
+                    HamburgerIcon(modifier = IconStyle.toModifier(SmallIconSize))
                 }
             }
             Box(modifier = Modifier.flex(1), contentAlignment = Alignment.Center) {

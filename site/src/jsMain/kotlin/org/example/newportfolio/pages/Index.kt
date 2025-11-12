@@ -11,6 +11,8 @@ import com.varabyte.kobweb.core.Page
 import org.example.newportfolio.components.layouts.DefaultPageLayout
 import org.example.newportfolio.components.sections.about.AboutSection
 import org.example.newportfolio.components.sections.contact.ContactSection
+import org.example.newportfolio.components.sections.education.EducationSection
+import org.example.newportfolio.components.sections.experience.ExperienceSection
 import org.example.newportfolio.components.sections.start.StartSection
 import org.example.newportfolio.components.sections.works.WorksSection
 
@@ -24,6 +26,8 @@ fun HomePage() {
         ) {
             StartSection()
             WorksSection()
+            ExperienceSection()
+            EducationSection()
             AboutSection()
             ContactSection()
         }
