@@ -46,8 +46,9 @@ private fun CardContent(experience: Experience) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             SpanText(experience.jobPosition, modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor))
+            // show "from - to (duration)"
             SpanText(
-                "${experience.from} - ${experience.to}",
+                "${experience.from} - ${experience.to} (${experience.formattedDuration})",
                 modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor)
             )
         }
@@ -55,10 +56,20 @@ private fun CardContent(experience: Experience) {
             experience.company,
             modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor).margin(bottom = 10.px)
         )
-        SpanText(
-            experience.description,
-            modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor).margin(bottom = 20.px)
-        )
+        // Render each sentence on its own line (split by '.')
+        Column(modifier = Modifier.margin(bottom = 20.px)) {
+            experience.description
+                .split('.')
+                .map { it.trim() }
+                .filter { it.isNotEmpty() }
+                .forEach { sentence ->
+                    SpanText(
+                        text = "$sentence.",
+                        modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor)
+                            .margin(bottom = 6.px)
+                    )
+                }
+        }
         SimpleGrid(numColumns(base = 3, sm = 4, md = 5)) {
             experience.skills.forEach { skill ->
                 Box(

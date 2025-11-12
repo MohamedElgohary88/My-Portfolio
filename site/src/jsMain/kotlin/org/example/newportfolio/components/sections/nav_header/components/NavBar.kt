@@ -108,7 +108,7 @@ fun NavBar(selectedSectionId: String) {
     Row(
         modifier = Modifier
             .id("nav-bar-container")
-            .fillMaxWidth()
+            // .fillMaxWidth() // removed to avoid overlaying ThemeIconButton
             .position(Position.Relative)
             .overflow(Overflow.Visible)
             .justifyContent(JustifyContent.Center)
