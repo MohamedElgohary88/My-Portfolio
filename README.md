@@ -4,7 +4,7 @@ Welcome to my **Awesome Portfolio Website**! This portfolio showcases my skills,
 
 ## Live Demo
 
-Check out the live demo of my portfolio at: [https://mohamedelgohary.com/](https://mohamedelgohary.dev)
+Check out the live demo of my portfolio at: [https://mohamedelgohary.dev/](https://mohamedelgohary.dev)
 
 ## Project Overview
 
