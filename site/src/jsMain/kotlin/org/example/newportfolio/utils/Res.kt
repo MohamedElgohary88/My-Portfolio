@@ -66,6 +66,6 @@ object Res {
         const val MOVIE = "images/movie.svg"
         const val BLOG = "images/blog.svg"
         const val HOTEL = "images/hotel.svg"
+        const val BISMAR = "images/bismar.svg"
     }
-
 }

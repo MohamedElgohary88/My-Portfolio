@@ -1,87 +1,87 @@
 package org.example.newportfolio.components.sections.experience
 
-import androidx.compose.runtime.Composable
-import com.varabyte.kobweb.compose.css.FontWeight
-import com.varabyte.kobweb.compose.foundation.layout.Column
-import com.varabyte.kobweb.compose.foundation.layout.Row
+import androidx.compose.runtime.*
+import com.varabyte.kobweb.compose.css.*
+import com.varabyte.kobweb.compose.foundation.layout.*
+import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
+import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.modifiers.*
-import com.varabyte.kobweb.silk.components.navigation.Link
+import com.varabyte.kobweb.compose.ui.thenIf
+import com.varabyte.kobweb.silk.components.layout.SimpleGrid
+import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.components.style.toModifier
 import com.varabyte.kobweb.silk.components.text.SpanText
-import com.varabyte.kobweb.silk.theme.colors.ColorMode
-import com.varabyte.kobweb.silk.theme.colors.palette.color
-import com.varabyte.kobweb.silk.theme.colors.palette.toPalette
 import org.example.newportfolio.models.Experience
 import org.example.newportfolio.theme.fonts.*
 import org.jetbrains.compose.web.css.*
 
 @Composable
-fun ExperienceCard(experience: Experience, modifier: Modifier = Modifier) {
-    val colorMode = ColorMode.current
-    val palette = colorMode.toPalette()
-
-    Column(modifier = modifier) {
-        // Header line: Role @ Company - Type
+private fun CardContent(experience: Experience) {
+    var isHovered by remember { mutableStateOf(false) }
+    Column(
+        modifier = Modifier
+            .width(45.percent)
+            .padding(20.px)
+            .borderRadius(10.px)
+            .border(1.px, LineStyle.Solid, Colors.LightGray)
+            .onMouseEnter { isHovered = true }
+            .onMouseLeave { isHovered = false }
+            .thenIf(
+                isHovered,
+                Modifier
+                    .transform { scale(1.02) }
+                    .boxShadow(color = Colors.Green.copy(alpha = 30), blurRadius = 10.px, spreadRadius = 5.px)
+            )
+            .transition(CSSTransition("all", 0.3.s, TransitionTimingFunction.EaseInOut))
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth().margin(bottom = 10.px),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            SpanText(experience.jobPosition, modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor))
+            SpanText(
+                "${experience.from} - ${experience.to}",
+                modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor)
+            )
+        }
         SpanText(
-            text = "${experience.role} @ ",
-            modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor)
-        )
-        Link(
-            path = experience.companyUrl,
-            text = experience.company,
-            modifier = TextStyle.toModifier(TitleTextStyle).color(palette.color)
+            experience.company,
+            modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor).margin(bottom = 10.px)
         )
         SpanText(
-            text = " - ${experience.employmentType}",
-            modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor)
+            experience.description,
+            modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor).margin(bottom = 20.px)
         )
-
-        // Period line
-        SpanText(
-            text = experience.period,
-            modifier = TextStyle.toModifier(LabelMediumTextStyle, TextStyleSecondaryColor).margin(top = 0.5.cssRem)
-        )
-
-        // Summary paragraph
-        SpanText(
-            text = experience.summary,
-            modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor).margin(top = 1.5.cssRem)
-        )
-
-        // Bullets
-        Column(modifier = Modifier.margin(top = 1.cssRem)) {
-            experience.bullets.forEach { bullet ->
-                Row(Modifier.margin(top = 0.5.cssRem)) {
-                    SpanText(
-                        text = "»",
-                        modifier = TextStyle.toModifier(BodyLargeTextStyle).color(palette.color).margin(right = 0.75.cssRem)
-                    )
-                    SpanText(
-                        text = bullet,
-                        modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor)
-                    )
+        SimpleGrid(numColumns(base = 3, sm = 4, md = 5)) {
+            experience.skills.forEach { skill ->
+                Box(
+                    modifier = Modifier
+                        .margin(top = 5.px, right = 5.px)
+                        .padding(5.px)
+                        .borderRadius(5.px)
+                        .backgroundColor(Colors.Green.copy(alpha = 20))
+                ) {
+                    SpanText(skill, modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor))
                 }
             }
         }
+    }
+}
 
-        // Skills
-        if (experience.skills != null) {
-            Row(modifier = Modifier.margin(top = 1.5.cssRem).flexWrap(FlexWrap.Wrap)) {
-                val skills = experience.skills.split(",").map { it.trim() }
-                skills.forEach { skill ->
-                    SpanText(
-                        text = skill,
-                        modifier = TextStyle.toModifier(LabelMediumTextStyle)
-                            .margin(right = 0.75.cssRem, bottom = 0.75.cssRem)
-                            .padding(0.5.cssRem, 0.75.cssRem)
-                            .borderRadius(12.px)
-                            .backgroundColor(palette.color.toRgb().copy(alpha = 0.1f.toInt()))
-                            .color(palette.color)
-                            .fontWeight(FontWeight.Medium)
-                    )
-                }
-            }
-        }
+@Composable
+fun ExperienceCard(experience: Experience) {
+    val isOdd = experience.number.toInt() % 2 != 0
+    Box(
+        modifier = Modifier
+            .id("experience-card-${experience.ordinal}")
+            .fillMaxWidth()
+            .position(Position.Relative)
+            .padding(left = 50.px, right = 50.px, top = 20.px, bottom = 20.px)
+            .classNames("experience-card"),
+        contentAlignment = if (isOdd) Alignment.CenterStart else Alignment.CenterEnd
+    ) {
+        CardContent(experience)
     }
 }
