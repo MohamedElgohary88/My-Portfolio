@@ -1,6 +1,6 @@
 # General ignores
 .DS_Store
-build
+# Removed 'build' ignore so build/kobweb/site can be committed for Render deployment
 out
 kotlin-js-store
 
@@ -24,4 +24,3 @@ kotlin-js-store
 
 # Gradle ignores
 .gradle
-
