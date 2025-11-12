@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/../.config/github-copilot/intellij/mcp.json">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/../.config/github-copilot/intellij/mcp.json" />
+              <option name="originalContent" value="{&#10;    &quot;servers&quot;: {&#10;        &quot;github&quot;: {&#10;            &quot;url&quot;: &quot;https://api.githubcopilot.com/mcp/&quot;,&#10;            &quot;requestInit&quot;: {&#10;                &quot;headers&quot;: {&#10;                    &quot;Authorization&quot;: &quot;Bearer REPLACE_WITH_TOKEN&quot;&#10;                }&#10;            }&#10;        }&#10;    }&#10;}" />
+              <option name="updatedContent" value="{&#10;    &quot;servers&quot;: {&#10;        &quot;github&quot;: {&#10;            &quot;url&quot;: &quot;https://api.githubcopilot.com/mcp/&quot;,&#10;            &quot;requestInit&quot;: {&#10;                &quot;headers&quot;: {&#10;                    &quot;Authorization&quot;: &quot;Bearer REPLACE_WITH_TOKEN&quot;&#10;                }&#10;            }&#10;        }&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
