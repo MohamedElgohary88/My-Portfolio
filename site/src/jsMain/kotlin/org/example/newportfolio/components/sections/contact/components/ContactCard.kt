@@ -3,6 +3,11 @@
 package org.example.newportfolio.components.sections.contact.components
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import com.varabyte.kobweb.compose.css.CSSTransition
 import org.example.newportfolio.components.widgets.button.LinkIconButton
 import org.example.newportfolio.models.Social
 import org.example.newportfolio.theme.icons.IconStyle
@@ -17,6 +22,7 @@ import com.varabyte.kobweb.compose.foundation.layout.Row
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.thenIf
 import com.varabyte.kobweb.compose.ui.toAttrs
 import com.varabyte.kobweb.silk.components.style.ComponentStyle
 import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
@@ -75,11 +81,24 @@ val ContactCardStyle by ComponentStyle(
 
 @Composable
 fun ContactCard(
-    modifier: Modifier = Modifier,
     colorMode: ColorMode = ColorMode.current
 ) {
+    var isHovered by remember { mutableStateOf(false) }
+    val palette = ColorMode.current.toPalette()
     Column(
-        modifier = ContactCardStyle.toModifier().then(modifier),
+        modifier = ContactCardStyle.toModifier()
+            .onMouseEnter { isHovered = true }
+            .onMouseLeave { isHovered = false }
+            .thenIf(
+                isHovered,
+                Modifier
+                    .transform { translateY((-6).px); scale(1.015); rotate((-0.5).deg) }
+                    .boxShadow(color = palette.brand.primary.toRgb().copyf(alpha = 0.45f), blurRadius = 26.px, spreadRadius = 6.px)
+            )
+            .transition(
+                CSSTransition("transform", 0.28.s, TransitionTimingFunction.EaseInOut),
+                CSSTransition("box-shadow", 0.30.s, TransitionTimingFunction.EaseInOut)
+            ),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
