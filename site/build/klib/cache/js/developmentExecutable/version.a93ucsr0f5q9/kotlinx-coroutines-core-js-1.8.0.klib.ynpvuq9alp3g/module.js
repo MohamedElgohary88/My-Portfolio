@@ -2059,12 +2059,12 @@
   }
   function Deferred() {
   }
+  function Delay() {
+  }
   function get_delay(_this__u8e3s4) {
     var tmp = _this__u8e3s4.get_y2st91_k$(Key_getInstance());
     var tmp0_elvis_lhs = (!(tmp == null) ? isInterface(tmp, Delay) : false) ? tmp : null;
     return tmp0_elvis_lhs == null ? get_DefaultDelay() : tmp0_elvis_lhs;
-  }
-  function Delay() {
   }
   function get_DISPOSED_TASK() {
     _init_properties_EventLoop_common_kt__pwfggr();

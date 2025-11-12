@@ -104,9 +104,9 @@
   var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.k;
   var Collection = kotlin_kotlin.$_$.w4;
   var isInterface = kotlin_kotlin.$_$.fb;
-  var backgroundImage = kotlin_org_jetbrains_compose_html_html_core.$_$.o3;
   var backgroundRepeat = kotlin_org_jetbrains_compose_html_html_core.$_$.p3;
   var backgroundSize = kotlin_org_jetbrains_compose_html_html_core.$_$.q3;
+  var backgroundImage = kotlin_org_jetbrains_compose_html_html_core.$_$.o3;
   var Color_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.l;
   var Color = kotlin_org_jetbrains_compose_html_html_core.$_$.z2;
   var Companion_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.p;
@@ -180,16 +180,17 @@
   setMetadataFor(DummyAttrsScope, 'DummyAttrsScope', classMeta, VOID, [AttrsScope], DummyAttrsScope);
   setMetadataFor(SyntheticEventListener, 'SyntheticEventListener', classMeta, VOID, [NamedEventListener]);
   setMetadataFor(TransitionEventListener, 'TransitionEventListener', classMeta, SyntheticEventListener);
+  setMetadataFor(JustifyContent, 'JustifyContent', classMeta);
+  setMetadataFor(JustifyContentKeyword, 'JustifyContentKeyword', classMeta, JustifyContent);
+  setMetadataFor(JustifyContentPosition, 'JustifyContentPosition', classMeta, JustifyContent);
+  setMetadataFor(OverflowAlignment, 'OverflowAlignment', classMeta, JustifyContent);
+  setMetadataFor(Companion, 'Companion', objectMeta);
+  setMetadataFor(OverflowStrategy, 'OverflowStrategy', classMeta, Enum);
   setMetadataFor(JustifyItems, 'JustifyItems', classMeta);
   setMetadataFor(JustifyItemsKeyword, 'JustifyItemsKeyword', classMeta, JustifyItems);
   setMetadataFor(JustifyItemsPosition, 'JustifyItemsPosition', classMeta, JustifyItems);
   setMetadataFor(BaselineAlignment, 'BaselineAlignment', classMeta, JustifyItems);
-  setMetadataFor(OverflowAlignment, 'OverflowAlignment', classMeta, JustifyItems);
-  setMetadataFor(Companion, 'Companion', objectMeta);
-  setMetadataFor(JustifyContent, 'JustifyContent', classMeta);
-  setMetadataFor(JustifyContentKeyword, 'JustifyContentKeyword', classMeta, JustifyContent);
-  setMetadataFor(JustifyContentPosition, 'JustifyContentPosition', classMeta, JustifyContent);
-  setMetadataFor(OverflowAlignment_0, 'OverflowAlignment', classMeta, JustifyContent);
+  setMetadataFor(OverflowAlignment_0, 'OverflowAlignment', classMeta, JustifyItems);
   setMetadataFor(Companion_0, 'Companion', objectMeta);
   setMetadataFor(JustifySelf, 'JustifySelf', classMeta);
   setMetadataFor(JustifySelfKeyword, 'JustifySelfKeyword', classMeta, JustifySelf);
@@ -198,7 +199,6 @@
   setMetadataFor(OverflowAlignment_1, 'OverflowAlignment', classMeta, JustifySelf);
   setMetadataFor(Companion_1, 'Companion', objectMeta);
   setMetadataFor(BaselineSet, 'BaselineSet', classMeta, Enum);
-  setMetadataFor(OverflowStrategy, 'OverflowStrategy', classMeta, Enum);
   setMetadataFor(Animation, 'Animation', classMeta);
   setMetadataFor(Keyword, 'Keyword', classMeta, Animation);
   setMetadataFor(Repeatable, 'Repeatable', classMeta, Animation);
@@ -211,13 +211,13 @@
   setMetadataFor(RepeatStyle, 'RepeatStyle', classMeta, BackgroundRepeat);
   setMetadataFor(TwoValue, 'TwoValue', classMeta, BackgroundRepeat);
   setMetadataFor(Companion_4, 'Companion', objectMeta);
-  setMetadataFor(Background, 'Background', classMeta);
-  setMetadataFor(Keyword_1, 'Keyword', classMeta, Background);
-  setMetadataFor(Repeatable_0, 'Repeatable', classMeta, Background);
-  setMetadataFor(Companion_5, 'Companion', objectMeta);
   setMetadataFor(BackgroundSize, 'BackgroundSize', classMeta);
-  setMetadataFor(Keyword_2, 'Keyword', classMeta, BackgroundSize);
+  setMetadataFor(Keyword_1, 'Keyword', classMeta, BackgroundSize);
   setMetadataFor(Size, 'Size', classMeta, BackgroundSize);
+  setMetadataFor(Companion_5, 'Companion', objectMeta);
+  setMetadataFor(Background, 'Background', classMeta);
+  setMetadataFor(Keyword_2, 'Keyword', classMeta, Background);
+  setMetadataFor(Repeatable_0, 'Repeatable', classMeta, Background);
   setMetadataFor(Companion_6, 'Companion', objectMeta);
   setMetadataFor(BackgroundPosition, 'BackgroundPosition', classMeta);
   setMetadataFor(Keyword_3, 'Keyword', classMeta, BackgroundPosition);
@@ -254,36 +254,36 @@
   setMetadataFor(Appearance, 'Appearance', classMeta);
   setMetadataFor(Companion_17, 'Companion', objectMeta);
   setMetadataFor(FontWeight, 'FontWeight', classMeta);
-  setMetadataFor(FontVariantEastAsian, 'FontVariantEastAsian', classMeta);
-  setMetadataFor(Keyword_5, 'Keyword', classMeta, FontVariantEastAsian);
-  setMetadataFor(ListableKeyword, 'ListableKeyword', classMeta, FontVariantEastAsian);
-  setMetadataFor(KeywordList, 'KeywordList', classMeta, FontVariantEastAsian);
   setMetadataFor(Companion_18, 'Companion', objectMeta);
+  setMetadataFor(FontStyle, 'FontStyle', classMeta);
   setMetadataFor(Companion_19, 'Companion', objectMeta);
-  setMetadataFor(FontVariantEmoji, 'FontVariantEmoji', classMeta);
-  setMetadataFor(FontVariantLigatures, 'FontVariantLigatures', classMeta);
-  setMetadataFor(Keyword_6, 'Keyword', classMeta, FontVariantLigatures);
-  setMetadataFor(ListableKeyword_0, 'ListableKeyword', classMeta, FontVariantLigatures);
-  setMetadataFor(KeywordList_0, 'KeywordList', classMeta, FontVariantLigatures);
-  setMetadataFor(Companion_20, 'Companion', objectMeta);
-  setMetadataFor(Companion_21, 'Companion', objectMeta);
-  setMetadataFor(FontVariantCaps, 'FontVariantCaps', classMeta);
-  setMetadataFor(FontVariantNumeric, 'FontVariantNumeric', classMeta);
-  setMetadataFor(Keyword_7, 'Keyword', classMeta, FontVariantNumeric);
-  setMetadataFor(ListableKeyword_1, 'ListableKeyword', classMeta, FontVariantNumeric);
-  setMetadataFor(KeywordList_1, 'KeywordList', classMeta, FontVariantNumeric);
-  setMetadataFor(Companion_22, 'Companion', objectMeta);
+  setMetadataFor(FontSize, 'FontSize', classMeta);
   setMetadataFor(FontVariantAlternates, 'FontVariantAlternates', classMeta);
   setMetadataFor(SingleKeyword, 'SingleKeyword', classMeta, FontVariantAlternates);
   setMetadataFor(ListableValue, 'ListableValue', classMeta, FontVariantAlternates);
-  setMetadataFor(ListableKeyword_2, 'ListableKeyword', classMeta, ListableValue);
+  setMetadataFor(ListableKeyword, 'ListableKeyword', classMeta, ListableValue);
   setMetadataFor(FunctionalNotation, 'FunctionalNotation', classMeta, ListableValue);
   setMetadataFor(ValueList, 'ValueList', classMeta, FontVariantAlternates);
+  setMetadataFor(Companion_20, 'Companion', objectMeta);
+  setMetadataFor(Companion_21, 'Companion', objectMeta);
+  setMetadataFor(FontVariantCaps, 'FontVariantCaps', classMeta);
+  setMetadataFor(FontVariantEastAsian, 'FontVariantEastAsian', classMeta);
+  setMetadataFor(Keyword_5, 'Keyword', classMeta, FontVariantEastAsian);
+  setMetadataFor(ListableKeyword_0, 'ListableKeyword', classMeta, FontVariantEastAsian);
+  setMetadataFor(KeywordList, 'KeywordList', classMeta, FontVariantEastAsian);
+  setMetadataFor(Companion_22, 'Companion', objectMeta);
   setMetadataFor(Companion_23, 'Companion', objectMeta);
+  setMetadataFor(FontVariantEmoji, 'FontVariantEmoji', classMeta);
+  setMetadataFor(FontVariantLigatures, 'FontVariantLigatures', classMeta);
+  setMetadataFor(Keyword_6, 'Keyword', classMeta, FontVariantLigatures);
+  setMetadataFor(ListableKeyword_1, 'ListableKeyword', classMeta, FontVariantLigatures);
+  setMetadataFor(KeywordList_0, 'KeywordList', classMeta, FontVariantLigatures);
   setMetadataFor(Companion_24, 'Companion', objectMeta);
-  setMetadataFor(FontSize, 'FontSize', classMeta);
+  setMetadataFor(FontVariantNumeric, 'FontVariantNumeric', classMeta);
+  setMetadataFor(Keyword_7, 'Keyword', classMeta, FontVariantNumeric);
+  setMetadataFor(ListableKeyword_2, 'ListableKeyword', classMeta, FontVariantNumeric);
+  setMetadataFor(KeywordList_1, 'KeywordList', classMeta, FontVariantNumeric);
   setMetadataFor(Companion_25, 'Companion', objectMeta);
-  setMetadataFor(FontStyle, 'FontStyle', classMeta);
   setMetadataFor(GridTrackBuilderInRepeat, 'GridTrackBuilderInRepeat', classMeta);
   setMetadataFor(GridTrackBuilder, 'GridTrackBuilder', classMeta, GridTrackBuilderInRepeat, VOID, GridTrackBuilder);
   setMetadataFor(GridEntry, 'GridEntry', classMeta);
@@ -329,11 +329,11 @@
   setMetadataFor(Companion_35, 'Companion', objectMeta);
   setMetadataFor(UserSelect, 'UserSelect', classMeta);
   setMetadataFor(Companion_36, 'Companion', objectMeta);
-  setMetadataFor(TextDecorationLine, 'TextDecorationLine', classMeta);
+  setMetadataFor(WhiteSpace, 'WhiteSpace', classMeta);
   setMetadataFor(Companion_37, 'Companion', objectMeta);
   setMetadataFor(TextAlign, 'TextAlign', classMeta);
   setMetadataFor(Companion_38, 'Companion', objectMeta);
-  setMetadataFor(WhiteSpace, 'WhiteSpace', classMeta);
+  setMetadataFor(TextDecorationLine, 'TextDecorationLine', classMeta);
   setMetadataFor(Transition, 'Transition', classMeta);
   setMetadataFor(Keyword_9, 'Keyword', classMeta, Transition);
   setMetadataFor(Repeatable_2, 'Repeatable', classMeta, Transition);
@@ -391,6 +391,15 @@
   setMetadataFor(CalcScope, 'CalcScope', interfaceMeta);
   setMetadataFor(CalcScopeInstance, 'CalcScopeInstance', objectMeta, VOID, [CalcScope]);
   setMetadataFor(CSSFilter, 'CSSFilter', classMeta);
+  setMetadataFor(Shape, 'Shape', classMeta);
+  setMetadataFor(Circle, 'Circle', classMeta, Shape, VOID, Circle_init_$Create$);
+  setMetadataFor(Ellipse, 'Ellipse', classMeta, Shape, VOID, Ellipse_init_$Create$);
+  setMetadataFor(Companion_43, 'Companion', objectMeta);
+  setMetadataFor(Extent, 'Extent', classMeta, Enum);
+  setMetadataFor(Gradient_0, 'Gradient', interfaceMeta);
+  setMetadataFor(RadialGradient, 'RadialGradient', classMeta, VOID, [Gradient_0]);
+  setMetadataFor(Default, 'Default', classMeta, RadialGradient);
+  setMetadataFor(ByShape, 'ByShape', classMeta, RadialGradient);
   setMetadataFor(Entry, 'Entry', classMeta);
   setMetadataFor(Color_0, 'Color', classMeta, Entry);
   setMetadataFor(Simple, 'Simple', classMeta, Color_0);
@@ -398,15 +407,6 @@
   setMetadataFor(StopRange, 'StopRange', classMeta, Color_0);
   setMetadataFor(Hint, 'Hint', classMeta, Entry);
   setMetadataFor(ColorStopsBuilder, 'ColorStopsBuilder', classMeta, VOID, VOID, ColorStopsBuilder);
-  setMetadataFor(Gradient_0, 'Gradient', interfaceMeta);
-  setMetadataFor(Shape, 'Shape', classMeta);
-  setMetadataFor(Circle, 'Circle', classMeta, Shape, VOID, Circle_init_$Create$);
-  setMetadataFor(Ellipse, 'Ellipse', classMeta, Shape, VOID, Ellipse_init_$Create$);
-  setMetadataFor(Companion_43, 'Companion', objectMeta);
-  setMetadataFor(Extent, 'Extent', classMeta, Enum);
-  setMetadataFor(RadialGradient, 'RadialGradient', classMeta, VOID, [Gradient_0]);
-  setMetadataFor(Default, 'Default', classMeta, RadialGradient);
-  setMetadataFor(ByShape, 'ByShape', classMeta, RadialGradient);
   setMetadataFor(Direction, 'Direction', classMeta, Enum);
   setMetadataFor(LinearGradient, 'LinearGradient', classMeta, VOID, [Gradient_0]);
   setMetadataFor(Default_0, 'Default', classMeta, LinearGradient);
@@ -750,80 +750,71 @@
   function _get_value__a43j40($this) {
     return $this.value_1;
   }
-  function JustifyItemsKeyword(value) {
-    JustifyItems.call(this, value);
+  function JustifyContentKeyword(value) {
+    JustifyContent.call(this, value);
   }
-  function JustifyItemsPosition(value) {
-    JustifyItems.call(this, value);
-  }
-  function BaselineAlignment(baselineSet) {
-    JustifyItems.call(this, toValue(baselineSet));
+  function JustifyContentPosition(value) {
+    JustifyContent.call(this, value);
   }
   function OverflowAlignment(strategy, position) {
-    JustifyItems.call(this, toValue_0(strategy, position));
+    JustifyContent.call(this, toValue(strategy, position));
   }
   function Companion() {
     Companion_instance = this;
   }
   protoOf(Companion).get_Normal_22avww_k$ = function () {
-    return new JustifyItemsKeyword('normal');
-  };
-  protoOf(Companion).get_Stretch_2brthg_k$ = function () {
-    return new JustifyItemsKeyword('stretch');
+    return new JustifyContentKeyword('normal');
   };
   protoOf(Companion).get_Center_3arb0i_k$ = function () {
-    return new JustifyItemsPosition('center');
+    return new JustifyContentPosition('center');
   };
   protoOf(Companion).get_Start_ih4i6x_k$ = function () {
-    return new JustifyItemsPosition('start');
+    return new JustifyContentPosition('start');
   };
   protoOf(Companion).get_End_18ju7i_k$ = function () {
-    return new JustifyItemsPosition('end');
+    return new JustifyContentPosition('end');
   };
   protoOf(Companion).get_FlexStart_cfavq8_k$ = function () {
-    return new JustifyItemsPosition('flex-start');
+    return new JustifyContentPosition('flex-start');
   };
   protoOf(Companion).get_FlexEnd_fz7iu1_k$ = function () {
-    return new JustifyItemsPosition('flex-end');
-  };
-  protoOf(Companion).get_SelfStart_di8gbx_k$ = function () {
-    return new JustifyItemsPosition('self-start');
-  };
-  protoOf(Companion).get_SelfEnd_9ir8ka_k$ = function () {
-    return new JustifyItemsPosition('self-end');
+    return new JustifyContentPosition('flex-end');
   };
   protoOf(Companion).get_Left_wo5bw0_k$ = function () {
-    return new JustifyItemsPosition('left');
+    return new JustifyContentPosition('left');
   };
   protoOf(Companion).get_Right_igdsyb_k$ = function () {
-    return new JustifyItemsPosition('right');
+    return new JustifyContentPosition('right');
   };
-  protoOf(Companion).get_Baseline_bu5gku_k$ = function () {
-    return new BaselineAlignment(null);
+  protoOf(Companion).get_SpaceBetween_5p3wqd_k$ = function () {
+    return new JustifyContentKeyword('space-between');
   };
-  protoOf(Companion).get_FirstBaseline_dztmto_k$ = function () {
-    return new BaselineAlignment(BaselineSet_FIRST_getInstance());
+  protoOf(Companion).get_SpaceAround_1tvu22_k$ = function () {
+    return new JustifyContentKeyword('space-around');
   };
-  protoOf(Companion).get_LastBaseline_ldoo6c_k$ = function () {
-    return new BaselineAlignment(BaselineSet_LAST_getInstance());
+  protoOf(Companion).get_SpaceEvenly_3s2yx0_k$ = function () {
+    return new JustifyContentKeyword('space-evenly');
   };
-  protoOf(Companion).Safe_n4n8gl_k$ = function (position) {
+  protoOf(Companion).get_Stretch_2brthg_k$ = function () {
+    return new JustifyContentKeyword('stretch');
+  };
+  protoOf(Companion).Safe_hanrce_k$ = function (position) {
     return new OverflowAlignment(OverflowStrategy_SAFE_getInstance(), position);
   };
-  protoOf(Companion).Unsafe_kggy3o_k$ = function (position) {
+  protoOf(Companion).Unsafe_nn34c5_k$ = function (position) {
     return new OverflowAlignment(OverflowStrategy_UNSAFE_getInstance(), position);
   };
   protoOf(Companion).get_Inherit_a1a9e6_k$ = function () {
-    return new JustifyItemsKeyword('inherit');
+    return new JustifyContentKeyword('inherit');
   };
   protoOf(Companion).get_Initial_a0h2v9_k$ = function () {
-    return new JustifyItemsKeyword('initial');
+    return new JustifyContentKeyword('initial');
   };
   protoOf(Companion).get_Revert_3t1tzh_k$ = function () {
-    return new JustifyItemsKeyword('revert');
+    return new JustifyContentKeyword('revert');
   };
   protoOf(Companion).get_Unset_ii4mhs_k$ = function () {
-    return new JustifyItemsKeyword('unset');
+    return new JustifyContentKeyword('unset');
   };
   var Companion_instance;
   function Companion_getInstance_2() {
@@ -831,81 +822,135 @@
       new Companion();
     return Companion_instance;
   }
-  function JustifyItems(value) {
+  function JustifyContent(value) {
     Companion_getInstance_2();
     this.value_1 = value;
   }
-  protoOf(JustifyItems).toString = function () {
+  protoOf(JustifyContent).toString = function () {
     return this.value_1;
   };
+  function justifyContent(_this__u8e3s4, justifyContent) {
+    _this__u8e3s4.property_npxg1h_k$('justify-content', justifyContent);
+  }
+  var OverflowStrategy_SAFE_instance;
+  var OverflowStrategy_UNSAFE_instance;
+  function values() {
+    return [OverflowStrategy_SAFE_getInstance(), OverflowStrategy_UNSAFE_getInstance()];
+  }
+  function valueOf(value) {
+    switch (value) {
+      case 'SAFE':
+        return OverflowStrategy_SAFE_getInstance();
+      case 'UNSAFE':
+        return OverflowStrategy_UNSAFE_getInstance();
+      default:
+        OverflowStrategy_initEntries();
+        THROW_IAE('No enum constant value.');
+        break;
+    }
+  }
+  function get_entries() {
+    if ($ENTRIES == null)
+      $ENTRIES = enumEntries(values());
+    return $ENTRIES;
+  }
+  var OverflowStrategy_entriesInitialized;
+  function OverflowStrategy_initEntries() {
+    if (OverflowStrategy_entriesInitialized)
+      return Unit_getInstance();
+    OverflowStrategy_entriesInitialized = true;
+    OverflowStrategy_SAFE_instance = new OverflowStrategy('SAFE', 0);
+    OverflowStrategy_UNSAFE_instance = new OverflowStrategy('UNSAFE', 1);
+  }
+  var $ENTRIES;
+  function OverflowStrategy(name, ordinal) {
+    Enum.call(this, name, ordinal);
+  }
+  function toValue(_this__u8e3s4, position) {
+    // Inline function 'kotlin.text.lowercase' call
+    // Inline function 'kotlin.js.asDynamic' call
+    return _this__u8e3s4.get_name_woqyms_k$().toLowerCase() + ' ' + position;
+  }
+  function justifyItems(_this__u8e3s4, justifyItems) {
+    _this__u8e3s4.property_npxg1h_k$('justify-items', justifyItems);
+  }
   function _get_value__a43j40_0($this) {
     return $this.value_1;
   }
-  function JustifyContentKeyword(value) {
-    JustifyContent.call(this, value);
+  function JustifyItemsKeyword(value) {
+    JustifyItems.call(this, value);
   }
-  function JustifyContentPosition(value) {
-    JustifyContent.call(this, value);
+  function JustifyItemsPosition(value) {
+    JustifyItems.call(this, value);
+  }
+  function BaselineAlignment(baselineSet) {
+    JustifyItems.call(this, toValue_0(baselineSet));
   }
   function OverflowAlignment_0(strategy, position) {
-    JustifyContent.call(this, toValue_0(strategy, position));
+    JustifyItems.call(this, toValue(strategy, position));
   }
   function Companion_0() {
     Companion_instance_0 = this;
   }
   protoOf(Companion_0).get_Normal_22avww_k$ = function () {
-    return new JustifyContentKeyword('normal');
-  };
-  protoOf(Companion_0).get_Center_3arb0i_k$ = function () {
-    return new JustifyContentPosition('center');
-  };
-  protoOf(Companion_0).get_Start_ih4i6x_k$ = function () {
-    return new JustifyContentPosition('start');
-  };
-  protoOf(Companion_0).get_End_18ju7i_k$ = function () {
-    return new JustifyContentPosition('end');
-  };
-  protoOf(Companion_0).get_FlexStart_cfavq8_k$ = function () {
-    return new JustifyContentPosition('flex-start');
-  };
-  protoOf(Companion_0).get_FlexEnd_fz7iu1_k$ = function () {
-    return new JustifyContentPosition('flex-end');
-  };
-  protoOf(Companion_0).get_Left_wo5bw0_k$ = function () {
-    return new JustifyContentPosition('left');
-  };
-  protoOf(Companion_0).get_Right_igdsyb_k$ = function () {
-    return new JustifyContentPosition('right');
-  };
-  protoOf(Companion_0).get_SpaceBetween_5p3wqd_k$ = function () {
-    return new JustifyContentKeyword('space-between');
-  };
-  protoOf(Companion_0).get_SpaceAround_1tvu22_k$ = function () {
-    return new JustifyContentKeyword('space-around');
-  };
-  protoOf(Companion_0).get_SpaceEvenly_3s2yx0_k$ = function () {
-    return new JustifyContentKeyword('space-evenly');
+    return new JustifyItemsKeyword('normal');
   };
   protoOf(Companion_0).get_Stretch_2brthg_k$ = function () {
-    return new JustifyContentKeyword('stretch');
+    return new JustifyItemsKeyword('stretch');
   };
-  protoOf(Companion_0).Safe_hanrce_k$ = function (position) {
+  protoOf(Companion_0).get_Center_3arb0i_k$ = function () {
+    return new JustifyItemsPosition('center');
+  };
+  protoOf(Companion_0).get_Start_ih4i6x_k$ = function () {
+    return new JustifyItemsPosition('start');
+  };
+  protoOf(Companion_0).get_End_18ju7i_k$ = function () {
+    return new JustifyItemsPosition('end');
+  };
+  protoOf(Companion_0).get_FlexStart_cfavq8_k$ = function () {
+    return new JustifyItemsPosition('flex-start');
+  };
+  protoOf(Companion_0).get_FlexEnd_fz7iu1_k$ = function () {
+    return new JustifyItemsPosition('flex-end');
+  };
+  protoOf(Companion_0).get_SelfStart_di8gbx_k$ = function () {
+    return new JustifyItemsPosition('self-start');
+  };
+  protoOf(Companion_0).get_SelfEnd_9ir8ka_k$ = function () {
+    return new JustifyItemsPosition('self-end');
+  };
+  protoOf(Companion_0).get_Left_wo5bw0_k$ = function () {
+    return new JustifyItemsPosition('left');
+  };
+  protoOf(Companion_0).get_Right_igdsyb_k$ = function () {
+    return new JustifyItemsPosition('right');
+  };
+  protoOf(Companion_0).get_Baseline_bu5gku_k$ = function () {
+    return new BaselineAlignment(null);
+  };
+  protoOf(Companion_0).get_FirstBaseline_dztmto_k$ = function () {
+    return new BaselineAlignment(BaselineSet_FIRST_getInstance());
+  };
+  protoOf(Companion_0).get_LastBaseline_ldoo6c_k$ = function () {
+    return new BaselineAlignment(BaselineSet_LAST_getInstance());
+  };
+  protoOf(Companion_0).Safe_n4n8gl_k$ = function (position) {
     return new OverflowAlignment_0(OverflowStrategy_SAFE_getInstance(), position);
   };
-  protoOf(Companion_0).Unsafe_nn34c5_k$ = function (position) {
+  protoOf(Companion_0).Unsafe_kggy3o_k$ = function (position) {
     return new OverflowAlignment_0(OverflowStrategy_UNSAFE_getInstance(), position);
   };
   protoOf(Companion_0).get_Inherit_a1a9e6_k$ = function () {
-    return new JustifyContentKeyword('inherit');
+    return new JustifyItemsKeyword('inherit');
   };
   protoOf(Companion_0).get_Initial_a0h2v9_k$ = function () {
-    return new JustifyContentKeyword('initial');
+    return new JustifyItemsKeyword('initial');
   };
   protoOf(Companion_0).get_Revert_3t1tzh_k$ = function () {
-    return new JustifyContentKeyword('revert');
+    return new JustifyItemsKeyword('revert');
   };
   protoOf(Companion_0).get_Unset_ii4mhs_k$ = function () {
-    return new JustifyContentKeyword('unset');
+    return new JustifyItemsKeyword('unset');
   };
   var Companion_instance_0;
   function Companion_getInstance_3() {
@@ -913,16 +958,13 @@
       new Companion_0();
     return Companion_instance_0;
   }
-  function JustifyContent(value) {
+  function JustifyItems(value) {
     Companion_getInstance_3();
     this.value_1 = value;
   }
-  protoOf(JustifyContent).toString = function () {
+  protoOf(JustifyItems).toString = function () {
     return this.value_1;
   };
-  function justifyItems(_this__u8e3s4, justifyItems) {
-    _this__u8e3s4.property_npxg1h_k$('justify-items', justifyItems);
-  }
   function justifySelf(_this__u8e3s4, justifySelf) {
     _this__u8e3s4.property_npxg1h_k$('justify-self', justifySelf);
   }
@@ -936,10 +978,10 @@
     JustifySelf.call(this, value);
   }
   function BaselineAlignment_0(baselineSet) {
-    JustifySelf.call(this, toValue(baselineSet));
+    JustifySelf.call(this, toValue_0(baselineSet));
   }
   function OverflowAlignment_1(strategy, position) {
-    JustifySelf.call(this, toValue_0(strategy, position));
+    JustifySelf.call(this, toValue(strategy, position));
   }
   function Companion_1() {
     Companion_instance_1 = this;
@@ -1020,15 +1062,12 @@
   protoOf(JustifySelf).toString = function () {
     return this.value_1;
   };
-  function justifyContent(_this__u8e3s4, justifyContent) {
-    _this__u8e3s4.property_npxg1h_k$('justify-content', justifyContent);
-  }
   var BaselineSet_FIRST_instance;
   var BaselineSet_LAST_instance;
-  function values() {
+  function values_0() {
     return [BaselineSet_FIRST_getInstance(), BaselineSet_LAST_getInstance()];
   }
-  function valueOf(value) {
+  function valueOf_0(value) {
     switch (value) {
       case 'FIRST':
         return BaselineSet_FIRST_getInstance();
@@ -1040,10 +1079,10 @@
         break;
     }
   }
-  function get_entries() {
-    if ($ENTRIES == null)
-      $ENTRIES = enumEntries(values());
-    return $ENTRIES;
+  function get_entries_0() {
+    if ($ENTRIES_0 == null)
+      $ENTRIES_0 = enumEntries(values_0());
+    return $ENTRIES_0;
   }
   var BaselineSet_entriesInitialized;
   function BaselineSet_initEntries() {
@@ -1053,11 +1092,11 @@
     BaselineSet_FIRST_instance = new BaselineSet('FIRST', 0);
     BaselineSet_LAST_instance = new BaselineSet('LAST', 1);
   }
-  var $ENTRIES;
+  var $ENTRIES_0;
   function BaselineSet(name, ordinal) {
     Enum.call(this, name, ordinal);
   }
-  function toValue(_this__u8e3s4) {
+  function toValue_0(_this__u8e3s4) {
     var self_0 = _this__u8e3s4;
     // Inline function 'kotlin.text.buildString' call
     // Inline function 'kotlin.contracts.contract' call
@@ -1075,44 +1114,13 @@
     this_0.append_22ad7x_k$('baseline');
     return this_0.toString();
   }
-  var OverflowStrategy_SAFE_instance;
-  var OverflowStrategy_UNSAFE_instance;
-  function values_0() {
-    return [OverflowStrategy_SAFE_getInstance(), OverflowStrategy_UNSAFE_getInstance()];
+  function OverflowStrategy_SAFE_getInstance() {
+    OverflowStrategy_initEntries();
+    return OverflowStrategy_SAFE_instance;
   }
-  function valueOf_0(value) {
-    switch (value) {
-      case 'SAFE':
-        return OverflowStrategy_SAFE_getInstance();
-      case 'UNSAFE':
-        return OverflowStrategy_UNSAFE_getInstance();
-      default:
-        OverflowStrategy_initEntries();
-        THROW_IAE('No enum constant value.');
-        break;
-    }
-  }
-  function get_entries_0() {
-    if ($ENTRIES_0 == null)
-      $ENTRIES_0 = enumEntries(values_0());
-    return $ENTRIES_0;
-  }
-  var OverflowStrategy_entriesInitialized;
-  function OverflowStrategy_initEntries() {
-    if (OverflowStrategy_entriesInitialized)
-      return Unit_getInstance();
-    OverflowStrategy_entriesInitialized = true;
-    OverflowStrategy_SAFE_instance = new OverflowStrategy('SAFE', 0);
-    OverflowStrategy_UNSAFE_instance = new OverflowStrategy('UNSAFE', 1);
-  }
-  var $ENTRIES_0;
-  function OverflowStrategy(name, ordinal) {
-    Enum.call(this, name, ordinal);
-  }
-  function toValue_0(_this__u8e3s4, position) {
-    // Inline function 'kotlin.text.lowercase' call
-    // Inline function 'kotlin.js.asDynamic' call
-    return _this__u8e3s4.get_name_woqyms_k$().toLowerCase() + ' ' + position;
+  function OverflowStrategy_UNSAFE_getInstance() {
+    OverflowStrategy_initEntries();
+    return OverflowStrategy_UNSAFE_instance;
   }
   function BaselineSet_FIRST_getInstance() {
     BaselineSet_initEntries();
@@ -1121,14 +1129,6 @@
   function BaselineSet_LAST_getInstance() {
     BaselineSet_initEntries();
     return BaselineSet_LAST_instance;
-  }
-  function OverflowStrategy_SAFE_getInstance() {
-    OverflowStrategy_initEntries();
-    return OverflowStrategy_SAFE_instance;
-  }
-  function OverflowStrategy_UNSAFE_getInstance() {
-    OverflowStrategy_initEntries();
-    return OverflowStrategy_UNSAFE_instance;
   }
   function _get_value__a43j40_2($this) {
     return $this.value_1;
@@ -1561,6 +1561,67 @@
     return $this.value_1;
   }
   function Keyword_1(value) {
+    BackgroundSize.call(this, value);
+  }
+  function Size(value) {
+    BackgroundSize.call(this, value);
+  }
+  function Companion_5() {
+    Companion_instance_5 = this;
+  }
+  protoOf(Companion_5).of_bnlfbt_k$ = function (width) {
+    return new Size('' + width);
+  };
+  protoOf(Companion_5).of_5s0ir0_k$ = function (width) {
+    return new Size('' + width);
+  };
+  protoOf(Companion_5).of_7ht9sn_k$ = function (width, height) {
+    return new Size('' + width + ' ' + height);
+  };
+  protoOf(Companion_5).of_89wy16_k$ = function (width, height) {
+    return new Size('' + width + ' ' + height);
+  };
+  protoOf(Companion_5).of_1gkwv8_k$ = function (width, height) {
+    return new Size('' + width + ' ' + height);
+  };
+  protoOf(Companion_5).get_Cover_i8910u_k$ = function () {
+    return new Keyword_1('cover');
+  };
+  protoOf(Companion_5).get_Contain_qhyalx_k$ = function () {
+    return new Keyword_1('contain');
+  };
+  protoOf(Companion_5).get_Inherit_a1a9e6_k$ = function () {
+    return new Keyword_1('inherit');
+  };
+  protoOf(Companion_5).get_Initial_a0h2v9_k$ = function () {
+    return new Keyword_1('initial');
+  };
+  protoOf(Companion_5).get_Revert_3t1tzh_k$ = function () {
+    return new Keyword_1('revert');
+  };
+  protoOf(Companion_5).get_Unset_ii4mhs_k$ = function () {
+    return new Keyword_1('unset');
+  };
+  var Companion_instance_5;
+  function Companion_getInstance_8() {
+    if (Companion_instance_5 == null)
+      new Companion_5();
+    return Companion_instance_5;
+  }
+  function BackgroundSize(value) {
+    Companion_getInstance_8();
+    this.value_1 = value;
+  }
+  protoOf(BackgroundSize).toString = function () {
+    return this.value_1;
+  };
+  function backgroundImage_0(_this__u8e3s4, gradient) {
+    return backgroundImage_1(_this__u8e3s4, Companion_getInstance_45().of_jjeryt_k$(gradient));
+  }
+  function _get_value__a43j40_5($this) {
+    return $this.value_1;
+  }
+  function Keyword_2(value) {
     Background.call(this, value);
   }
   function Repeatable_0(image, repeat, size, position, blend, origin, clip, attachment) {
@@ -1672,33 +1733,33 @@
   protoOf(Repeatable_0).get_attachment_iduc30_k$ = function () {
     return this.attachment_1;
   };
-  function Companion_5() {
-    Companion_instance_5 = this;
-    this.None_1 = new Keyword_1('none');
-    this.Inherit_1 = new Keyword_1('inherit');
-    this.Initial_1 = new Keyword_1('initial');
-    this.Revert_1 = new Keyword_1('revert');
-    this.Unset_1 = new Keyword_1('unset');
+  function Companion_6() {
+    Companion_instance_6 = this;
+    this.None_1 = new Keyword_2('none');
+    this.Inherit_1 = new Keyword_2('inherit');
+    this.Initial_1 = new Keyword_2('initial');
+    this.Revert_1 = new Keyword_2('revert');
+    this.Unset_1 = new Keyword_2('unset');
   }
-  protoOf(Companion_5).get_None_wo6tgh_k$ = function () {
+  protoOf(Companion_6).get_None_wo6tgh_k$ = function () {
     return this.None_1;
   };
-  protoOf(Companion_5).get_Inherit_a1a9e6_k$ = function () {
+  protoOf(Companion_6).get_Inherit_a1a9e6_k$ = function () {
     return this.Inherit_1;
   };
-  protoOf(Companion_5).get_Initial_a0h2v9_k$ = function () {
+  protoOf(Companion_6).get_Initial_a0h2v9_k$ = function () {
     return this.Initial_1;
   };
-  protoOf(Companion_5).get_Revert_3t1tzh_k$ = function () {
+  protoOf(Companion_6).get_Revert_3t1tzh_k$ = function () {
     return this.Revert_1;
   };
-  protoOf(Companion_5).get_Unset_ii4mhs_k$ = function () {
+  protoOf(Companion_6).get_Unset_ii4mhs_k$ = function () {
     return this.Unset_1;
   };
-  protoOf(Companion_5).of_baukr9_k$ = function (image, repeat, size, position, blend, origin, clip, attachment) {
+  protoOf(Companion_6).of_baukr9_k$ = function (image, repeat, size, position, blend, origin, clip, attachment) {
     return new Repeatable_0(image, repeat, size, position, blend, origin, clip, attachment);
   };
-  protoOf(Companion_5).of$default_p0f684_k$ = function (image, repeat, size, position, blend, origin, clip, attachment, $super) {
+  protoOf(Companion_6).of$default_p0f684_k$ = function (image, repeat, size, position, blend, origin, clip, attachment, $super) {
     image = image === VOID ? null : image;
     repeat = repeat === VOID ? null : repeat;
     size = size === VOID ? null : size;
@@ -1709,14 +1770,14 @@
     attachment = attachment === VOID ? null : attachment;
     return $super === VOID ? this.of_baukr9_k$(image, repeat, size, position, blend, origin, clip, attachment) : $super.of_baukr9_k$.call(this, image, repeat, size, position, blend, origin, clip, attachment);
   };
-  var Companion_instance_5;
-  function Companion_getInstance_8() {
-    if (Companion_instance_5 == null)
-      new Companion_5();
-    return Companion_instance_5;
+  var Companion_instance_6;
+  function Companion_getInstance_9() {
+    if (Companion_instance_6 == null)
+      new Companion_6();
+    return Companion_instance_6;
   }
   function Background(value) {
-    Companion_getInstance_8();
+    Companion_getInstance_9();
     this.value_1 = value;
   }
   protoOf(Background).toString = function () {
@@ -1793,66 +1854,14 @@
       _this__u8e3s4.property_wcrait_k$('background-blend-mode', joinToString(blendModes));
     }
   }
-  function _get_value__a43j40_5($this) {
-    return $this.value_1;
+  function backgroundRepeat_0(_this__u8e3s4, backgroundRepeat_0) {
+    backgroundRepeat(_this__u8e3s4, backgroundRepeat_0.toString());
   }
-  function Keyword_2(value) {
-    BackgroundSize.call(this, value);
+  function backgroundSize_0(_this__u8e3s4, backgroundSize_0) {
+    backgroundSize(_this__u8e3s4, backgroundSize_0.toString());
   }
-  function Size(value) {
-    BackgroundSize.call(this, value);
-  }
-  function Companion_6() {
-    Companion_instance_6 = this;
-  }
-  protoOf(Companion_6).of_bnlfbt_k$ = function (width) {
-    return new Size('' + width);
-  };
-  protoOf(Companion_6).of_5s0ir0_k$ = function (width) {
-    return new Size('' + width);
-  };
-  protoOf(Companion_6).of_7ht9sn_k$ = function (width, height) {
-    return new Size('' + width + ' ' + height);
-  };
-  protoOf(Companion_6).of_89wy16_k$ = function (width, height) {
-    return new Size('' + width + ' ' + height);
-  };
-  protoOf(Companion_6).of_1gkwv8_k$ = function (width, height) {
-    return new Size('' + width + ' ' + height);
-  };
-  protoOf(Companion_6).get_Cover_i8910u_k$ = function () {
-    return new Keyword_2('cover');
-  };
-  protoOf(Companion_6).get_Contain_qhyalx_k$ = function () {
-    return new Keyword_2('contain');
-  };
-  protoOf(Companion_6).get_Inherit_a1a9e6_k$ = function () {
-    return new Keyword_2('inherit');
-  };
-  protoOf(Companion_6).get_Initial_a0h2v9_k$ = function () {
-    return new Keyword_2('initial');
-  };
-  protoOf(Companion_6).get_Revert_3t1tzh_k$ = function () {
-    return new Keyword_2('revert');
-  };
-  protoOf(Companion_6).get_Unset_ii4mhs_k$ = function () {
-    return new Keyword_2('unset');
-  };
-  var Companion_instance_6;
-  function Companion_getInstance_9() {
-    if (Companion_instance_6 == null)
-      new Companion_6();
-    return Companion_instance_6;
-  }
-  function BackgroundSize(value) {
-    Companion_getInstance_9();
-    this.value_1 = value;
-  }
-  protoOf(BackgroundSize).toString = function () {
-    return this.value_1;
-  };
-  function backgroundImage_0(_this__u8e3s4, gradient) {
-    return backgroundImage_1(_this__u8e3s4, Companion_getInstance_45().of_jjeryt_k$(gradient));
+  function backgroundImage_1(_this__u8e3s4, backgroundImage_0) {
+    backgroundImage(_this__u8e3s4, backgroundImage_0.toString());
   }
   function _get_value__a43j40_6($this) {
     return $this.value_1;
@@ -2017,15 +2026,6 @@
   protoOf(BackgroundAttachment).toString = function () {
     return this.value_1;
   };
-  function backgroundImage_1(_this__u8e3s4, backgroundImage_0) {
-    backgroundImage(_this__u8e3s4, backgroundImage_0.toString());
-  }
-  function backgroundRepeat_0(_this__u8e3s4, backgroundRepeat_0) {
-    backgroundRepeat(_this__u8e3s4, backgroundRepeat_0.toString());
-  }
-  function backgroundSize_0(_this__u8e3s4, backgroundSize_0) {
-    backgroundSize(_this__u8e3s4, backgroundSize_0.toString());
-  }
   function borderBottom(_this__u8e3s4, width, style, color) {
     width = width === VOID ? null : width;
     style = style === VOID ? null : style;
@@ -2979,9 +2979,6 @@
   function cursor(_this__u8e3s4, cursor) {
     _this__u8e3s4.property_npxg1h_k$('cursor', cursor);
   }
-  function appearance(_this__u8e3s4, appearance) {
-    _this__u8e3s4.property_npxg1h_k$('appearance', appearance);
-  }
   function _get_value__a43j40_15($this) {
     return $this.value_1;
   }
@@ -3025,6 +3022,9 @@
   protoOf(Appearance).toString = function () {
     return this.value_1;
   };
+  function appearance(_this__u8e3s4, appearance) {
+    _this__u8e3s4.property_npxg1h_k$('appearance', appearance);
+  }
   function _get_value__a43j40_16($this) {
     return $this.value_1;
   }
@@ -3092,71 +3092,35 @@
   protoOf(FontWeight).toString = function () {
     return this.value_1;
   };
-  function fontWeight(_this__u8e3s4, weight) {
-    _this__u8e3s4.property_npxg1h_k$('font-weight', weight);
-  }
-  function fontVariantCaps(_this__u8e3s4, caps) {
-    _this__u8e3s4.property_npxg1h_k$('font-variant-caps', caps);
-  }
   function _get_value__a43j40_17($this) {
     return $this.value_1;
-  }
-  function Keyword_5(value) {
-    FontVariantEastAsian.call(this, value);
-  }
-  function ListableKeyword(value) {
-    FontVariantEastAsian.call(this, value);
-  }
-  function KeywordList(values) {
-    FontVariantEastAsian.call(this, joinToString_0(values, ' '));
   }
   function Companion_18() {
     Companion_instance_18 = this;
   }
   protoOf(Companion_18).get_Normal_22avww_k$ = function () {
-    return new Keyword_5('normal');
+    return new FontStyle('normal');
   };
-  protoOf(Companion_18).get_Ruby_wo9hkz_k$ = function () {
-    return new ListableKeyword('ruby');
+  protoOf(Companion_18).get_Italic_8h4fb_k$ = function () {
+    return new FontStyle('italic');
   };
-  protoOf(Companion_18).get_Jis78_ibznvw_k$ = function () {
-    return new ListableKeyword('jis78');
+  protoOf(Companion_18).get_Oblique_1dpn3c_k$ = function () {
+    return new FontStyle('oblique');
   };
-  protoOf(Companion_18).get_Jis83_ibznwm_k$ = function () {
-    return new ListableKeyword('jis83');
-  };
-  protoOf(Companion_18).get_Jis90_ibznxe_k$ = function () {
-    return new ListableKeyword('jis90');
-  };
-  protoOf(Companion_18).get_Jis04_ibznpr_k$ = function () {
-    return new ListableKeyword('jis04');
-  };
-  protoOf(Companion_18).get_Simplified_at7a4f_k$ = function () {
-    return new ListableKeyword('simplified');
-  };
-  protoOf(Companion_18).get_Traditional_64gz6m_k$ = function () {
-    return new ListableKeyword('traditional');
-  };
-  protoOf(Companion_18).get_FullWidth_dslm0e_k$ = function () {
-    return new ListableKeyword('full-width');
-  };
-  protoOf(Companion_18).get_ProportionalWidth_h2tsxk_k$ = function () {
-    return new ListableKeyword('proportional-width');
-  };
-  protoOf(Companion_18).of_juz3re_k$ = function (values) {
-    return new KeywordList(values.slice());
+  protoOf(Companion_18).Oblique_bcndcl_k$ = function (angle) {
+    return new FontStyle('oblique ' + angle);
   };
   protoOf(Companion_18).get_Inherit_a1a9e6_k$ = function () {
-    return new Keyword_5('inherit');
+    return new FontStyle('inherit');
   };
   protoOf(Companion_18).get_Initial_a0h2v9_k$ = function () {
-    return new Keyword_5('initial');
+    return new FontStyle('initial');
   };
   protoOf(Companion_18).get_Revert_3t1tzh_k$ = function () {
-    return new Keyword_5('revert');
+    return new FontStyle('revert');
   };
   protoOf(Companion_18).get_Unset_ii4mhs_k$ = function () {
-    return new Keyword_5('unset');
+    return new FontStyle('unset');
   };
   var Companion_instance_18;
   function Companion_getInstance_21() {
@@ -3164,15 +3128,15 @@
       new Companion_18();
     return Companion_instance_18;
   }
-  function FontVariantEastAsian(value) {
+  function FontStyle(value) {
     Companion_getInstance_21();
     this.value_1 = value;
   }
-  protoOf(FontVariantEastAsian).toString = function () {
+  protoOf(FontStyle).toString = function () {
     return this.value_1;
   };
-  function fontVariantLigatures(_this__u8e3s4, ligatures) {
-    _this__u8e3s4.property_npxg1h_k$('font-variant-ligatures', ligatures);
+  function fontWeight(_this__u8e3s4, weight) {
+    _this__u8e3s4.property_npxg1h_k$('font-weight', weight);
   }
   function _get_value__a43j40_18($this) {
     return $this.value_1;
@@ -3180,29 +3144,44 @@
   function Companion_19() {
     Companion_instance_19 = this;
   }
-  protoOf(Companion_19).get_Normal_22avww_k$ = function () {
-    return new FontVariantEmoji('normal');
+  protoOf(Companion_19).get_XXSmall_dp2rr6_k$ = function () {
+    return new FontSize('xx-small');
   };
-  protoOf(Companion_19).get_Text_woag7q_k$ = function () {
-    return new FontVariantEmoji('text');
+  protoOf(Companion_19).get_XSmall_6d9fo8_k$ = function () {
+    return new FontSize('x-small');
   };
-  protoOf(Companion_19).get_Emoji_i9b75p_k$ = function () {
-    return new FontVariantEmoji('emoji');
+  protoOf(Companion_19).get_Small_ih014u_k$ = function () {
+    return new FontSize('small');
   };
-  protoOf(Companion_19).get_Unicode_o1rhlg_k$ = function () {
-    return new FontVariantEmoji('unicode');
+  protoOf(Companion_19).get_Medium_1fiba6_k$ = function () {
+    return new FontSize('medium');
+  };
+  protoOf(Companion_19).get_Large_icy5ma_k$ = function () {
+    return new FontSize('large');
+  };
+  protoOf(Companion_19).get_XLarge_697k5o_k$ = function () {
+    return new FontSize('x-large');
+  };
+  protoOf(Companion_19).get_XXLarge_dt4n9q_k$ = function () {
+    return new FontSize('xx-large');
+  };
+  protoOf(Companion_19).get_Smaller_5wbdat_k$ = function () {
+    return new FontSize('smaller');
+  };
+  protoOf(Companion_19).get_Larger_wiegw_k$ = function () {
+    return new FontSize('larger');
   };
   protoOf(Companion_19).get_Inherit_a1a9e6_k$ = function () {
-    return new FontVariantEmoji('inherit');
+    return new FontSize('inherit');
   };
   protoOf(Companion_19).get_Initial_a0h2v9_k$ = function () {
-    return new FontVariantEmoji('initial');
+    return new FontSize('initial');
   };
   protoOf(Companion_19).get_Revert_3t1tzh_k$ = function () {
-    return new FontVariantEmoji('revert');
+    return new FontSize('revert');
   };
   protoOf(Companion_19).get_Unset_ii4mhs_k$ = function () {
-    return new FontVariantEmoji('unset');
+    return new FontSize('unset');
   };
   var Companion_instance_19;
   function Companion_getInstance_22() {
@@ -3210,104 +3189,78 @@
       new Companion_19();
     return Companion_instance_19;
   }
-  function FontVariantEmoji(value) {
+  function FontSize(value) {
     Companion_getInstance_22();
     this.value_1 = value;
   }
-  protoOf(FontVariantEmoji).toString = function () {
+  protoOf(FontSize).toString = function () {
     return this.value_1;
   };
+  function fontSize(_this__u8e3s4, size) {
+    _this__u8e3s4.property_npxg1h_k$('font-size', size);
+  }
+  function fontStyle(_this__u8e3s4, style) {
+    _this__u8e3s4.property_npxg1h_k$('font-style', style);
+  }
   function _get_value__a43j40_19($this) {
     return $this.value_1;
   }
-  function Keyword_6(value) {
-    FontVariantLigatures.call(this, value);
+  function SingleKeyword(value) {
+    FontVariantAlternates.call(this, value);
   }
-  function ListableKeyword_0(value) {
-    FontVariantLigatures.call(this, value);
+  function ListableValue(value) {
+    FontVariantAlternates.call(this, value);
   }
-  function KeywordList_0(values) {
-    FontVariantLigatures.call(this, joinToString_0(values, ' '));
+  function ListableKeyword(value) {
+    ListableValue.call(this, value);
+  }
+  function FunctionalNotation(name, ident) {
+    ListableValue.call(this, name + '(' + ident + ')');
+  }
+  function ValueList(values) {
+    FontVariantAlternates.call(this, joinToString_0(values, ' '));
   }
   function Companion_20() {
     Companion_instance_20 = this;
   }
   protoOf(Companion_20).get_Normal_22avww_k$ = function () {
-    return new Keyword_6('normal');
+    return new SingleKeyword('normal');
   };
-  protoOf(Companion_20).get_None_wo6tgh_k$ = function () {
-    return new Keyword_6('none');
+  protoOf(Companion_20).get_HistoricalForms_exu1z0_k$ = function () {
+    return new ListableKeyword('historical-forms');
   };
-  protoOf(Companion_20).get_CommonLigatures_3s3pbg_k$ = function () {
-    return new ListableKeyword_0('common-ligatures');
+  protoOf(Companion_20).Stylistic_bqcjl6_k$ = function (ident) {
+    return new FunctionalNotation('stylistic', ident);
   };
-  protoOf(Companion_20).get_NoCommonLigatures_pryser_k$ = function () {
-    return new ListableKeyword_0('no-common-ligatures');
+  protoOf(Companion_20).Styleset_br1yuh_k$ = function (ident) {
+    return new FunctionalNotation('styleset', ident);
   };
-  protoOf(Companion_20).get_DiscretionaryLigatures_fc9l39_k$ = function () {
-    return new ListableKeyword_0('discretionary-ligatures');
+  protoOf(Companion_20).CharacterVariant_j7024e_k$ = function (ident) {
+    return new FunctionalNotation('character-variant', ident);
   };
-  protoOf(Companion_20).get_NoDiscretionaryLigatures_3uduze_k$ = function () {
-    return new ListableKeyword_0('no-discretionary-ligatures');
+  protoOf(Companion_20).Swash_wuegnc_k$ = function (ident) {
+    return new FunctionalNotation('swash', ident);
   };
-  protoOf(Companion_20).get_HistoricalLigatures_6r86ln_k$ = function () {
-    return new ListableKeyword_0('historical-ligatures');
+  protoOf(Companion_20).Ornaments_x1khh7_k$ = function (ident) {
+    return new FunctionalNotation('ornaments', ident);
   };
-  protoOf(Companion_20).get_NoHistoricalLigatures_iqbb8s_k$ = function () {
-    return new ListableKeyword_0('no-historical-ligatures');
+  protoOf(Companion_20).Annotation_4oh39n_k$ = function (ident) {
+    return new FunctionalNotation('annotation', ident);
   };
-  protoOf(Companion_20).get_Contextual_hbmghm_k$ = function () {
-    return new ListableKeyword_0('contextual');
-  };
-  protoOf(Companion_20).get_NoContextual_z6lrvf_k$ = function () {
-    return new ListableKeyword_0('no-contextual');
-  };
-  protoOf(Companion_20).of_fm0xhz_k$ = function (values) {
-    return new KeywordList_0(values.slice());
-  };
-  protoOf(Companion_20).of_45scd3_k$ = function (common, discretionary, historical, contextual) {
-    // Inline function 'kotlin.collections.buildList' call
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'kotlin.collections.buildListInternal' call
-    // Inline function 'kotlin.apply' call
-    var this_0 = ArrayList_init_$Create$();
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'com.varabyte.kobweb.compose.css.Companion.of.<anonymous>' call
-    if (!(common == null)) {
-      this_0.add_utx5q5_k$(common ? Companion_getInstance_23().get_CommonLigatures_3s3pbg_k$() : Companion_getInstance_23().get_NoCommonLigatures_pryser_k$());
-    }
-    if (!(discretionary == null)) {
-      this_0.add_utx5q5_k$(discretionary ? Companion_getInstance_23().get_DiscretionaryLigatures_fc9l39_k$() : Companion_getInstance_23().get_NoDiscretionaryLigatures_3uduze_k$());
-    }
-    if (!(historical == null)) {
-      this_0.add_utx5q5_k$(historical ? Companion_getInstance_23().get_HistoricalLigatures_6r86ln_k$() : Companion_getInstance_23().get_NoHistoricalLigatures_iqbb8s_k$());
-    }
-    if (!(contextual == null)) {
-      this_0.add_utx5q5_k$(contextual ? Companion_getInstance_23().get_Contextual_hbmghm_k$() : Companion_getInstance_23().get_NoContextual_z6lrvf_k$());
-    }
-    var values = this_0.build_1k0s4u_k$();
-    // Inline function 'kotlin.collections.toTypedArray' call
-    var tmp$ret$3 = copyToArray(values);
-    return this.of_fm0xhz_k$(tmp$ret$3.slice());
-  };
-  protoOf(Companion_20).of$default_pj1g8y_k$ = function (common, discretionary, historical, contextual, $super) {
-    common = common === VOID ? null : common;
-    discretionary = discretionary === VOID ? null : discretionary;
-    historical = historical === VOID ? null : historical;
-    contextual = contextual === VOID ? null : contextual;
-    return $super === VOID ? this.of_45scd3_k$(common, discretionary, historical, contextual) : $super.of_45scd3_k$.call(this, common, discretionary, historical, contextual);
+  protoOf(Companion_20).of_iaihgi_k$ = function (values) {
+    return new ValueList(values.slice());
   };
   protoOf(Companion_20).get_Inherit_a1a9e6_k$ = function () {
-    return new Keyword_6('inherit');
+    return new SingleKeyword('inherit');
   };
   protoOf(Companion_20).get_Initial_a0h2v9_k$ = function () {
-    return new Keyword_6('initial');
+    return new SingleKeyword('initial');
   };
   protoOf(Companion_20).get_Revert_3t1tzh_k$ = function () {
-    return new Keyword_6('revert');
+    return new SingleKeyword('revert');
   };
   protoOf(Companion_20).get_Unset_ii4mhs_k$ = function () {
-    return new Keyword_6('unset');
+    return new SingleKeyword('unset');
   };
   var Companion_instance_20;
   function Companion_getInstance_23() {
@@ -3315,11 +3268,11 @@
       new Companion_20();
     return Companion_instance_20;
   }
-  function FontVariantLigatures(value) {
+  function FontVariantAlternates(value) {
     Companion_getInstance_23();
     this.value_1 = value;
   }
-  protoOf(FontVariantLigatures).toString = function () {
+  protoOf(FontVariantAlternates).toString = function () {
     return this.value_1;
   };
   function fontVariantAlternates(_this__u8e3s4, fontVariantAlternates) {
@@ -3377,62 +3330,68 @@
   protoOf(FontVariantCaps).toString = function () {
     return this.value_1;
   };
+  function fontVariantCaps(_this__u8e3s4, caps) {
+    _this__u8e3s4.property_npxg1h_k$('font-variant-caps', caps);
+  }
   function _get_value__a43j40_21($this) {
     return $this.value_1;
   }
-  function Keyword_7(value) {
-    FontVariantNumeric.call(this, value);
+  function Keyword_5(value) {
+    FontVariantEastAsian.call(this, value);
   }
-  function ListableKeyword_1(value) {
-    FontVariantNumeric.call(this, value);
+  function ListableKeyword_0(value) {
+    FontVariantEastAsian.call(this, value);
   }
-  function KeywordList_1(keywords) {
-    FontVariantNumeric.call(this, joinToString_0(keywords, ' '));
+  function KeywordList(values) {
+    FontVariantEastAsian.call(this, joinToString_0(values, ' '));
   }
   function Companion_22() {
     Companion_instance_22 = this;
   }
   protoOf(Companion_22).get_Normal_22avww_k$ = function () {
-    return new Keyword_7('normal');
+    return new Keyword_5('normal');
   };
-  protoOf(Companion_22).get_Ordinal_8u15yg_k$ = function () {
-    return new ListableKeyword_1('ordinal');
+  protoOf(Companion_22).get_Ruby_wo9hkz_k$ = function () {
+    return new ListableKeyword_0('ruby');
   };
-  protoOf(Companion_22).get_SlashedZero_vearj9_k$ = function () {
-    return new ListableKeyword_1('slashed-zero');
+  protoOf(Companion_22).get_Jis78_ibznvw_k$ = function () {
+    return new ListableKeyword_0('jis78');
   };
-  protoOf(Companion_22).get_LiningNums_9yblwn_k$ = function () {
-    return new ListableKeyword_1('lining-nums');
+  protoOf(Companion_22).get_Jis83_ibznwm_k$ = function () {
+    return new ListableKeyword_0('jis83');
   };
-  protoOf(Companion_22).get_OldstyleNums_6xbcww_k$ = function () {
-    return new ListableKeyword_1('oldstyle-nums');
+  protoOf(Companion_22).get_Jis90_ibznxe_k$ = function () {
+    return new ListableKeyword_0('jis90');
   };
-  protoOf(Companion_22).get_ProportionalNums_k2pg91_k$ = function () {
-    return new ListableKeyword_1('proportional-nums');
+  protoOf(Companion_22).get_Jis04_ibznpr_k$ = function () {
+    return new ListableKeyword_0('jis04');
   };
-  protoOf(Companion_22).get_TabularNums_bm8qhr_k$ = function () {
-    return new ListableKeyword_1('tabular-nums');
+  protoOf(Companion_22).get_Simplified_at7a4f_k$ = function () {
+    return new ListableKeyword_0('simplified');
   };
-  protoOf(Companion_22).get_DiagonalFractions_dh6sz7_k$ = function () {
-    return new ListableKeyword_1('diagonal-fractions');
+  protoOf(Companion_22).get_Traditional_64gz6m_k$ = function () {
+    return new ListableKeyword_0('traditional');
   };
-  protoOf(Companion_22).get_StackedFractions_5brrv1_k$ = function () {
-    return new ListableKeyword_1('stacked-fractions');
+  protoOf(Companion_22).get_FullWidth_dslm0e_k$ = function () {
+    return new ListableKeyword_0('full-width');
   };
-  protoOf(Companion_22).of_mgfh98_k$ = function (keywords) {
-    return new KeywordList_1(keywords.slice());
+  protoOf(Companion_22).get_ProportionalWidth_h2tsxk_k$ = function () {
+    return new ListableKeyword_0('proportional-width');
+  };
+  protoOf(Companion_22).of_juz3re_k$ = function (values) {
+    return new KeywordList(values.slice());
   };
   protoOf(Companion_22).get_Inherit_a1a9e6_k$ = function () {
-    return new Keyword_7('inherit');
+    return new Keyword_5('inherit');
   };
   protoOf(Companion_22).get_Initial_a0h2v9_k$ = function () {
-    return new Keyword_7('initial');
+    return new Keyword_5('initial');
   };
   protoOf(Companion_22).get_Revert_3t1tzh_k$ = function () {
-    return new Keyword_7('revert');
+    return new Keyword_5('revert');
   };
   protoOf(Companion_22).get_Unset_ii4mhs_k$ = function () {
-    return new Keyword_7('unset');
+    return new Keyword_5('unset');
   };
   var Companion_instance_22;
   function Companion_getInstance_25() {
@@ -3440,78 +3399,45 @@
       new Companion_22();
     return Companion_instance_22;
   }
-  function FontVariantNumeric(value) {
+  function FontVariantEastAsian(value) {
     Companion_getInstance_25();
     this.value_1 = value;
   }
-  protoOf(FontVariantNumeric).toString = function () {
+  protoOf(FontVariantEastAsian).toString = function () {
     return this.value_1;
   };
-  function fontStyle(_this__u8e3s4, style) {
-    _this__u8e3s4.property_npxg1h_k$('font-style', style);
-  }
-  function fontVariantNumeric(_this__u8e3s4, numeric) {
-    _this__u8e3s4.property_npxg1h_k$('font-variant-numeric', numeric);
+  function fontVariantEastAsian(_this__u8e3s4, eastAsian) {
+    _this__u8e3s4.property_npxg1h_k$('font-variant-east-asian', eastAsian);
   }
   function _get_value__a43j40_22($this) {
     return $this.value_1;
-  }
-  function SingleKeyword(value) {
-    FontVariantAlternates.call(this, value);
-  }
-  function ListableValue(value) {
-    FontVariantAlternates.call(this, value);
-  }
-  function ListableKeyword_2(value) {
-    ListableValue.call(this, value);
-  }
-  function FunctionalNotation(name, ident) {
-    ListableValue.call(this, name + '(' + ident + ')');
-  }
-  function ValueList(values) {
-    FontVariantAlternates.call(this, joinToString_0(values, ' '));
   }
   function Companion_23() {
     Companion_instance_23 = this;
   }
   protoOf(Companion_23).get_Normal_22avww_k$ = function () {
-    return new SingleKeyword('normal');
+    return new FontVariantEmoji('normal');
   };
-  protoOf(Companion_23).get_HistoricalForms_exu1z0_k$ = function () {
-    return new ListableKeyword_2('historical-forms');
+  protoOf(Companion_23).get_Text_woag7q_k$ = function () {
+    return new FontVariantEmoji('text');
   };
-  protoOf(Companion_23).Stylistic_bqcjl6_k$ = function (ident) {
-    return new FunctionalNotation('stylistic', ident);
+  protoOf(Companion_23).get_Emoji_i9b75p_k$ = function () {
+    return new FontVariantEmoji('emoji');
   };
-  protoOf(Companion_23).Styleset_br1yuh_k$ = function (ident) {
-    return new FunctionalNotation('styleset', ident);
-  };
-  protoOf(Companion_23).CharacterVariant_j7024e_k$ = function (ident) {
-    return new FunctionalNotation('character-variant', ident);
-  };
-  protoOf(Companion_23).Swash_wuegnc_k$ = function (ident) {
-    return new FunctionalNotation('swash', ident);
-  };
-  protoOf(Companion_23).Ornaments_x1khh7_k$ = function (ident) {
-    return new FunctionalNotation('ornaments', ident);
-  };
-  protoOf(Companion_23).Annotation_4oh39n_k$ = function (ident) {
-    return new FunctionalNotation('annotation', ident);
-  };
-  protoOf(Companion_23).of_iaihgi_k$ = function (values) {
-    return new ValueList(values.slice());
+  protoOf(Companion_23).get_Unicode_o1rhlg_k$ = function () {
+    return new FontVariantEmoji('unicode');
   };
   protoOf(Companion_23).get_Inherit_a1a9e6_k$ = function () {
-    return new SingleKeyword('inherit');
+    return new FontVariantEmoji('inherit');
   };
   protoOf(Companion_23).get_Initial_a0h2v9_k$ = function () {
-    return new SingleKeyword('initial');
+    return new FontVariantEmoji('initial');
   };
   protoOf(Companion_23).get_Revert_3t1tzh_k$ = function () {
-    return new SingleKeyword('revert');
+    return new FontVariantEmoji('revert');
   };
   protoOf(Companion_23).get_Unset_ii4mhs_k$ = function () {
-    return new SingleKeyword('unset');
+    return new FontVariantEmoji('unset');
   };
   var Companion_instance_23;
   function Companion_getInstance_26() {
@@ -3519,66 +3445,107 @@
       new Companion_23();
     return Companion_instance_23;
   }
-  function FontVariantAlternates(value) {
+  function FontVariantEmoji(value) {
     Companion_getInstance_26();
     this.value_1 = value;
   }
-  protoOf(FontVariantAlternates).toString = function () {
+  protoOf(FontVariantEmoji).toString = function () {
     return this.value_1;
   };
-  function fontVariantEastAsian(_this__u8e3s4, eastAsian) {
-    _this__u8e3s4.property_npxg1h_k$('font-variant-east-asian', eastAsian);
-  }
   function fontVariantEmoji(_this__u8e3s4, emoji) {
     _this__u8e3s4.property_npxg1h_k$('font-variant-emoji', emoji);
-  }
-  function fontSize(_this__u8e3s4, size) {
-    _this__u8e3s4.property_npxg1h_k$('font-size', size);
   }
   function _get_value__a43j40_23($this) {
     return $this.value_1;
   }
+  function Keyword_6(value) {
+    FontVariantLigatures.call(this, value);
+  }
+  function ListableKeyword_1(value) {
+    FontVariantLigatures.call(this, value);
+  }
+  function KeywordList_0(values) {
+    FontVariantLigatures.call(this, joinToString_0(values, ' '));
+  }
   function Companion_24() {
     Companion_instance_24 = this;
   }
-  protoOf(Companion_24).get_XXSmall_dp2rr6_k$ = function () {
-    return new FontSize('xx-small');
+  protoOf(Companion_24).get_Normal_22avww_k$ = function () {
+    return new Keyword_6('normal');
   };
-  protoOf(Companion_24).get_XSmall_6d9fo8_k$ = function () {
-    return new FontSize('x-small');
+  protoOf(Companion_24).get_None_wo6tgh_k$ = function () {
+    return new Keyword_6('none');
   };
-  protoOf(Companion_24).get_Small_ih014u_k$ = function () {
-    return new FontSize('small');
+  protoOf(Companion_24).get_CommonLigatures_3s3pbg_k$ = function () {
+    return new ListableKeyword_1('common-ligatures');
   };
-  protoOf(Companion_24).get_Medium_1fiba6_k$ = function () {
-    return new FontSize('medium');
+  protoOf(Companion_24).get_NoCommonLigatures_pryser_k$ = function () {
+    return new ListableKeyword_1('no-common-ligatures');
   };
-  protoOf(Companion_24).get_Large_icy5ma_k$ = function () {
-    return new FontSize('large');
+  protoOf(Companion_24).get_DiscretionaryLigatures_fc9l39_k$ = function () {
+    return new ListableKeyword_1('discretionary-ligatures');
   };
-  protoOf(Companion_24).get_XLarge_697k5o_k$ = function () {
-    return new FontSize('x-large');
+  protoOf(Companion_24).get_NoDiscretionaryLigatures_3uduze_k$ = function () {
+    return new ListableKeyword_1('no-discretionary-ligatures');
   };
-  protoOf(Companion_24).get_XXLarge_dt4n9q_k$ = function () {
-    return new FontSize('xx-large');
+  protoOf(Companion_24).get_HistoricalLigatures_6r86ln_k$ = function () {
+    return new ListableKeyword_1('historical-ligatures');
   };
-  protoOf(Companion_24).get_Smaller_5wbdat_k$ = function () {
-    return new FontSize('smaller');
+  protoOf(Companion_24).get_NoHistoricalLigatures_iqbb8s_k$ = function () {
+    return new ListableKeyword_1('no-historical-ligatures');
   };
-  protoOf(Companion_24).get_Larger_wiegw_k$ = function () {
-    return new FontSize('larger');
+  protoOf(Companion_24).get_Contextual_hbmghm_k$ = function () {
+    return new ListableKeyword_1('contextual');
+  };
+  protoOf(Companion_24).get_NoContextual_z6lrvf_k$ = function () {
+    return new ListableKeyword_1('no-contextual');
+  };
+  protoOf(Companion_24).of_fm0xhz_k$ = function (values) {
+    return new KeywordList_0(values.slice());
+  };
+  protoOf(Companion_24).of_45scd3_k$ = function (common, discretionary, historical, contextual) {
+    // Inline function 'kotlin.collections.buildList' call
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'kotlin.collections.buildListInternal' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = ArrayList_init_$Create$();
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'com.varabyte.kobweb.compose.css.Companion.of.<anonymous>' call
+    if (!(common == null)) {
+      this_0.add_utx5q5_k$(common ? Companion_getInstance_27().get_CommonLigatures_3s3pbg_k$() : Companion_getInstance_27().get_NoCommonLigatures_pryser_k$());
+    }
+    if (!(discretionary == null)) {
+      this_0.add_utx5q5_k$(discretionary ? Companion_getInstance_27().get_DiscretionaryLigatures_fc9l39_k$() : Companion_getInstance_27().get_NoDiscretionaryLigatures_3uduze_k$());
+    }
+    if (!(historical == null)) {
+      this_0.add_utx5q5_k$(historical ? Companion_getInstance_27().get_HistoricalLigatures_6r86ln_k$() : Companion_getInstance_27().get_NoHistoricalLigatures_iqbb8s_k$());
+    }
+    if (!(contextual == null)) {
+      this_0.add_utx5q5_k$(contextual ? Companion_getInstance_27().get_Contextual_hbmghm_k$() : Companion_getInstance_27().get_NoContextual_z6lrvf_k$());
+    }
+    var values = this_0.build_1k0s4u_k$();
+    // Inline function 'kotlin.collections.toTypedArray' call
+    var tmp$ret$3 = copyToArray(values);
+    return this.of_fm0xhz_k$(tmp$ret$3.slice());
+  };
+  protoOf(Companion_24).of$default_pj1g8y_k$ = function (common, discretionary, historical, contextual, $super) {
+    common = common === VOID ? null : common;
+    discretionary = discretionary === VOID ? null : discretionary;
+    historical = historical === VOID ? null : historical;
+    contextual = contextual === VOID ? null : contextual;
+    return $super === VOID ? this.of_45scd3_k$(common, discretionary, historical, contextual) : $super.of_45scd3_k$.call(this, common, discretionary, historical, contextual);
   };
   protoOf(Companion_24).get_Inherit_a1a9e6_k$ = function () {
-    return new FontSize('inherit');
+    return new Keyword_6('inherit');
   };
   protoOf(Companion_24).get_Initial_a0h2v9_k$ = function () {
-    return new FontSize('initial');
+    return new Keyword_6('initial');
   };
   protoOf(Companion_24).get_Revert_3t1tzh_k$ = function () {
-    return new FontSize('revert');
+    return new Keyword_6('revert');
   };
   protoOf(Companion_24).get_Unset_ii4mhs_k$ = function () {
-    return new FontSize('unset');
+    return new Keyword_6('unset');
   };
   var Companion_instance_24;
   function Companion_getInstance_27() {
@@ -3586,42 +3553,72 @@
       new Companion_24();
     return Companion_instance_24;
   }
-  function FontSize(value) {
+  function FontVariantLigatures(value) {
     Companion_getInstance_27();
     this.value_1 = value;
   }
-  protoOf(FontSize).toString = function () {
+  protoOf(FontVariantLigatures).toString = function () {
     return this.value_1;
   };
+  function fontVariantLigatures(_this__u8e3s4, ligatures) {
+    _this__u8e3s4.property_npxg1h_k$('font-variant-ligatures', ligatures);
+  }
   function _get_value__a43j40_24($this) {
     return $this.value_1;
+  }
+  function Keyword_7(value) {
+    FontVariantNumeric.call(this, value);
+  }
+  function ListableKeyword_2(value) {
+    FontVariantNumeric.call(this, value);
+  }
+  function KeywordList_1(keywords) {
+    FontVariantNumeric.call(this, joinToString_0(keywords, ' '));
   }
   function Companion_25() {
     Companion_instance_25 = this;
   }
   protoOf(Companion_25).get_Normal_22avww_k$ = function () {
-    return new FontStyle('normal');
+    return new Keyword_7('normal');
   };
-  protoOf(Companion_25).get_Italic_8h4fb_k$ = function () {
-    return new FontStyle('italic');
+  protoOf(Companion_25).get_Ordinal_8u15yg_k$ = function () {
+    return new ListableKeyword_2('ordinal');
   };
-  protoOf(Companion_25).get_Oblique_1dpn3c_k$ = function () {
-    return new FontStyle('oblique');
+  protoOf(Companion_25).get_SlashedZero_vearj9_k$ = function () {
+    return new ListableKeyword_2('slashed-zero');
   };
-  protoOf(Companion_25).Oblique_bcndcl_k$ = function (angle) {
-    return new FontStyle('oblique ' + angle);
+  protoOf(Companion_25).get_LiningNums_9yblwn_k$ = function () {
+    return new ListableKeyword_2('lining-nums');
+  };
+  protoOf(Companion_25).get_OldstyleNums_6xbcww_k$ = function () {
+    return new ListableKeyword_2('oldstyle-nums');
+  };
+  protoOf(Companion_25).get_ProportionalNums_k2pg91_k$ = function () {
+    return new ListableKeyword_2('proportional-nums');
+  };
+  protoOf(Companion_25).get_TabularNums_bm8qhr_k$ = function () {
+    return new ListableKeyword_2('tabular-nums');
+  };
+  protoOf(Companion_25).get_DiagonalFractions_dh6sz7_k$ = function () {
+    return new ListableKeyword_2('diagonal-fractions');
+  };
+  protoOf(Companion_25).get_StackedFractions_5brrv1_k$ = function () {
+    return new ListableKeyword_2('stacked-fractions');
+  };
+  protoOf(Companion_25).of_mgfh98_k$ = function (keywords) {
+    return new KeywordList_1(keywords.slice());
   };
   protoOf(Companion_25).get_Inherit_a1a9e6_k$ = function () {
-    return new FontStyle('inherit');
+    return new Keyword_7('inherit');
   };
   protoOf(Companion_25).get_Initial_a0h2v9_k$ = function () {
-    return new FontStyle('initial');
+    return new Keyword_7('initial');
   };
   protoOf(Companion_25).get_Revert_3t1tzh_k$ = function () {
-    return new FontStyle('revert');
+    return new Keyword_7('revert');
   };
   protoOf(Companion_25).get_Unset_ii4mhs_k$ = function () {
-    return new FontStyle('unset');
+    return new Keyword_7('unset');
   };
   var Companion_instance_25;
   function Companion_getInstance_28() {
@@ -3629,13 +3626,16 @@
       new Companion_25();
     return Companion_instance_25;
   }
-  function FontStyle(value) {
+  function FontVariantNumeric(value) {
     Companion_getInstance_28();
     this.value_1 = value;
   }
-  protoOf(FontStyle).toString = function () {
+  protoOf(FontVariantNumeric).toString = function () {
     return this.value_1;
   };
+  function fontVariantNumeric(_this__u8e3s4, numeric) {
+    _this__u8e3s4.property_npxg1h_k$('font-variant-numeric', numeric);
+  }
   function GridTrackBuilder() {
     GridTrackBuilderInRepeat.call(this);
   }
@@ -4721,15 +4721,6 @@
       return Unit_getInstance();
     };
   }
-  function overflowX(_this__u8e3s4, overflowX) {
-    _this__u8e3s4.property_npxg1h_k$('overflow-x', overflowX);
-  }
-  function overflow(_this__u8e3s4, overflow) {
-    _this__u8e3s4.property_npxg1h_k$('overflow', overflow);
-  }
-  function overflowY(_this__u8e3s4, overflowY) {
-    _this__u8e3s4.property_npxg1h_k$('overflow-y', overflowY);
-  }
   function _get_value__a43j40_32($this) {
     return $this.value_1;
   }
@@ -4776,6 +4767,15 @@
   protoOf(Overflow).toString = function () {
     return this.value_1;
   };
+  function overflowX(_this__u8e3s4, overflowX) {
+    _this__u8e3s4.property_npxg1h_k$('overflow-x', overflowX);
+  }
+  function overflowY(_this__u8e3s4, overflowY) {
+    _this__u8e3s4.property_npxg1h_k$('overflow-y', overflowY);
+  }
+  function overflow(_this__u8e3s4, overflow) {
+    _this__u8e3s4.property_npxg1h_k$('overflow', overflow);
+  }
   function _get_value__a43j40_33($this) {
     return $this.value_1;
   }
@@ -5058,38 +5058,41 @@
   protoOf(UserSelect).toString = function () {
     return this.value_1;
   };
-  function userSelect(_this__u8e3s4, userSelect) {
-    _this__u8e3s4.property_npxg1h_k$('user-select', userSelect);
-  }
   function _get_value__a43j40_35($this) {
     return $this.value_1;
   }
   function Companion_36() {
     Companion_instance_36 = this;
   }
-  protoOf(Companion_36).get_Underline_oo7egz_k$ = function () {
-    return new TextDecorationLine('underline');
+  protoOf(Companion_36).get_Normal_22avww_k$ = function () {
+    return new WhiteSpace('normal');
   };
-  protoOf(Companion_36).get_Overline_lz0ci7_k$ = function () {
-    return new TextDecorationLine('overline');
+  protoOf(Companion_36).get_NoWrap_21tqz8_k$ = function () {
+    return new WhiteSpace('nowrap');
   };
-  protoOf(Companion_36).get_LineThrough_pr9ajs_k$ = function () {
-    return new TextDecorationLine('line-through');
+  protoOf(Companion_36).get_Pre_18jlye_k$ = function () {
+    return new WhiteSpace('pre');
   };
-  protoOf(Companion_36).get_None_wo6tgh_k$ = function () {
-    return new TextDecorationLine('none');
+  protoOf(Companion_36).get_PreWrap_nintz8_k$ = function () {
+    return new WhiteSpace('pre-wrap');
+  };
+  protoOf(Companion_36).get_PreLine_nigmr2_k$ = function () {
+    return new WhiteSpace('pre-line');
+  };
+  protoOf(Companion_36).get_BreakSpaces_6b23jx_k$ = function () {
+    return new WhiteSpace('break-spaces');
   };
   protoOf(Companion_36).get_Inherit_a1a9e6_k$ = function () {
-    return new TextDecorationLine('inherit');
+    return new WhiteSpace('inherit');
   };
   protoOf(Companion_36).get_Initial_a0h2v9_k$ = function () {
-    return new TextDecorationLine('initial');
+    return new WhiteSpace('initial');
   };
   protoOf(Companion_36).get_Revert_3t1tzh_k$ = function () {
-    return new TextDecorationLine('revert');
+    return new WhiteSpace('revert');
   };
   protoOf(Companion_36).get_Unset_ii4mhs_k$ = function () {
-    return new TextDecorationLine('unset');
+    return new WhiteSpace('unset');
   };
   var Companion_instance_36;
   function Companion_getInstance_39() {
@@ -5097,11 +5100,11 @@
       new Companion_36();
     return Companion_instance_36;
   }
-  function TextDecorationLine(value) {
+  function WhiteSpace(value) {
     Companion_getInstance_39();
     this.value_1 = value;
   }
-  protoOf(TextDecorationLine).toString = function () {
+  protoOf(WhiteSpace).toString = function () {
     return this.value_1;
   };
   function _get_value__a43j40_36($this) {
@@ -5165,35 +5168,29 @@
   function Companion_38() {
     Companion_instance_38 = this;
   }
-  protoOf(Companion_38).get_Normal_22avww_k$ = function () {
-    return new WhiteSpace('normal');
+  protoOf(Companion_38).get_Underline_oo7egz_k$ = function () {
+    return new TextDecorationLine('underline');
   };
-  protoOf(Companion_38).get_NoWrap_21tqz8_k$ = function () {
-    return new WhiteSpace('nowrap');
+  protoOf(Companion_38).get_Overline_lz0ci7_k$ = function () {
+    return new TextDecorationLine('overline');
   };
-  protoOf(Companion_38).get_Pre_18jlye_k$ = function () {
-    return new WhiteSpace('pre');
+  protoOf(Companion_38).get_LineThrough_pr9ajs_k$ = function () {
+    return new TextDecorationLine('line-through');
   };
-  protoOf(Companion_38).get_PreWrap_nintz8_k$ = function () {
-    return new WhiteSpace('pre-wrap');
-  };
-  protoOf(Companion_38).get_PreLine_nigmr2_k$ = function () {
-    return new WhiteSpace('pre-line');
-  };
-  protoOf(Companion_38).get_BreakSpaces_6b23jx_k$ = function () {
-    return new WhiteSpace('break-spaces');
+  protoOf(Companion_38).get_None_wo6tgh_k$ = function () {
+    return new TextDecorationLine('none');
   };
   protoOf(Companion_38).get_Inherit_a1a9e6_k$ = function () {
-    return new WhiteSpace('inherit');
+    return new TextDecorationLine('inherit');
   };
   protoOf(Companion_38).get_Initial_a0h2v9_k$ = function () {
-    return new WhiteSpace('initial');
+    return new TextDecorationLine('initial');
   };
   protoOf(Companion_38).get_Revert_3t1tzh_k$ = function () {
-    return new WhiteSpace('revert');
+    return new TextDecorationLine('revert');
   };
   protoOf(Companion_38).get_Unset_ii4mhs_k$ = function () {
-    return new WhiteSpace('unset');
+    return new TextDecorationLine('unset');
   };
   var Companion_instance_38;
   function Companion_getInstance_41() {
@@ -5201,30 +5198,33 @@
       new Companion_38();
     return Companion_instance_38;
   }
-  function WhiteSpace(value) {
+  function TextDecorationLine(value) {
     Companion_getInstance_41();
     this.value_1 = value;
   }
-  protoOf(WhiteSpace).toString = function () {
+  protoOf(TextDecorationLine).toString = function () {
     return this.value_1;
   };
+  function userSelect(_this__u8e3s4, userSelect) {
+    _this__u8e3s4.property_npxg1h_k$('user-select', userSelect);
+  }
   function whiteSpace(_this__u8e3s4, whiteSpace) {
     _this__u8e3s4.property_npxg1h_k$('white-space', whiteSpace);
-  }
-  function textDecorationLine(_this__u8e3s4, textDecorationLines) {
-    _this__u8e3s4.property_wcrait_k$('text-decoration-line', joinToString_0(textDecorationLines, ' '));
   }
   function textAlign(_this__u8e3s4, textAlign) {
     _this__u8e3s4.property_npxg1h_k$('text-align', textAlign);
   }
+  function textDecorationLine(_this__u8e3s4, textDecorationLines) {
+    _this__u8e3s4.property_wcrait_k$('text-decoration-line', joinToString_0(textDecorationLines, ' '));
+  }
   function translateX(_this__u8e3s4, tx) {
     translate(_this__u8e3s4, tx);
   }
-  function scale(_this__u8e3s4, s) {
-    _this__u8e3s4.property_jk9dw6_k$('scale', s);
-  }
   function translate(_this__u8e3s4, tx) {
     _this__u8e3s4.property_npxg1h_k$('translate', tx);
+  }
+  function scale(_this__u8e3s4, s) {
+    _this__u8e3s4.property_jk9dw6_k$('scale', s);
   }
   function _get_value__a43j40_38($this) {
     return $this.value_1;
@@ -5531,6 +5531,20 @@
       return false;
     return true;
   };
+  function transition(_this__u8e3s4, transitions) {
+    // Inline function 'kotlin.collections.isNotEmpty' call
+    // Inline function 'kotlin.collections.isEmpty' call
+    if (!(transitions.length === 0)) {
+      _this__u8e3s4.property_wcrait_k$('transition', joinToString_0(transitions));
+    }
+  }
+  function transition_0(_this__u8e3s4, transitions) {
+    // Inline function 'kotlin.collections.isNotEmpty' call
+    // Inline function 'kotlin.collections.isEmpty' call
+    if (!(transitions.length === 0)) {
+      _this__u8e3s4.property_wcrait_k$('transition', joinToString_0(transitions));
+    }
+  }
   function _get_value__a43j40_39($this) {
     return $this.value_1;
   }
@@ -5606,20 +5620,6 @@
   protoOf(TransitionProperty).toString = function () {
     return this.value_1;
   };
-  function transition(_this__u8e3s4, transitions) {
-    // Inline function 'kotlin.collections.isNotEmpty' call
-    // Inline function 'kotlin.collections.isEmpty' call
-    if (!(transitions.length === 0)) {
-      _this__u8e3s4.property_wcrait_k$('transition', joinToString_0(transitions));
-    }
-  }
-  function transition_0(_this__u8e3s4, transitions) {
-    // Inline function 'kotlin.collections.isNotEmpty' call
-    // Inline function 'kotlin.collections.isEmpty' call
-    if (!(transitions.length === 0)) {
-      _this__u8e3s4.property_wcrait_k$('transition', joinToString_0(transitions));
-    }
-  }
   function _get_value__a43j40_40($this) {
     return $this.value_1;
   }
@@ -5765,146 +5765,6 @@
   }
   function blur(radius) {
     return new CSSFilter('blur(' + radius + ')');
-  }
-  function linearGradient(angle, init) {
-    // Inline function 'kotlin.let' call
-    // Inline function 'kotlin.apply' call
-    var this_0 = new ColorStopsBuilder();
-    // Inline function 'kotlin.contracts.contract' call
-    init(this_0);
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'com.varabyte.kobweb.compose.css.functions.linearGradient.<anonymous>' call
-    return new ByAngle(angle, this_0.verifiedEntries_yuic0o_k$().slice());
-  }
-  function radialGradient(shape, position, init) {
-    position = position === VOID ? null : position;
-    // Inline function 'kotlin.let' call
-    // Inline function 'kotlin.apply' call
-    var this_0 = new ColorStopsBuilder();
-    // Inline function 'kotlin.contracts.contract' call
-    init(this_0);
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'com.varabyte.kobweb.compose.css.functions.radialGradient.<anonymous>' call
-    return new ByShape(shape, position, this_0.verifiedEntries_yuic0o_k$().slice());
-  }
-  function Simple(value) {
-    Color_0.call(this, '' + value);
-  }
-  function Stop(color, stop) {
-    Color_0.call(this, '' + color + ' ' + stop);
-  }
-  function StopRange(color, from, to) {
-    Color_0.call(this, '' + color + ' ' + from + ' ' + to);
-  }
-  function _get_entryStr__gktpos($this) {
-    return $this.entryStr_1;
-  }
-  function Color_0(value) {
-    Entry.call(this, value);
-    this.value_1 = value;
-  }
-  protoOf(Color_0).get_value_j01efc_k$ = function () {
-    return this.value_1;
-  };
-  function Hint(value) {
-    Entry.call(this, '' + value);
-    this.value_1 = value;
-  }
-  protoOf(Hint).get_value_j01efc_k$ = function () {
-    return this.value_1;
-  };
-  function Entry(entryStr) {
-    this.entryStr_1 = entryStr;
-  }
-  protoOf(Entry).toString = function () {
-    return this.entryStr_1;
-  };
-  function _get_entries__iz8n5($this) {
-    return $this.entries_1;
-  }
-  function ColorStopsBuilder() {
-    var tmp = this;
-    // Inline function 'kotlin.collections.mutableListOf' call
-    tmp.entries_1 = ArrayList_init_$Create$();
-  }
-  protoOf(ColorStopsBuilder).verifiedEntries_yuic0o_k$ = function () {
-    // Inline function 'kotlin.check' call
-    var tmp$ret$0;
-    $l$block: {
-      // Inline function 'kotlin.collections.count' call
-      var this_0 = this.entries_1;
-      var tmp;
-      if (isInterface(this_0, Collection)) {
-        tmp = this_0.isEmpty_y1axqb_k$();
-      } else {
-        tmp = false;
-      }
-      if (tmp) {
-        tmp$ret$0 = 0;
-        break $l$block;
-      }
-      var count = 0;
-      var tmp0_iterator = this_0.iterator_jk1svi_k$();
-      while (tmp0_iterator.hasNext_bitz1p_k$()) {
-        var element = tmp0_iterator.next_20eer_k$();
-        // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>' call
-        if (element instanceof Color_0) {
-          count = count + 1 | 0;
-          checkCountOverflow(count);
-        }
-      }
-      tmp$ret$0 = count;
-    }
-    // Inline function 'kotlin.contracts.contract' call
-    if (!(tmp$ret$0 >= 2)) {
-      // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>' call
-      var message = 'A gradient should consistent of at least two color entries (an initial color and an end color)';
-      throw IllegalStateException_init_$Create$(toString(message));
-    }
-    // Inline function 'kotlin.collections.forEachIndexed' call
-    var index = 0;
-    var tmp0_iterator_0 = this.entries_1.iterator_jk1svi_k$();
-    while (tmp0_iterator_0.hasNext_bitz1p_k$()) {
-      var item = tmp0_iterator_0.next_20eer_k$();
-      // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>' call
-      var tmp1 = index;
-      index = tmp1 + 1 | 0;
-      var i = checkIndexOverflow(tmp1);
-      if (item instanceof Hint) {
-        // Inline function 'kotlin.check' call
-        var tmp_0;
-        var tmp_1 = getOrNull(this.entries_1, i - 1 | 0);
-        if (tmp_1 instanceof Color_0) {
-          var tmp_2 = getOrNull(this.entries_1, i + 1 | 0);
-          tmp_0 = tmp_2 instanceof Color_0;
-        } else {
-          tmp_0 = false;
-        }
-        // Inline function 'kotlin.contracts.contract' call
-        if (!tmp_0) {
-          // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>.<anonymous>' call
-          var message_0 = 'A gradient color midpoint must only be added between two colors';
-          throw IllegalStateException_init_$Create$(toString(message_0));
-        }
-      }
-    }
-    // Inline function 'kotlin.collections.toTypedArray' call
-    var this_1 = this.entries_1;
-    return copyToArray(this_1);
-  };
-  protoOf(ColorStopsBuilder).add_ad4gbn_k$ = function (color) {
-    return this.entries_1.add_utx5q5_k$(new Simple(color));
-  };
-  protoOf(ColorStopsBuilder).add_hkfvmd_k$ = function (color, stop) {
-    return this.entries_1.add_utx5q5_k$(new Stop(color, stop));
-  };
-  protoOf(ColorStopsBuilder).add_8cat99_k$ = function (color, from, to) {
-    return this.entries_1.add_utx5q5_k$(new StopRange(color, from, to));
-  };
-  protoOf(ColorStopsBuilder).setMidpoint_jac6ry_k$ = function (hint) {
-    return this.entries_1.add_utx5q5_k$(new Hint(hint));
-  };
-  function Gradient_0() {
   }
   function Circle_init_$Init$($this) {
     Circle.call($this, '');
@@ -6143,6 +6003,136 @@
   protoOf(RadialGradient).toString = function () {
     return 'radial-gradient(' + this.gradientStr_1 + ')';
   };
+  function radialGradient(shape, position, init) {
+    position = position === VOID ? null : position;
+    // Inline function 'kotlin.let' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = new ColorStopsBuilder();
+    // Inline function 'kotlin.contracts.contract' call
+    init(this_0);
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'com.varabyte.kobweb.compose.css.functions.radialGradient.<anonymous>' call
+    return new ByShape(shape, position, this_0.verifiedEntries_yuic0o_k$().slice());
+  }
+  function Simple(value) {
+    Color_0.call(this, '' + value);
+  }
+  function Stop(color, stop) {
+    Color_0.call(this, '' + color + ' ' + stop);
+  }
+  function StopRange(color, from, to) {
+    Color_0.call(this, '' + color + ' ' + from + ' ' + to);
+  }
+  function _get_entryStr__gktpos($this) {
+    return $this.entryStr_1;
+  }
+  function Color_0(value) {
+    Entry.call(this, value);
+    this.value_1 = value;
+  }
+  protoOf(Color_0).get_value_j01efc_k$ = function () {
+    return this.value_1;
+  };
+  function Hint(value) {
+    Entry.call(this, '' + value);
+    this.value_1 = value;
+  }
+  protoOf(Hint).get_value_j01efc_k$ = function () {
+    return this.value_1;
+  };
+  function Entry(entryStr) {
+    this.entryStr_1 = entryStr;
+  }
+  protoOf(Entry).toString = function () {
+    return this.entryStr_1;
+  };
+  function _get_entries__iz8n5($this) {
+    return $this.entries_1;
+  }
+  function ColorStopsBuilder() {
+    var tmp = this;
+    // Inline function 'kotlin.collections.mutableListOf' call
+    tmp.entries_1 = ArrayList_init_$Create$();
+  }
+  protoOf(ColorStopsBuilder).verifiedEntries_yuic0o_k$ = function () {
+    // Inline function 'kotlin.check' call
+    var tmp$ret$0;
+    $l$block: {
+      // Inline function 'kotlin.collections.count' call
+      var this_0 = this.entries_1;
+      var tmp;
+      if (isInterface(this_0, Collection)) {
+        tmp = this_0.isEmpty_y1axqb_k$();
+      } else {
+        tmp = false;
+      }
+      if (tmp) {
+        tmp$ret$0 = 0;
+        break $l$block;
+      }
+      var count = 0;
+      var tmp0_iterator = this_0.iterator_jk1svi_k$();
+      while (tmp0_iterator.hasNext_bitz1p_k$()) {
+        var element = tmp0_iterator.next_20eer_k$();
+        // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>' call
+        if (element instanceof Color_0) {
+          count = count + 1 | 0;
+          checkCountOverflow(count);
+        }
+      }
+      tmp$ret$0 = count;
+    }
+    // Inline function 'kotlin.contracts.contract' call
+    if (!(tmp$ret$0 >= 2)) {
+      // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>' call
+      var message = 'A gradient should consistent of at least two color entries (an initial color and an end color)';
+      throw IllegalStateException_init_$Create$(toString(message));
+    }
+    // Inline function 'kotlin.collections.forEachIndexed' call
+    var index = 0;
+    var tmp0_iterator_0 = this.entries_1.iterator_jk1svi_k$();
+    while (tmp0_iterator_0.hasNext_bitz1p_k$()) {
+      var item = tmp0_iterator_0.next_20eer_k$();
+      // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>' call
+      var tmp1 = index;
+      index = tmp1 + 1 | 0;
+      var i = checkIndexOverflow(tmp1);
+      if (item instanceof Hint) {
+        // Inline function 'kotlin.check' call
+        var tmp_0;
+        var tmp_1 = getOrNull(this.entries_1, i - 1 | 0);
+        if (tmp_1 instanceof Color_0) {
+          var tmp_2 = getOrNull(this.entries_1, i + 1 | 0);
+          tmp_0 = tmp_2 instanceof Color_0;
+        } else {
+          tmp_0 = false;
+        }
+        // Inline function 'kotlin.contracts.contract' call
+        if (!tmp_0) {
+          // Inline function 'com.varabyte.kobweb.compose.css.functions.ColorStopsBuilder.verifiedEntries.<anonymous>.<anonymous>' call
+          var message_0 = 'A gradient color midpoint must only be added between two colors';
+          throw IllegalStateException_init_$Create$(toString(message_0));
+        }
+      }
+    }
+    // Inline function 'kotlin.collections.toTypedArray' call
+    var this_1 = this.entries_1;
+    return copyToArray(this_1);
+  };
+  protoOf(ColorStopsBuilder).add_ad4gbn_k$ = function (color) {
+    return this.entries_1.add_utx5q5_k$(new Simple(color));
+  };
+  protoOf(ColorStopsBuilder).add_hkfvmd_k$ = function (color, stop) {
+    return this.entries_1.add_utx5q5_k$(new Stop(color, stop));
+  };
+  protoOf(ColorStopsBuilder).add_8cat99_k$ = function (color, from, to) {
+    return this.entries_1.add_utx5q5_k$(new StopRange(color, from, to));
+  };
+  protoOf(ColorStopsBuilder).setMidpoint_jac6ry_k$ = function (hint) {
+    return this.entries_1.add_utx5q5_k$(new Hint(hint));
+  };
+  function Gradient_0() {
+  }
   var Direction_ToTop_instance;
   var Direction_ToTopRight_instance;
   var Direction_ToRight_instance;
@@ -6284,6 +6274,16 @@
   protoOf(LinearGradient).toString = function () {
     return 'linear-gradient(' + this.gradientStr_1 + ')';
   };
+  function linearGradient(angle, init) {
+    // Inline function 'kotlin.let' call
+    // Inline function 'kotlin.apply' call
+    var this_0 = new ColorStopsBuilder();
+    // Inline function 'kotlin.contracts.contract' call
+    init(this_0);
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'com.varabyte.kobweb.compose.css.functions.linearGradient.<anonymous>' call
+    return new ByAngle(angle, this_0.verifiedEntries_yuic0o_k$().slice());
+  }
   function _get_url__e6i4g2($this) {
     return $this.url_1;
   }
@@ -8258,8 +8258,8 @@
   _.$_$.m2 = textAlign;
   _.$_$.n2 = textDecorationLine;
   _.$_$.o2 = toDegrees;
-  _.$_$.p2 = transition_0;
-  _.$_$.q2 = transition;
+  _.$_$.p2 = transition;
+  _.$_$.q2 = transition_0;
   _.$_$.r2 = translateX;
   _.$_$.s2 = translate;
   _.$_$.t2 = userSelect;
@@ -8291,29 +8291,29 @@
   _.$_$.t3 = Companion_getInstance_5;
   _.$_$.u3 = Companion_getInstance_19;
   _.$_$.v3 = Companion_getInstance_7;
-  _.$_$.w3 = Companion_getInstance_9;
+  _.$_$.w3 = Companion_getInstance_8;
   _.$_$.x3 = Companion_getInstance_15;
   _.$_$.y3 = Companion_getInstance_14;
   _.$_$.z3 = Companion_getInstance_18;
-  _.$_$.a4 = Companion_getInstance_28;
-  _.$_$.b4 = Companion_getInstance_26;
-  _.$_$.c4 = Companion_getInstance_21;
-  _.$_$.d4 = Companion_getInstance_23;
-  _.$_$.e4 = Companion_getInstance_25;
+  _.$_$.a4 = Companion_getInstance_21;
+  _.$_$.b4 = Companion_getInstance_23;
+  _.$_$.c4 = Companion_getInstance_25;
+  _.$_$.d4 = Companion_getInstance_27;
+  _.$_$.e4 = Companion_getInstance_28;
   _.$_$.f4 = Companion_getInstance_20;
-  _.$_$.g4 = Companion_getInstance_3;
-  _.$_$.h4 = Companion_getInstance_2;
+  _.$_$.g4 = Companion_getInstance_2;
+  _.$_$.h4 = Companion_getInstance_3;
   _.$_$.i4 = Companion_getInstance_4;
   _.$_$.j4 = Companion_getInstance_32;
   _.$_$.k4 = Companion_getInstance_34;
   _.$_$.l4 = Companion_getInstance_36;
   _.$_$.m4 = Companion_getInstance_37;
   _.$_$.n4 = Companion_getInstance_40;
-  _.$_$.o4 = Companion_getInstance_39;
+  _.$_$.o4 = Companion_getInstance_41;
   _.$_$.p4 = Companion_getInstance_42;
   _.$_$.q4 = Companion_getInstance_38;
   _.$_$.r4 = Companion_getInstance_31;
-  _.$_$.s4 = Companion_getInstance_41;
+  _.$_$.s4 = Companion_getInstance_39;
   _.$_$.t4 = Companion_getInstance_51;
   //endregion
   return _;

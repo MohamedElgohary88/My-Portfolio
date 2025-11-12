@@ -337,14 +337,14 @@
   setMetadataFor(ScopeMap, 'ScopeMap', classMeta, VOID, VOID, ScopeMap);
   setMetadataFor(AbstractListIterator, 'AbstractListIterator', classMeta);
   setMetadataFor(SingleElementListIterator, 'SingleElementListIterator', classMeta, AbstractListIterator);
-  setMetadataFor(AbstractPersistentList, 'AbstractPersistentList', classMeta, AbstractList, [Collection, List, AbstractList]);
+  setMetadataFor(AbstractPersistentList, 'AbstractPersistentList', classMeta, AbstractList, [List, Collection, AbstractList]);
   setMetadataFor(BufferIterator, 'BufferIterator', classMeta, AbstractListIterator);
-  setMetadataFor(PersistentVector, 'PersistentVector', classMeta, AbstractPersistentList, [Collection, List, AbstractPersistentList]);
+  setMetadataFor(PersistentVector, 'PersistentVector', classMeta, AbstractPersistentList, [List, Collection, AbstractPersistentList]);
   setMetadataFor(PersistentVectorBuilder, 'PersistentVectorBuilder', classMeta, AbstractMutableList, [AbstractMutableList, MutableCollection, List]);
   setMetadataFor(PersistentVectorIterator, 'PersistentVectorIterator', classMeta, AbstractListIterator);
   setMetadataFor(PersistentVectorMutableIterator, 'PersistentVectorMutableIterator', classMeta, AbstractListIterator);
   setMetadataFor(Companion_6, 'Companion', objectMeta);
-  setMetadataFor(SmallPersistentVector, 'SmallPersistentVector', classMeta, AbstractPersistentList, [Collection, List, AbstractPersistentList]);
+  setMetadataFor(SmallPersistentVector, 'SmallPersistentVector', classMeta, AbstractPersistentList, [List, Collection, AbstractPersistentList]);
   setMetadataFor(TrieIterator, 'TrieIterator', classMeta, AbstractListIterator);
   setMetadataFor(ObjectRef, 'ObjectRef', classMeta);
   setMetadataFor(Companion_7, 'Companion', objectMeta);

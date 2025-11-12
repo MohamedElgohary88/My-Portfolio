@@ -6974,8 +6974,8 @@
     set_overlay(this_0.get_light_iuogdp_k$(), color.copyf$default_6pu18v_k$(VOID, VOID, VOID, 0.5));
     set_placeholder(this_0.get_light_iuogdp_k$(), placeholder);
     var buttonBase = Colors_getInstance().get_White_ij46ow_k$().darkened_iwrtmu_k$(0.2);
-    get_button(this_0.get_light_iuogdp_k$()).set_s40lvu_k$(buttonBase, buttonBase.darkened_iwrtmu_k$(0.2), Colors_getInstance().get_CornflowerBlue_r6uqqi_k$(), buttonBase.darkened_iwrtmu_k$(0.4));
-    get_checkbox(this_0.get_light_iuogdp_k$()).set_38lh8k_k$(Blue_getInstance().get__500_wogfpb_k$(), Blue_getInstance().get__600_woggg0_k$(), Colors_getInstance().get_White_ij46ow_k$());
+    get_button_0(this_0.get_light_iuogdp_k$()).set_s40lvu_k$(buttonBase, buttonBase.darkened_iwrtmu_k$(0.2), Colors_getInstance().get_CornflowerBlue_r6uqqi_k$(), buttonBase.darkened_iwrtmu_k$(0.4));
+    get_checkbox_0(this_0.get_light_iuogdp_k$()).set_38lh8k_k$(Blue_getInstance().get__500_wogfpb_k$(), Blue_getInstance().get__600_woggg0_k$(), Colors_getInstance().get_White_ij46ow_k$());
     var inputFilled = Gray_getInstance().get__200_wogdh8_k$();
     var tmp0_$this = get_input_0(this_0.get_light_iuogdp_k$());
     var tmp1_filledFocus = Colors_getInstance().get_Transparent_cxh4g9_k$();
@@ -6983,13 +6983,13 @@
     var tmp3_invalidBorder = Red_getInstance().get__900_wogio3_k$();
     var tmp4_filledHover = inputFilled.darkened_iwrtmu_k$(0.1);
     tmp0_$this.set_ax4sbs_k$(tmp2_hoveredBorder, tmp3_invalidBorder, inputFilled, tmp4_filledHover, tmp1_filledFocus);
-    var tmp5_$this = get_switch(this_0.get_light_iuogdp_k$());
+    var tmp5_$this = get_switch_0(this_0.get_light_iuogdp_k$());
     var tmp6_thumb = Colors_getInstance().get_White_ij46ow_k$();
     var tmp7_backgroundOn = Colors_getInstance().get_DodgerBlue_w4tkwu_k$();
     var tmp8_backgroundOff = Colors_getInstance().get_LightGray_i1h2r4_k$();
     tmp5_$this.set_38lh8k_k$(tmp7_backgroundOn, tmp8_backgroundOff, tmp6_thumb);
     get_tab_0(this_0.get_light_iuogdp_k$()).set$default_u64q8f_k$(Colors_getInstance().get_Black_i7mvue_k$(), Colors_getInstance().get_White_ij46ow_k$(), Colors_getInstance().get_CornflowerBlue_r6uqqi_k$(), VOID, VOID, Colors_getInstance().get_LightGray_i1h2r4_k$(), Colors_getInstance().get_WhiteSmoke_gvtxtb_k$(), Colors_getInstance().get_White_ij46ow_k$());
-    get_tooltip(this_0.get_light_iuogdp_k$()).set_djj1hu_k$(get_color_0(this_0.get_light_iuogdp_k$()), get_background(this_0.get_light_iuogdp_k$()));
+    get_tooltip_0(this_0.get_light_iuogdp_k$()).set_djj1hu_k$(get_color_0(this_0.get_light_iuogdp_k$()), get_background_0(this_0.get_light_iuogdp_k$()));
     // Inline function 'kotlin.run' call
     // Inline function 'kotlin.contracts.contract' call
     var color_0 = Colors_getInstance().get_White_ij46ow_k$();
@@ -7000,8 +7000,8 @@
     set_overlay(this_0.get_dark_wokkvz_k$(), color_0.copyf$default_6pu18v_k$(VOID, VOID, VOID, 0.5));
     set_placeholder(this_0.get_dark_wokkvz_k$(), placeholder);
     var buttonBase_0 = lightened(Colors_getInstance().get_Black_i7mvue_k$(), 0.2);
-    get_button(this_0.get_dark_wokkvz_k$()).set_s40lvu_k$(buttonBase_0, lightened(buttonBase_0, 0.2), Colors_getInstance().get_LightSkyBlue_74jx4i_k$(), lightened(buttonBase_0, 0.4));
-    get_checkbox(this_0.get_dark_wokkvz_k$()).set_38lh8k_k$(Blue_getInstance().get__200_wogdh8_k$(), Blue_getInstance().get__300_woge7x_k$(), Colors_getInstance().get_Black_i7mvue_k$());
+    get_button_0(this_0.get_dark_wokkvz_k$()).set_s40lvu_k$(buttonBase_0, lightened(buttonBase_0, 0.2), Colors_getInstance().get_LightSkyBlue_74jx4i_k$(), lightened(buttonBase_0, 0.4));
+    get_checkbox_0(this_0.get_dark_wokkvz_k$()).set_38lh8k_k$(Blue_getInstance().get__200_wogdh8_k$(), Blue_getInstance().get__300_woge7x_k$(), Colors_getInstance().get_Black_i7mvue_k$());
     var inputFilled_0 = Gray_getInstance().get__900_wogio3_k$();
     var tmp0_$this_0 = get_input_0(this_0.get_dark_wokkvz_k$());
     var tmp1_filledFocus_0 = Colors_getInstance().get_Transparent_cxh4g9_k$();
@@ -7009,13 +7009,13 @@
     var tmp3_invalidBorder_0 = Red_getInstance().get__300_woge7x_k$();
     var tmp4_filledHover_0 = lightened(inputFilled_0, 0.1);
     tmp0_$this_0.set_ax4sbs_k$(tmp2_hoveredBorder_0, tmp3_invalidBorder_0, inputFilled_0, tmp4_filledHover_0, tmp1_filledFocus_0);
-    var tmp5_$this_0 = get_switch(this_0.get_dark_wokkvz_k$());
+    var tmp5_$this_0 = get_switch_0(this_0.get_dark_wokkvz_k$());
     var tmp6_thumb_0 = Colors_getInstance().get_White_ij46ow_k$();
     var tmp7_backgroundOn_0 = Colors_getInstance().get_LightSkyBlue_74jx4i_k$();
     var tmp8_backgroundOff_0 = Colors_getInstance().get_DarkGray_1y3y8u_k$();
     tmp5_$this_0.set_38lh8k_k$(tmp7_backgroundOn_0, tmp8_backgroundOff_0, tmp6_thumb_0);
     get_tab_0(this_0.get_dark_wokkvz_k$()).set$default_u64q8f_k$(Colors_getInstance().get_White_ij46ow_k$(), Colors_getInstance().get_Black_i7mvue_k$(), Colors_getInstance().get_LightSkyBlue_74jx4i_k$(), VOID, VOID, Colors_getInstance().get_DarkSlateGray_s468al_k$(), Colors_getInstance().get_DarkGray_1y3y8u_k$(), Colors_getInstance().get_Black_i7mvue_k$());
-    get_tooltip(this_0.get_dark_wokkvz_k$()).set_djj1hu_k$(get_color_0(this_0.get_dark_wokkvz_k$()), get_background(this_0.get_dark_wokkvz_k$()));
+    get_tooltip_0(this_0.get_dark_wokkvz_k$()).set_djj1hu_k$(get_color_0(this_0.get_dark_wokkvz_k$()), get_background_0(this_0.get_dark_wokkvz_k$()));
     mutableTheme.registerStyle$default_qiw5ck_k$('silk-colors', get_SilkColorsStyle());
     mutableTheme.registerStyle$default_z1l3ol_k$('silk-input', get_InputStyle());
     mutableTheme.registerVariant$default_k7o5vi_k$('-outlined', get_OutlinedInputVariant());
@@ -7147,7 +7147,7 @@
   function SilkColorsStyle$lambda($this$base) {
     _init_properties_InitSilkWidgets_kt__62z9ag();
     var palette = toPalette($this$base.get_colorMode_trbg8z_k$());
-    return setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(Companion_getInstance(), get_BackgroundColorVar_0(), get_background_0(palette)), get_ColorVar_0(), get_color(palette)), get_BorderColorVar_0(), get_border(palette)), get_FocusOutlineColorVar_0(), get_focusOutline_0(palette)), get_PlaceholderColorVar_0(), get_placeholder_0(palette)), ButtonVars_getInstance().get_BackgroundDefaultColor_so3bvr_k$(), get_button_0(palette).get_default_qtagd4_k$()), ButtonVars_getInstance().get_BackgroundHoverColor_qkbxz2_k$(), get_button_0(palette).get_hover_islez7_k$()), ButtonVars_getInstance().get_BackgroundPressedColor_qp3aco_k$(), get_button_0(palette).get_pressed_3zxk93_k$()), CheckboxVars_getInstance().get_IconBackgroundColor_fqf24z_k$(), get_checkbox_0(palette).get_background_stpfw7_k$()), CheckboxVars_getInstance().get_IconBackgroundHoverColor_gda561_k$(), get_checkbox_0(palette).get_hover_islez7_k$()), CheckboxVars_getInstance().get_IconColor_i8bnoh_k$(), get_checkbox_0(palette).get_color_ipu8u2_k$()), InputVars_getInstance().get_BorderHoverColor_4uita4_k$(), get_input(palette).get_hoveredBorder_pnis3i_k$()), InputVars_getInstance().get_BorderInvalidColor_3xft0h_k$(), get_input(palette).get_invalidBorder_suexpi_k$()), InputVars_getInstance().get_FilledColor_27lcwo_k$(), get_input(palette).get_filled_dbz78r_k$()), InputVars_getInstance().get_FilledHoverColor_z8l4su_k$(), get_input(palette).get_filledHover_panomn_k$()), InputVars_getInstance().get_FilledFocusColor_e3i8gm_k$(), get_input(palette).get_filledFocus_pbrnir_k$()), OverlayVars_getInstance().get_BackgroundColor_qhx06s_k$(), get_overlay_0(palette)), SwitchVars_getInstance().get_ThumbColor_g0t1d6_k$(), get_switch_0(palette).get_thumb_iz2gml_k$()), TabVars_getInstance().get_Color_i88tui_k$(), get_tab(palette).get_color_ipu8u2_k$()), TabVars_getInstance().get_BackgroundColor_qhx06s_k$(), get_tab(palette).get_background_stpfw7_k$()), TabVars_getInstance().get_DisabledBackgroundColor_cqusog_k$(), get_tab(palette).get_disabled_rbmjej_k$()), TabVars_getInstance().get_HoverBackgroundColor_uy6r32_k$(), get_tab(palette).get_hover_islez7_k$()), TabVars_getInstance().get_PressedBackgroundColor_ow7ud8_k$(), get_tab(palette).get_pressed_3zxk93_k$()), TooltipVars_getInstance().get_BackgroundColor_qhx06s_k$(), get_tooltip_0(palette).get_background_stpfw7_k$()), TooltipVars_getInstance().get_Color_i88tui_k$(), get_tooltip_0(palette).get_color_ipu8u2_k$());
+    return setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(setVariable(Companion_getInstance(), get_BackgroundColorVar_0(), get_background(palette)), get_ColorVar_0(), get_color(palette)), get_BorderColorVar_0(), get_border(palette)), get_FocusOutlineColorVar_0(), get_focusOutline(palette)), get_PlaceholderColorVar_0(), get_placeholder_0(palette)), ButtonVars_getInstance().get_BackgroundDefaultColor_so3bvr_k$(), get_button(palette).get_default_qtagd4_k$()), ButtonVars_getInstance().get_BackgroundHoverColor_qkbxz2_k$(), get_button(palette).get_hover_islez7_k$()), ButtonVars_getInstance().get_BackgroundPressedColor_qp3aco_k$(), get_button(palette).get_pressed_3zxk93_k$()), CheckboxVars_getInstance().get_IconBackgroundColor_fqf24z_k$(), get_checkbox(palette).get_background_stpfw7_k$()), CheckboxVars_getInstance().get_IconBackgroundHoverColor_gda561_k$(), get_checkbox(palette).get_hover_islez7_k$()), CheckboxVars_getInstance().get_IconColor_i8bnoh_k$(), get_checkbox(palette).get_color_ipu8u2_k$()), InputVars_getInstance().get_BorderHoverColor_4uita4_k$(), get_input(palette).get_hoveredBorder_pnis3i_k$()), InputVars_getInstance().get_BorderInvalidColor_3xft0h_k$(), get_input(palette).get_invalidBorder_suexpi_k$()), InputVars_getInstance().get_FilledColor_27lcwo_k$(), get_input(palette).get_filled_dbz78r_k$()), InputVars_getInstance().get_FilledHoverColor_z8l4su_k$(), get_input(palette).get_filledHover_panomn_k$()), InputVars_getInstance().get_FilledFocusColor_e3i8gm_k$(), get_input(palette).get_filledFocus_pbrnir_k$()), OverlayVars_getInstance().get_BackgroundColor_qhx06s_k$(), get_overlay(palette)), SwitchVars_getInstance().get_ThumbColor_g0t1d6_k$(), get_switch(palette).get_thumb_iz2gml_k$()), TabVars_getInstance().get_Color_i88tui_k$(), get_tab(palette).get_color_ipu8u2_k$()), TabVars_getInstance().get_BackgroundColor_qhx06s_k$(), get_tab(palette).get_background_stpfw7_k$()), TabVars_getInstance().get_DisabledBackgroundColor_cqusog_k$(), get_tab(palette).get_disabled_rbmjej_k$()), TabVars_getInstance().get_HoverBackgroundColor_uy6r32_k$(), get_tab(palette).get_hover_islez7_k$()), TabVars_getInstance().get_PressedBackgroundColor_ow7ud8_k$(), get_tab(palette).get_pressed_3zxk93_k$()), TooltipVars_getInstance().get_BackgroundColor_qhx06s_k$(), get_tooltip(palette).get_background_stpfw7_k$()), TooltipVars_getInstance().get_Color_i88tui_k$(), get_tooltip(palette).get_color_ipu8u2_k$());
   }
   function setSilkWidgetVariables$lambda($this_setSilkWidgetVariables, $$changed) {
     return function ($composer, $force) {
@@ -7499,12 +7499,6 @@
       return receiver.get_LG_knton0_k$();
     }, null);
   }
-  function set_focusOutline(_this__u8e3s4, value) {
-    _this__u8e3s4.set_17rjxm_k$('focusOutline', value);
-  }
-  function get_focusOutline(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('focusOutline');
-  }
   function Button_1() {
   }
   function MutableButton(palette) {
@@ -7768,35 +7762,89 @@
       new SilkWidgetColorGroups();
     return SilkWidgetColorGroups_instance;
   }
-  function get_color(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('color');
-  }
-  function get_button(_this__u8e3s4) {
-    return new MutableButton(_this__u8e3s4);
-  }
-  function get_placeholder_0(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('placeholder');
-  }
-  function get_switch(_this__u8e3s4) {
-    return new MutableSwitch(_this__u8e3s4);
-  }
-  function get_input(_this__u8e3s4) {
-    return get_input_0(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
-  }
-  function get_border(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('border');
+  function get_tooltip(_this__u8e3s4) {
+    return get_tooltip_0(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
   }
   function get_tab(_this__u8e3s4) {
     return get_tab_0(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
   }
-  function set_placeholder(_this__u8e3s4, value) {
-    _this__u8e3s4.set_17rjxm_k$('placeholder', value);
+  function get_switch(_this__u8e3s4) {
+    return get_switch_0(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
   }
-  function get_placeholder_1(_this__u8e3s4) {
+  function get_overlay(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('overlay');
+  }
+  function get_input(_this__u8e3s4) {
+    return get_input_0(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
+  }
+  function get_checkbox(_this__u8e3s4) {
+    return get_checkbox_0(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
+  }
+  function get_button(_this__u8e3s4) {
+    return get_button_0(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
+  }
+  function get_placeholder_0(_this__u8e3s4) {
     return _this__u8e3s4.getValue_r24mvz_k$('placeholder');
+  }
+  function get_focusOutline(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('focusOutline');
+  }
+  function get_border(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('border');
+  }
+  function get_color(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('color');
+  }
+  function get_background(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('background');
+  }
+  function get_tooltip_0(_this__u8e3s4) {
+    return new MutableTooltip(_this__u8e3s4);
   }
   function get_tab_0(_this__u8e3s4) {
     return new MutableTab(_this__u8e3s4);
+  }
+  function get_switch_0(_this__u8e3s4) {
+    return new MutableSwitch(_this__u8e3s4);
+  }
+  function get_OVERLAY_KEY() {
+    return OVERLAY_KEY;
+  }
+  var OVERLAY_KEY;
+  function get_input_0(_this__u8e3s4) {
+    return new MutableInput(_this__u8e3s4);
+  }
+  function get_checkbox_0(_this__u8e3s4) {
+    return new MutableCheckbox(_this__u8e3s4);
+  }
+  function get_button_0(_this__u8e3s4) {
+    return new MutableButton(_this__u8e3s4);
+  }
+  function get_PLACEHOLDER_KEY() {
+    return PLACEHOLDER_KEY;
+  }
+  var PLACEHOLDER_KEY;
+  function get_FOCUS_OUTLINE_KEY() {
+    return FOCUS_OUTLINE_KEY;
+  }
+  var FOCUS_OUTLINE_KEY;
+  function get_BORDER_KEY() {
+    return BORDER_KEY;
+  }
+  var BORDER_KEY;
+  function get_COLOR_KEY() {
+    return COLOR_KEY;
+  }
+  var COLOR_KEY;
+  function get_BACKGROUND_KEY() {
+    return BACKGROUND_KEY;
+  }
+  var BACKGROUND_KEY;
+  function set_background(_this__u8e3s4, value) {
+    _this__u8e3s4.set_17rjxm_k$('background', value);
+  }
+  function get_background_0(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('background');
   }
   function set_color(_this__u8e3s4, value) {
     _this__u8e3s4.set_17rjxm_k$('color', value);
@@ -7804,8 +7852,11 @@
   function get_color_0(_this__u8e3s4) {
     return _this__u8e3s4.getValue_r24mvz_k$('color');
   }
-  function get_button_0(_this__u8e3s4) {
-    return get_button(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
+  function set_overlay(_this__u8e3s4, value) {
+    _this__u8e3s4.set_17rjxm_k$('overlay', value);
+  }
+  function get_overlay_0(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('overlay');
   }
   function set_border(_this__u8e3s4, value) {
     _this__u8e3s4.set_17rjxm_k$('border', value);
@@ -7813,69 +7864,18 @@
   function get_border_0(_this__u8e3s4) {
     return _this__u8e3s4.getValue_r24mvz_k$('border');
   }
-  function get_tooltip(_this__u8e3s4) {
-    return new MutableTooltip(_this__u8e3s4);
+  function set_focusOutline(_this__u8e3s4, value) {
+    _this__u8e3s4.set_17rjxm_k$('focusOutline', value);
   }
   function get_focusOutline_0(_this__u8e3s4) {
     return _this__u8e3s4.getValue_r24mvz_k$('focusOutline');
   }
-  function set_overlay(_this__u8e3s4, value) {
-    _this__u8e3s4.set_17rjxm_k$('overlay', value);
+  function set_placeholder(_this__u8e3s4, value) {
+    _this__u8e3s4.set_17rjxm_k$('placeholder', value);
   }
-  function get_overlay(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('overlay');
+  function get_placeholder_1(_this__u8e3s4) {
+    return _this__u8e3s4.getValue_r24mvz_k$('placeholder');
   }
-  function get_overlay_0(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('overlay');
-  }
-  function get_tooltip_0(_this__u8e3s4) {
-    return get_tooltip(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
-  }
-  function get_switch_0(_this__u8e3s4) {
-    return get_switch(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
-  }
-  function get_checkbox(_this__u8e3s4) {
-    return new MutableCheckbox(_this__u8e3s4);
-  }
-  function set_background(_this__u8e3s4, value) {
-    _this__u8e3s4.set_17rjxm_k$('background', value);
-  }
-  function get_background(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('background');
-  }
-  function get_checkbox_0(_this__u8e3s4) {
-    return get_checkbox(_this__u8e3s4 instanceof MutablePalette ? _this__u8e3s4 : THROW_CCE());
-  }
-  function get_input_0(_this__u8e3s4) {
-    return new MutableInput(_this__u8e3s4);
-  }
-  function get_background_0(_this__u8e3s4) {
-    return _this__u8e3s4.getValue_r24mvz_k$('background');
-  }
-  function get_FOCUS_OUTLINE_KEY() {
-    return FOCUS_OUTLINE_KEY;
-  }
-  var FOCUS_OUTLINE_KEY;
-  function get_COLOR_KEY() {
-    return COLOR_KEY;
-  }
-  var COLOR_KEY;
-  function get_PLACEHOLDER_KEY() {
-    return PLACEHOLDER_KEY;
-  }
-  var PLACEHOLDER_KEY;
-  function get_BORDER_KEY() {
-    return BORDER_KEY;
-  }
-  var BORDER_KEY;
-  function get_OVERLAY_KEY() {
-    return OVERLAY_KEY;
-  }
-  var OVERLAY_KEY;
-  function get_BACKGROUND_KEY() {
-    return BACKGROUND_KEY;
-  }
-  var BACKGROUND_KEY;
   function default$factory() {
     return getPropertyCallableRef('default', 1, KMutableProperty1, function (receiver) {
       return receiver.get_default_qtagd4_k$();
@@ -8231,11 +8231,11 @@
   //endregion
   //region block: init
   DEFAULT_POPUP_OFFSET_PX = 15;
-  FOCUS_OUTLINE_KEY = 'focusOutline';
-  COLOR_KEY = 'color';
-  PLACEHOLDER_KEY = 'placeholder';
-  BORDER_KEY = 'border';
   OVERLAY_KEY = 'overlay';
+  PLACEHOLDER_KEY = 'placeholder';
+  FOCUS_OUTLINE_KEY = 'focusOutline';
+  BORDER_KEY = 'border';
+  COLOR_KEY = 'color';
   BACKGROUND_KEY = 'background';
   //endregion
   //region block: exports
@@ -8257,15 +8257,15 @@
   _.$_$.o = setSilkWidgetVariables_0;
   _.$_$.p = get_BorderColorVar_0;
   _.$_$.q = get_ColorVar_0;
-  _.$_$.r = get_background_0;
+  _.$_$.r = get_background;
   _.$_$.s = set_background;
-  _.$_$.t = get_button;
-  _.$_$.u = get_button_0;
+  _.$_$.t = get_button_0;
+  _.$_$.u = get_button;
   _.$_$.v = get_color;
   _.$_$.w = set_color;
-  _.$_$.x = get_overlay_0;
+  _.$_$.x = get_overlay;
   _.$_$.y = set_overlay;
-  _.$_$.z = get_tooltip;
+  _.$_$.z = get_tooltip_0;
   _.$_$.a1 = OverlayVars_getInstance;
   //endregion
   return _;

@@ -23,15 +23,15 @@
   //region block: imports
   var imul = Math.imul;
   var protoOf = kotlin_kotlin.$_$.ub;
-  var classMeta = kotlin_kotlin.$_$.ka;
+  var interfaceMeta = kotlin_kotlin.$_$.wa;
   var setMetadataFor = kotlin_kotlin.$_$.vb;
+  var VOID = kotlin_kotlin.$_$.f;
+  var objectMeta = kotlin_kotlin.$_$.tb;
+  var classMeta = kotlin_kotlin.$_$.ka;
   var getKClassFromExpression = kotlin_kotlin.$_$.c;
   var THROW_CCE = kotlin_kotlin.$_$.ff;
   var equals = kotlin_kotlin.$_$.na;
   var hashCode = kotlin_kotlin.$_$.ua;
-  var VOID = kotlin_kotlin.$_$.f;
-  var interfaceMeta = kotlin_kotlin.$_$.wa;
-  var objectMeta = kotlin_kotlin.$_$.tb;
   var Unit_getInstance = kotlin_kotlin.$_$.m4;
   var traceEventStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.c1;
   var isTraceInProgress = kotlin_org_jetbrains_compose_runtime_runtime.$_$.t;
@@ -88,14 +88,14 @@
   var coerceIn = kotlin_kotlin.$_$.dc;
   var ariaHidden = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.q;
   var ariaDisabled = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.p;
-  var alignContent = kotlin_org_jetbrains_compose_html_html_core.$_$.k3;
   var justifyContent_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x1;
+  var alignContent = kotlin_org_jetbrains_compose_html_html_core.$_$.k3;
   var animation = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.n;
-  var backgroundRepeat = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s;
-  var backgroundImage = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r;
   var backgroundColor = kotlin_org_jetbrains_compose_html_html_core.$_$.n3;
-  var backgroundSize = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.t;
+  var backgroundImage = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r;
   var background = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u;
+  var backgroundRepeat = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s;
+  var backgroundSize = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.t;
   var borderColor = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.w;
   var borderColor_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x;
   var Color_getInstance = kotlin_org_jetbrains_compose_html_html_core.$_$.l;
@@ -111,11 +111,11 @@
   var borderWidth_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.u3;
   var borderWidth_1 = kotlin_org_jetbrains_compose_html_html_core.$_$.v3;
   var borderWidth_2 = kotlin_org_jetbrains_compose_html_html_core.$_$.t3;
-  var border = kotlin_org_jetbrains_compose_html_html_core.$_$.w3;
-  var borderLeft = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.a1;
-  var borderRadius = kotlin_org_jetbrains_compose_html_html_core.$_$.r3;
-  var borderTop = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.f1;
   var borderBottom = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.v;
+  var borderRadius = kotlin_org_jetbrains_compose_html_html_core.$_$.r3;
+  var border = kotlin_org_jetbrains_compose_html_html_core.$_$.w3;
+  var borderTop = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.f1;
+  var borderLeft = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.a1;
   var borderRadius_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.s3;
   var Companion_getInstance_8 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.x3;
   var boxSizing = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.i1;
@@ -125,8 +125,8 @@
   var joinToString = kotlin_kotlin.$_$.h7;
   var appearance = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.o;
   var gap = kotlin_org_jetbrains_compose_html_html_core.$_$.o4;
-  var flex = kotlin_org_jetbrains_compose_html_html_core.$_$.i4;
   var gap_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.n4;
+  var flex = kotlin_org_jetbrains_compose_html_html_core.$_$.i4;
   var fontFamily = kotlin_org_jetbrains_compose_html_html_core.$_$.j4;
   var fontSize = kotlin_org_jetbrains_compose_html_html_core.$_$.k4;
   var fontSize_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.k1;
@@ -149,62 +149,62 @@
   var cursor = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.j1;
   var overflowX = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.e2;
   var overflowY = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.f2;
-  var padding = kotlin_org_jetbrains_compose_html_html_core.$_$.h5;
   var margin = kotlin_org_jetbrains_compose_html_html_core.$_$.a5;
+  var padding = kotlin_org_jetbrains_compose_html_html_core.$_$.h5;
+  var verticalAlign = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u2;
   var lineHeight = kotlin_org_jetbrains_compose_html_html_core.$_$.z4;
-  var lineHeight_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.y4;
   var overflow = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.g2;
   var paddingInline = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.h2;
+  var lineHeight_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.y4;
   var zIndex = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.w2;
-  var verticalAlign = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u2;
   var listStyle = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.b2;
   var objectFit = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.c2;
   var outline = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.d2;
   var position = kotlin_org_jetbrains_compose_html_html_core.$_$.j5;
+  var top = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
+  var left = kotlin_org_jetbrains_compose_html_html_core.$_$.x4;
   var right = kotlin_org_jetbrains_compose_html_html_core.$_$.l5;
   var bottom = kotlin_org_jetbrains_compose_html_html_core.$_$.x3;
-  var left = kotlin_org_jetbrains_compose_html_html_core.$_$.x4;
-  var top = kotlin_org_jetbrains_compose_html_html_core.$_$.p5;
   var scrollBehavior = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.j2;
   var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.i5;
-  var height = kotlin_org_jetbrains_compose_html_html_core.$_$.u4;
   var width = kotlin_org_jetbrains_compose_html_html_core.$_$.t5;
   var minWidth = kotlin_org_jetbrains_compose_html_html_core.$_$.e5;
-  var height_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.v4;
+  var height = kotlin_org_jetbrains_compose_html_html_core.$_$.u4;
   var minHeight = kotlin_org_jetbrains_compose_html_html_core.$_$.d5;
-  var width_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.v5;
   var maxWidth = kotlin_org_jetbrains_compose_html_html_core.$_$.b5;
+  var height_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.v4;
+  var width_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.v5;
   var whiteSpace = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.v2;
-  var textDecorationLine = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.n2;
   var textAlign = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.m2;
-  var transform = kotlin_org_jetbrains_compose_html_html_core.$_$.q5;
+  var textDecorationLine = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.n2;
   var translateX = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r2;
-  var scale = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.i2;
+  var transform = kotlin_org_jetbrains_compose_html_html_core.$_$.q5;
   var translate = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s2;
+  var scale = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.i2;
+  var transition = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.p2;
+  var transition_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.q2;
   var onTransitionEnd = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.a;
-  var transition = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.q2;
-  var transition_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.p2;
   var setVariable = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.k2;
   var setVariable_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.l2;
   //endregion
   //region block: pre-declaration
-  setMetadataFor(Horizontal_0, 'Horizontal', interfaceMeta);
-  setMetadataFor(Vertical_0, 'Vertical', interfaceMeta);
-  setMetadataFor(HorizontalOrVertical_0, 'HorizontalOrVertical', interfaceMeta, VOID, [Horizontal_0, Vertical_0]);
-  setMetadataFor(SpacedAligned, 'SpacedAligned', classMeta, VOID, [HorizontalOrVertical_0]);
-  setMetadataFor(HorizontalOrVertical, 'HorizontalOrVertical', classMeta, SpacedAligned);
-  setMetadataFor(Vertical, 'Vertical', classMeta, SpacedAligned);
-  setMetadataFor(Horizontal, 'Horizontal', classMeta, SpacedAligned);
-  setMetadataFor(End, 'End', objectMeta, VOID, [Horizontal_0]);
-  setMetadataFor(Start, 'Start', objectMeta, VOID, [Horizontal_0]);
-  setMetadataFor(Top, 'Top', objectMeta, VOID, [Vertical_0]);
-  setMetadataFor(Bottom, 'Bottom', objectMeta, VOID, [Vertical_0]);
-  setMetadataFor(Center, 'Center', objectMeta, VOID, [HorizontalOrVertical_0]);
-  setMetadataFor(SpaceEvenly, 'SpaceEvenly', objectMeta, VOID, [HorizontalOrVertical_0]);
-  setMetadataFor(SpaceBetween, 'SpaceBetween', objectMeta, VOID, [HorizontalOrVertical_0]);
-  setMetadataFor(SpaceAround, 'SpaceAround', objectMeta, VOID, [HorizontalOrVertical_0]);
-  setMetadataFor(FromStyle, 'FromStyle', objectMeta, VOID, [HorizontalOrVertical_0]);
+  setMetadataFor(Horizontal, 'Horizontal', interfaceMeta);
+  setMetadataFor(Vertical, 'Vertical', interfaceMeta);
+  setMetadataFor(HorizontalOrVertical, 'HorizontalOrVertical', interfaceMeta, VOID, [Horizontal, Vertical]);
+  setMetadataFor(End, 'End', objectMeta, VOID, [Horizontal]);
+  setMetadataFor(Start, 'Start', objectMeta, VOID, [Horizontal]);
+  setMetadataFor(Top, 'Top', objectMeta, VOID, [Vertical]);
+  setMetadataFor(Bottom, 'Bottom', objectMeta, VOID, [Vertical]);
+  setMetadataFor(Center, 'Center', objectMeta, VOID, [HorizontalOrVertical]);
+  setMetadataFor(SpaceEvenly, 'SpaceEvenly', objectMeta, VOID, [HorizontalOrVertical]);
+  setMetadataFor(SpaceBetween, 'SpaceBetween', objectMeta, VOID, [HorizontalOrVertical]);
+  setMetadataFor(SpaceAround, 'SpaceAround', objectMeta, VOID, [HorizontalOrVertical]);
+  setMetadataFor(FromStyle, 'FromStyle', objectMeta, VOID, [HorizontalOrVertical]);
   setMetadataFor(Arrangement, 'Arrangement', objectMeta);
+  setMetadataFor(SpacedAligned, 'SpacedAligned', classMeta, VOID, [HorizontalOrVertical]);
+  setMetadataFor(HorizontalOrVertical_0, 'HorizontalOrVertical', classMeta, SpacedAligned);
+  setMetadataFor(Vertical_0, 'Vertical', classMeta, SpacedAligned);
+  setMetadataFor(Horizontal_0, 'Horizontal', classMeta, SpacedAligned);
   function align(_this__u8e3s4, alignment) {
     return attrsModifier(_this__u8e3s4, BoxScope$align$lambda(alignment));
   }
@@ -262,7 +262,6 @@
   setMetadataFor(WebModifier, 'WebModifier', interfaceMeta, VOID, [Element]);
   setMetadataFor(StyleModifier, 'StyleModifier', classMeta, VOID, [WebModifier]);
   setMetadataFor(AttrsModifier, 'AttrsModifier', classMeta, VOID, [WebModifier]);
-  setMetadataFor(Colors, 'Colors', objectMeta);
   function darkened$default(byPercent, $super) {
     byPercent = byPercent === VOID ? 0.3 : byPercent;
     return $super === VOID ? this.darkened_iwrtmu_k$(byPercent) : $super.darkened_iwrtmu_k$.call(this, byPercent);
@@ -271,76 +270,17 @@
   setMetadataFor(Rgb, 'Rgb', classMeta, VOID, [Color_0]);
   setMetadataFor(Hsl, 'Hsl', classMeta, VOID, [Color_0]);
   setMetadataFor(Companion_0, 'Companion', objectMeta);
+  setMetadataFor(Colors, 'Colors', objectMeta);
   setMetadataFor(BorderScope, 'BorderScope', classMeta);
   setMetadataFor(FontScope, 'FontScope', classMeta);
   setMetadataFor(FontVariantScope, 'FontVariantScope', classMeta);
   setMetadataFor(OverflowScope, 'OverflowScope', classMeta);
   //endregion
-  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Start$stable;
-  function HorizontalOrVertical(spacing) {
-    SpacedAligned.call(this, spacing);
+  function Horizontal() {
   }
-  function Vertical(spacing, alignment) {
-    SpacedAligned.call(this, spacing);
-    this.alignment_1 = alignment;
+  function Vertical() {
   }
-  protoOf(Vertical).get_alignment_xa1jnq_k$ = function () {
-    return this.alignment_1;
-  };
-  function Horizontal(spacing, alignment) {
-    SpacedAligned.call(this, spacing);
-    this.alignment_1 = alignment;
-  }
-  protoOf(Horizontal).get_alignment_xa1jnq_k$ = function () {
-    return this.alignment_1;
-  };
-  function SpacedAligned(spacing) {
-    this.spacing_1 = spacing;
-  }
-  protoOf(SpacedAligned).get_spacing_w0flpi_k$ = function () {
-    return this.spacing_1;
-  };
-  protoOf(SpacedAligned).equals = function (other) {
-    if (this === other)
-      return true;
-    if (other == null)
-      return false;
-    if (!getKClassFromExpression(other).equals(getKClassFromExpression(this)))
-      return false;
-    var other_0 = other instanceof SpacedAligned ? other : THROW_CCE();
-    var tmp;
-    if (equals(this.spacing_1, other_0.spacing_1)) {
-      var tmp_0;
-      if (this instanceof Vertical) {
-        tmp_0 = equals(this.alignment_1, (other_0 instanceof Vertical ? other_0 : THROW_CCE()).alignment_1);
-      } else {
-        if (this instanceof Horizontal) {
-          tmp_0 = equals(this.alignment_1, (other_0 instanceof Horizontal ? other_0 : THROW_CCE()).alignment_1);
-        } else {
-          tmp_0 = true;
-        }
-      }
-      tmp = tmp_0;
-    } else {
-      tmp = false;
-    }
-    return tmp;
-  };
-  protoOf(SpacedAligned).hashCode = function () {
-    var result = hashCode(this.spacing_1);
-    if (this instanceof Vertical)
-      result = result + imul(31, hashCode(this.alignment_1)) | 0;
-    else {
-      if (this instanceof Horizontal)
-        result = result + imul(31, hashCode(this.alignment_1)) | 0;
-    }
-    return result;
-  };
-  function Horizontal_0() {
-  }
-  function Vertical_0() {
-  }
-  function HorizontalOrVertical_0() {
+  function HorizontalOrVertical() {
   }
   function End() {
     End_instance = this;
@@ -427,13 +367,13 @@
     Arrangement_instance = this;
   }
   protoOf(Arrangement).spacedBy_9noyc7_k$ = function (space) {
-    return new HorizontalOrVertical(space);
+    return new HorizontalOrVertical_0(space);
   };
   protoOf(Arrangement).spacedBy_q5wwc_k$ = function (space, alignment) {
-    return new Vertical(space, alignment);
+    return new Vertical_0(space, alignment);
   };
   protoOf(Arrangement).spacedBy_xrntom_k$ = function (space, alignment) {
-    return new Horizontal(space, alignment);
+    return new Horizontal_0(space, alignment);
   };
   var Arrangement_instance;
   function Arrangement_getInstance() {
@@ -441,9 +381,69 @@
       new Arrangement();
     return Arrangement_instance;
   }
+  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stable;
   var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Top$stable;
   var com_varabyte_kobweb_compose_foundation_layout_Arrangement_SpaceBetween$stable;
-  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stable;
+  var com_varabyte_kobweb_compose_foundation_layout_Arrangement_Start$stable;
+  function HorizontalOrVertical_0(spacing) {
+    SpacedAligned.call(this, spacing);
+  }
+  function Vertical_0(spacing, alignment) {
+    SpacedAligned.call(this, spacing);
+    this.alignment_1 = alignment;
+  }
+  protoOf(Vertical_0).get_alignment_xa1jnq_k$ = function () {
+    return this.alignment_1;
+  };
+  function Horizontal_0(spacing, alignment) {
+    SpacedAligned.call(this, spacing);
+    this.alignment_1 = alignment;
+  }
+  protoOf(Horizontal_0).get_alignment_xa1jnq_k$ = function () {
+    return this.alignment_1;
+  };
+  function SpacedAligned(spacing) {
+    this.spacing_1 = spacing;
+  }
+  protoOf(SpacedAligned).get_spacing_w0flpi_k$ = function () {
+    return this.spacing_1;
+  };
+  protoOf(SpacedAligned).equals = function (other) {
+    if (this === other)
+      return true;
+    if (other == null)
+      return false;
+    if (!getKClassFromExpression(other).equals(getKClassFromExpression(this)))
+      return false;
+    var other_0 = other instanceof SpacedAligned ? other : THROW_CCE();
+    var tmp;
+    if (equals(this.spacing_1, other_0.spacing_1)) {
+      var tmp_0;
+      if (this instanceof Vertical_0) {
+        tmp_0 = equals(this.alignment_1, (other_0 instanceof Vertical_0 ? other_0 : THROW_CCE()).alignment_1);
+      } else {
+        if (this instanceof Horizontal_0) {
+          tmp_0 = equals(this.alignment_1, (other_0 instanceof Horizontal_0 ? other_0 : THROW_CCE()).alignment_1);
+        } else {
+          tmp_0 = true;
+        }
+      }
+      tmp = tmp_0;
+    } else {
+      tmp = false;
+    }
+    return tmp;
+  };
+  protoOf(SpacedAligned).hashCode = function () {
+    var result = hashCode(this.spacing_1);
+    if (this instanceof Vertical_0)
+      result = result + imul(31, hashCode(this.alignment_1)) | 0;
+    else {
+      if (this instanceof Horizontal_0)
+        result = result + imul(31, hashCode(this.alignment_1)) | 0;
+    }
+    return result;
+  };
   function BoxScope$align$lambda($alignment) {
     return function ($this$attrsModifier) {
       $this$attrsModifier.classes_ayghm2_k$([toClassName_0($alignment) + '-self']);
@@ -620,14 +620,6 @@
       return Unit_getInstance();
     };
   }
-  function ColumnScope$align$lambda($alignment) {
-    return function ($this$attrsModifier) {
-      $this$attrsModifier.classes_ayghm2_k$([toClassName_1($alignment) + '-self']);
-      return Unit_getInstance();
-    };
-  }
-  function ColumnScope() {
-  }
   function Column(modifier, verticalArrangement, horizontalAlignment, ref, content, $composer, $changed, $default) {
     var modifier_0 = {_v: modifier};
     var verticalArrangement_0 = {_v: verticalArrangement};
@@ -737,6 +729,14 @@
       tmp0_safe_receiver.updateScope_t8jcf_k$(Column$lambda_0(modifier_0, verticalArrangement_0, horizontalAlignment_0, ref_0, content, $changed, $default));
     }
   }
+  function ColumnScope$align$lambda($alignment) {
+    return function ($this$attrsModifier) {
+      $this$attrsModifier.classes_ayghm2_k$([toClassName_1($alignment) + '-self']);
+      return Unit_getInstance();
+    };
+  }
+  function ColumnScope() {
+  }
   function ColumnDefaults() {
     ColumnDefaults_instance = this;
     this.VerticalArrangement_1 = Top_getInstance();
@@ -811,14 +811,6 @@
   protoOf(LayoutScopeMarker).toString = function () {
     return '@com.varabyte.kobweb.compose.foundation.layout.LayoutScopeMarker()';
   };
-  function RowScope$align$lambda($alignment) {
-    return function ($this$attrsModifier) {
-      $this$attrsModifier.classes_ayghm2_k$([toClassName($alignment) + '-self']);
-      return Unit_getInstance();
-    };
-  }
-  function RowScope() {
-  }
   function rowClasses(_this__u8e3s4, horizontalArrangement, verticalAlignment) {
     horizontalArrangement = horizontalArrangement === VOID ? RowDefaults_getInstance().HorizontalArrangement_1 : horizontalArrangement;
     verticalAlignment = verticalAlignment === VOID ? RowDefaults_getInstance().VerticalAlignment_1 : verticalAlignment;
@@ -932,6 +924,14 @@
     else {
       tmp0_safe_receiver.updateScope_t8jcf_k$(Row$lambda_0(modifier_0, horizontalArrangement_0, verticalAlignment_0, ref_0, content, $changed, $default));
     }
+  }
+  function RowScope$align$lambda($alignment) {
+    return function ($this$attrsModifier) {
+      $this$attrsModifier.classes_ayghm2_k$([toClassName($alignment) + '-self']);
+      return Unit_getInstance();
+    };
+  }
+  function RowScope() {
   }
   function RowDefaults() {
     RowDefaults_instance = this;
@@ -1063,7 +1063,7 @@
         // Inline function 'kotlin.js.asDynamic' call
         tmp = ['kobweb-arrange-start'];
       } else {
-        if (isInterface(_this__u8e3s4, HorizontalOrVertical_0)) {
+        if (isInterface(_this__u8e3s4, HorizontalOrVertical)) {
           tmp = toClassNames_1(_this__u8e3s4);
         } else {
           noWhenBranchMatchedException();
@@ -1087,7 +1087,7 @@
         // Inline function 'kotlin.js.asDynamic' call
         tmp = ['kobweb-arrange-bottom'];
       } else {
-        if (isInterface(_this__u8e3s4, HorizontalOrVertical_0)) {
+        if (isInterface(_this__u8e3s4, HorizontalOrVertical)) {
           tmp = toClassNames_1(_this__u8e3s4);
         } else {
           noWhenBranchMatchedException();
@@ -1187,7 +1187,7 @@
   function get_alignmentClassName(_this__u8e3s4) {
     _init_properties_ArrangementExtensions_kt__c0bxro();
     var tmp;
-    if (_this__u8e3s4 instanceof Vertical) {
+    if (_this__u8e3s4 instanceof Vertical_0) {
       var tmp1_subject = _this__u8e3s4.get_alignment_xa1jnq_k$();
       var tmp_0;
       if (equals(tmp1_subject, Bottom_getInstance_0())) {
@@ -1203,7 +1203,7 @@
       }
       tmp = tmp_0;
     } else {
-      if (_this__u8e3s4 instanceof Horizontal) {
+      if (_this__u8e3s4 instanceof Horizontal_0) {
         var tmp2_subject = _this__u8e3s4.get_alignment_xa1jnq_k$();
         var tmp_1;
         if (equals(tmp2_subject, Start_getInstance_0())) {
@@ -1806,9 +1806,6 @@
     return KobwebComposeStyleSheet_instance;
   }
   var com_varabyte_kobweb_compose_style_KobwebComposeStyleSheet$stable;
-  var com_varabyte_kobweb_compose_ui_Alignment_Start$stable;
-  var com_varabyte_kobweb_compose_ui_Alignment_Center$stable;
-  var com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stable;
   function Vertical_1() {
   }
   function Horizontal_1() {
@@ -1960,11 +1957,11 @@
   function Alignment() {
   }
   var com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stable;
-  var com_varabyte_kobweb_compose_ui_Alignment_CenterEnd$stable;
+  var com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stable;
+  var com_varabyte_kobweb_compose_ui_Alignment_Center$stable;
   var com_varabyte_kobweb_compose_ui_Alignment_CenterStart$stable;
-  function thenIf(_this__u8e3s4, condition, lazyProduce) {
-    return _this__u8e3s4.then_mmfvo6_k$(condition ? lazyProduce() : Companion_getInstance_13());
-  }
+  var com_varabyte_kobweb_compose_ui_Alignment_CenterEnd$stable;
+  var com_varabyte_kobweb_compose_ui_Alignment_Start$stable;
   function Element() {
   }
   function Companion() {
@@ -1984,23 +1981,12 @@
   }
   function Modifier() {
   }
-  function thenIf_0(_this__u8e3s4, condition, other) {
+  function thenIf(_this__u8e3s4, condition, other) {
     // Inline function 'com.varabyte.kobweb.compose.ui.thenIf' call
     var tmp;
     if (condition) {
       // Inline function 'com.varabyte.kobweb.compose.ui.thenIf.<anonymous>' call
       tmp = other;
-    } else {
-      tmp = Companion_getInstance_13();
-    }
-    return _this__u8e3s4.then_mmfvo6_k$(tmp);
-  }
-  function thenIfNotNull(_this__u8e3s4, value, consume) {
-    // Inline function 'com.varabyte.kobweb.compose.ui.thenIf' call
-    var tmp;
-    if (!(value == null)) {
-      // Inline function 'com.varabyte.kobweb.compose.ui.thenIfNotNull.<anonymous>' call
-      tmp = consume(ensureNotNull(value));
     } else {
       tmp = Companion_getInstance_13();
     }
@@ -2037,6 +2023,20 @@
   protoOf(ChainedModifier).hashCode = function () {
     return hashCode(this.current_1) + imul(31, hashCode(this.next_1)) | 0;
   };
+  function thenIf_0(_this__u8e3s4, condition, lazyProduce) {
+    return _this__u8e3s4.then_mmfvo6_k$(condition ? lazyProduce() : Companion_getInstance_13());
+  }
+  function thenIfNotNull(_this__u8e3s4, value, consume) {
+    // Inline function 'com.varabyte.kobweb.compose.ui.thenIf' call
+    var tmp;
+    if (!(value == null)) {
+      // Inline function 'com.varabyte.kobweb.compose.ui.thenIfNotNull.<anonymous>' call
+      tmp = consume(ensureNotNull(value));
+    } else {
+      tmp = Companion_getInstance_13();
+    }
+    return _this__u8e3s4.then_mmfvo6_k$(tmp);
+  }
   function toStyles(_this__u8e3s4, finalHandler) {
     finalHandler = finalHandler === VOID ? null : finalHandler;
     var firstModifier = _this__u8e3s4;
@@ -2149,6 +2149,402 @@
         tmp0_safe_receiver($this$null);
       return Unit_getInstance();
     };
+  }
+  function toInRangeInt(_this__u8e3s4, $this) {
+    // Inline function 'kotlin.check' call
+    // Inline function 'kotlin.contracts.contract' call
+    if (!(new Long(0, -1)).and_4spn93_k$(_this__u8e3s4).equals(new Long(0, 0))) {
+      // Inline function 'com.varabyte.kobweb.compose.ui.graphics.Companion.toInRangeInt.<anonymous>' call
+      // Inline function 'kotlin.text.uppercase' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var message = 'Got an invalid hex color (0x' + toString(_this__u8e3s4, 16).toUpperCase() + ') value larger than 0xFFFFFFFF';
+      throw IllegalStateException_init_$Create$(toString_0(message));
+    }
+    return _this__u8e3s4.toInt_1tsl84_k$();
+  }
+  function Rgb(value) {
+    this.value_1 = value;
+  }
+  protoOf(Rgb).get_value_j01efc_k$ = function () {
+    return this.value_1;
+  };
+  protoOf(Rgb).get_red_18ix20_k$ = function () {
+    return this.value_1 >> 16 & 255;
+  };
+  protoOf(Rgb).get_green_is36qi_k$ = function () {
+    return this.value_1 >> 8 & 255;
+  };
+  protoOf(Rgb).get_blue_wojj4z_k$ = function () {
+    return this.value_1 >> 0 & 255;
+  };
+  protoOf(Rgb).get_alpha_iooth1_k$ = function () {
+    return this.value_1 >> 24 & 255;
+  };
+  protoOf(Rgb).get_redf_wotlby_k$ = function () {
+    return toColorFloat(this.get_red_18ix20_k$());
+  };
+  protoOf(Rgb).get_greenf_dxud3g_k$ = function () {
+    return toColorFloat(this.get_green_is36qi_k$());
+  };
+  protoOf(Rgb).get_bluef_ip8ppf_k$ = function () {
+    return toColorFloat(this.get_blue_wojj4z_k$());
+  };
+  protoOf(Rgb).get_alphaf_b0gxxt_k$ = function () {
+    return toColorFloat(this.get_alpha_iooth1_k$());
+  };
+  protoOf(Rgb).inverted_adp911_k$ = function () {
+    return Companion_getInstance_14().rgba_3xu3m4_k$(255 - this.get_red_18ix20_k$() | 0, 255 - this.get_green_is36qi_k$() | 0, 255 - this.get_blue_wojj4z_k$() | 0, this.get_alpha_iooth1_k$());
+  };
+  protoOf(Rgb).darkened_iwrtmu_k$ = function (byPercent) {
+    // Inline function 'kotlin.require' call
+    // Inline function 'kotlin.contracts.contract' call
+    if (!(0.0 <= byPercent ? byPercent <= 1.0 : false)) {
+      // Inline function 'com.varabyte.kobweb.compose.ui.graphics.Rgb.darkened.<anonymous>' call
+      var message = 'Invalid color shifting percent. Expected between 0 and 1, got ' + byPercent;
+      throw IllegalArgumentException_init_$Create$(toString_0(message));
+    }
+    if (byPercent === 0.0)
+      return this;
+    var darkeningMultiplier = 1.0 - byPercent;
+    return Companion_getInstance_14().rgba_bap9l8_k$(this.get_redf_wotlby_k$() * darkeningMultiplier, this.get_greenf_dxud3g_k$() * darkeningMultiplier, this.get_bluef_ip8ppf_k$() * darkeningMultiplier, this.get_alphaf_b0gxxt_k$());
+  };
+  protoOf(Rgb).copy_my5h57_k$ = function (red, green, blue, alpha) {
+    return Companion_getInstance_14().rgba_3xu3m4_k$(red, green, blue, alpha);
+  };
+  protoOf(Rgb).copy$default_mtju0j_k$ = function (red, green, blue, alpha, $super) {
+    red = red === VOID ? this.get_red_18ix20_k$() : red;
+    green = green === VOID ? this.get_green_is36qi_k$() : green;
+    blue = blue === VOID ? this.get_blue_wojj4z_k$() : blue;
+    alpha = alpha === VOID ? this.get_alpha_iooth1_k$() : alpha;
+    return $super === VOID ? this.copy_my5h57_k$(red, green, blue, alpha) : $super.copy_my5h57_k$.call(this, red, green, blue, alpha);
+  };
+  protoOf(Rgb).copyf_olenlb_k$ = function (red, green, blue, alpha) {
+    return Companion_getInstance_14().rgba_bap9l8_k$(red, green, blue, alpha);
+  };
+  protoOf(Rgb).copyf$default_6pu18v_k$ = function (red, green, blue, alpha, $super) {
+    red = red === VOID ? this.get_redf_wotlby_k$() : red;
+    green = green === VOID ? this.get_greenf_dxud3g_k$() : green;
+    blue = blue === VOID ? this.get_bluef_ip8ppf_k$() : blue;
+    alpha = alpha === VOID ? this.get_alphaf_b0gxxt_k$() : alpha;
+    return $super === VOID ? this.copyf_olenlb_k$(red, green, blue, alpha) : $super.copyf_olenlb_k$.call(this, red, green, blue, alpha);
+  };
+  protoOf(Rgb).toRgb_1tsrpu_k$ = function () {
+    return this;
+  };
+  protoOf(Rgb).toHsl_1tskli_k$ = function () {
+    // Inline function 'kotlin.comparisons.maxOf' call
+    var a = this.get_redf_wotlby_k$();
+    var b = this.get_greenf_dxud3g_k$();
+    var c = this.get_bluef_ip8ppf_k$();
+    var chromaMax = Math.max(a, b, c);
+    // Inline function 'kotlin.comparisons.minOf' call
+    var a_0 = this.get_redf_wotlby_k$();
+    var b_0 = this.get_greenf_dxud3g_k$();
+    var c_0 = this.get_bluef_ip8ppf_k$();
+    var chromaMin = Math.min(a_0, b_0, c_0);
+    var chromaDelta = chromaMax - chromaMin;
+    var lightness = (chromaMin + chromaMax) / 2.0;
+    // Inline function 'kotlin.math.abs' call
+    var x = 2.0 * lightness - 1.0;
+    var saturation = chromaDelta / (1.0 - Math.abs(x));
+    var tmp;
+    if (chromaDelta === 0.0) {
+      tmp = 0.0;
+    } else {
+      var tmp_0;
+      if (chromaMax === this.get_redf_wotlby_k$()) {
+        tmp_0 = (this.get_greenf_dxud3g_k$() - this.get_bluef_ip8ppf_k$()) / chromaDelta % 6;
+      } else if (chromaMax === this.get_greenf_dxud3g_k$()) {
+        tmp_0 = (this.get_bluef_ip8ppf_k$() - this.get_redf_wotlby_k$()) / chromaDelta + 2.0;
+      } else if (chromaMax === this.get_bluef_ip8ppf_k$()) {
+        tmp_0 = (this.get_redf_wotlby_k$() - this.get_greenf_dxud3g_k$()) / chromaDelta + 4.0;
+      } else {
+        var message = 'Unexpected chromaMax value ' + chromaMax;
+        throw IllegalStateException_init_$Create$(toString_0(message));
+      }
+      tmp = 60.0 * tmp_0;
+    }
+    var hue = tmp;
+    return Companion_getInstance_14().hsla_rzsfr4_k$(hue, saturation, lightness, this.get_alphaf_b0gxxt_k$());
+  };
+  protoOf(Rgb).toString = function () {
+    return this.get_alpha_iooth1_k$() === 255 ? 'rgb(' + this.get_red_18ix20_k$() + ', ' + this.get_green_is36qi_k$() + ', ' + this.get_blue_wojj4z_k$() + ')' : 'rgba(' + this.get_red_18ix20_k$() + ', ' + this.get_green_is36qi_k$() + ', ' + this.get_blue_wojj4z_k$() + ', ' + this.get_alphaf_b0gxxt_k$() + ')';
+  };
+  protoOf(Rgb).equals = function (other) {
+    if (this === other)
+      return true;
+    var tmp;
+    var tmp_0;
+    var tmp_1;
+    var tmp_2;
+    if (other instanceof Rgb) {
+      tmp_2 = this.get_red_18ix20_k$() === other.get_red_18ix20_k$();
+    } else {
+      tmp_2 = false;
+    }
+    if (tmp_2) {
+      tmp_1 = this.get_green_is36qi_k$() === other.get_green_is36qi_k$();
+    } else {
+      tmp_1 = false;
+    }
+    if (tmp_1) {
+      tmp_0 = this.get_blue_wojj4z_k$() === other.get_blue_wojj4z_k$();
+    } else {
+      tmp_0 = false;
+    }
+    if (tmp_0) {
+      tmp = this.get_alpha_iooth1_k$() === other.get_alpha_iooth1_k$();
+    } else {
+      tmp = false;
+    }
+    return tmp;
+  };
+  protoOf(Rgb).hashCode = function () {
+    var result = this.get_red_18ix20_k$();
+    result = imul(31, result) + this.get_green_is36qi_k$() | 0;
+    result = imul(31, result) + this.get_blue_wojj4z_k$() | 0;
+    result = imul(31, result) + this.get_alpha_iooth1_k$() | 0;
+    return result;
+  };
+  function Hsl(hue, saturation, lightness, alpha) {
+    this.hue_1 = hue;
+    this.saturation_1 = saturation;
+    this.lightness_1 = lightness;
+    this.alpha_1 = alpha;
+  }
+  protoOf(Hsl).get_hue_18j435_k$ = function () {
+    return this.hue_1;
+  };
+  protoOf(Hsl).get_saturation_nzhaqt_k$ = function () {
+    return this.saturation_1;
+  };
+  protoOf(Hsl).get_lightness_jv7mx0_k$ = function () {
+    return this.lightness_1;
+  };
+  protoOf(Hsl).get_alpha_iooth1_k$ = function () {
+    return this.alpha_1;
+  };
+  protoOf(Hsl).inverted_adp911_k$ = function () {
+    return this.toRgb_1tsrpu_k$().inverted_adp911_k$();
+  };
+  protoOf(Hsl).darkened_iwrtmu_k$ = function (byPercent) {
+    return this.toRgb_1tsrpu_k$().darkened_iwrtmu_k$(byPercent);
+  };
+  protoOf(Hsl).copy_egrqb9_k$ = function (hue, saturation, lightness, alpha) {
+    return Companion_getInstance_14().hsla_rzsfr4_k$(hue, saturation, lightness, alpha);
+  };
+  protoOf(Hsl).copy$default_vnqijd_k$ = function (hue, saturation, lightness, alpha, $super) {
+    hue = hue === VOID ? this.hue_1 : hue;
+    saturation = saturation === VOID ? this.saturation_1 : saturation;
+    lightness = lightness === VOID ? this.lightness_1 : lightness;
+    alpha = alpha === VOID ? this.alpha_1 : alpha;
+    return $super === VOID ? this.copy_egrqb9_k$(hue, saturation, lightness, alpha) : $super.copy_egrqb9_k$.call(this, hue, saturation, lightness, alpha);
+  };
+  protoOf(Hsl).toRgb_1tsrpu_k$ = function () {
+    // Inline function 'kotlin.math.abs' call
+    var x = 2 * this.lightness_1 - 1;
+    var chroma = (1 - Math.abs(x)) * this.saturation_1;
+    // Inline function 'kotlin.math.abs' call
+    var x_0 = this.hue_1 / 60 % 2 - 1;
+    var intermediateValue = chroma * (1 - Math.abs(x_0));
+    var hueSection = (numberToInt(this.hue_1) % 360 | 0) / 60 | 0;
+    var r;
+    var g;
+    var b;
+    switch (hueSection) {
+      case 0:
+        r = chroma;
+        g = intermediateValue;
+        b = 0.0;
+        break;
+      case 1:
+        r = intermediateValue;
+        g = chroma;
+        b = 0.0;
+        break;
+      case 2:
+        r = 0.0;
+        g = chroma;
+        b = intermediateValue;
+        break;
+      case 3:
+        r = 0.0;
+        g = intermediateValue;
+        b = chroma;
+        break;
+      case 4:
+        r = intermediateValue;
+        g = 0.0;
+        b = chroma;
+        break;
+      default:
+        // Inline function 'kotlin.check' call
+
+        // Inline function 'kotlin.contracts.contract' call
+
+        // Inline function 'kotlin.check' call
+
+        // Inline function 'kotlin.contracts.contract' call
+
+        if (!(hueSection === 5)) {
+          // Inline function 'kotlin.check.<anonymous>' call
+          var message = 'Check failed.';
+          throw IllegalStateException_init_$Create$(toString_0(message));
+        }
+
+        r = chroma;
+        g = 0.0;
+        b = intermediateValue;
+        break;
+    }
+    var lightnessAdjustment = this.lightness_1 - chroma / 2;
+    return Companion_getInstance_14().rgba_bap9l8_k$(r + lightnessAdjustment, g + lightnessAdjustment, b + lightnessAdjustment, this.alpha_1);
+  };
+  protoOf(Hsl).toHsl_1tskli_k$ = function () {
+    return this;
+  };
+  protoOf(Hsl).toString = function () {
+    // Inline function 'kotlin.math.roundToInt' call
+    var this_0 = this.hue_1 * 10;
+    var hueRounded = roundToInt(this_0) / 10.0;
+    // Inline function 'kotlin.math.roundToInt' call
+    var this_1 = this.saturation_1 * 1000;
+    var saturationPercent = roundToInt(this_1) / 10.0;
+    // Inline function 'kotlin.math.roundToInt' call
+    var this_2 = this.lightness_1 * 1000;
+    var lightnessPercent = roundToInt(this_2) / 10.0;
+    return this.alpha_1 === 1.0 ? 'hsl(' + hueRounded + ', ' + saturationPercent + '%, ' + lightnessPercent + '%)' : 'hsla(' + hueRounded + ', ' + saturationPercent + '%, ' + lightnessPercent + '%, ' + this.alpha_1 + ')';
+  };
+  protoOf(Hsl).equals = function (other) {
+    if (this === other)
+      return true;
+    var tmp;
+    var tmp_0;
+    var tmp_1;
+    var tmp_2;
+    if (other instanceof Hsl) {
+      tmp_2 = this.hue_1 === other.hue_1;
+    } else {
+      tmp_2 = false;
+    }
+    if (tmp_2) {
+      tmp_1 = this.saturation_1 === other.saturation_1;
+    } else {
+      tmp_1 = false;
+    }
+    if (tmp_1) {
+      tmp_0 = this.lightness_1 === other.lightness_1;
+    } else {
+      tmp_0 = false;
+    }
+    if (tmp_0) {
+      tmp = this.alpha_1 === other.alpha_1;
+    } else {
+      tmp = false;
+    }
+    return tmp;
+  };
+  protoOf(Hsl).hashCode = function () {
+    var result = getNumberHashCode(this.hue_1);
+    result = imul(31, result) + getNumberHashCode(this.saturation_1) | 0;
+    result = imul(31, result) + getNumberHashCode(this.lightness_1) | 0;
+    result = imul(31, result) + getNumberHashCode(this.alpha_1) | 0;
+    return result;
+  };
+  function Companion_0() {
+    Companion_instance_0 = this;
+    this.DEFAULT_SHIFTING_PERCENT_1 = 0.3;
+  }
+  protoOf(Companion_0).get_DEFAULT_SHIFTING_PERCENT_bgdcr7_k$ = function () {
+    return this.DEFAULT_SHIFTING_PERCENT_1;
+  };
+  protoOf(Companion_0).rgb_6orfmz_k$ = function (value) {
+    return new Rgb(-16777216 | value);
+  };
+  protoOf(Companion_0).argb_u8nll8_k$ = function (value) {
+    return new Rgb(value);
+  };
+  protoOf(Companion_0).argb_v9u7oe_k$ = function (value) {
+    return this.argb_u8nll8_k$(toInRangeInt(value, this));
+  };
+  protoOf(Companion_0).rgba_idjuxo_k$ = function (value) {
+    // Inline function 'kotlin.run' call
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'com.varabyte.kobweb.compose.ui.graphics.Companion.rgba.<anonymous>' call
+    var alpha = (value & 255) << 24;
+    var rgb = value >> 8;
+    return this.argb_u8nll8_k$(alpha | rgb);
+  };
+  protoOf(Companion_0).rgba_dqu85i_k$ = function (value) {
+    return this.rgba_idjuxo_k$(toInRangeInt(value, this));
+  };
+  protoOf(Companion_0).rgb_udwlgr_k$ = function (r, g, b) {
+    return this.rgba_3xu3m4_k$(r, g, b, 255);
+  };
+  protoOf(Companion_0).rgba_3xu3m4_k$ = function (r, g, b, a) {
+    return new Rgb((r & 255) << 16 | (g & 255) << 8 | (b & 255) << 0 | (a & 255) << 24);
+  };
+  protoOf(Companion_0).argb_bgl9sc_k$ = function (a, r, g, b) {
+    return this.rgba_3xu3m4_k$(r, g, b, a);
+  };
+  protoOf(Companion_0).rgb_o6n8ln_k$ = function (r, g, b) {
+    return this.rgb_udwlgr_k$(toColorInt(r), toColorInt(g), toColorInt(b));
+  };
+  protoOf(Companion_0).rgba_bap9l8_k$ = function (r, g, b, a) {
+    return this.rgba_3xu3m4_k$(toColorInt(r), toColorInt(g), toColorInt(b), toColorInt(a));
+  };
+  protoOf(Companion_0).argb_eb1cjw_k$ = function (a, r, g, b) {
+    return this.rgba_bap9l8_k$(r, g, b, a);
+  };
+  protoOf(Companion_0).rgba_vsmmr0_k$ = function (r, g, b, a) {
+    return this.rgba_3xu3m4_k$(r, g, b, toColorInt(a));
+  };
+  protoOf(Companion_0).argb_g07r6c_k$ = function (a, r, g, b) {
+    return this.rgba_vsmmr0_k$(r, g, b, a);
+  };
+  protoOf(Companion_0).hsl_jlm5zd_k$ = function (h, s, l) {
+    return this.hsl_ppe4lz_k$(h, s, l);
+  };
+  protoOf(Companion_0).hsla_nhswtc_k$ = function (h, s, l, a) {
+    return this.hsla_rzsfr4_k$(h, s, l, a);
+  };
+  protoOf(Companion_0).hsl_ppe4lz_k$ = function (h, s, l) {
+    return new Hsl(h, s, l, 1.0);
+  };
+  protoOf(Companion_0).hsla_rzsfr4_k$ = function (h, s, l, a) {
+    return new Hsl(h, s, l, a);
+  };
+  protoOf(Companion_0).rgb_fpbdrf_k$ = function (r, g, b) {
+    return this.rgba_68523u_k$(r, g, b, 1.0);
+  };
+  protoOf(Companion_0).rgba_sw8yb8_k$ = function (r, g, b, a) {
+    return this.rgba_bap9l8_k$(r.value / 100.0, g.value / 100.0, b.value / 100.0, a.value / 100.0);
+  };
+  protoOf(Companion_0).rgba_68523u_k$ = function (r, g, b, a) {
+    return this.rgba_bap9l8_k$(r.value / 100.0, g.value / 100.0, b.value / 100.0, a);
+  };
+  protoOf(Companion_0).argb_3qzbuc_k$ = function (a, r, g, b) {
+    return this.argb_eb1cjw_k$(a.value / 100.0, r.value / 100.0, g.value / 100.0, b.value / 100.0);
+  };
+  protoOf(Companion_0).argb_ekqalm_k$ = function (a, r, g, b) {
+    return this.argb_eb1cjw_k$(a, r.value / 100.0, g.value / 100.0, b.value / 100.0);
+  };
+  protoOf(Companion_0).hsl_okaric_k$ = function (h, s, l) {
+    return this.hsla_sg5wgt_k$(h, s, l, 1.0);
+  };
+  protoOf(Companion_0).hsla_sg5wgt_k$ = function (h, s, l, alpha) {
+    return this.hsla_rzsfr4_k$(toDegrees(h), s.value / 100.0, l.value / 100.0, alpha);
+  };
+  protoOf(Companion_0).hsla_bcgopz_k$ = function (h, s, l, alpha) {
+    return this.hsla_sg5wgt_k$(h, s, l, alpha.value / 100.0);
+  };
+  var Companion_instance_0;
+  function Companion_getInstance_14() {
+    if (Companion_instance_0 == null)
+      new Companion_0();
+    return Companion_instance_0;
+  }
+  function Color_0() {
   }
   function Colors() {
     Colors_instance = this;
@@ -2606,405 +3002,6 @@
       new Colors();
     return Colors_instance;
   }
-  function toInRangeInt(_this__u8e3s4, $this) {
-    // Inline function 'kotlin.check' call
-    // Inline function 'kotlin.contracts.contract' call
-    if (!(new Long(0, -1)).and_4spn93_k$(_this__u8e3s4).equals(new Long(0, 0))) {
-      // Inline function 'com.varabyte.kobweb.compose.ui.graphics.Companion.toInRangeInt.<anonymous>' call
-      // Inline function 'kotlin.text.uppercase' call
-      // Inline function 'kotlin.js.asDynamic' call
-      var message = 'Got an invalid hex color (0x' + toString(_this__u8e3s4, 16).toUpperCase() + ') value larger than 0xFFFFFFFF';
-      throw IllegalStateException_init_$Create$(toString_0(message));
-    }
-    return _this__u8e3s4.toInt_1tsl84_k$();
-  }
-  function Rgb(value) {
-    this.value_1 = value;
-  }
-  protoOf(Rgb).get_value_j01efc_k$ = function () {
-    return this.value_1;
-  };
-  protoOf(Rgb).get_red_18ix20_k$ = function () {
-    return this.value_1 >> 16 & 255;
-  };
-  protoOf(Rgb).get_green_is36qi_k$ = function () {
-    return this.value_1 >> 8 & 255;
-  };
-  protoOf(Rgb).get_blue_wojj4z_k$ = function () {
-    return this.value_1 >> 0 & 255;
-  };
-  protoOf(Rgb).get_alpha_iooth1_k$ = function () {
-    return this.value_1 >> 24 & 255;
-  };
-  protoOf(Rgb).get_redf_wotlby_k$ = function () {
-    return toColorFloat(this.get_red_18ix20_k$());
-  };
-  protoOf(Rgb).get_greenf_dxud3g_k$ = function () {
-    return toColorFloat(this.get_green_is36qi_k$());
-  };
-  protoOf(Rgb).get_bluef_ip8ppf_k$ = function () {
-    return toColorFloat(this.get_blue_wojj4z_k$());
-  };
-  protoOf(Rgb).get_alphaf_b0gxxt_k$ = function () {
-    return toColorFloat(this.get_alpha_iooth1_k$());
-  };
-  protoOf(Rgb).inverted_adp911_k$ = function () {
-    return Companion_getInstance_14().rgba_3xu3m4_k$(255 - this.get_red_18ix20_k$() | 0, 255 - this.get_green_is36qi_k$() | 0, 255 - this.get_blue_wojj4z_k$() | 0, this.get_alpha_iooth1_k$());
-  };
-  protoOf(Rgb).darkened_iwrtmu_k$ = function (byPercent) {
-    // Inline function 'kotlin.require' call
-    // Inline function 'kotlin.contracts.contract' call
-    if (!(0.0 <= byPercent ? byPercent <= 1.0 : false)) {
-      // Inline function 'com.varabyte.kobweb.compose.ui.graphics.Rgb.darkened.<anonymous>' call
-      var message = 'Invalid color shifting percent. Expected between 0 and 1, got ' + byPercent;
-      throw IllegalArgumentException_init_$Create$(toString_0(message));
-    }
-    if (byPercent === 0.0)
-      return this;
-    var darkeningMultiplier = 1.0 - byPercent;
-    return Companion_getInstance_14().rgba_bap9l8_k$(this.get_redf_wotlby_k$() * darkeningMultiplier, this.get_greenf_dxud3g_k$() * darkeningMultiplier, this.get_bluef_ip8ppf_k$() * darkeningMultiplier, this.get_alphaf_b0gxxt_k$());
-  };
-  protoOf(Rgb).copy_my5h57_k$ = function (red, green, blue, alpha) {
-    return Companion_getInstance_14().rgba_3xu3m4_k$(red, green, blue, alpha);
-  };
-  protoOf(Rgb).copy$default_mtju0j_k$ = function (red, green, blue, alpha, $super) {
-    red = red === VOID ? this.get_red_18ix20_k$() : red;
-    green = green === VOID ? this.get_green_is36qi_k$() : green;
-    blue = blue === VOID ? this.get_blue_wojj4z_k$() : blue;
-    alpha = alpha === VOID ? this.get_alpha_iooth1_k$() : alpha;
-    return $super === VOID ? this.copy_my5h57_k$(red, green, blue, alpha) : $super.copy_my5h57_k$.call(this, red, green, blue, alpha);
-  };
-  protoOf(Rgb).copyf_olenlb_k$ = function (red, green, blue, alpha) {
-    return Companion_getInstance_14().rgba_bap9l8_k$(red, green, blue, alpha);
-  };
-  protoOf(Rgb).copyf$default_6pu18v_k$ = function (red, green, blue, alpha, $super) {
-    red = red === VOID ? this.get_redf_wotlby_k$() : red;
-    green = green === VOID ? this.get_greenf_dxud3g_k$() : green;
-    blue = blue === VOID ? this.get_bluef_ip8ppf_k$() : blue;
-    alpha = alpha === VOID ? this.get_alphaf_b0gxxt_k$() : alpha;
-    return $super === VOID ? this.copyf_olenlb_k$(red, green, blue, alpha) : $super.copyf_olenlb_k$.call(this, red, green, blue, alpha);
-  };
-  protoOf(Rgb).toRgb_1tsrpu_k$ = function () {
-    return this;
-  };
-  protoOf(Rgb).toHsl_1tskli_k$ = function () {
-    // Inline function 'kotlin.comparisons.maxOf' call
-    var a = this.get_redf_wotlby_k$();
-    var b = this.get_greenf_dxud3g_k$();
-    var c = this.get_bluef_ip8ppf_k$();
-    var chromaMax = Math.max(a, b, c);
-    // Inline function 'kotlin.comparisons.minOf' call
-    var a_0 = this.get_redf_wotlby_k$();
-    var b_0 = this.get_greenf_dxud3g_k$();
-    var c_0 = this.get_bluef_ip8ppf_k$();
-    var chromaMin = Math.min(a_0, b_0, c_0);
-    var chromaDelta = chromaMax - chromaMin;
-    var lightness = (chromaMin + chromaMax) / 2.0;
-    // Inline function 'kotlin.math.abs' call
-    var x = 2.0 * lightness - 1.0;
-    var saturation = chromaDelta / (1.0 - Math.abs(x));
-    var tmp;
-    if (chromaDelta === 0.0) {
-      tmp = 0.0;
-    } else {
-      var tmp_0;
-      if (chromaMax === this.get_redf_wotlby_k$()) {
-        tmp_0 = (this.get_greenf_dxud3g_k$() - this.get_bluef_ip8ppf_k$()) / chromaDelta % 6;
-      } else if (chromaMax === this.get_greenf_dxud3g_k$()) {
-        tmp_0 = (this.get_bluef_ip8ppf_k$() - this.get_redf_wotlby_k$()) / chromaDelta + 2.0;
-      } else if (chromaMax === this.get_bluef_ip8ppf_k$()) {
-        tmp_0 = (this.get_redf_wotlby_k$() - this.get_greenf_dxud3g_k$()) / chromaDelta + 4.0;
-      } else {
-        var message = 'Unexpected chromaMax value ' + chromaMax;
-        throw IllegalStateException_init_$Create$(toString_0(message));
-      }
-      tmp = 60.0 * tmp_0;
-    }
-    var hue = tmp;
-    return Companion_getInstance_14().hsla_rzsfr4_k$(hue, saturation, lightness, this.get_alphaf_b0gxxt_k$());
-  };
-  protoOf(Rgb).toString = function () {
-    return this.get_alpha_iooth1_k$() === 255 ? 'rgb(' + this.get_red_18ix20_k$() + ', ' + this.get_green_is36qi_k$() + ', ' + this.get_blue_wojj4z_k$() + ')' : 'rgba(' + this.get_red_18ix20_k$() + ', ' + this.get_green_is36qi_k$() + ', ' + this.get_blue_wojj4z_k$() + ', ' + this.get_alphaf_b0gxxt_k$() + ')';
-  };
-  protoOf(Rgb).equals = function (other) {
-    if (this === other)
-      return true;
-    var tmp;
-    var tmp_0;
-    var tmp_1;
-    var tmp_2;
-    if (other instanceof Rgb) {
-      tmp_2 = this.get_red_18ix20_k$() === other.get_red_18ix20_k$();
-    } else {
-      tmp_2 = false;
-    }
-    if (tmp_2) {
-      tmp_1 = this.get_green_is36qi_k$() === other.get_green_is36qi_k$();
-    } else {
-      tmp_1 = false;
-    }
-    if (tmp_1) {
-      tmp_0 = this.get_blue_wojj4z_k$() === other.get_blue_wojj4z_k$();
-    } else {
-      tmp_0 = false;
-    }
-    if (tmp_0) {
-      tmp = this.get_alpha_iooth1_k$() === other.get_alpha_iooth1_k$();
-    } else {
-      tmp = false;
-    }
-    return tmp;
-  };
-  protoOf(Rgb).hashCode = function () {
-    var result = this.get_red_18ix20_k$();
-    result = imul(31, result) + this.get_green_is36qi_k$() | 0;
-    result = imul(31, result) + this.get_blue_wojj4z_k$() | 0;
-    result = imul(31, result) + this.get_alpha_iooth1_k$() | 0;
-    return result;
-  };
-  function Hsl(hue, saturation, lightness, alpha) {
-    this.hue_1 = hue;
-    this.saturation_1 = saturation;
-    this.lightness_1 = lightness;
-    this.alpha_1 = alpha;
-  }
-  protoOf(Hsl).get_hue_18j435_k$ = function () {
-    return this.hue_1;
-  };
-  protoOf(Hsl).get_saturation_nzhaqt_k$ = function () {
-    return this.saturation_1;
-  };
-  protoOf(Hsl).get_lightness_jv7mx0_k$ = function () {
-    return this.lightness_1;
-  };
-  protoOf(Hsl).get_alpha_iooth1_k$ = function () {
-    return this.alpha_1;
-  };
-  protoOf(Hsl).inverted_adp911_k$ = function () {
-    return this.toRgb_1tsrpu_k$().inverted_adp911_k$();
-  };
-  protoOf(Hsl).darkened_iwrtmu_k$ = function (byPercent) {
-    return this.toRgb_1tsrpu_k$().darkened_iwrtmu_k$(byPercent);
-  };
-  protoOf(Hsl).copy_egrqb9_k$ = function (hue, saturation, lightness, alpha) {
-    return Companion_getInstance_14().hsla_rzsfr4_k$(hue, saturation, lightness, alpha);
-  };
-  protoOf(Hsl).copy$default_vnqijd_k$ = function (hue, saturation, lightness, alpha, $super) {
-    hue = hue === VOID ? this.hue_1 : hue;
-    saturation = saturation === VOID ? this.saturation_1 : saturation;
-    lightness = lightness === VOID ? this.lightness_1 : lightness;
-    alpha = alpha === VOID ? this.alpha_1 : alpha;
-    return $super === VOID ? this.copy_egrqb9_k$(hue, saturation, lightness, alpha) : $super.copy_egrqb9_k$.call(this, hue, saturation, lightness, alpha);
-  };
-  protoOf(Hsl).toRgb_1tsrpu_k$ = function () {
-    // Inline function 'kotlin.math.abs' call
-    var x = 2 * this.lightness_1 - 1;
-    var chroma = (1 - Math.abs(x)) * this.saturation_1;
-    // Inline function 'kotlin.math.abs' call
-    var x_0 = this.hue_1 / 60 % 2 - 1;
-    var intermediateValue = chroma * (1 - Math.abs(x_0));
-    var hueSection = (numberToInt(this.hue_1) % 360 | 0) / 60 | 0;
-    var r;
-    var g;
-    var b;
-    switch (hueSection) {
-      case 0:
-        r = chroma;
-        g = intermediateValue;
-        b = 0.0;
-        break;
-      case 1:
-        r = intermediateValue;
-        g = chroma;
-        b = 0.0;
-        break;
-      case 2:
-        r = 0.0;
-        g = chroma;
-        b = intermediateValue;
-        break;
-      case 3:
-        r = 0.0;
-        g = intermediateValue;
-        b = chroma;
-        break;
-      case 4:
-        r = intermediateValue;
-        g = 0.0;
-        b = chroma;
-        break;
-      default:
-        // Inline function 'kotlin.check' call
-
-        // Inline function 'kotlin.contracts.contract' call
-
-        // Inline function 'kotlin.check' call
-
-        // Inline function 'kotlin.contracts.contract' call
-
-        if (!(hueSection === 5)) {
-          // Inline function 'kotlin.check.<anonymous>' call
-          var message = 'Check failed.';
-          throw IllegalStateException_init_$Create$(toString_0(message));
-        }
-
-        r = chroma;
-        g = 0.0;
-        b = intermediateValue;
-        break;
-    }
-    var lightnessAdjustment = this.lightness_1 - chroma / 2;
-    return Companion_getInstance_14().rgba_bap9l8_k$(r + lightnessAdjustment, g + lightnessAdjustment, b + lightnessAdjustment, this.alpha_1);
-  };
-  protoOf(Hsl).toHsl_1tskli_k$ = function () {
-    return this;
-  };
-  protoOf(Hsl).toString = function () {
-    // Inline function 'kotlin.math.roundToInt' call
-    var this_0 = this.hue_1 * 10;
-    var hueRounded = roundToInt(this_0) / 10.0;
-    // Inline function 'kotlin.math.roundToInt' call
-    var this_1 = this.saturation_1 * 1000;
-    var saturationPercent = roundToInt(this_1) / 10.0;
-    // Inline function 'kotlin.math.roundToInt' call
-    var this_2 = this.lightness_1 * 1000;
-    var lightnessPercent = roundToInt(this_2) / 10.0;
-    return this.alpha_1 === 1.0 ? 'hsl(' + hueRounded + ', ' + saturationPercent + '%, ' + lightnessPercent + '%)' : 'hsla(' + hueRounded + ', ' + saturationPercent + '%, ' + lightnessPercent + '%, ' + this.alpha_1 + ')';
-  };
-  protoOf(Hsl).equals = function (other) {
-    if (this === other)
-      return true;
-    var tmp;
-    var tmp_0;
-    var tmp_1;
-    var tmp_2;
-    if (other instanceof Hsl) {
-      tmp_2 = this.hue_1 === other.hue_1;
-    } else {
-      tmp_2 = false;
-    }
-    if (tmp_2) {
-      tmp_1 = this.saturation_1 === other.saturation_1;
-    } else {
-      tmp_1 = false;
-    }
-    if (tmp_1) {
-      tmp_0 = this.lightness_1 === other.lightness_1;
-    } else {
-      tmp_0 = false;
-    }
-    if (tmp_0) {
-      tmp = this.alpha_1 === other.alpha_1;
-    } else {
-      tmp = false;
-    }
-    return tmp;
-  };
-  protoOf(Hsl).hashCode = function () {
-    var result = getNumberHashCode(this.hue_1);
-    result = imul(31, result) + getNumberHashCode(this.saturation_1) | 0;
-    result = imul(31, result) + getNumberHashCode(this.lightness_1) | 0;
-    result = imul(31, result) + getNumberHashCode(this.alpha_1) | 0;
-    return result;
-  };
-  function Companion_0() {
-    Companion_instance_0 = this;
-    this.DEFAULT_SHIFTING_PERCENT_1 = 0.3;
-  }
-  protoOf(Companion_0).get_DEFAULT_SHIFTING_PERCENT_bgdcr7_k$ = function () {
-    return this.DEFAULT_SHIFTING_PERCENT_1;
-  };
-  protoOf(Companion_0).rgb_6orfmz_k$ = function (value) {
-    return new Rgb(-16777216 | value);
-  };
-  protoOf(Companion_0).argb_u8nll8_k$ = function (value) {
-    return new Rgb(value);
-  };
-  protoOf(Companion_0).argb_v9u7oe_k$ = function (value) {
-    return this.argb_u8nll8_k$(toInRangeInt(value, this));
-  };
-  protoOf(Companion_0).rgba_idjuxo_k$ = function (value) {
-    // Inline function 'kotlin.run' call
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'com.varabyte.kobweb.compose.ui.graphics.Companion.rgba.<anonymous>' call
-    var alpha = (value & 255) << 24;
-    var rgb = value >> 8;
-    return this.argb_u8nll8_k$(alpha | rgb);
-  };
-  protoOf(Companion_0).rgba_dqu85i_k$ = function (value) {
-    return this.rgba_idjuxo_k$(toInRangeInt(value, this));
-  };
-  protoOf(Companion_0).rgb_udwlgr_k$ = function (r, g, b) {
-    return this.rgba_3xu3m4_k$(r, g, b, 255);
-  };
-  protoOf(Companion_0).rgba_3xu3m4_k$ = function (r, g, b, a) {
-    return new Rgb((r & 255) << 16 | (g & 255) << 8 | (b & 255) << 0 | (a & 255) << 24);
-  };
-  protoOf(Companion_0).argb_bgl9sc_k$ = function (a, r, g, b) {
-    return this.rgba_3xu3m4_k$(r, g, b, a);
-  };
-  protoOf(Companion_0).rgb_o6n8ln_k$ = function (r, g, b) {
-    return this.rgb_udwlgr_k$(toColorInt(r), toColorInt(g), toColorInt(b));
-  };
-  protoOf(Companion_0).rgba_bap9l8_k$ = function (r, g, b, a) {
-    return this.rgba_3xu3m4_k$(toColorInt(r), toColorInt(g), toColorInt(b), toColorInt(a));
-  };
-  protoOf(Companion_0).argb_eb1cjw_k$ = function (a, r, g, b) {
-    return this.rgba_bap9l8_k$(r, g, b, a);
-  };
-  protoOf(Companion_0).rgba_vsmmr0_k$ = function (r, g, b, a) {
-    return this.rgba_3xu3m4_k$(r, g, b, toColorInt(a));
-  };
-  protoOf(Companion_0).argb_g07r6c_k$ = function (a, r, g, b) {
-    return this.rgba_vsmmr0_k$(r, g, b, a);
-  };
-  protoOf(Companion_0).hsl_jlm5zd_k$ = function (h, s, l) {
-    return this.hsl_ppe4lz_k$(h, s, l);
-  };
-  protoOf(Companion_0).hsla_nhswtc_k$ = function (h, s, l, a) {
-    return this.hsla_rzsfr4_k$(h, s, l, a);
-  };
-  protoOf(Companion_0).hsl_ppe4lz_k$ = function (h, s, l) {
-    return new Hsl(h, s, l, 1.0);
-  };
-  protoOf(Companion_0).hsla_rzsfr4_k$ = function (h, s, l, a) {
-    return new Hsl(h, s, l, a);
-  };
-  protoOf(Companion_0).rgb_fpbdrf_k$ = function (r, g, b) {
-    return this.rgba_68523u_k$(r, g, b, 1.0);
-  };
-  protoOf(Companion_0).rgba_sw8yb8_k$ = function (r, g, b, a) {
-    return this.rgba_bap9l8_k$(r.value / 100.0, g.value / 100.0, b.value / 100.0, a.value / 100.0);
-  };
-  protoOf(Companion_0).rgba_68523u_k$ = function (r, g, b, a) {
-    return this.rgba_bap9l8_k$(r.value / 100.0, g.value / 100.0, b.value / 100.0, a);
-  };
-  protoOf(Companion_0).argb_3qzbuc_k$ = function (a, r, g, b) {
-    return this.argb_eb1cjw_k$(a.value / 100.0, r.value / 100.0, g.value / 100.0, b.value / 100.0);
-  };
-  protoOf(Companion_0).argb_ekqalm_k$ = function (a, r, g, b) {
-    return this.argb_eb1cjw_k$(a, r.value / 100.0, g.value / 100.0, b.value / 100.0);
-  };
-  protoOf(Companion_0).hsl_okaric_k$ = function (h, s, l) {
-    return this.hsla_sg5wgt_k$(h, s, l, 1.0);
-  };
-  protoOf(Companion_0).hsla_sg5wgt_k$ = function (h, s, l, alpha) {
-    return this.hsla_rzsfr4_k$(toDegrees(h), s.value / 100.0, l.value / 100.0, alpha);
-  };
-  protoOf(Companion_0).hsla_bcgopz_k$ = function (h, s, l, alpha) {
-    return this.hsla_sg5wgt_k$(h, s, l, alpha.value / 100.0);
-  };
-  var Companion_instance_0;
-  function Companion_getInstance_14() {
-    if (Companion_instance_0 == null)
-      new Companion_0();
-    return Companion_instance_0;
-  }
-  function Color_0() {
-  }
-  function get_isBright(_this__u8e3s4) {
-    return get_luminance(_this__u8e3s4) > 0.5;
-  }
   function lightened(_this__u8e3s4, byPercent) {
     byPercent = byPercent === VOID ? 0.3 : byPercent;
     return _this__u8e3s4.inverted_adp911_k$().darkened_iwrtmu_k$(byPercent).inverted_adp911_k$();
@@ -3014,6 +3011,9 @@
   }
   function toColorInt(_this__u8e3s4) {
     return numberToInt(coerceIn(_this__u8e3s4, 0.0, 1.0) * 255.0);
+  }
+  function get_isBright(_this__u8e3s4) {
+    return get_luminance(_this__u8e3s4) > 0.5;
   }
   function get_luminance(_this__u8e3s4) {
     // Inline function 'kotlin.let' call
@@ -3042,8 +3042,8 @@
       return Unit_getInstance();
     };
   }
-  function alignContent_0(_this__u8e3s4, alignContent) {
-    return styleModifier(_this__u8e3s4, alignContent$lambda(alignContent));
+  function alignItems_0(_this__u8e3s4, alignItems) {
+    return styleModifier(_this__u8e3s4, alignItems$lambda(alignItems));
   }
   function justifyContent_1(_this__u8e3s4, justifyContent) {
     return styleModifier(_this__u8e3s4, justifyContent$lambda(justifyContent));
@@ -3051,30 +3051,30 @@
   function justifyContent_2(_this__u8e3s4, justifyContent) {
     return styleModifier(_this__u8e3s4, justifyContent$lambda_0(justifyContent));
   }
-  function alignItems_0(_this__u8e3s4, alignItems) {
-    return styleModifier(_this__u8e3s4, alignItems$lambda(alignItems));
+  function alignContent_0(_this__u8e3s4, alignContent) {
+    return styleModifier(_this__u8e3s4, alignContent$lambda(alignContent));
   }
-  function alignContent$lambda($alignContent) {
+  function alignItems$lambda($alignItems) {
     return function ($this$styleModifier) {
-      alignContent($this$styleModifier, $alignContent);
+      alignItems($this$styleModifier, $alignItems);
       return Unit_getInstance();
     };
   }
   function justifyContent$lambda($justifyContent) {
     return function ($this$styleModifier) {
-      justifyContent($this$styleModifier, $justifyContent);
+      justifyContent_0($this$styleModifier, $justifyContent);
       return Unit_getInstance();
     };
   }
   function justifyContent$lambda_0($justifyContent) {
     return function ($this$styleModifier) {
-      justifyContent_0($this$styleModifier, $justifyContent);
+      justifyContent($this$styleModifier, $justifyContent);
       return Unit_getInstance();
     };
   }
-  function alignItems$lambda($alignItems) {
+  function alignContent$lambda($alignContent) {
     return function ($this$styleModifier) {
-      alignItems($this$styleModifier, $alignItems);
+      alignContent($this$styleModifier, $alignContent);
       return Unit_getInstance();
     };
   }
@@ -3096,24 +3096,24 @@
       return Unit_getInstance();
     };
   }
-  function backgroundRepeat_0(_this__u8e3s4, backgroundRepeat) {
-    return styleModifier(_this__u8e3s4, backgroundRepeat$lambda(backgroundRepeat));
+  function backgroundColor_0(_this__u8e3s4, color) {
+    return styleModifier(_this__u8e3s4, backgroundColor$lambda(color));
   }
   function backgroundImage_0(_this__u8e3s4, gradient) {
     return styleModifier(_this__u8e3s4, backgroundImage$lambda(gradient));
   }
-  function backgroundColor_0(_this__u8e3s4, color) {
-    return styleModifier(_this__u8e3s4, backgroundColor$lambda(color));
+  function background_0(_this__u8e3s4, color, backgrounds) {
+    return styleModifier(_this__u8e3s4, background$lambda(color, backgrounds));
+  }
+  function backgroundRepeat_0(_this__u8e3s4, backgroundRepeat) {
+    return styleModifier(_this__u8e3s4, backgroundRepeat$lambda(backgroundRepeat));
   }
   function backgroundSize_0(_this__u8e3s4, backgroundSize) {
     return styleModifier(_this__u8e3s4, backgroundSize$lambda(backgroundSize));
   }
-  function background_0(_this__u8e3s4, color, backgrounds) {
-    return styleModifier(_this__u8e3s4, background$lambda(color, backgrounds));
-  }
-  function backgroundRepeat$lambda($backgroundRepeat) {
+  function backgroundColor$lambda($color) {
     return function ($this$styleModifier) {
-      backgroundRepeat($this$styleModifier, $backgroundRepeat);
+      backgroundColor($this$styleModifier, $color);
       return Unit_getInstance();
     };
   }
@@ -3123,9 +3123,15 @@
       return Unit_getInstance();
     };
   }
-  function backgroundColor$lambda($color) {
+  function background$lambda($color, $backgrounds) {
     return function ($this$styleModifier) {
-      backgroundColor($this$styleModifier, $color);
+      background($this$styleModifier, $color, $backgrounds.slice());
+      return Unit_getInstance();
+    };
+  }
+  function backgroundRepeat$lambda($backgroundRepeat) {
+    return function ($this$styleModifier) {
+      backgroundRepeat($this$styleModifier, $backgroundRepeat);
       return Unit_getInstance();
     };
   }
@@ -3135,29 +3141,14 @@
       return Unit_getInstance();
     };
   }
-  function background$lambda($color, $backgrounds) {
-    return function ($this$styleModifier) {
-      background($this$styleModifier, $color, $backgrounds.slice());
-      return Unit_getInstance();
-    };
-  }
-  function border_0(_this__u8e3s4, width, style, color) {
+  function borderBottom_0(_this__u8e3s4, width, style, color) {
     width = width === VOID ? null : width;
     style = style === VOID ? null : style;
     color = color === VOID ? null : color;
-    return styleModifier(_this__u8e3s4, border$lambda(width, style, color));
+    return styleModifier(_this__u8e3s4, borderBottom$lambda(width, style, color));
   }
-  function borderLeft_0(_this__u8e3s4, width, style, color) {
-    width = width === VOID ? null : width;
-    style = style === VOID ? null : style;
-    color = color === VOID ? null : color;
-    return styleModifier(_this__u8e3s4, borderLeft$lambda(width, style, color));
-  }
-  function border_1(_this__u8e3s4, scope) {
-    return styleModifier(_this__u8e3s4, border$lambda_0(scope));
-  }
-  function borderRadius_1(_this__u8e3s4, r) {
-    return styleModifier(_this__u8e3s4, borderRadius$lambda(r));
+  function border_0(_this__u8e3s4, scope) {
+    return styleModifier(_this__u8e3s4, border$lambda(scope));
   }
   function _get_styleScope__yp0uyw($this) {
     return $this.styleScope_1;
@@ -3450,17 +3441,26 @@
   protoOf(BorderScope).width_ar2lo6_k$ = function (top, right, bottom, left) {
     return borderWidth_2(this.styleScope_1, top, right, bottom, left);
   };
+  function borderRadius_1(_this__u8e3s4, r) {
+    return styleModifier(_this__u8e3s4, borderRadius$lambda(r));
+  }
+  function border_1(_this__u8e3s4, width, style, color) {
+    width = width === VOID ? null : width;
+    style = style === VOID ? null : style;
+    color = color === VOID ? null : color;
+    return styleModifier(_this__u8e3s4, border$lambda_0(width, style, color));
+  }
   function borderTop_0(_this__u8e3s4, width, style, color) {
     width = width === VOID ? null : width;
     style = style === VOID ? null : style;
     color = color === VOID ? null : color;
     return styleModifier(_this__u8e3s4, borderTop$lambda(width, style, color));
   }
-  function borderBottom_0(_this__u8e3s4, width, style, color) {
+  function borderLeft_0(_this__u8e3s4, width, style, color) {
     width = width === VOID ? null : width;
     style = style === VOID ? null : style;
     color = color === VOID ? null : color;
-    return styleModifier(_this__u8e3s4, borderBottom$lambda(width, style, color));
+    return styleModifier(_this__u8e3s4, borderLeft$lambda(width, style, color));
   }
   function borderRadius_2(_this__u8e3s4, topLeft, topRight, bottomRight, bottomLeft) {
     topLeft = topLeft === VOID ? get_px(0) : topLeft;
@@ -3469,22 +3469,13 @@
     bottomLeft = bottomLeft === VOID ? get_px(0) : bottomLeft;
     return styleModifier(_this__u8e3s4, borderRadius$lambda_0(topLeft, topRight, bottomRight, bottomLeft));
   }
-  function border$lambda($width, $style, $color) {
+  function borderBottom$lambda($width, $style, $color) {
     return function ($this$styleModifier) {
-      // Inline function 'kotlin.js.unsafeCast' call
-      // Inline function 'kotlin.js.asDynamic' call
-      var tmp$ret$1 = $width;
-      border($this$styleModifier, tmp$ret$1, $style, $color);
+      borderBottom($this$styleModifier, $width, $style, $color);
       return Unit_getInstance();
     };
   }
-  function borderLeft$lambda($width, $style, $color) {
-    return function ($this$styleModifier) {
-      borderLeft($this$styleModifier, $width, $style, $color);
-      return Unit_getInstance();
-    };
-  }
-  function border$lambda_0($scope) {
+  function border$lambda($scope) {
     return function ($this$styleModifier) {
       // Inline function 'kotlin.apply' call
       var this_0 = new BorderScope($this$styleModifier);
@@ -3499,15 +3490,24 @@
       return Unit_getInstance();
     };
   }
+  function border$lambda_0($width, $style, $color) {
+    return function ($this$styleModifier) {
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$1 = $width;
+      border($this$styleModifier, tmp$ret$1, $style, $color);
+      return Unit_getInstance();
+    };
+  }
   function borderTop$lambda($width, $style, $color) {
     return function ($this$styleModifier) {
       borderTop($this$styleModifier, $width, $style, $color);
       return Unit_getInstance();
     };
   }
-  function borderBottom$lambda($width, $style, $color) {
+  function borderLeft$lambda($width, $style, $color) {
     return function ($this$styleModifier) {
-      borderBottom($this$styleModifier, $width, $style, $color);
+      borderLeft($this$styleModifier, $width, $style, $color);
       return Unit_getInstance();
     };
   }
@@ -3586,18 +3586,18 @@
       return Unit_getInstance();
     };
   }
-  function id(_this__u8e3s4, value) {
-    return attrsModifier(_this__u8e3s4, id$lambda(value));
+  function classNames(_this__u8e3s4, classes) {
+    return attrsModifier(_this__u8e3s4, classNames$lambda(classes));
   }
   function appearance_0(_this__u8e3s4, appearance) {
     return styleModifier(_this__u8e3s4, appearance$lambda(appearance));
   }
-  function classNames(_this__u8e3s4, classes) {
-    return attrsModifier(_this__u8e3s4, classNames$lambda(classes));
+  function id(_this__u8e3s4, value) {
+    return attrsModifier(_this__u8e3s4, id$lambda(value));
   }
-  function id$lambda($value) {
+  function classNames$lambda($classes) {
     return function ($this$attrsModifier) {
-      $this$attrsModifier.id_e4l56n_k$($value);
+      $this$attrsModifier.classes_ayghm2_k$($classes.slice());
       return Unit_getInstance();
     };
   }
@@ -3607,36 +3607,48 @@
       return Unit_getInstance();
     };
   }
-  function classNames$lambda($classes) {
+  function id$lambda($value) {
     return function ($this$attrsModifier) {
-      $this$attrsModifier.classes_ayghm2_k$($classes.slice());
+      $this$attrsModifier.id_e4l56n_k$($value);
       return Unit_getInstance();
     };
-  }
-  function gap_1(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, gap$lambda(value));
-  }
-  function flex_0(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, flex$lambda(value));
-  }
-  function columnGap_0(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, columnGap$lambda(value));
-  }
-  function rowGap_0(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, rowGap$lambda(value));
-  }
-  function flexDirection_0(_this__u8e3s4, flexDirection) {
-    return styleModifier(_this__u8e3s4, flexDirection$lambda(flexDirection));
   }
   function flexGrow_0(_this__u8e3s4, value) {
     return styleModifier(_this__u8e3s4, flexGrow$lambda(value));
   }
+  function gap_1(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, gap$lambda(value));
+  }
   function gap_2(_this__u8e3s4, rowGap, columnGap) {
     return styleModifier(_this__u8e3s4, gap$lambda_0(rowGap, columnGap));
+  }
+  function flex_0(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, flex$lambda(value));
+  }
+  function rowGap_0(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, rowGap$lambda(value));
+  }
+  function columnGap_0(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, columnGap$lambda(value));
+  }
+  function flexDirection_0(_this__u8e3s4, flexDirection) {
+    return styleModifier(_this__u8e3s4, flexDirection$lambda(flexDirection));
+  }
+  function flexGrow$lambda($value) {
+    return function ($this$styleModifier) {
+      flexGrow($this$styleModifier, $value);
+      return Unit_getInstance();
+    };
   }
   function gap$lambda($value) {
     return function ($this$styleModifier) {
       gap($this$styleModifier, $value);
+      return Unit_getInstance();
+    };
+  }
+  function gap$lambda_0($rowGap, $columnGap) {
+    return function ($this$styleModifier) {
+      gap_0($this$styleModifier, $rowGap, $columnGap);
       return Unit_getInstance();
     };
   }
@@ -3646,33 +3658,21 @@
       return Unit_getInstance();
     };
   }
-  function columnGap$lambda($value) {
-    return function ($this$styleModifier) {
-      columnGap($this$styleModifier, $value);
-      return Unit_getInstance();
-    };
-  }
   function rowGap$lambda($value) {
     return function ($this$styleModifier) {
       rowGap($this$styleModifier, $value);
       return Unit_getInstance();
     };
   }
+  function columnGap$lambda($value) {
+    return function ($this$styleModifier) {
+      columnGap($this$styleModifier, $value);
+      return Unit_getInstance();
+    };
+  }
   function flexDirection$lambda($flexDirection) {
     return function ($this$styleModifier) {
       flexDirection($this$styleModifier, $flexDirection);
-      return Unit_getInstance();
-    };
-  }
-  function flexGrow$lambda($value) {
-    return function ($this$styleModifier) {
-      flexGrow($this$styleModifier, $value);
-      return Unit_getInstance();
-    };
-  }
-  function gap$lambda_0($rowGap, $columnGap) {
-    return function ($this$styleModifier) {
-      gap_0($this$styleModifier, $rowGap, $columnGap);
       return Unit_getInstance();
     };
   }
@@ -3810,29 +3810,23 @@
       return Unit_getInstance();
     };
   }
-  function onClick(_this__u8e3s4, listener) {
-    return attrsModifier(_this__u8e3s4, onClick$lambda(listener));
-  }
   function tabIndex(_this__u8e3s4, value) {
     return attrsModifier(_this__u8e3s4, tabIndex$lambda(value));
   }
   function userSelect_0(_this__u8e3s4, userSelect) {
     return styleModifier(_this__u8e3s4, userSelect$lambda(userSelect));
   }
-  function onMouseLeave(_this__u8e3s4, listener) {
-    return attrsModifier(_this__u8e3s4, onMouseLeave$lambda(listener));
-  }
   function cursor_0(_this__u8e3s4, cursor) {
     return styleModifier(_this__u8e3s4, cursor$lambda(cursor));
+  }
+  function onMouseLeave(_this__u8e3s4, listener) {
+    return attrsModifier(_this__u8e3s4, onMouseLeave$lambda(listener));
   }
   function onMouseEnter(_this__u8e3s4, listener) {
     return attrsModifier(_this__u8e3s4, onMouseEnter$lambda(listener));
   }
-  function onClick$lambda($listener) {
-    return function ($this$attrsModifier) {
-      $this$attrsModifier.onClick_q9cds6_k$($listener);
-      return Unit_getInstance();
-    };
+  function onClick(_this__u8e3s4, listener) {
+    return attrsModifier(_this__u8e3s4, onClick$lambda(listener));
   }
   function tabIndex$lambda($value) {
     return function ($this$attrsModifier) {
@@ -3846,15 +3840,15 @@
       return Unit_getInstance();
     };
   }
-  function onMouseLeave$lambda($listener) {
-    return function ($this$attrsModifier) {
-      $this$attrsModifier.onMouseLeave_j862le_k$($listener);
-      return Unit_getInstance();
-    };
-  }
   function cursor$lambda($cursor) {
     return function ($this$styleModifier) {
       cursor($this$styleModifier, $cursor);
+      return Unit_getInstance();
+    };
+  }
+  function onMouseLeave$lambda($listener) {
+    return function ($this$attrsModifier) {
+      $this$attrsModifier.onMouseLeave_j862le_k$($listener);
       return Unit_getInstance();
     };
   }
@@ -3863,6 +3857,24 @@
       $this$attrsModifier.onMouseEnter_smfckd_k$($listener);
       return Unit_getInstance();
     };
+  }
+  function onClick$lambda($listener) {
+    return function ($this$attrsModifier) {
+      $this$attrsModifier.onClick_q9cds6_k$($listener);
+      return Unit_getInstance();
+    };
+  }
+  function margin_0(_this__u8e3s4, top, leftRight, bottom) {
+    top = top === VOID ? get_px(0) : top;
+    leftRight = leftRight === VOID ? get_px(0) : leftRight;
+    bottom = bottom === VOID ? get_px(0) : bottom;
+    return styleModifier(_this__u8e3s4, margin$lambda(top, leftRight, bottom));
+  }
+  function padding_0(_this__u8e3s4, all) {
+    return styleModifier(_this__u8e3s4, padding$lambda(all));
+  }
+  function overflow_0(_this__u8e3s4, scope) {
+    return styleModifier(_this__u8e3s4, overflow$lambda(scope));
   }
   function _get_styleScope__yp0uyw_2($this) {
     return $this.styleScope_1;
@@ -3876,15 +3888,34 @@
   protoOf(OverflowScope).y_9zjijb_k$ = function (overflowY_0) {
     return overflowY(this.styleScope_1, overflowY_0);
   };
-  function padding_0(_this__u8e3s4, top, right, bottom, left) {
+  function verticalAlign_0(_this__u8e3s4, verticalAlign) {
+    return styleModifier(_this__u8e3s4, verticalAlign$lambda(verticalAlign));
+  }
+  function padding_1(_this__u8e3s4, topBottom, leftRight) {
+    topBottom = topBottom === VOID ? get_px(0) : topBottom;
+    leftRight = leftRight === VOID ? get_px(0) : leftRight;
+    return styleModifier(_this__u8e3s4, padding$lambda_0(topBottom, leftRight));
+  }
+  function lineHeight_1(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, lineHeight$lambda(value));
+  }
+  function overflow_1(_this__u8e3s4, overflow) {
+    return styleModifier(_this__u8e3s4, overflow$lambda_0(overflow));
+  }
+  function margin_1(_this__u8e3s4, all) {
+    return styleModifier(_this__u8e3s4, margin$lambda_0(all));
+  }
+  function paddingInline_0(_this__u8e3s4, start, end) {
+    start = start === VOID ? get_px(0) : start;
+    end = end === VOID ? get_px(0) : end;
+    return styleModifier(_this__u8e3s4, paddingInline$lambda(start, end));
+  }
+  function margin_2(_this__u8e3s4, top, right, bottom, left) {
     top = top === VOID ? get_px(0) : top;
     right = right === VOID ? get_px(0) : right;
     bottom = bottom === VOID ? get_px(0) : bottom;
     left = left === VOID ? get_px(0) : left;
-    return styleModifier(_this__u8e3s4, padding$lambda(top, right, bottom, left));
-  }
-  function padding_1(_this__u8e3s4, all) {
-    return styleModifier(_this__u8e3s4, padding$lambda_0(all));
+    return styleModifier(_this__u8e3s4, margin$lambda_1(top, right, bottom, left));
   }
   function padding_2(_this__u8e3s4, top, leftRight, bottom) {
     top = top === VOID ? get_px(0) : top;
@@ -3892,71 +3923,46 @@
     bottom = bottom === VOID ? get_px(0) : bottom;
     return styleModifier(_this__u8e3s4, padding$lambda_1(top, leftRight, bottom));
   }
-  function margin_0(_this__u8e3s4, top, right, bottom, left) {
+  function padding_3(_this__u8e3s4, top, right, bottom, left) {
     top = top === VOID ? get_px(0) : top;
     right = right === VOID ? get_px(0) : right;
     bottom = bottom === VOID ? get_px(0) : bottom;
     left = left === VOID ? get_px(0) : left;
-    return styleModifier(_this__u8e3s4, margin$lambda(top, right, bottom, left));
-  }
-  function lineHeight_1(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, lineHeight$lambda(value));
+    return styleModifier(_this__u8e3s4, padding$lambda_2(top, right, bottom, left));
   }
   function lineHeight_2(_this__u8e3s4, value) {
     return styleModifier(_this__u8e3s4, lineHeight$lambda_0(value));
   }
-  function padding_3(_this__u8e3s4, topBottom, leftRight) {
-    topBottom = topBottom === VOID ? get_px(0) : topBottom;
-    leftRight = leftRight === VOID ? get_px(0) : leftRight;
-    return styleModifier(_this__u8e3s4, padding$lambda_2(topBottom, leftRight));
-  }
-  function overflow_0(_this__u8e3s4, overflow) {
-    return styleModifier(_this__u8e3s4, overflow$lambda(overflow));
-  }
-  function overflow_1(_this__u8e3s4, scope) {
-    return styleModifier(_this__u8e3s4, overflow$lambda_0(scope));
-  }
-  function paddingInline_0(_this__u8e3s4, start, end) {
-    start = start === VOID ? get_px(0) : start;
-    end = end === VOID ? get_px(0) : end;
-    return styleModifier(_this__u8e3s4, paddingInline$lambda(start, end));
-  }
   function zIndex_0(_this__u8e3s4, value) {
     return styleModifier(_this__u8e3s4, zIndex$lambda(value));
   }
-  function margin_1(_this__u8e3s4, top, leftRight, bottom) {
-    top = top === VOID ? get_px(0) : top;
-    leftRight = leftRight === VOID ? get_px(0) : leftRight;
-    bottom = bottom === VOID ? get_px(0) : bottom;
-    return styleModifier(_this__u8e3s4, margin$lambda_0(top, leftRight, bottom));
-  }
-  function margin_2(_this__u8e3s4, all) {
-    return styleModifier(_this__u8e3s4, margin$lambda_1(all));
-  }
-  function verticalAlign_0(_this__u8e3s4, verticalAlign) {
-    return styleModifier(_this__u8e3s4, verticalAlign$lambda(verticalAlign));
-  }
-  function padding$lambda($top, $right, $bottom, $left) {
+  function margin$lambda($top, $leftRight, $bottom) {
     return function ($this$styleModifier) {
-      padding($this$styleModifier, [$top, $right, $bottom, $left]);
+      margin($this$styleModifier, [$top, $leftRight, $bottom]);
       return Unit_getInstance();
     };
   }
-  function padding$lambda_0($all) {
+  function padding$lambda($all) {
     return function ($this$styleModifier) {
       padding($this$styleModifier, [$all]);
       return Unit_getInstance();
     };
   }
-  function padding$lambda_1($top, $leftRight, $bottom) {
+  function overflow$lambda($scope) {
     return function ($this$styleModifier) {
-      padding($this$styleModifier, [$top, $leftRight, $bottom]);
+      $scope(new OverflowScope($this$styleModifier));
       return Unit_getInstance();
     };
   }
-  function margin$lambda($top, $right, $bottom, $left) {
+  function verticalAlign$lambda($verticalAlign) {
     return function ($this$styleModifier) {
-      margin($this$styleModifier, [$top, $right, $bottom, $left]);
+      verticalAlign($this$styleModifier, $verticalAlign);
+      return Unit_getInstance();
+    };
+  }
+  function padding$lambda_0($topBottom, $leftRight) {
+    return function ($this$styleModifier) {
+      padding($this$styleModifier, [$topBottom, $leftRight]);
       return Unit_getInstance();
     };
   }
@@ -3966,27 +3972,15 @@
       return Unit_getInstance();
     };
   }
-  function lineHeight$lambda_0($value) {
-    return function ($this$styleModifier) {
-      lineHeight_0($this$styleModifier, $value);
-      return Unit_getInstance();
-    };
-  }
-  function padding$lambda_2($topBottom, $leftRight) {
-    return function ($this$styleModifier) {
-      padding($this$styleModifier, [$topBottom, $leftRight]);
-      return Unit_getInstance();
-    };
-  }
-  function overflow$lambda($overflow) {
+  function overflow$lambda_0($overflow) {
     return function ($this$styleModifier) {
       overflow($this$styleModifier, $overflow);
       return Unit_getInstance();
     };
   }
-  function overflow$lambda_0($scope) {
+  function margin$lambda_0($all) {
     return function ($this$styleModifier) {
-      $scope(new OverflowScope($this$styleModifier));
+      margin($this$styleModifier, [$all]);
       return Unit_getInstance();
     };
   }
@@ -3996,27 +3990,33 @@
       return Unit_getInstance();
     };
   }
+  function margin$lambda_1($top, $right, $bottom, $left) {
+    return function ($this$styleModifier) {
+      margin($this$styleModifier, [$top, $right, $bottom, $left]);
+      return Unit_getInstance();
+    };
+  }
+  function padding$lambda_1($top, $leftRight, $bottom) {
+    return function ($this$styleModifier) {
+      padding($this$styleModifier, [$top, $leftRight, $bottom]);
+      return Unit_getInstance();
+    };
+  }
+  function padding$lambda_2($top, $right, $bottom, $left) {
+    return function ($this$styleModifier) {
+      padding($this$styleModifier, [$top, $right, $bottom, $left]);
+      return Unit_getInstance();
+    };
+  }
+  function lineHeight$lambda_0($value) {
+    return function ($this$styleModifier) {
+      lineHeight_0($this$styleModifier, $value);
+      return Unit_getInstance();
+    };
+  }
   function zIndex$lambda($value) {
     return function ($this$styleModifier) {
       zIndex($this$styleModifier, $value);
-      return Unit_getInstance();
-    };
-  }
-  function margin$lambda_0($top, $leftRight, $bottom) {
-    return function ($this$styleModifier) {
-      margin($this$styleModifier, [$top, $leftRight, $bottom]);
-      return Unit_getInstance();
-    };
-  }
-  function margin$lambda_1($all) {
-    return function ($this$styleModifier) {
-      margin($this$styleModifier, [$all]);
-      return Unit_getInstance();
-    };
-  }
-  function verticalAlign$lambda($verticalAlign) {
-    return function ($this$styleModifier) {
-      verticalAlign($this$styleModifier, $verticalAlign);
       return Unit_getInstance();
     };
   }
@@ -4056,21 +4056,39 @@
   function position_0(_this__u8e3s4, position) {
     return styleModifier(_this__u8e3s4, position$lambda(position));
   }
+  function top_0(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, top$lambda(value));
+  }
+  function left_0(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, left$lambda(value));
+  }
   function right_0(_this__u8e3s4, value) {
     return styleModifier(_this__u8e3s4, right$lambda(value));
   }
   function bottom_0(_this__u8e3s4, value) {
     return styleModifier(_this__u8e3s4, bottom$lambda(value));
   }
-  function left_0(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, left$lambda(value));
-  }
-  function top_0(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, top$lambda(value));
-  }
   function position$lambda($position) {
     return function ($this$styleModifier) {
       position($this$styleModifier, $position);
+      return Unit_getInstance();
+    };
+  }
+  function top$lambda($value) {
+    return function ($this$styleModifier) {
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$1 = $value;
+      top($this$styleModifier, tmp$ret$1);
+      return Unit_getInstance();
+    };
+  }
+  function left$lambda($value) {
+    return function ($this$styleModifier) {
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$1 = $value;
+      left($this$styleModifier, tmp$ret$1);
       return Unit_getInstance();
     };
   }
@@ -4092,24 +4110,6 @@
       return Unit_getInstance();
     };
   }
-  function left$lambda($value) {
-    return function ($this$styleModifier) {
-      // Inline function 'kotlin.js.unsafeCast' call
-      // Inline function 'kotlin.js.asDynamic' call
-      var tmp$ret$1 = $value;
-      left($this$styleModifier, tmp$ret$1);
-      return Unit_getInstance();
-    };
-  }
-  function top$lambda($value) {
-    return function ($this$styleModifier) {
-      // Inline function 'kotlin.js.unsafeCast' call
-      // Inline function 'kotlin.js.asDynamic' call
-      var tmp$ret$1 = $value;
-      top($this$styleModifier, tmp$ret$1);
-      return Unit_getInstance();
-    };
-  }
   function scrollBehavior_0(_this__u8e3s4, scrollBehavior) {
     return styleModifier(_this__u8e3s4, scrollBehavior$lambda(scrollBehavior));
   }
@@ -4119,19 +4119,6 @@
       return Unit_getInstance();
     };
   }
-  function height_1(_this__u8e3s4, size) {
-    return styleModifier(_this__u8e3s4, height$lambda(size));
-  }
-  function size(_this__u8e3s4, size) {
-    return size_0(_this__u8e3s4, size, size);
-  }
-  function fillMaxSize(_this__u8e3s4, percent) {
-    percent = percent === VOID ? get_percent(100) : percent;
-    return styleModifier(_this__u8e3s4, fillMaxSize$lambda(percent));
-  }
-  function width_1(_this__u8e3s4, size) {
-    return styleModifier(_this__u8e3s4, width$lambda(size));
-  }
   function fillMaxWidth(_this__u8e3s4, percent) {
     percent = percent === VOID ? get_percent(100) : percent;
     return styleModifier(_this__u8e3s4, fillMaxWidth$lambda(percent));
@@ -4139,14 +4126,21 @@
   function minWidth_0(_this__u8e3s4, size) {
     return styleModifier(_this__u8e3s4, minWidth$lambda(size));
   }
-  function height_2(_this__u8e3s4, auto) {
-    return styleModifier(_this__u8e3s4, height$lambda_0(auto));
+  function height_1(_this__u8e3s4, size) {
+    return styleModifier(_this__u8e3s4, height$lambda(size));
+  }
+  function size(_this__u8e3s4, size) {
+    return size_0(_this__u8e3s4, size, size);
   }
   function minHeight_0(_this__u8e3s4, size) {
     return styleModifier(_this__u8e3s4, minHeight$lambda(size));
   }
-  function width_2(_this__u8e3s4, auto) {
-    return styleModifier(_this__u8e3s4, width$lambda_0(auto));
+  function width_1(_this__u8e3s4, size) {
+    return styleModifier(_this__u8e3s4, width$lambda(size));
+  }
+  function fillMaxSize(_this__u8e3s4, percent) {
+    percent = percent === VOID ? get_percent(100) : percent;
+    return styleModifier(_this__u8e3s4, fillMaxSize$lambda(percent));
   }
   function maxWidth_0(_this__u8e3s4, size) {
     return styleModifier(_this__u8e3s4, maxWidth$lambda(size));
@@ -4155,27 +4149,14 @@
     percent = percent === VOID ? get_percent(100) : percent;
     return styleModifier(_this__u8e3s4, fillMaxHeight$lambda(percent));
   }
+  function height_2(_this__u8e3s4, auto) {
+    return styleModifier(_this__u8e3s4, height$lambda_0(auto));
+  }
+  function width_2(_this__u8e3s4, auto) {
+    return styleModifier(_this__u8e3s4, width$lambda_0(auto));
+  }
   function size_0(_this__u8e3s4, width, height) {
     return styleModifier(_this__u8e3s4, size$lambda(width, height));
-  }
-  function height$lambda($size) {
-    return function ($this$styleModifier) {
-      height($this$styleModifier, $size);
-      return Unit_getInstance();
-    };
-  }
-  function fillMaxSize$lambda($percent) {
-    return function ($this$styleModifier) {
-      width($this$styleModifier, $percent);
-      height($this$styleModifier, $percent);
-      return Unit_getInstance();
-    };
-  }
-  function width$lambda($size) {
-    return function ($this$styleModifier) {
-      width($this$styleModifier, $size);
-      return Unit_getInstance();
-    };
   }
   function fillMaxWidth$lambda($percent) {
     return function ($this$styleModifier) {
@@ -4189,9 +4170,9 @@
       return Unit_getInstance();
     };
   }
-  function height$lambda_0($auto) {
+  function height$lambda($size) {
     return function ($this$styleModifier) {
-      height_0($this$styleModifier, $auto);
+      height($this$styleModifier, $size);
       return Unit_getInstance();
     };
   }
@@ -4201,9 +4182,16 @@
       return Unit_getInstance();
     };
   }
-  function width$lambda_0($auto) {
+  function width$lambda($size) {
     return function ($this$styleModifier) {
-      width_0($this$styleModifier, $auto);
+      width($this$styleModifier, $size);
+      return Unit_getInstance();
+    };
+  }
+  function fillMaxSize$lambda($percent) {
+    return function ($this$styleModifier) {
+      width($this$styleModifier, $percent);
+      height($this$styleModifier, $percent);
       return Unit_getInstance();
     };
   }
@@ -4219,6 +4207,18 @@
       return Unit_getInstance();
     };
   }
+  function height$lambda_0($auto) {
+    return function ($this$styleModifier) {
+      height_0($this$styleModifier, $auto);
+      return Unit_getInstance();
+    };
+  }
+  function width$lambda_0($auto) {
+    return function ($this$styleModifier) {
+      width_0($this$styleModifier, $auto);
+      return Unit_getInstance();
+    };
+  }
   function size$lambda($width, $height) {
     return function ($this$styleModifier) {
       width($this$styleModifier, $width);
@@ -4229,21 +4229,15 @@
   function whiteSpace_0(_this__u8e3s4, whiteSpace) {
     return styleModifier(_this__u8e3s4, whiteSpace$lambda(whiteSpace));
   }
-  function textDecorationLine_0(_this__u8e3s4, textDecorationLine) {
-    return styleModifier(_this__u8e3s4, textDecorationLine$lambda(textDecorationLine));
-  }
   function textAlign_0(_this__u8e3s4, textAlign) {
     return styleModifier(_this__u8e3s4, textAlign$lambda(textAlign));
+  }
+  function textDecorationLine_0(_this__u8e3s4, textDecorationLine) {
+    return styleModifier(_this__u8e3s4, textDecorationLine$lambda(textDecorationLine));
   }
   function whiteSpace$lambda($whiteSpace) {
     return function ($this$styleModifier) {
       whiteSpace($this$styleModifier, $whiteSpace);
-      return Unit_getInstance();
-    };
-  }
-  function textDecorationLine$lambda($textDecorationLine) {
-    return function ($this$styleModifier) {
-      textDecorationLine($this$styleModifier, [$textDecorationLine]);
       return Unit_getInstance();
     };
   }
@@ -4253,23 +4247,23 @@
       return Unit_getInstance();
     };
   }
-  function transform_0(_this__u8e3s4, transformContext) {
-    return styleModifier(_this__u8e3s4, transform$lambda(transformContext));
+  function textDecorationLine$lambda($textDecorationLine) {
+    return function ($this$styleModifier) {
+      textDecorationLine($this$styleModifier, [$textDecorationLine]);
+      return Unit_getInstance();
+    };
   }
   function translateX_0(_this__u8e3s4, tx) {
     return styleModifier(_this__u8e3s4, translateX$lambda(tx));
   }
-  function scale_0(_this__u8e3s4, s) {
-    return styleModifier(_this__u8e3s4, scale$lambda(s));
+  function transform_0(_this__u8e3s4, transformContext) {
+    return styleModifier(_this__u8e3s4, transform$lambda(transformContext));
   }
   function translate_0(_this__u8e3s4, tx) {
     return styleModifier(_this__u8e3s4, translate$lambda(tx));
   }
-  function transform$lambda($transformContext) {
-    return function ($this$styleModifier) {
-      transform($this$styleModifier, $transformContext);
-      return Unit_getInstance();
-    };
+  function scale_0(_this__u8e3s4, s) {
+    return styleModifier(_this__u8e3s4, scale$lambda(s));
   }
   function translateX$lambda($tx) {
     return function ($this$styleModifier) {
@@ -4277,9 +4271,9 @@
       return Unit_getInstance();
     };
   }
-  function scale$lambda($s) {
+  function transform$lambda($transformContext) {
     return function ($this$styleModifier) {
-      scale($this$styleModifier, $s);
+      transform($this$styleModifier, $transformContext);
       return Unit_getInstance();
     };
   }
@@ -4289,8 +4283,11 @@
       return Unit_getInstance();
     };
   }
-  function onTransitionEnd_0(_this__u8e3s4, listener) {
-    return attrsModifier(_this__u8e3s4, onTransitionEnd$lambda(listener));
+  function scale$lambda($s) {
+    return function ($this$styleModifier) {
+      scale($this$styleModifier, $s);
+      return Unit_getInstance();
+    };
   }
   function transition_1(_this__u8e3s4, transitions) {
     return styleModifier(_this__u8e3s4, transition$lambda(transitions));
@@ -4301,11 +4298,8 @@
   function transition_3(_this__u8e3s4, transitions) {
     return styleModifier(_this__u8e3s4, transition$lambda_1(transitions));
   }
-  function onTransitionEnd$lambda($listener) {
-    return function ($this$attrsModifier) {
-      onTransitionEnd($this$attrsModifier, $listener);
-      return Unit_getInstance();
-    };
+  function onTransitionEnd_0(_this__u8e3s4, listener) {
+    return attrsModifier(_this__u8e3s4, onTransitionEnd$lambda(listener));
   }
   function transition$lambda($transitions) {
     return function ($this$styleModifier) {
@@ -4315,13 +4309,19 @@
   }
   function transition$lambda_0($transitions) {
     return function ($this$styleModifier) {
-      transition_0($this$styleModifier, $transitions.slice());
+      transition($this$styleModifier, $transitions.slice());
       return Unit_getInstance();
     };
   }
   function transition$lambda_1($transitions) {
     return function ($this$styleModifier) {
       transition_0($this$styleModifier, $transitions.slice());
+      return Unit_getInstance();
+    };
+  }
+  function onTransitionEnd$lambda($listener) {
+    return function ($this$attrsModifier) {
+      onTransitionEnd($this$attrsModifier, $listener);
       return Unit_getInstance();
     };
   }
@@ -4370,10 +4370,10 @@
   protoOf(Hsl).darkened$default_kpriub_k$ = darkened$default;
   //endregion
   //region block: init
-  com_varabyte_kobweb_compose_foundation_layout_Arrangement_Start$stable = 0;
+  com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stable = 0;
   com_varabyte_kobweb_compose_foundation_layout_Arrangement_Top$stable = 0;
   com_varabyte_kobweb_compose_foundation_layout_Arrangement_SpaceBetween$stable = 0;
-  com_varabyte_kobweb_compose_foundation_layout_Arrangement_Center$stable = 0;
+  com_varabyte_kobweb_compose_foundation_layout_Arrangement_Start$stable = 0;
   KOBWEB_ARRANGE_END = 'kobweb-arrange-end';
   KOBWEB_ARRANGE_START = 'kobweb-arrange-start';
   KOBWEB_ARRANGE_TOP = 'kobweb-arrange-top';
@@ -4385,12 +4385,12 @@
   KOBWEB_ARRANGE_FROM_STYLE = 'kobweb-arrange-from-style';
   KOBWEB_ARRANGE_SPACED_BY = 'kobweb-arrange-spaced-by';
   com_varabyte_kobweb_compose_style_KobwebComposeStyleSheet$stable = 0;
-  com_varabyte_kobweb_compose_ui_Alignment_Start$stable = 0;
-  com_varabyte_kobweb_compose_ui_Alignment_Center$stable = 0;
-  com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stable = 0;
   com_varabyte_kobweb_compose_ui_Alignment_CenterHorizontally$stable = 0;
-  com_varabyte_kobweb_compose_ui_Alignment_CenterEnd$stable = 0;
+  com_varabyte_kobweb_compose_ui_Alignment_CenterVertically$stable = 0;
+  com_varabyte_kobweb_compose_ui_Alignment_Center$stable = 0;
   com_varabyte_kobweb_compose_ui_Alignment_CenterStart$stable = 0;
+  com_varabyte_kobweb_compose_ui_Alignment_CenterEnd$stable = 0;
+  com_varabyte_kobweb_compose_ui_Alignment_Start$stable = 0;
   //endregion
   //region block: exports
   _.$_$ = _.$_$ || {};
@@ -4419,8 +4419,8 @@
   _.$_$.w = borderRadius_1;
   _.$_$.x = borderRadius_2;
   _.$_$.y = borderTop_0;
-  _.$_$.z = border_0;
-  _.$_$.a1 = border_1;
+  _.$_$.z = border_1;
+  _.$_$.a1 = border_0;
   _.$_$.b1 = bottom_0;
   _.$_$.c1 = boxShadow_0;
   _.$_$.d1 = boxSizing_0;
@@ -4446,15 +4446,15 @@
   _.$_$.x1 = height_1;
   _.$_$.y1 = height_2;
   _.$_$.z1 = id;
-  _.$_$.a2 = justifyContent_2;
-  _.$_$.b2 = justifyContent_1;
+  _.$_$.a2 = justifyContent_1;
+  _.$_$.b2 = justifyContent_2;
   _.$_$.c2 = left_0;
   _.$_$.d2 = lineHeight_2;
   _.$_$.e2 = lineHeight_1;
   _.$_$.f2 = listStyle_0;
-  _.$_$.g2 = margin_0;
-  _.$_$.h2 = margin_2;
-  _.$_$.i2 = margin_1;
+  _.$_$.g2 = margin_2;
+  _.$_$.h2 = margin_1;
+  _.$_$.i2 = margin_0;
   _.$_$.j2 = maxWidth_0;
   _.$_$.k2 = minHeight_0;
   _.$_$.l2 = minWidth_0;
@@ -4466,13 +4466,13 @@
   _.$_$.r2 = onTransitionEnd_0;
   _.$_$.s2 = opacity_0;
   _.$_$.t2 = outline_0;
-  _.$_$.u2 = overflow_1;
-  _.$_$.v2 = overflow_0;
+  _.$_$.u2 = overflow_0;
+  _.$_$.v2 = overflow_1;
   _.$_$.w2 = paddingInline_0;
-  _.$_$.x2 = padding_0;
-  _.$_$.y2 = padding_1;
+  _.$_$.x2 = padding_3;
+  _.$_$.y2 = padding_0;
   _.$_$.z2 = padding_2;
-  _.$_$.a3 = padding_3;
+  _.$_$.a3 = padding_1;
   _.$_$.b3 = position_0;
   _.$_$.c3 = right_0;
   _.$_$.d3 = rowGap_0;
@@ -4487,8 +4487,8 @@
   _.$_$.m3 = top_0;
   _.$_$.n3 = transform_0;
   _.$_$.o3 = transition_2;
-  _.$_$.p3 = transition_1;
-  _.$_$.q3 = transition_3;
+  _.$_$.p3 = transition_3;
+  _.$_$.q3 = transition_1;
   _.$_$.r3 = translateX_0;
   _.$_$.s3 = translate_0;
   _.$_$.t3 = userSelect_0;
@@ -4498,7 +4498,7 @@
   _.$_$.x3 = width_2;
   _.$_$.y3 = zIndex_0;
   _.$_$.z3 = styleModifier;
-  _.$_$.a4 = thenIf_0;
+  _.$_$.a4 = thenIf;
   _.$_$.b4 = toAttrs;
   _.$_$.c4 = toStyles;
   _.$_$.d4 = Center_getInstance;
