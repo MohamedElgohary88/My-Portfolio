@@ -5,7 +5,6 @@ import com.varabyte.kobweb.compose.css.*
 import com.varabyte.kobweb.compose.foundation.layout.*
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.compose.ui.thenIf
 import com.varabyte.kobweb.silk.components.layout.SimpleGrid
@@ -13,28 +12,34 @@ import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.components.style.toModifier
 import com.varabyte.kobweb.silk.components.text.SpanText
 import org.example.newportfolio.models.Experience
+import org.example.newportfolio.theme.brand
 import org.example.newportfolio.theme.fonts.*
 import org.jetbrains.compose.web.css.*
+import com.varabyte.kobweb.silk.theme.colors.ColorMode
+import com.varabyte.kobweb.silk.theme.colors.palette.overlay
+import com.varabyte.kobweb.silk.theme.colors.palette.toPalette
 
 @Composable
 private fun CardContent(experience: Experience) {
     var isHovered by remember { mutableStateOf(false) }
+    val palette = ColorMode.current.toPalette()
     Column(
         modifier = Modifier
             .width(45.percent)
             .padding(20.px)
-            .borderRadius(10.px)
-            .border(1.px, LineStyle.Solid, Colors.LightGray)
+            .borderRadius(12.px)
+            .border(1.px, LineStyle.Solid, palette.overlay)
             .onMouseEnter { isHovered = true }
             .onMouseLeave { isHovered = false }
             .thenIf(
                 isHovered,
                 Modifier
-                    .transform { scale(1.02) }
-                    .boxShadow(color = Colors.Green.copy(alpha = 30), blurRadius = 10.px, spreadRadius = 5.px)
+                    .transform { translateY((-6).px); scale(1.015) }
+                    .boxShadow(color = palette.brand.primary.toRgb().copyf(alpha = 0.4f), blurRadius = 18.px, spreadRadius = 4.px)
             )
-            .transition(CSSTransition("all", 0.3.s, TransitionTimingFunction.EaseInOut))
-    ) {
+            .transition(
+                CSSTransition("transform", 0.28.s, TransitionTimingFunction.EaseInOut),
+            )    ) {
         Row(
             modifier = Modifier.fillMaxWidth().margin(bottom = 10.px),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -59,9 +64,9 @@ private fun CardContent(experience: Experience) {
                 Box(
                     modifier = Modifier
                         .margin(top = 5.px, right = 5.px)
-                        .padding(5.px)
-                        .borderRadius(5.px)
-                        .backgroundColor(Colors.Green.copy(alpha = 20))
+                        .padding(6.px)
+                        .borderRadius(6.px)
+                        .backgroundColor(palette.overlay)
                 ) {
                     SpanText(skill, modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor))
                 }

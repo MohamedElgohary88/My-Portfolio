@@ -2,6 +2,7 @@
 package org.example.newportfolio.components.sections.start
 
 import androidx.compose.runtime.Composable
+import org.example.newportfolio.components.sections.start.components.HeroPhoto
 import org.example.newportfolio.components.sections.start.components.SkillsSectionDivider
 import org.example.newportfolio.components.sections.start.components.StartSectionGridStyle
 import org.example.newportfolio.components.sections.start.components.StartSectionImageStyle

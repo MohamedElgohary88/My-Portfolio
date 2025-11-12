@@ -25,8 +25,10 @@ import com.varabyte.kobweb.silk.components.text.SpanText
 import com.varabyte.kobweb.silk.theme.colors.ColorMode
 import com.varabyte.kobweb.silk.theme.colors.palette.overlay
 import com.varabyte.kobweb.silk.theme.colors.palette.toPalette
+import org.example.newportfolio.theme.brand
 import org.example.newportfolio.theme.fonts.*
 import org.jetbrains.compose.web.css.cssRem
+import org.jetbrains.compose.web.css.deg
 import org.jetbrains.compose.web.css.em
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
@@ -48,6 +50,18 @@ val ContactCardStyle by ComponentStyle(
             .padding(topBottom = 1.cssRem, leftRight = 1.cssRem)
             .boxShadow(blurRadius = 20.px, spreadRadius = 2.px, color = colors.overlay)
             .transition(Transition.of("box-shadow", 0.4.s, TransitionTimingFunction.EaseInOut))
+    }
+    cssRule("&:hover") {
+        Modifier
+            .transform { translateY((-6).px); rotate((-0.4).deg) }
+            .boxShadow(blurRadius = 28.px, spreadRadius = 6.px, color = colors.brand.primary.toRgb().copyf(alpha = 0.45f))
+            .transition(
+                Transition.of("transform", 0.32.s, TransitionTimingFunction.EaseInOut),
+                Transition.of("box-shadow", 0.32.s, TransitionTimingFunction.EaseInOut)
+            )
+    }
+    Breakpoint.LG {
+        Modifier
             .fillMaxWidth(65.percent)
             .padding(topBottom = 2.cssRem, leftRight = 2.cssRem)
     }

@@ -2,6 +2,8 @@
 package org.example.newportfolio.components.sections.nav_header.components
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -35,7 +37,10 @@ import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.Nav
 import org.jetbrains.compose.web.dom.Text
 import kotlinx.browser.document
+import kotlinx.browser.window
 import com.varabyte.kobweb.compose.css.functions.blur
+import org.w3c.dom.events.Event
+import org.w3c.dom.events.MouseEvent
 
 val NavBarStyle by ComponentStyle {
     val colorPalette = colorMode.toPalette()
@@ -57,25 +62,35 @@ fun NavBar(
     selectedSectionId: String
 ) {
     var indicatorLeft by remember { mutableStateOf(0.px) }
-    var indicatorWidth by remember { mutableStateOf(10.px) } // small circle diameter
+    var indicatorWidth by remember { mutableStateOf(12.px) } // orb size
+    var mouseX by remember { mutableStateOf(0.0) }
+
+    DisposableEffect(Unit) {
+        val listener: (Event) -> Unit = { e ->
+            val me = e as? MouseEvent
+            if (me != null) mouseX = me.clientX.toDouble()
+        }
+        window.addEventListener("mousemove", listener)
+        onDispose { window.removeEventListener("mousemove", listener) }
+    }
 
     Nav(
         attrs = NavBarStyle.toAttrs()
     ) {
-        // Collect positions after layout using side-effect
         SideEffect {
             val activeEl = document.querySelector("a[href='#$selectedSectionId']")
             val navEl = activeEl?.closest("nav") ?: document.querySelector("nav")
             if (activeEl != null && navEl != null) {
                 val rect = activeEl.getBoundingClientRect()
                 val navRect = navEl.getBoundingClientRect()
-                val circle = 10.0 // px
+                val circle = 12.0
                 val center = rect.left + rect.width / 2.0
                 val leftPx = center - navRect.left - (circle / 2.0)
                 indicatorLeft = leftPx.px
                 indicatorWidth = circle.px
             }
         }
+        val parallax = ((mouseX / 50.0) % 6.0) - 3.0 // -3..+3
         Box(
             modifier = Modifier
                 .position(Position.Absolute)
@@ -84,11 +99,11 @@ fun NavBar(
                 .width(indicatorWidth)
                 .height(indicatorWidth)
                 .borderRadius(50.percent)
-                .backgroundColor(Color.rgba(r = 255, g = 255, b = 255, a = 0.12f))
-                .border(width = 1.px, style = LineStyle.Solid, color = Colors.White.copy(alpha = 35))
-                .backdropFilter(blur(6.px))
-                .boxShadow(blurRadius = 14.px, spreadRadius = 2.px, color = Color.rgba(r = 127, g = 82, b = 255, a = 0.35f))
-                .transform { translateY((-50).percent) }
+                .backgroundColor(Color.rgba(255,255,255,0.12f))
+                .border(width = 1.px, style = LineStyle.Solid, color = Color.rgba(255,255,255,0.28f))
+                .backdropFilter(blur(10.px))
+                .boxShadow(blurRadius = 18.px, spreadRadius = 5.px, color = Color.rgba(r = 190, g = 25, b = 228, a = 0.35f))
+                .transform { translateY((-50).percent); translateX(parallax.px) }
                 .transition(
                     CSSTransition("left", 0.45.s, TransitionTimingFunction.EaseInOut),
                     CSSTransition("width", 0.2.s, TransitionTimingFunction.EaseInOut),

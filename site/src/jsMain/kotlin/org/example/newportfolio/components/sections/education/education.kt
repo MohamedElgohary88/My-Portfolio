@@ -7,6 +7,7 @@ import com.varabyte.kobweb.compose.css.Cursor
 import com.varabyte.kobweb.compose.css.TextDecorationLine
 import com.varabyte.kobweb.compose.css.TransitionTimingFunction
 import com.varabyte.kobweb.compose.css.Transition
+import com.varabyte.kobweb.compose.css.functions.linearGradient
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -27,6 +28,10 @@ import org.example.newportfolio.components.widgets.section.SectionContainerStyle
 import org.example.newportfolio.models.Section
 import org.example.newportfolio.theme.fonts.*
 import org.jetbrains.compose.web.css.*
+import com.varabyte.kobweb.silk.theme.colors.ColorMode
+import com.varabyte.kobweb.silk.theme.colors.palette.overlay
+import com.varabyte.kobweb.silk.theme.colors.palette.toPalette
+import org.example.newportfolio.theme.brand
 
 // Data models
 private data class EducationEntry(
@@ -157,16 +162,31 @@ val EducationCardStyle by SectionContainerStyle.addVariant {
 @Composable
 private fun EducationCard(entry: EducationEntry, modifier: Modifier = Modifier) {
     val hovered = remember { mutableStateOf(false) }
+    val palette = ColorMode.current.toPalette()
     Column(
         modifier = modifier
             .padding(20.px)
-            .borderRadius(12.px)
-            .border(1.px, LineStyle.Solid, Colors.LightGray)
+            .borderRadius(14.px)
+            .border(1.px, LineStyle.Solid, palette.overlay)
             .backgroundColor(Colors.Transparent)
             .onMouseEnter { hovered.value = true }
             .onMouseLeave { hovered.value = false }
-            .thenIf(hovered.value, Modifier.boxShadow(color = Colors.Green.copy(alpha = 30), blurRadius = 12.px, spreadRadius = 2.px))
-            .transition(Transition.of("all", 0.25.s, TransitionTimingFunction.EaseInOut))
+            .thenIf(hovered.value,
+                Modifier
+                    .boxShadow(color = palette.brand.primary.toRgb().copyf(alpha = 0.45f), blurRadius = 24.px, spreadRadius = 4.px)
+                    .transform { translateY((-5).px) }
+                    .backgroundImage(
+                        linearGradient(135.deg) {
+                            add(palette.brand.primary.toRgb(), 0.percent)
+                            add(Colors.Transparent, 100.percent)
+                        }
+                    )
+            )
+            .transition(
+                Transition.of("box-shadow", 0.32.s, TransitionTimingFunction.EaseInOut),
+                Transition.of("transform", 0.32.s, TransitionTimingFunction.EaseInOut),
+                Transition.of("background-image", 0.5.s, TransitionTimingFunction.Ease)
+            )
             .maxWidth(100.percent)
     ) {
         SpanText(entry.school, modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor).margin(bottom = 8.px))
@@ -178,15 +198,25 @@ private fun EducationCard(entry: EducationEntry, modifier: Modifier = Modifier) 
 @Composable
 private fun CertificationCard(entry: CertificationEntry, modifier: Modifier = Modifier) {
     val hovered = remember { mutableStateOf(false) }
+    val palette = ColorMode.current.toPalette()
     Column(
         modifier = modifier
             .padding(16.px)
-            .borderRadius(10.px)
-            .border(1.px, LineStyle.Solid, Colors.LightGray)
+            .borderRadius(12.px)
+            .border(1.px, LineStyle.Solid, palette.overlay)
             .onMouseEnter { hovered.value = true }
             .onMouseLeave { hovered.value = false }
-            .thenIf(hovered.value, Modifier.boxShadow(color = Colors.Green.copy(alpha = 25), blurRadius = 10.px, spreadRadius = 2.px))
-            .transition(Transition.of("all", 0.25.s, TransitionTimingFunction.EaseInOut))
+            .thenIf(hovered.value,
+                Modifier
+                    .transform { translateY((-4).px); rotate(0.6.deg) }
+                    .boxShadow(color = palette.brand.primary.toRgb().copyf(alpha = 0.35f), blurRadius = 20.px, spreadRadius = 3.px)
+                    .outline(width = 2.px, style = LineStyle.Solid, color = palette.brand.primary)
+            )
+            .transition(
+                Transition.of("transform", 0.28.s, TransitionTimingFunction.EaseInOut),
+                Transition.of("box-shadow", 0.28.s, TransitionTimingFunction.EaseInOut),
+                Transition.of("outline", 0.4.s, TransitionTimingFunction.EaseIn)
+            )
             .backgroundColor(Colors.Transparent)
     ) {
         SpanText(entry.title, modifier = TextStyle.toModifier(TitleTextStyle, TextStylePrimaryColor).margin(bottom = 6.px))
