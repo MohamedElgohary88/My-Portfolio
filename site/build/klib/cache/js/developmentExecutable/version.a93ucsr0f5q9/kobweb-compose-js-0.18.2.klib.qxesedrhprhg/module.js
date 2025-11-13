@@ -149,14 +149,14 @@
   var cursor = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.j1;
   var overflowX = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.e2;
   var overflowY = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.f2;
-  var margin = kotlin_org_jetbrains_compose_html_html_core.$_$.a5;
   var padding = kotlin_org_jetbrains_compose_html_html_core.$_$.h5;
-  var verticalAlign = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u2;
+  var margin = kotlin_org_jetbrains_compose_html_html_core.$_$.a5;
   var lineHeight = kotlin_org_jetbrains_compose_html_html_core.$_$.z4;
+  var lineHeight_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.y4;
   var overflow = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.g2;
   var paddingInline = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.h2;
-  var lineHeight_0 = kotlin_org_jetbrains_compose_html_html_core.$_$.y4;
   var zIndex = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.w2;
+  var verticalAlign = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u2;
   var listStyle = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.b2;
   var objectFit = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.c2;
   var outline = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.d2;
@@ -3864,18 +3864,6 @@
       return Unit_getInstance();
     };
   }
-  function margin_0(_this__u8e3s4, top, leftRight, bottom) {
-    top = top === VOID ? get_px(0) : top;
-    leftRight = leftRight === VOID ? get_px(0) : leftRight;
-    bottom = bottom === VOID ? get_px(0) : bottom;
-    return styleModifier(_this__u8e3s4, margin$lambda(top, leftRight, bottom));
-  }
-  function padding_0(_this__u8e3s4, all) {
-    return styleModifier(_this__u8e3s4, padding$lambda(all));
-  }
-  function overflow_0(_this__u8e3s4, scope) {
-    return styleModifier(_this__u8e3s4, overflow$lambda(scope));
-  }
   function _get_styleScope__yp0uyw_2($this) {
     return $this.styleScope_1;
   }
@@ -3888,34 +3876,15 @@
   protoOf(OverflowScope).y_9zjijb_k$ = function (overflowY_0) {
     return overflowY(this.styleScope_1, overflowY_0);
   };
-  function verticalAlign_0(_this__u8e3s4, verticalAlign) {
-    return styleModifier(_this__u8e3s4, verticalAlign$lambda(verticalAlign));
-  }
-  function padding_1(_this__u8e3s4, topBottom, leftRight) {
-    topBottom = topBottom === VOID ? get_px(0) : topBottom;
-    leftRight = leftRight === VOID ? get_px(0) : leftRight;
-    return styleModifier(_this__u8e3s4, padding$lambda_0(topBottom, leftRight));
-  }
-  function lineHeight_1(_this__u8e3s4, value) {
-    return styleModifier(_this__u8e3s4, lineHeight$lambda(value));
-  }
-  function overflow_1(_this__u8e3s4, overflow) {
-    return styleModifier(_this__u8e3s4, overflow$lambda_0(overflow));
-  }
-  function margin_1(_this__u8e3s4, all) {
-    return styleModifier(_this__u8e3s4, margin$lambda_0(all));
-  }
-  function paddingInline_0(_this__u8e3s4, start, end) {
-    start = start === VOID ? get_px(0) : start;
-    end = end === VOID ? get_px(0) : end;
-    return styleModifier(_this__u8e3s4, paddingInline$lambda(start, end));
-  }
-  function margin_2(_this__u8e3s4, top, right, bottom, left) {
+  function padding_0(_this__u8e3s4, top, right, bottom, left) {
     top = top === VOID ? get_px(0) : top;
     right = right === VOID ? get_px(0) : right;
     bottom = bottom === VOID ? get_px(0) : bottom;
     left = left === VOID ? get_px(0) : left;
-    return styleModifier(_this__u8e3s4, margin$lambda_1(top, right, bottom, left));
+    return styleModifier(_this__u8e3s4, padding$lambda(top, right, bottom, left));
+  }
+  function padding_1(_this__u8e3s4, all) {
+    return styleModifier(_this__u8e3s4, padding$lambda_0(all));
   }
   function padding_2(_this__u8e3s4, top, leftRight, bottom) {
     top = top === VOID ? get_px(0) : top;
@@ -3923,76 +3892,64 @@
     bottom = bottom === VOID ? get_px(0) : bottom;
     return styleModifier(_this__u8e3s4, padding$lambda_1(top, leftRight, bottom));
   }
-  function padding_3(_this__u8e3s4, top, right, bottom, left) {
+  function margin_0(_this__u8e3s4, top, right, bottom, left) {
     top = top === VOID ? get_px(0) : top;
     right = right === VOID ? get_px(0) : right;
     bottom = bottom === VOID ? get_px(0) : bottom;
     left = left === VOID ? get_px(0) : left;
-    return styleModifier(_this__u8e3s4, padding$lambda_2(top, right, bottom, left));
+    return styleModifier(_this__u8e3s4, margin$lambda(top, right, bottom, left));
+  }
+  function lineHeight_1(_this__u8e3s4, value) {
+    return styleModifier(_this__u8e3s4, lineHeight$lambda(value));
   }
   function lineHeight_2(_this__u8e3s4, value) {
     return styleModifier(_this__u8e3s4, lineHeight$lambda_0(value));
   }
+  function padding_3(_this__u8e3s4, topBottom, leftRight) {
+    topBottom = topBottom === VOID ? get_px(0) : topBottom;
+    leftRight = leftRight === VOID ? get_px(0) : leftRight;
+    return styleModifier(_this__u8e3s4, padding$lambda_2(topBottom, leftRight));
+  }
+  function overflow_0(_this__u8e3s4, overflow) {
+    return styleModifier(_this__u8e3s4, overflow$lambda(overflow));
+  }
+  function overflow_1(_this__u8e3s4, scope) {
+    return styleModifier(_this__u8e3s4, overflow$lambda_0(scope));
+  }
+  function paddingInline_0(_this__u8e3s4, start, end) {
+    start = start === VOID ? get_px(0) : start;
+    end = end === VOID ? get_px(0) : end;
+    return styleModifier(_this__u8e3s4, paddingInline$lambda(start, end));
+  }
   function zIndex_0(_this__u8e3s4, value) {
     return styleModifier(_this__u8e3s4, zIndex$lambda(value));
   }
-  function margin$lambda($top, $leftRight, $bottom) {
+  function margin_1(_this__u8e3s4, topBottom, leftRight) {
+    topBottom = topBottom === VOID ? get_px(0) : topBottom;
+    leftRight = leftRight === VOID ? get_px(0) : leftRight;
+    return styleModifier(_this__u8e3s4, margin$lambda_0(topBottom, leftRight));
+  }
+  function margin_2(_this__u8e3s4, top, leftRight, bottom) {
+    top = top === VOID ? get_px(0) : top;
+    leftRight = leftRight === VOID ? get_px(0) : leftRight;
+    bottom = bottom === VOID ? get_px(0) : bottom;
+    return styleModifier(_this__u8e3s4, margin$lambda_1(top, leftRight, bottom));
+  }
+  function margin_3(_this__u8e3s4, all) {
+    return styleModifier(_this__u8e3s4, margin$lambda_2(all));
+  }
+  function verticalAlign_0(_this__u8e3s4, verticalAlign) {
+    return styleModifier(_this__u8e3s4, verticalAlign$lambda(verticalAlign));
+  }
+  function padding$lambda($top, $right, $bottom, $left) {
     return function ($this$styleModifier) {
-      margin($this$styleModifier, [$top, $leftRight, $bottom]);
+      padding($this$styleModifier, [$top, $right, $bottom, $left]);
       return Unit_getInstance();
     };
   }
-  function padding$lambda($all) {
+  function padding$lambda_0($all) {
     return function ($this$styleModifier) {
       padding($this$styleModifier, [$all]);
-      return Unit_getInstance();
-    };
-  }
-  function overflow$lambda($scope) {
-    return function ($this$styleModifier) {
-      $scope(new OverflowScope($this$styleModifier));
-      return Unit_getInstance();
-    };
-  }
-  function verticalAlign$lambda($verticalAlign) {
-    return function ($this$styleModifier) {
-      verticalAlign($this$styleModifier, $verticalAlign);
-      return Unit_getInstance();
-    };
-  }
-  function padding$lambda_0($topBottom, $leftRight) {
-    return function ($this$styleModifier) {
-      padding($this$styleModifier, [$topBottom, $leftRight]);
-      return Unit_getInstance();
-    };
-  }
-  function lineHeight$lambda($value) {
-    return function ($this$styleModifier) {
-      lineHeight($this$styleModifier, toString_0($value));
-      return Unit_getInstance();
-    };
-  }
-  function overflow$lambda_0($overflow) {
-    return function ($this$styleModifier) {
-      overflow($this$styleModifier, $overflow);
-      return Unit_getInstance();
-    };
-  }
-  function margin$lambda_0($all) {
-    return function ($this$styleModifier) {
-      margin($this$styleModifier, [$all]);
-      return Unit_getInstance();
-    };
-  }
-  function paddingInline$lambda($start, $end) {
-    return function ($this$styleModifier) {
-      paddingInline($this$styleModifier, [$start, $end]);
-      return Unit_getInstance();
-    };
-  }
-  function margin$lambda_1($top, $right, $bottom, $left) {
-    return function ($this$styleModifier) {
-      margin($this$styleModifier, [$top, $right, $bottom, $left]);
       return Unit_getInstance();
     };
   }
@@ -4002,9 +3959,15 @@
       return Unit_getInstance();
     };
   }
-  function padding$lambda_2($top, $right, $bottom, $left) {
+  function margin$lambda($top, $right, $bottom, $left) {
     return function ($this$styleModifier) {
-      padding($this$styleModifier, [$top, $right, $bottom, $left]);
+      margin($this$styleModifier, [$top, $right, $bottom, $left]);
+      return Unit_getInstance();
+    };
+  }
+  function lineHeight$lambda($value) {
+    return function ($this$styleModifier) {
+      lineHeight($this$styleModifier, toString_0($value));
       return Unit_getInstance();
     };
   }
@@ -4014,9 +3977,57 @@
       return Unit_getInstance();
     };
   }
+  function padding$lambda_2($topBottom, $leftRight) {
+    return function ($this$styleModifier) {
+      padding($this$styleModifier, [$topBottom, $leftRight]);
+      return Unit_getInstance();
+    };
+  }
+  function overflow$lambda($overflow) {
+    return function ($this$styleModifier) {
+      overflow($this$styleModifier, $overflow);
+      return Unit_getInstance();
+    };
+  }
+  function overflow$lambda_0($scope) {
+    return function ($this$styleModifier) {
+      $scope(new OverflowScope($this$styleModifier));
+      return Unit_getInstance();
+    };
+  }
+  function paddingInline$lambda($start, $end) {
+    return function ($this$styleModifier) {
+      paddingInline($this$styleModifier, [$start, $end]);
+      return Unit_getInstance();
+    };
+  }
   function zIndex$lambda($value) {
     return function ($this$styleModifier) {
       zIndex($this$styleModifier, $value);
+      return Unit_getInstance();
+    };
+  }
+  function margin$lambda_0($topBottom, $leftRight) {
+    return function ($this$styleModifier) {
+      margin($this$styleModifier, [$topBottom, $leftRight]);
+      return Unit_getInstance();
+    };
+  }
+  function margin$lambda_1($top, $leftRight, $bottom) {
+    return function ($this$styleModifier) {
+      margin($this$styleModifier, [$top, $leftRight, $bottom]);
+      return Unit_getInstance();
+    };
+  }
+  function margin$lambda_2($all) {
+    return function ($this$styleModifier) {
+      margin($this$styleModifier, [$all]);
+      return Unit_getInstance();
+    };
+  }
+  function verticalAlign$lambda($verticalAlign) {
+    return function ($this$styleModifier) {
+      verticalAlign($this$styleModifier, $verticalAlign);
       return Unit_getInstance();
     };
   }
@@ -4452,72 +4463,73 @@
   _.$_$.d2 = lineHeight_2;
   _.$_$.e2 = lineHeight_1;
   _.$_$.f2 = listStyle_0;
-  _.$_$.g2 = margin_2;
-  _.$_$.h2 = margin_1;
-  _.$_$.i2 = margin_0;
-  _.$_$.j2 = maxWidth_0;
-  _.$_$.k2 = minHeight_0;
-  _.$_$.l2 = minWidth_0;
-  _.$_$.m2 = objectFit_0;
-  _.$_$.n2 = onAnimationEnd;
-  _.$_$.o2 = onClick;
-  _.$_$.p2 = onMouseEnter;
-  _.$_$.q2 = onMouseLeave;
-  _.$_$.r2 = onTransitionEnd_0;
-  _.$_$.s2 = opacity_0;
-  _.$_$.t2 = outline_0;
-  _.$_$.u2 = overflow_0;
+  _.$_$.g2 = margin_0;
+  _.$_$.h2 = margin_3;
+  _.$_$.i2 = margin_1;
+  _.$_$.j2 = margin_2;
+  _.$_$.k2 = maxWidth_0;
+  _.$_$.l2 = minHeight_0;
+  _.$_$.m2 = minWidth_0;
+  _.$_$.n2 = objectFit_0;
+  _.$_$.o2 = onAnimationEnd;
+  _.$_$.p2 = onClick;
+  _.$_$.q2 = onMouseEnter;
+  _.$_$.r2 = onMouseLeave;
+  _.$_$.s2 = onTransitionEnd_0;
+  _.$_$.t2 = opacity_0;
+  _.$_$.u2 = outline_0;
   _.$_$.v2 = overflow_1;
-  _.$_$.w2 = paddingInline_0;
-  _.$_$.x2 = padding_3;
+  _.$_$.w2 = overflow_0;
+  _.$_$.x2 = paddingInline_0;
   _.$_$.y2 = padding_0;
-  _.$_$.z2 = padding_2;
-  _.$_$.a3 = padding_1;
-  _.$_$.b3 = position_0;
-  _.$_$.c3 = right_0;
-  _.$_$.d3 = rowGap_0;
-  _.$_$.e3 = scale_0;
-  _.$_$.f3 = scrollBehavior_0;
-  _.$_$.g3 = setVariable_2;
-  _.$_$.h3 = setVariable_1;
-  _.$_$.i3 = size;
-  _.$_$.j3 = tabIndex;
-  _.$_$.k3 = textAlign_0;
-  _.$_$.l3 = textDecorationLine_0;
-  _.$_$.m3 = top_0;
-  _.$_$.n3 = transform_0;
-  _.$_$.o3 = transition_2;
-  _.$_$.p3 = transition_3;
-  _.$_$.q3 = transition_1;
-  _.$_$.r3 = translateX_0;
-  _.$_$.s3 = translate_0;
-  _.$_$.t3 = userSelect_0;
-  _.$_$.u3 = verticalAlign_0;
-  _.$_$.v3 = whiteSpace_0;
-  _.$_$.w3 = width_1;
-  _.$_$.x3 = width_2;
-  _.$_$.y3 = zIndex_0;
-  _.$_$.z3 = styleModifier;
-  _.$_$.a4 = thenIf;
-  _.$_$.b4 = toAttrs;
-  _.$_$.c4 = toStyles;
-  _.$_$.d4 = Center_getInstance;
-  _.$_$.e4 = SpaceBetween_getInstance;
-  _.$_$.f4 = Start_getInstance;
-  _.$_$.g4 = Top_getInstance;
-  _.$_$.h4 = Arrangement_getInstance;
-  _.$_$.i4 = KobwebComposeStyleSheet_getInstance;
-  _.$_$.j4 = Companion_getInstance_14;
-  _.$_$.k4 = Colors_getInstance;
-  _.$_$.l4 = CenterEnd_getInstance;
-  _.$_$.m4 = CenterHorizontally_getInstance;
-  _.$_$.n4 = CenterStart_getInstance;
-  _.$_$.o4 = CenterVertically_getInstance;
-  _.$_$.p4 = Center_getInstance_0;
-  _.$_$.q4 = Start_getInstance_0;
-  _.$_$.r4 = TopCenter_getInstance;
-  _.$_$.s4 = TopStart_getInstance;
-  _.$_$.t4 = Companion_getInstance_13;
+  _.$_$.z2 = padding_1;
+  _.$_$.a3 = padding_2;
+  _.$_$.b3 = padding_3;
+  _.$_$.c3 = position_0;
+  _.$_$.d3 = right_0;
+  _.$_$.e3 = rowGap_0;
+  _.$_$.f3 = scale_0;
+  _.$_$.g3 = scrollBehavior_0;
+  _.$_$.h3 = setVariable_2;
+  _.$_$.i3 = setVariable_1;
+  _.$_$.j3 = size;
+  _.$_$.k3 = tabIndex;
+  _.$_$.l3 = textAlign_0;
+  _.$_$.m3 = textDecorationLine_0;
+  _.$_$.n3 = top_0;
+  _.$_$.o3 = transform_0;
+  _.$_$.p3 = transition_2;
+  _.$_$.q3 = transition_3;
+  _.$_$.r3 = transition_1;
+  _.$_$.s3 = translateX_0;
+  _.$_$.t3 = translate_0;
+  _.$_$.u3 = userSelect_0;
+  _.$_$.v3 = verticalAlign_0;
+  _.$_$.w3 = whiteSpace_0;
+  _.$_$.x3 = width_1;
+  _.$_$.y3 = width_2;
+  _.$_$.z3 = zIndex_0;
+  _.$_$.a4 = styleModifier;
+  _.$_$.b4 = thenIf;
+  _.$_$.c4 = toAttrs;
+  _.$_$.d4 = toStyles;
+  _.$_$.e4 = Center_getInstance;
+  _.$_$.f4 = SpaceBetween_getInstance;
+  _.$_$.g4 = Start_getInstance;
+  _.$_$.h4 = Top_getInstance;
+  _.$_$.i4 = Arrangement_getInstance;
+  _.$_$.j4 = KobwebComposeStyleSheet_getInstance;
+  _.$_$.k4 = Companion_getInstance_14;
+  _.$_$.l4 = Colors_getInstance;
+  _.$_$.m4 = CenterEnd_getInstance;
+  _.$_$.n4 = CenterHorizontally_getInstance;
+  _.$_$.o4 = CenterStart_getInstance;
+  _.$_$.p4 = CenterVertically_getInstance;
+  _.$_$.q4 = Center_getInstance_0;
+  _.$_$.r4 = Start_getInstance_0;
+  _.$_$.s4 = TopCenter_getInstance;
+  _.$_$.t4 = TopStart_getInstance;
+  _.$_$.u4 = Companion_getInstance_13;
   //endregion
   return _;
 }));

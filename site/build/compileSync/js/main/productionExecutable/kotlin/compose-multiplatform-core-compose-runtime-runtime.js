@@ -365,7 +365,7 @@
   setMetadataFor(Companion_8, 'Companion', objectMeta);
   setMetadataFor(TrieNode, 'TrieNode', classMeta);
   setMetadataFor(Companion_9, 'Companion', objectMeta);
-  setMetadataFor(PersistentOrderedSet, 'PersistentOrderedSet', classMeta, AbstractSet, [AbstractSet, Collection, Set]);
+  setMetadataFor(PersistentOrderedSet, 'PersistentOrderedSet', classMeta, AbstractSet, [AbstractSet, Set, Collection]);
   setMetadataFor(Links, 'Links', classMeta, VOID, VOID, Links_init_$Create$);
   setMetadataFor(PersistentOrderedSetIterator, 'PersistentOrderedSetIterator', classMeta);
   setMetadataFor(EndOfChain, 'EndOfChain', objectMeta);

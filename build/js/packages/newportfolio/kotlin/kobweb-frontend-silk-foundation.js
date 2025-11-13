@@ -36,7 +36,7 @@
   var THROW_CCE = kotlin_kotlin.$_$.p9;
   var traceEventStart = kotlin_org_jetbrains_compose_runtime_runtime.$_$.z;
   var isTraceInProgress = kotlin_org_jetbrains_compose_runtime_runtime.$_$.q;
-  var KobwebComposeStyleSheet_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g4;
+  var KobwebComposeStyleSheet_getInstance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h4;
   var Style = kotlin_org_jetbrains_compose_html_html_core.$_$.d4;
   var traceEventEnd = kotlin_org_jetbrains_compose_runtime_runtime.$_$.y;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a1;
@@ -63,14 +63,14 @@
   var charSequenceLength = kotlin_kotlin.$_$.b6;
   var IllegalArgumentException_init_$Create$ = kotlin_kotlin.$_$.d1;
   var toList = kotlin_kotlin.$_$.y4;
-  var Companion_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r4;
-  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
+  var Companion_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s4;
+  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
   var removePrefix = kotlin_kotlin.$_$.j8;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.u1;
   var endsWith = kotlin_kotlin.$_$.z7;
   var startsWith = kotlin_kotlin.$_$.q8;
   var Companion_instance_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.y3;
-  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t3;
+  var whiteSpace = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u3;
   var composableLambda = kotlin_org_jetbrains_compose_runtime_runtime.$_$.b;
   var sourceInformation = kotlin_org_jetbrains_compose_runtime_runtime.$_$.w;
   var Span = kotlin_org_jetbrains_compose_html_html_core.$_$.c4;
@@ -116,7 +116,7 @@
   var plus = kotlin_kotlin.$_$.k4;
   var interfaceMeta = kotlin_kotlin.$_$.o6;
   var ComparableStyleScope = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.h;
-  var toStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
+  var toStyles = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
   var equals = kotlin_kotlin.$_$.f6;
   var substringAfterLast = kotlin_kotlin.$_$.r8;
   var endsWith_0 = kotlin_kotlin.$_$.a8;
@@ -160,12 +160,12 @@
   var throwKotlinNothingValueException = kotlin_kotlin.$_$.ea;
   var THROW_IAE = kotlin_kotlin.$_$.q9;
   var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.s;
-  var Companion_instance_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h4;
+  var Companion_instance_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i4;
   var lightened = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f;
   var KProperty0 = kotlin_kotlin.$_$.k7;
   var compositionLocalOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.o;
   var ensureNotNull = kotlin_kotlin.$_$.y9;
-  var styleModifier = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x3;
+  var styleModifier = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y3;
   //endregion
   //region block: pre-declaration
   setMetadataFor(SilkStyleSheet, 'SilkStyleSheet', objectMeta, StyleSheet);

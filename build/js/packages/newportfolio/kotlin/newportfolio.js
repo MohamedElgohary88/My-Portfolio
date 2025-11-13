@@ -102,24 +102,24 @@
   var toModifier = kotlin_com_varabyte_kobweb_silk_foundation.$_$.n;
   var fillMaxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j1;
   var get_vh = kotlin_org_jetbrains_compose_html_html_core.$_$.q3;
-  var minHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i2;
+  var minHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j2;
   var Companion_instance_1 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.s3;
-  var scrollBehavior = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d3;
+  var scrollBehavior = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e3;
   var Surface = kotlin_com_varabyte_kobweb_silk_widgets.$_$.h;
   var updateChangedFlags = kotlin_org_jetbrains_compose_runtime_runtime.$_$.a1;
-  var Companion_instance_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r4;
+  var Companion_instance_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s4;
   var fillMaxSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i1;
-  var CenterHorizontally_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k4;
+  var CenterHorizontally_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
   var Column = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b;
-  var Center_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
+  var Center_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
   var get_cssRem = kotlin_org_jetbrains_compose_html_html_core.$_$.b2;
-  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x2;
+  var padding = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y2;
   var flexGrow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l1;
   var numColumns = kotlin_com_varabyte_kobweb_silk_widgets.$_$.i;
   var SimpleGrid = kotlin_com_varabyte_kobweb_silk_widgets.$_$.g;
   var toModifier_0 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.o;
   var Companion_instance_3 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.t3;
-  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i3;
+  var textAlign = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j3;
   var SpanText = kotlin_com_varabyte_kobweb_silk_foundation.$_$.p;
   var toPalette = kotlin_com_varabyte_kobweb_silk_foundation.$_$.w1;
   var Breakpoint_ZERO_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.j2;
@@ -127,9 +127,9 @@
   var Breakpoint_MD_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.g2;
   var Breakpoint_LG_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.f2;
   var Breakpoint_XL_getInstance = kotlin_com_varabyte_kobweb_silk_foundation.$_$.i2;
-  var Colors_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i4;
+  var Colors_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j4;
   var get_percent = kotlin_org_jetbrains_compose_html_html_core.$_$.g3;
-  var maxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h2;
+  var maxWidth = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i2;
   var Companion_instance_4 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.d3;
   var CSSPosition_init_$Create$ = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.b3;
   var radialGradient = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.e;
@@ -137,7 +137,7 @@
   var KProperty0 = kotlin_kotlin.$_$.k7;
   var getPropertyCallableRef = kotlin_kotlin.$_$.k6;
   var addVariant = kotlin_com_varabyte_kobweb_silk_foundation.$_$.j;
-  var padding_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v2;
+  var padding_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w2;
   var gridAutoRows = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t1;
   var get_fr = kotlin_org_jetbrains_compose_html_html_core.$_$.k2;
   var gap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s1;
@@ -146,16 +146,18 @@
   var get_px = kotlin_org_jetbrains_compose_html_html_core.$_$.i3;
   var height = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v1;
   var mutableStateOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.s;
-  var onMouseEnter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n2;
-  var onMouseLeave = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o2;
-  var transform = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l3;
+  var rememberBreakpoint = kotlin_com_varabyte_kobweb_silk_foundation.$_$.t1;
+  var get_em = kotlin_org_jetbrains_compose_html_html_core.$_$.e2;
+  var onMouseEnter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o2;
+  var onMouseLeave = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p2;
+  var transform = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m3;
   var boxShadow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a1;
-  var thenIf = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y3;
+  var thenIf = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
   var get_s = kotlin_org_jetbrains_compose_html_html_core.$_$.l3;
   var Companion_instance_5 = kotlin_org_jetbrains_compose_html_html_core.$_$.i;
   var CSSTransition_init_$Create$ = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.c3;
-  var transition = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n3;
-  var Top_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e4;
+  var transition = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o3;
+  var Top_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f4;
   var Text = kotlin_org_jetbrains_compose_html_html_core.$_$.f4;
   var fontFamily = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n1;
   var KMutableProperty0 = kotlin_kotlin.$_$.i7;
@@ -164,48 +166,47 @@
   var get_overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.x;
   var background = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r;
   var borderRadius = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u;
-  var padding_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y2;
+  var padding_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z2;
   var Companion_getInstance_0 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.v3;
-  var transition_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m3;
+  var transition_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n3;
   var get_deg = kotlin_org_jetbrains_compose_html_html_core.$_$.c2;
-  var get_em = kotlin_org_jetbrains_compose_html_html_core.$_$.e2;
   var margin = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g2;
+  var margin_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h2;
   var lineHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b2;
-  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z3;
+  var toAttrs = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a4;
   var P = kotlin_org_jetbrains_compose_html_html_core.$_$.b4;
   var gap_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r1;
-  var CenterVertically_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m4;
+  var CenterVertically_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n4;
   var Row = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c;
   var ComponentStyle = kotlin_com_varabyte_kobweb_silk_foundation.$_$.f;
   var getStringHashCode = kotlin_kotlin.$_$.l6;
   var getBooleanHashCode = kotlin_kotlin.$_$.h6;
-  var padding_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w2;
+  var padding_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x2;
   var Companion_instance_6 = kotlin_org_jetbrains_compose_html_html_core.$_$.o;
   var border = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x;
   var backgroundColor = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n;
   var linearGradient = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.d;
-  var outline = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r2;
+  var outline = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.s2;
   var Companion_instance_7 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.j3;
   var cursor = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f1;
-  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m2;
+  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n2;
   var Companion_instance_8 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.u3;
-  var textDecorationLine = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j3;
+  var textDecorationLine = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k3;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.j;
   var id = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x1;
-  var margin_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e2;
-  var margin_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f2;
+  var margin_1 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e2;
+  var margin_2 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f2;
   var Box = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a;
   var take = kotlin_kotlin.$_$.v4;
-  var Arrangement_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f4;
+  var Arrangement_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g4;
   var listOf = kotlin_kotlin.$_$.c4;
-  var rememberBreakpoint = kotlin_com_varabyte_kobweb_silk_foundation.$_$.t1;
-  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u3;
+  var width = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v3;
   var Companion_instance_9 = kotlin_org_jetbrains_compose_html_html_core.$_$.p;
-  var position = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z2;
+  var position = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a3;
   var classNames = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c1;
-  var Center_instance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.n4;
-  var CenterEnd_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.j4;
-  var CenterStart_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l4;
+  var Center_instance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o4;
+  var CenterEnd_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k4;
+  var CenterStart_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m4;
   var _Char___init__impl__6a9atx = kotlin_kotlin.$_$.u1;
   var charArrayOf = kotlin_kotlin.$_$.z5;
   var split = kotlin_kotlin.$_$.n8;
@@ -214,17 +215,17 @@
   var isCharSequence = kotlin_kotlin.$_$.q6;
   var trim = kotlin_kotlin.$_$.d9;
   var toString_0 = kotlin_kotlin.$_$.c7;
-  var SpaceBetween_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c4;
+  var SpaceBetween_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
   var mutableStateListOf = kotlin_org_jetbrains_compose_runtime_runtime.$_$.r;
   var SideEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.n;
   var checkIndexOverflow = kotlin_kotlin.$_$.b3;
   var get_lastIndex = kotlin_kotlin.$_$.x3;
-  var opacity = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q2;
-  var top = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k3;
+  var opacity = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r2;
+  var top = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l3;
   var bottom = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.z;
   var displayIfAtLeast = kotlin_com_varabyte_kobweb_silk_foundation.$_$.c;
   var left = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.a2;
-  var size = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g3;
+  var size = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h3;
   var substringAfter = kotlin_kotlin.$_$.t8;
   var toIntOrNull = kotlin_kotlin.$_$.x8;
   var startsWith = kotlin_kotlin.$_$.p8;
@@ -245,7 +246,7 @@
   var justifyContent = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.y1;
   var Companion_instance_12 = kotlin_org_jetbrains_compose_html_html_core.$_$.e;
   var alignItems = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h;
-  var zIndex = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w3;
+  var zIndex = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.x3;
   var Anchor = kotlin_com_varabyte_kobweb_kobweb_core.$_$.e;
   var get_hover = kotlin_com_varabyte_kobweb_silk_foundation.$_$.l;
   var noWhenBranchMatchedException = kotlin_kotlin.$_$.aa;
@@ -254,7 +255,7 @@
   var emptyMap = kotlin_kotlin.$_$.k3;
   var LaunchedEffect_0 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.k;
   var Companion_instance_13 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.r3;
-  var overflow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.t2;
+  var overflow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u2;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.q;
   var getNumberHashCode = kotlin_kotlin.$_$.j6;
   var equals = kotlin_kotlin.$_$.f6;
@@ -263,34 +264,34 @@
   var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d1;
   var Enum = kotlin_kotlin.$_$.i9;
   var OverlayVars_getInstance = kotlin_com_varabyte_kobweb_silk_widgets.$_$.a1;
-  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f3;
+  var setVariable = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g3;
   var Overlay = kotlin_com_varabyte_kobweb_silk_widgets.$_$.j;
   var thenIf_0 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.p1;
   var Link = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.d;
   var CloseIcon = kotlin_com_varabyte_kobweb_silk_widgets.$_$.c;
   var fillMaxHeight = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h1;
   var borderRadius_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v;
-  var translate = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
-  var translateX = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p3;
+  var translate = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r3;
+  var translateX = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q3;
   var get_active = kotlin_com_varabyte_kobweb_silk_foundation.$_$.h;
   var shifted = kotlin_com_varabyte_kobweb_silk_foundation.$_$.y1;
-  var Start_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o4;
+  var Start_instance = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p4;
   var get_ms = kotlin_org_jetbrains_compose_html_html_core.$_$.d3;
   var Companion_instance_14 = kotlin_org_jetbrains_compose_html_html_core.$_$.g;
   var Companion_instance_15 = kotlin_org_jetbrains_compose_html_html_core.$_$.h;
   var toAnimation = kotlin_com_varabyte_kobweb_silk_foundation.$_$.b;
   var animation = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i;
-  var onAnimationEnd = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.l2;
+  var onAnimationEnd = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m2;
   var Keyframes = kotlin_com_varabyte_kobweb_silk_foundation.$_$.a;
   var get_LinkStyle = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.c;
   var addVariant_1 = kotlin_com_varabyte_kobweb_silk_foundation.$_$.i;
   var rememberPageContext = kotlin_com_varabyte_kobweb_kobweb_core.$_$.d;
-  var Start_instance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d4;
+  var Start_instance_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e4;
   var columnGap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.e1;
-  var rowGap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b3;
+  var rowGap = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c3;
   var Companion_instance_16 = kotlin_org_jetbrains_compose_html_html_core.$_$.m;
   var flexDirection = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.k1;
-  var Companion_instance_17 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h4;
+  var Companion_instance_17 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.i4;
   var Companion_instance_18 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.g3;
   var backgroundSize = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q;
   var Companion_instance_19 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.f3;
@@ -298,7 +299,7 @@
   var Button = kotlin_com_varabyte_kobweb_silk_widgets.$_$.b;
   var Companion_instance_20 = kotlin_com_varabyte_kobweb_browser_ext.$_$.h;
   var Tooltip = kotlin_com_varabyte_kobweb_silk_widgets.$_$.k;
-  var width_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.v3;
+  var width_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w3;
   var height_0 = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w1;
   var Companion_instance_21 = kotlin_org_jetbrains_compose_html_html_core.$_$.d;
   var alignContent = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.g;
@@ -308,7 +309,7 @@
   var get_ButtonStyle = kotlin_com_varabyte_kobweb_silk_widgets.$_$.a;
   var OpenLinkStrategy_IN_NEW_TAB_getInstance = kotlin_com_varabyte_kobweb_kobweb_core.$_$.h;
   var Link_0 = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.e;
-  var scale = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c3;
+  var scale = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.d3;
   var get_ImageStyle = kotlin_com_varabyte_kobweb_silk_widgets_kobweb.$_$.a;
   var split_0 = kotlin_kotlin.$_$.o8;
   var equals_0 = kotlin_kotlin.$_$.b8;
@@ -1531,9 +1532,9 @@
       }
       $composer_0.v1n();
       if (isTraceInProgress()) {
-        traceEventStart(-810951222, $dirty, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard (ContactCard.kt:84)');
+        traceEventStart(-810951222, $dirty, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard (ContactCard.kt:85)');
       }
-      $composer_0.s1n(-446352054);
+      $composer_0.s1n(-446351986);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_0 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1554,8 +1555,10 @@
       $composer_0.t1n();
       var isHovered$delegate = tmp0_group;
       var palette = toPalette(Companion_instance_0.r3a($composer_0, 8));
+      var bp = rememberBreakpoint($composer_0, 0);
+      var horizontalTextMargin = bp.z9(Breakpoint_MD_getInstance()) < 0 ? get_em(1.2) : get_em(0.6);
       var tmp_1 = toModifier_0(get_ContactCardStyle(), [], $composer_0, 64);
-      $composer_0.s1n(-446351884);
+      $composer_0.s1n(-446351708);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1575,7 +1578,7 @@
       var tmp1_group = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
       $composer_0.t1n();
       var tmp_4 = onMouseEnter(tmp_1, tmp1_group);
-      $composer_0.s1n(-446351837);
+      $composer_0.s1n(-446351661);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_2 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1597,7 +1600,7 @@
       var tmp_7 = onMouseLeave(tmp_4, tmp2_group);
       var tmp_8 = ContactCard$lambda(isHovered$delegate);
       var tmp_9 = Companion_instance_2;
-      $composer_0.s1n(-446351711);
+      $composer_0.s1n(-446351535);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_3 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1639,7 +1642,7 @@
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>' call
       var tmp_16 = $composer_0;
-      var dispatchReceiver = composableLambda(tmp_16, -337144717, true, ContactCard$lambda_4(colorMode_0));
+      var dispatchReceiver = composableLambda(tmp_16, -337144717, true, ContactCard$lambda_4(horizontalTextMargin, colorMode_0));
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       $composer_1.s1n(1157296644);
@@ -1684,7 +1687,7 @@
   function ComposableSingletons$ContactCardKt$lambda_1$lambda_xlprae($this$P, $composer, $changed) {
     var $composer_0 = $composer;
     if (isTraceInProgress()) {
-      traceEventStart(478404117, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ComposableSingletons$ContactCardKt.lambda-1.<anonymous> (ContactCard.kt:116)');
+      traceEventStart(478404117, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ComposableSingletons$ContactCardKt.lambda-1.<anonymous> (ContactCard.kt:120)');
     }
     Text('Feel free to reach out about collaborations, performance audits, or just to say hi. Email ', $composer_0, 6);
     var tmp = toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0);
@@ -1732,7 +1735,7 @@
     var $composer_0 = $composer;
     $composer_0.s1n(-990316938);
     if (isTraceInProgress()) {
-      traceEventStart(-990316938, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCardStyle$delegate.<anonymous> (ContactCard.kt:46)');
+      traceEventStart(-990316938, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCardStyle$delegate.<anonymous> (ContactCard.kt:47)');
     }
     var tmp0 = toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle()], $composer_0, 0);
     if (isTraceInProgress()) {
@@ -1826,7 +1829,7 @@
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.n1n()) {
         if (isTraceInProgress()) {
-          traceEventStart(416129552, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>.<anonymous> (ContactCard.kt:138)');
+          traceEventStart(416129552, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>.<anonymous> (ContactCard.kt:142)');
         }
         // Inline function 'kotlin.collections.forEach' call
         var tmp0_iterator = get_entries_2().l();
@@ -1863,19 +1866,19 @@
       return $boundThis.w2j(p0, p1, p2);
     };
   }
-  function ContactCard$lambda_4($colorMode) {
+  function ContactCard$lambda_4($horizontalTextMargin, $colorMode) {
     return function ($this$Column, $composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.n1n()) {
         if (isTraceInProgress()) {
-          traceEventStart(-337144717, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous> (ContactCard.kt:104)');
+          traceEventStart(-337144717, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous> (ContactCard.kt:107)');
         }
-        var tmp0_modifier = textAlign(toModifier_0(get_TextStyle(), [get_DisplayTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), Companion_instance_3.k2u());
+        var tmp0_modifier = margin(textAlign(toModifier_0(get_TextStyle(), [get_DisplayTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), Companion_instance_3.k2u()), VOID, $horizontalTextMargin);
         var tmp1_text = 'Contact me';
         SpanText(tmp1_text, tmp0_modifier, null, null, $composer_0, 70, 12);
-        P(toAttrs(lineHeight(margin(textAlign(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), Companion_instance_3.k2u()), get_em(0.6), get_em(0.6)), get_em(1.6))), ComposableSingletons$ContactCardKt_getInstance().e41_1, $composer_0, 48, 0);
-        var tmp_0 = gap_0(margin(Companion_instance_2, get_em(2.5)), get_em(1.1));
+        P(toAttrs(lineHeight(margin_0(textAlign(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), Companion_instance_3.k2u()), get_em(0.6), $horizontalTextMargin), get_em(1.6))), ComposableSingletons$ContactCardKt_getInstance().e41_1, $composer_0, 48, 0);
+        var tmp_0 = gap_0(margin_0(Companion_instance_2, get_em(2.5)), get_em(1.1));
         var tmp_1 = CenterVertically_instance;
         // Inline function 'kotlin.run' call
         // Inline function 'kotlin.contracts.contract' call
@@ -2602,7 +2605,7 @@
       }
       var tmp = toModifier_0(get_TextStyle(), [get_DisplayTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0);
       SpanText('Education & Certifications', tmp, null, null, $composer_0, 70, 12);
-      var tmp_0 = margin(toModifier_0(get_TextStyle(), [get_SubDisplayTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), get_px(12));
+      var tmp_0 = margin_0(toModifier_0(get_TextStyle(), [get_SubDisplayTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), get_px(12));
       SpanText('My academic background and professional credentials', tmp_0, null, null, $composer_0, 70, 12);
       if (isTraceInProgress()) {
         traceEventEnd();
@@ -2623,7 +2626,7 @@
       if (isTraceInProgress()) {
         traceEventStart(893992229, $changed, -1, 'org.example.newportfolio.components.sections.education.ComposableSingletons$EducationKt.lambda-2.<anonymous> (education.kt:268)');
       }
-      var tmp = margin(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(8));
+      var tmp = margin_0(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(8));
       SpanText('My Education', tmp, null, null, $composer_0, 70, 12);
       // Inline function 'kotlin.collections.forEach' call
       var tmp0_iterator = get_educationEntries().l();
@@ -2694,7 +2697,7 @@
         if (isTraceInProgress()) {
           traceEventStart(-1233463538, $changed, -1, 'org.example.newportfolio.components.sections.education.EducationCard.<anonymous> (education.kt:191)');
         }
-        var tmp_0 = margin(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(8));
+        var tmp_0 = margin_0(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(8));
         SpanText($entry.k41_1, tmp_0, null, null, $composer_0, 64, 12);
         var tmp0_safe_receiver = $entry.m41_1;
         var tmp_1;
@@ -2708,7 +2711,7 @@
         }
         var tmp1_elvis_lhs = tmp_1;
         var tmp_2 = $entry.l41_1 + (tmp1_elvis_lhs == null ? '' : tmp1_elvis_lhs);
-        var tmp_3 = margin(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(12));
+        var tmp_3 = margin_0(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(12));
         SpanText(tmp_2, tmp_3, null, null, $composer_0, 64, 12);
         var tmp_4 = toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0);
         SpanText($entry.n41_1, tmp_4, null, null, $composer_0, 64, 12);
@@ -2762,7 +2765,7 @@
         if (isTraceInProgress()) {
           traceEventStart(937803698, $changed, -1, 'org.example.newportfolio.components.sections.education.CertificationCard.<anonymous> (education.kt:221)');
         }
-        var tmp_0 = margin(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(6));
+        var tmp_0 = margin_0(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(6));
         SpanText($entry.o41_1, tmp_0, null, null, $composer_0, 64, 12);
         var tmp0_safe_receiver = $entry.q41_1;
         var tmp_1;
@@ -2776,7 +2779,7 @@
         }
         var tmp1_elvis_lhs = tmp_1;
         var tmp_2 = $entry.p41_1 + (tmp1_elvis_lhs == null ? '' : tmp1_elvis_lhs);
-        var tmp_3 = margin(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(12));
+        var tmp_3 = margin_0(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(12));
         SpanText(tmp_2, tmp_3, null, null, $composer_0, 64, 12);
         if (!($entry.r41_1 == null)) {
           LinkButton('Show Credential', $entry.r41_1, $composer_0, 6);
@@ -2840,7 +2843,7 @@
         }
         var tmp1_elvis_lhs = tmp_2;
         var tmp_3 = tmp_1 + (tmp1_elvis_lhs == null ? '' : tmp1_elvis_lhs);
-        var tmp_4 = margin_0(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, VOID, get_px(4));
+        var tmp_4 = margin_1(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, VOID, get_px(4));
         SpanText(tmp_3, tmp_4, null, null, $composer_0, 64, 12);
         var tmp_5;
         if (isTraceInProgress()) {
@@ -2906,7 +2909,7 @@
         while (tmp0_iterator.z()) {
           var element = tmp0_iterator.b1();
           // Inline function 'org.example.newportfolio.components.sections.education.EducationSection.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var tmp_0 = margin_1(Companion_instance_2, get_px(10));
+          var tmp_0 = margin_2(Companion_instance_2, get_px(10));
           // Inline function 'kotlin.run' call
           // Inline function 'kotlin.contracts.contract' call
           // Inline function 'org.example.newportfolio.components.sections.education.EducationSection.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
@@ -2968,7 +2971,7 @@
         if (isTraceInProgress()) {
           traceEventStart(1567054685, $changed, -1, 'org.example.newportfolio.components.sections.education.EducationSection.<anonymous>.<anonymous>.<anonymous> (education.kt:285)');
         }
-        var tmp_0 = margin(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(12));
+        var tmp_0 = margin_0(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(12));
         SpanText('Foundation Courses', tmp_0, null, null, $composer_0, 70, 12);
         var displayed = $showAllFoundation.p2() ? $foundation : take($foundation, 6);
         $composer_0.s1n(933824639);
@@ -2981,7 +2984,7 @@
         }
         $composer_0.t1n();
         if (!$showAllFoundation.p2() ? $foundation.j() > 6 : false) {
-          var tmp_1 = margin(cursor(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), Companion_instance_7.b2w()), get_px(12));
+          var tmp_1 = margin_0(cursor(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), Companion_instance_7.b2w()), get_px(12));
           $composer_0.s1n(933825042);
           // Inline function 'androidx.compose.runtime.cache' call
           // Inline function 'kotlin.let' call
@@ -3031,7 +3034,7 @@
         }
         var tmp_0 = toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0);
         SpanText('Licenses & Certifications', tmp_0, null, null, $composer_0, 70, 12);
-        var tmp_1 = margin(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), get_px(12), VOID, get_px(24));
+        var tmp_1 = margin_0(toModifier_0(get_TextStyle(), [get_TitleTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), get_px(12), VOID, get_px(24));
         SpanText('Featured Certifications', tmp_1, null, null, $composer_0, 70, 12);
         var tmp_2 = numColumns(1, 2, 3, 3);
         // Inline function 'kotlin.run' call
@@ -3511,7 +3514,7 @@
           var element_0 = tmp0_iterator_1.b1();
           // Inline function 'org.example.newportfolio.components.sections.experience.CardContent.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
           var tmp_0 = element_0 + '.';
-          var tmp_1 = margin(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(6));
+          var tmp_1 = margin_0(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), VOID, VOID, get_px(6));
           SpanText(tmp_0, tmp_1, null, null, $composer_0, 64, 12);
         }
         var tmp_2;
@@ -3573,7 +3576,7 @@
         while (tmp0_iterator.z()) {
           var element = tmp0_iterator.b1();
           // Inline function 'org.example.newportfolio.components.sections.experience.CardContent.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var tmp_0 = backgroundColor(borderRadius(padding_2(margin_0(Companion_instance_2, get_px(5), get_px(5)), get_px(6)), get_px(6)), get_overlay($palette));
+          var tmp_0 = backgroundColor(borderRadius(padding_2(margin_1(Companion_instance_2, get_px(5), get_px(5)), get_px(6)), get_px(6)), get_overlay($palette));
           // Inline function 'kotlin.run' call
           // Inline function 'kotlin.contracts.contract' call
           // Inline function 'org.example.newportfolio.components.sections.experience.CardContent.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
@@ -3629,7 +3632,7 @@
         if (isTraceInProgress()) {
           traceEventStart(-1425046988, $changed, -1, 'org.example.newportfolio.components.sections.experience.CardContent.<anonymous> (ExperienceCard.kt:49)');
         }
-        var tmp_0 = margin(fillMaxWidth(Companion_instance_2), VOID, VOID, get_px(10));
+        var tmp_0 = margin_0(fillMaxWidth(Companion_instance_2), VOID, VOID, get_px(10));
         var tmp_1 = SpaceBetween_instance;
         var tmp_2 = CenterVertically_instance;
         // Inline function 'kotlin.run' call
@@ -3660,9 +3663,9 @@
         var tmp0 = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
         $composer_1.t1n();
         Row(tmp_0, tmp_1, tmp_2, null, tmp0, $composer_0, 24584, 8);
-        var tmp_6 = margin(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(10));
+        var tmp_6 = margin_0(toModifier_0(get_TextStyle(), [get_LabelLargeTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), VOID, VOID, get_px(10));
         SpanText($experience.z41_1, tmp_6, null, null, $composer_0, 64, 12);
-        var tmp_7 = margin(Companion_instance_2, VOID, VOID, get_px(20));
+        var tmp_7 = margin_0(Companion_instance_2, VOID, VOID, get_px(20));
         // Inline function 'kotlin.run' call
         // Inline function 'kotlin.contracts.contract' call
         // Inline function 'org.example.newportfolio.components.sections.experience.CardContent.<anonymous>.<anonymous>.<anonymous>' call
@@ -3983,7 +3986,7 @@
           // Inline function 'kotlin.let' call
           // Inline function 'kotlin.contracts.contract' call
           // Inline function 'org.example.newportfolio.components.sections.experience.ExperienceSection.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var it = margin(fillMaxWidth(Companion_instance_2), VOID, VOID, index_0 === get_lastIndex(get_entries()) ? get_px(0) : get_px(40));
+          var it = margin_0(fillMaxWidth(Companion_instance_2), VOID, VOID, index_0 === get_lastIndex(get_entries()) ? get_px(0) : get_px(40));
           var tmp_0;
           if ($visibleStates.k(index_0)) {
             $composer_0.s1n(1353676540);
@@ -4144,7 +4147,7 @@
         // Inline function 'org.jetbrains.compose.web.css.LineStyle' call
         // Inline function 'kotlin.js.unsafeCast' call
         // Inline function 'kotlin.js.asDynamic' call
-        var tmp_8 = margin(border(tmp_6, tmp_7, 'solid', Colors_instance.p39()), get_px(35 + imul(ExperienceSection$lambda($activeExperience$delegate).y9_1, 130) | 0));
+        var tmp_8 = margin_0(border(tmp_6, tmp_7, 'solid', Colors_instance.p39()), get_px(35 + imul(ExperienceSection$lambda($activeExperience$delegate).y9_1, 130) | 0));
         var tmp_9 = Companion_getInstance_0();
         var tmp_10 = get_s(0.3);
         // Inline function 'org.jetbrains.compose.web.css.Companion.EaseInOut' call
@@ -4523,7 +4526,7 @@
       // Inline function 'org.jetbrains.compose.web.css.DisplayStyle' call
       // Inline function 'kotlin.js.unsafeCast' call
       // Inline function 'kotlin.js.asDynamic' call
-      var tmp_0 = margin_0(height(display(tmp, 'flex'), get_cssRem(1.25)), VOID, VOID, VOID, get_cssRem(0.375));
+      var tmp_0 = margin_1(height(display(tmp, 'flex'), get_cssRem(1.25)), VOID, VOID, VOID, get_cssRem(0.375));
       Image('images/kotlin.svg', tmp_0, null, null, null, null, false, null, $composer_0, 70, 252);
       if (isTraceInProgress()) {
         traceEventEnd();
@@ -8010,10 +8013,10 @@
         var tmp0_modifier = textAlign(toModifier_0(get_TextStyle(), [get_DisplayTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), $breakpoint.z9(Breakpoint_MD_getInstance()) > 0 ? Companion_instance_3.n2u() : Companion_instance_3.k2u());
         var tmp1_text = 'Software Engineer - Mobile Developer';
         SpanText(tmp1_text, tmp0_modifier, null, null, $composer_0, 70, 12);
-        var tmp2_modifier = textAlign(margin(maxWidth(toModifier_0(get_TextStyle(), [get_SubDisplayTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), $breakpoint.z9(Breakpoint_SM_getInstance()) >= 0 ? get_percent(75) : get_percent(100)), get_px(3)), $breakpoint.z9(Breakpoint_MD_getInstance()) > 0 ? Companion_instance_3.n2u() : Companion_instance_3.k2u());
+        var tmp2_modifier = textAlign(margin_0(maxWidth(toModifier_0(get_TextStyle(), [get_SubDisplayTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), $breakpoint.z9(Breakpoint_SM_getInstance()) >= 0 ? get_percent(75) : get_percent(100)), get_px(3)), $breakpoint.z9(Breakpoint_MD_getInstance()) > 0 ? Companion_instance_3.n2u() : Companion_instance_3.k2u());
         var tmp3_text = 'Dedicated to turning your innovative idea into a high-quality mobile reality.';
         SpanText(tmp3_text, tmp2_modifier, null, null, $composer_0, 70, 12);
-        var tmp_0 = margin(Companion_instance_2, get_px(50));
+        var tmp_0 = margin_0(Companion_instance_2, get_px(50));
         var tmp_1 = ComposableSingletons$StartSectionKt_getInstance().q44_1;
         $composer_0.s1n(556903232);
         // Inline function 'androidx.compose.runtime.cache' call
@@ -8304,11 +8307,11 @@
   }
   function StartSectionGridKeyFrames$delegate$lambda$lambda() {
     _init_properties_StartSectionGridStyle_kt__t9gb7a();
-    return opacity(margin_0(Companion_instance_2, VOID, get_px(50)), 0);
+    return opacity(margin_1(Companion_instance_2, VOID, get_px(50)), 0);
   }
   function StartSectionGridKeyFrames$delegate$lambda$lambda_0() {
     _init_properties_StartSectionGridStyle_kt__t9gb7a();
-    return opacity(margin_0(Companion_instance_2, VOID, get_px(0)), 1);
+    return opacity(margin_1(Companion_instance_2, VOID, get_px(0)), 1);
   }
   function StartSectionGridStyle$delegate$lambda($composer, $changed) {
     _init_properties_StartSectionGridStyle_kt__t9gb7a();
@@ -8558,7 +8561,7 @@
       if (isTraceInProgress()) {
         traceEventStart(-255207470, $dirty, -1, 'org.example.newportfolio.components.sections.works.TextContent (WorksSection.kt:76)');
       }
-      var tmp = margin(Companion_instance_2, get_cssRem(8.5));
+      var tmp = margin_0(Companion_instance_2, get_cssRem(8.5));
       var tmp_0 = Center_instance;
       var tmp_1 = CenterHorizontally_instance;
       // Inline function 'kotlin.run' call
@@ -8718,7 +8721,7 @@
         var tmp0_modifier = textAlign(toModifier_0(get_TextStyle(), [get_DisplayTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), Companion_instance_3.k2u());
         var tmp1_text = 'Explore my works';
         SpanText(tmp1_text, tmp0_modifier, null, null, $composer_0, 70, 12);
-        var tmp2_modifier = textAlign(margin(maxWidth(toModifier_0(get_TextStyle(), [get_SubDisplayTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), $breakpoint.z9(Breakpoint_SM_getInstance()) >= 0 ? get_percent(75) : get_percent(100)), get_cssRem(1)), Companion_instance_3.k2u());
+        var tmp2_modifier = textAlign(margin_0(maxWidth(toModifier_0(get_TextStyle(), [get_SubDisplayTextStyle(), get_TextStyleSecondaryColor()], $composer_0, 0), $breakpoint.z9(Breakpoint_SM_getInstance()) >= 0 ? get_percent(75) : get_percent(100)), get_cssRem(1)), Companion_instance_3.k2u());
         var tmp3_text = "All projects are primarily developed with Kotlin. It's a powerful cross-platform language and Google's preferred language for Android development.";
         SpanText(tmp3_text, tmp2_modifier, null, null, $composer_0, 70, 12);
         var tmp_0;
@@ -9040,9 +9043,9 @@
         }
         var tmp_0 = toModifier_0(get_TextStyle(), [get_TitleTextStyle()], $composer_0, 0);
         SpanText($work.x44_1, tmp_0, null, null, $composer_0, 64, 12);
-        var tmp_1 = margin(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle()], $composer_0, 0), get_cssRem(0.5));
+        var tmp_1 = margin_0(toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle()], $composer_0, 0), get_cssRem(0.5));
         SpanText($work.y44_1, tmp_1, null, null, $composer_0, 64, 12);
-        var tmp0_modifier = margin(Companion_instance_2, get_cssRem(1));
+        var tmp0_modifier = margin_0(Companion_instance_2, get_cssRem(1));
         var tmp1_path = $work.z44_1;
         var tmp_2 = ComposableSingletons$WorkItemKt_getInstance().u44_1;
         LinkIconButton(tmp1_path, tmp0_modifier, null, null, tmp_2, null, $composer_0, 24640, 44);
@@ -9208,7 +9211,7 @@
   }
   function WorkItemsSimpleGridVariant$delegate$lambda$lambda() {
     _init_properties_WorkItemsGridStyle_kt__577edg();
-    var tmp = margin(gap_0(Companion_instance_2, get_cssRem(2)), get_cssRem(4.75));
+    var tmp = margin_0(gap_0(Companion_instance_2, get_cssRem(2)), get_cssRem(4.75));
     return gridAutoRows(tmp, WorkItemsSimpleGridVariant$delegate$lambda$lambda$lambda);
   }
   function WorkItemsSimpleGridVariant$delegate$lambda$lambda$lambda($this$gridAutoRows) {
@@ -9218,23 +9221,23 @@
   }
   function WorkItemsSimpleGridVariant$delegate$lambda$lambda_0() {
     _init_properties_WorkItemsGridStyle_kt__577edg();
-    return margin(gap_0(Companion_instance_2, get_cssRem(1)), get_cssRem(3));
+    return margin_0(gap_0(Companion_instance_2, get_cssRem(1)), get_cssRem(3));
   }
   function WorkItemsSimpleGridVariant$delegate$lambda$lambda_1() {
     _init_properties_WorkItemsGridStyle_kt__577edg();
-    return margin(gap_0(Companion_instance_2, get_cssRem(1.25)), get_cssRem(3));
+    return margin_0(gap_0(Companion_instance_2, get_cssRem(1.25)), get_cssRem(3));
   }
   function WorkItemsSimpleGridVariant$delegate$lambda$lambda_2() {
     _init_properties_WorkItemsGridStyle_kt__577edg();
-    return margin(gap_0(Companion_instance_2, get_cssRem(1.5)), get_cssRem(3.5));
+    return margin_0(gap_0(Companion_instance_2, get_cssRem(1.5)), get_cssRem(3.5));
   }
   function WorkItemsSimpleGridVariant$delegate$lambda$lambda_3() {
     _init_properties_WorkItemsGridStyle_kt__577edg();
-    return margin(gap_0(Companion_instance_2, get_cssRem(2)), get_cssRem(4));
+    return margin_0(gap_0(Companion_instance_2, get_cssRem(2)), get_cssRem(4));
   }
   function WorkItemsSimpleGridVariant$delegate$lambda$lambda_4() {
     _init_properties_WorkItemsGridStyle_kt__577edg();
-    return margin(gap_0(Companion_instance_2, get_cssRem(2)), get_cssRem(4.5));
+    return margin_0(gap_0(Companion_instance_2, get_cssRem(2)), get_cssRem(4.5));
   }
   function WorkItemsSimpleGridVariant$factory() {
     return getPropertyCallableRef('WorkItemsSimpleGridVariant', 0, KProperty0, function () {
@@ -10815,7 +10818,7 @@
         var tmp_0 = $colorMode._v.g3i() ? $skill.h45_1 : $skill.i45_1;
         var tmp_1 = get_SkillItemImageVariant();
         Image(tmp_0, null, tmp_1, null, null, null, false, null, $composer_0, 0, 250);
-        var tmp0_modifier = margin_0(Companion_instance_2, VOID, VOID, VOID, get_cssRem(0.75));
+        var tmp0_modifier = margin_1(Companion_instance_2, VOID, VOID, VOID, get_cssRem(0.75));
         // Inline function 'kotlin.run' call
         // Inline function 'kotlin.contracts.contract' call
         // Inline function 'org.example.newportfolio.components.widgets.skill.SkillItem.<anonymous>.<anonymous>.<anonymous>' call
