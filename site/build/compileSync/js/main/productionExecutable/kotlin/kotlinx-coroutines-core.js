@@ -246,7 +246,7 @@
   setMetadataFor(Symbol, 'Symbol', classMeta);
   setMetadataFor(SelectInstance, 'SelectInstance', interfaceMeta);
   setMetadataFor(ClauseData, 'ClauseData', classMeta, VOID, VOID, VOID, VOID, VOID, [1]);
-  setMetadataFor(SelectImplementation, 'SelectImplementation', classMeta, CancelHandler, [CancelHandler, Waiter, SelectInstance], VOID, VOID, VOID, [0, 2]);
+  setMetadataFor(SelectImplementation, 'SelectImplementation', classMeta, CancelHandler, [CancelHandler, SelectInstance, Waiter], VOID, VOID, VOID, [0, 2]);
   setMetadataFor(TrySelectDetailedResult, 'TrySelectDetailedResult', classMeta, Enum);
   setMetadataFor(UndispatchedCoroutine, 'UndispatchedCoroutine', classMeta, ScopeCoroutine, VOID, VOID, VOID, VOID, [0]);
   setMetadataFor(SetTimeoutBasedDispatcher, 'SetTimeoutBasedDispatcher', classMeta, CoroutineDispatcher, VOID, VOID, VOID, VOID, [1]);
