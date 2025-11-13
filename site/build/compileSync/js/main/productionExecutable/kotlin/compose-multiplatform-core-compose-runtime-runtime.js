@@ -340,7 +340,7 @@
   setMetadataFor(AbstractPersistentList, 'AbstractPersistentList', classMeta, AbstractList, [List, Collection, AbstractList]);
   setMetadataFor(BufferIterator, 'BufferIterator', classMeta, AbstractListIterator);
   setMetadataFor(PersistentVector, 'PersistentVector', classMeta, AbstractPersistentList, [List, Collection, AbstractPersistentList]);
-  setMetadataFor(PersistentVectorBuilder, 'PersistentVectorBuilder', classMeta, AbstractMutableList, [AbstractMutableList, MutableCollection, List]);
+  setMetadataFor(PersistentVectorBuilder, 'PersistentVectorBuilder', classMeta, AbstractMutableList, [AbstractMutableList, List, MutableCollection]);
   setMetadataFor(PersistentVectorIterator, 'PersistentVectorIterator', classMeta, AbstractListIterator);
   setMetadataFor(PersistentVectorMutableIterator, 'PersistentVectorMutableIterator', classMeta, AbstractListIterator);
   setMetadataFor(Companion_6, 'Companion', objectMeta);
@@ -365,7 +365,7 @@
   setMetadataFor(Companion_8, 'Companion', objectMeta);
   setMetadataFor(TrieNode, 'TrieNode', classMeta);
   setMetadataFor(Companion_9, 'Companion', objectMeta);
-  setMetadataFor(PersistentOrderedSet, 'PersistentOrderedSet', classMeta, AbstractSet, [AbstractSet, Set, Collection]);
+  setMetadataFor(PersistentOrderedSet, 'PersistentOrderedSet', classMeta, AbstractSet, [AbstractSet, Collection, Set]);
   setMetadataFor(Links, 'Links', classMeta, VOID, VOID, Links_init_$Create$);
   setMetadataFor(PersistentOrderedSetIterator, 'PersistentOrderedSetIterator', classMeta);
   setMetadataFor(EndOfChain, 'EndOfChain', objectMeta);
@@ -391,7 +391,7 @@
   setMetadataFor(SnapshotIdSet$iterator$slambda, 'SnapshotIdSet$iterator$slambda', classMeta, CoroutineImpl, VOID, VOID, VOID, VOID, [1]);
   setMetadataFor(SnapshotIdSet, 'SnapshotIdSet', classMeta);
   setMetadataFor(StateListStateRecord, 'StateListStateRecord', classMeta, StateRecord);
-  setMetadataFor(SnapshotStateList, 'SnapshotStateList', classMeta, VOID, [StateObject, MutableCollection, List, RandomAccess], SnapshotStateList);
+  setMetadataFor(SnapshotStateList, 'SnapshotStateList', classMeta, VOID, [StateObject, List, MutableCollection, RandomAccess], SnapshotStateList);
   setMetadataFor(StateListIterator, 'StateListIterator', classMeta);
   setMetadataFor(SnapshotWeakSet, 'SnapshotWeakSet', classMeta, VOID, VOID, SnapshotWeakSet);
   setMetadataFor(Companion_14, 'Companion', objectMeta);

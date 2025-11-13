@@ -97,7 +97,7 @@ if (typeof Math.imul === 'undefined') {
   setMetadataFor(AbstractMutableCollection, 'AbstractMutableCollection', classMeta, AbstractCollection, [AbstractCollection, MutableCollection]);
   setMetadataFor(IteratorImpl, 'IteratorImpl', classMeta);
   setMetadataFor(ListIteratorImpl, 'ListIteratorImpl', classMeta, IteratorImpl);
-  setMetadataFor(AbstractMutableList, 'AbstractMutableList', classMeta, AbstractMutableCollection, [AbstractMutableCollection, MutableCollection, List]);
+  setMetadataFor(AbstractMutableList, 'AbstractMutableList', classMeta, AbstractMutableCollection, [AbstractMutableCollection, List, MutableCollection]);
   setMetadataFor(RandomAccess, 'RandomAccess', interfaceMeta);
   setMetadataFor(SubList, 'SubList', classMeta, AbstractMutableList, [AbstractMutableList, RandomAccess]);
   setMetadataFor(Map_0, 'Map', interfaceMeta);
@@ -106,7 +106,7 @@ if (typeof Math.imul === 'undefined') {
   setMetadataFor(Set, 'Set', interfaceMeta, VOID, [Collection]);
   setMetadataFor(AbstractMutableSet, 'AbstractMutableSet', classMeta, AbstractMutableCollection, [AbstractMutableCollection, Set, MutableCollection]);
   setMetadataFor(Companion, 'Companion', objectMeta);
-  setMetadataFor(ArrayList, 'ArrayList', classMeta, AbstractMutableList, [AbstractMutableList, MutableCollection, List, RandomAccess], ArrayList_init_$Create$);
+  setMetadataFor(ArrayList, 'ArrayList', classMeta, AbstractMutableList, [AbstractMutableList, List, MutableCollection, RandomAccess], ArrayList_init_$Create$);
   setMetadataFor(HashMap, 'HashMap', classMeta, AbstractMutableMap, [AbstractMutableMap, Map_0], HashMap_init_$Create$);
   setMetadataFor(HashMapKeys, 'HashMapKeys', classMeta, AbstractMutableSet, [Set, MutableCollection, AbstractMutableSet]);
   setMetadataFor(HashMapValues, 'HashMapValues', classMeta, AbstractMutableCollection, [MutableCollection, AbstractMutableCollection]);
