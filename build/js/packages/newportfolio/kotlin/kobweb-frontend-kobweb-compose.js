@@ -2468,14 +2468,14 @@
   function cursor_0(_this__u8e3s4, cursor) {
     return styleModifier(_this__u8e3s4, cursor$lambda(cursor));
   }
+  function onClick(_this__u8e3s4, listener) {
+    return attrsModifier(_this__u8e3s4, onClick$lambda(listener));
+  }
   function onMouseLeave(_this__u8e3s4, listener) {
     return attrsModifier(_this__u8e3s4, onMouseLeave$lambda(listener));
   }
   function onMouseEnter(_this__u8e3s4, listener) {
     return attrsModifier(_this__u8e3s4, onMouseEnter$lambda(listener));
-  }
-  function onClick(_this__u8e3s4, listener) {
-    return attrsModifier(_this__u8e3s4, onClick$lambda(listener));
   }
   function tabIndex$lambda($value) {
     return function ($this$attrsModifier) {
@@ -2495,6 +2495,12 @@
       return Unit_instance;
     };
   }
+  function onClick$lambda($listener) {
+    return function ($this$attrsModifier) {
+      $this$attrsModifier.g2m($listener);
+      return Unit_instance;
+    };
+  }
   function onMouseLeave$lambda($listener) {
     return function ($this$attrsModifier) {
       $this$attrsModifier.i2m($listener);
@@ -2504,12 +2510,6 @@
   function onMouseEnter$lambda($listener) {
     return function ($this$attrsModifier) {
       $this$attrsModifier.h2m($listener);
-      return Unit_instance;
-    };
-  }
-  function onClick$lambda($listener) {
-    return function ($this$attrsModifier) {
-      $this$attrsModifier.g2m($listener);
       return Unit_instance;
     };
   }

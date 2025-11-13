@@ -151,6 +151,7 @@
   var get_em = kotlin_org_jetbrains_compose_html_html_core.$_$.f4;
   var onMouseEnter = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.q2;
   var onMouseLeave = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.r2;
+  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p2;
   var transform = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.o3;
   var boxShadow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.c1;
   var thenIf = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.b4;
@@ -190,7 +191,6 @@
   var outline = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.u2;
   var Companion_getInstance_9 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.z3;
   var cursor = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.h1;
-  var onClick = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.p2;
   var Companion_getInstance_10 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.o4;
   var textDecorationLine = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.m3;
   var ArrayList_init_$Create$ = kotlin_kotlin.$_$.l;
@@ -1573,9 +1573,9 @@
       }
       $composer_0.endDefaults_b0s0ot_k$();
       if (isTraceInProgress()) {
-        traceEventStart(-810951222, $dirty, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard (ContactCard.kt:85)');
+        traceEventStart(-810951222, $dirty, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard (ContactCard.kt:86)');
       }
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351986);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351956);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_0 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1599,7 +1599,7 @@
       var bp = rememberBreakpoint($composer_0, 0);
       var horizontalTextMargin = bp.compareTo_30rs7w_k$(Breakpoint_MD_getInstance()) < 0 ? get_em(1.2) : get_em(0.6);
       var tmp_1 = toModifier_0(get_ContactCardStyle(), [], $composer_0, 64);
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351708);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351678);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1619,7 +1619,7 @@
       var tmp1_group = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var tmp_4 = onMouseEnter(tmp_1, tmp1_group);
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351661);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351631);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_2 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1639,55 +1639,75 @@
       var tmp2_group = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var tmp_7 = onMouseLeave(tmp_4, tmp2_group);
-      var tmp_8 = ContactCard$lambda(isHovered$delegate);
-      var tmp_9 = Companion_getInstance_3();
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351535);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351588);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_3 = $composer_0;
       // Inline function 'kotlin.let' call
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
       var it_2 = this_3.rememberedValue_4dg93v_k$();
-      var tmp_10;
+      var tmp_8;
       if (false ? true : it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>' call
-        var value_2 = ContactCard$lambda_3;
+        var value_2 = ContactCard$lambda_3(isHovered$delegate);
         this_3.updateRememberedValue_l1wh71_k$(value_2);
-        tmp_10 = value_2;
+        tmp_8 = value_2;
       } else {
-        tmp_10 = it_2;
+        tmp_8 = it_2;
       }
-      var tmp_11 = tmp_10;
-      var tmp3_group = (tmp_11 == null ? true : !(tmp_11 == null)) ? tmp_11 : THROW_CCE();
+      var tmp_9 = tmp_8;
+      var tmp3_group = (tmp_9 == null ? true : !(tmp_9 == null)) ? tmp_9 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
-      var tmp0_$receiver = transform(tmp_9, tmp3_group);
+      var tmp_10 = onClick(tmp_7, tmp3_group);
+      var tmp_11 = ContactCard$lambda(isHovered$delegate);
+      var tmp_12 = Companion_getInstance_3();
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351286);
+      // Inline function 'androidx.compose.runtime.cache' call
+      var this_4 = $composer_0;
+      // Inline function 'kotlin.let' call
+      // Inline function 'kotlin.contracts.contract' call
+      // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+      var it_3 = this_4.rememberedValue_4dg93v_k$();
+      var tmp_13;
+      if (false ? true : it_3 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+        // Inline function 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>' call
+        var value_3 = ContactCard$lambda_4;
+        this_4.updateRememberedValue_l1wh71_k$(value_3);
+        tmp_13 = value_3;
+      } else {
+        tmp_13 = it_3;
+      }
+      var tmp_14 = tmp_13;
+      var tmp4_group = (tmp_14 == null ? true : !(tmp_14 == null)) ? tmp_14 : THROW_CCE();
+      $composer_0.endReplaceableGroup_ern0ak_k$();
+      var tmp0_$receiver = transform(tmp_12, tmp4_group);
       var tmp1_color = get_brand(palette).get_primary_3xuktj_k$().toRgb_1tsrpu_k$().copyf$default_6pu18v_k$(VOID, VOID, VOID, 0.45);
       var tmp2_blurRadius = get_px(26);
       var tmp3_spreadRadius = get_px(6);
-      var tmp_12 = thenIf(tmp_7, tmp_8, boxShadow(tmp0_$receiver, VOID, VOID, tmp2_blurRadius, tmp3_spreadRadius, tmp1_color));
-      var tmp_13 = get_s(0.28);
-      // Inline function 'org.jetbrains.compose.web.css.Companion.EaseInOut' call
-      Companion_getInstance_6();
-      // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
-      // Inline function 'kotlin.js.unsafeCast' call
-      // Inline function 'kotlin.js.asDynamic' call
-      var tmp$ret$19 = 'ease-in-out';
-      var tmp_14 = CSSTransition_init_$Create$('transform', tmp_13, tmp$ret$19);
-      var tmp_15 = get_s(0.3);
+      var tmp_15 = thenIf(tmp_10, tmp_11, boxShadow(tmp0_$receiver, VOID, VOID, tmp2_blurRadius, tmp3_spreadRadius, tmp1_color));
+      var tmp_16 = get_s(0.28);
       // Inline function 'org.jetbrains.compose.web.css.Companion.EaseInOut' call
       Companion_getInstance_6();
       // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
       // Inline function 'kotlin.js.unsafeCast' call
       // Inline function 'kotlin.js.asDynamic' call
       var tmp$ret$23 = 'ease-in-out';
-      var tmp4_modifier = transition(tmp_12, [tmp_14, CSSTransition_init_$Create$('box-shadow', tmp_15, tmp$ret$23)]);
+      var tmp_17 = CSSTransition_init_$Create$('transform', tmp_16, tmp$ret$23);
+      var tmp_18 = get_s(0.3);
+      // Inline function 'org.jetbrains.compose.web.css.Companion.EaseInOut' call
+      Companion_getInstance_6();
+      // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
+      // Inline function 'kotlin.js.unsafeCast' call
+      // Inline function 'kotlin.js.asDynamic' call
+      var tmp$ret$27 = 'ease-in-out';
+      var tmp4_modifier = transition(tmp_15, [tmp_17, CSSTransition_init_$Create$('box-shadow', tmp_18, tmp$ret$27)]);
       var tmp5_horizontalAlignment = CenterHorizontally_getInstance();
       var tmp6_verticalArrangement = Top_getInstance();
       // Inline function 'kotlin.run' call
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>' call
-      var tmp_16 = $composer_0;
-      var dispatchReceiver = composableLambda(tmp_16, -337144717, true, ContactCard$lambda_4(horizontalTextMargin, colorMode_0));
+      var tmp_19 = $composer_0;
+      var dispatchReceiver = composableLambda(tmp_19, -337144717, true, ContactCard$lambda_5(horizontalTextMargin, colorMode_0));
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       $composer_1.startReplaceableGroup_ip860b_k$(1157296644);
@@ -1697,18 +1717,18 @@
       // Inline function 'kotlin.let' call
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-      var it_3 = $composer_1.rememberedValue_4dg93v_k$();
-      var tmp_17;
-      if (invalid ? true : it_3 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+      var it_4 = $composer_1.rememberedValue_4dg93v_k$();
+      var tmp_20;
+      if (invalid ? true : it_4 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>.<anonymous>' call
-        var value_3 = ComposableLambda$invoke$ref_13(dispatchReceiver);
-        $composer_1.updateRememberedValue_l1wh71_k$(value_3);
-        tmp_17 = value_3;
+        var value_4 = ComposableLambda$invoke$ref_13(dispatchReceiver);
+        $composer_1.updateRememberedValue_l1wh71_k$(value_4);
+        tmp_20 = value_4;
       } else {
-        tmp_17 = it_3;
+        tmp_20 = it_4;
       }
-      var tmp_18 = tmp_17;
-      var tmp0 = (tmp_18 == null ? true : !(tmp_18 == null)) ? tmp_18 : THROW_CCE();
+      var tmp_21 = tmp_20;
+      var tmp0 = (tmp_21 == null ? true : !(tmp_21 == null)) ? tmp_21 : THROW_CCE();
       $composer_1.endReplaceableGroup_ern0ak_k$();
       Column(tmp4_modifier, tmp6_verticalArrangement, tmp5_horizontalAlignment, null, tmp0, $composer_0, 24584, 8);
       if (isTraceInProgress()) {
@@ -1717,11 +1737,11 @@
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
-    var tmp4_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp4_safe_receiver == null)
+    var tmp5_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp5_safe_receiver == null)
       null;
     else {
-      tmp4_safe_receiver.updateScope_t8jcf_k$(ContactCard$lambda_5(colorMode_0, $changed, $default));
+      tmp5_safe_receiver.updateScope_t8jcf_k$(ContactCard$lambda_6(colorMode_0, $changed, $default));
     }
   }
   function ComposableLambda$invoke$ref_11($boundThis) {
@@ -1732,7 +1752,7 @@
   function ComposableSingletons$ContactCardKt$lambda_1$lambda_xlprae($this$P, $composer, $changed) {
     var $composer_0 = $composer;
     if (isTraceInProgress()) {
-      traceEventStart(478404117, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ComposableSingletons$ContactCardKt.lambda-1.<anonymous> (ContactCard.kt:120)');
+      traceEventStart(478404117, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ComposableSingletons$ContactCardKt.lambda-1.<anonymous> (ContactCard.kt:126)');
     }
     Text('Feel free to reach out about collaborations, performance audits, or just to say hi. Email ', $composer_0, 6);
     var tmp = Strings_getInstance().get_EMAIL_ADDRESS_yi5v6g_k$();
@@ -1783,7 +1803,7 @@
     var $composer_0 = $composer;
     $composer_0.startReplaceableGroup_ip860b_k$(-990316938);
     if (isTraceInProgress()) {
-      traceEventStart(-990316938, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCardStyle$delegate.<anonymous> (ContactCard.kt:47)');
+      traceEventStart(-990316938, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCardStyle$delegate.<anonymous> (ContactCard.kt:48)');
     }
     var tmp0 = toModifier_0(get_TextStyle(), [get_BodyLargeTextStyle()], $composer_0, 0);
     if (isTraceInProgress()) {
@@ -1867,20 +1887,34 @@
       return Unit_getInstance();
     };
   }
-  function ContactCard$lambda_3($this$transform) {
+  function ContactCard$lambda$lambda($isHovered$delegate) {
+    return function () {
+      ContactCard$lambda_0($isHovered$delegate, false);
+      return Unit_getInstance();
+    };
+  }
+  function ContactCard$lambda_3($isHovered$delegate) {
+    return function (it) {
+      ContactCard$lambda_0($isHovered$delegate, true);
+      var tmp = window;
+      tmp.setTimeout(ContactCard$lambda$lambda($isHovered$delegate), 220);
+      return Unit_getInstance();
+    };
+  }
+  function ContactCard$lambda_4($this$transform) {
     _init_properties_ContactCard_kt__6srzaa();
     $this$transform.translateY_ar5xnx_k$(get_px(-6));
     $this$transform.scale_quwfox_k$(1.015);
     $this$transform.rotate_utl8m_k$(get_deg(-0.5));
     return Unit_getInstance();
   }
-  function ContactCard$lambda$lambda($colorMode) {
+  function ContactCard$lambda$lambda_0($colorMode) {
     return function ($this$Row, $composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(416129552, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>.<anonymous> (ContactCard.kt:142)');
+          traceEventStart(416129552, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>.<anonymous> (ContactCard.kt:148)');
         }
         // Inline function 'kotlin.collections.forEach' call
         var tmp0_iterator = get_entries_3().iterator_jk1svi_k$();
@@ -1919,13 +1953,13 @@
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ContactCard$lambda_4($horizontalTextMargin, $colorMode) {
+  function ContactCard$lambda_5($horizontalTextMargin, $colorMode) {
     return function ($this$Column, $composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(-337144717, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous> (ContactCard.kt:107)');
+          traceEventStart(-337144717, $changed, -1, 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous> (ContactCard.kt:113)');
         }
         var tmp0_modifier = margin(textAlign(toModifier_0(get_TextStyle(), [get_DisplayTextStyle(), get_TextStylePrimaryColor()], $composer_0, 0), Companion_getInstance_4().get_Center_3arb0i_k$()), VOID, $horizontalTextMargin);
         var tmp1_text = Strings_getInstance().get_CONTACT_SECTION_TITLE_wi8c8a_k$();
@@ -1937,7 +1971,7 @@
         // Inline function 'kotlin.contracts.contract' call
         // Inline function 'org.example.newportfolio.components.sections.contact.components.ContactCard.<anonymous>.<anonymous>.<anonymous>' call
         var tmp_2 = $composer_0;
-        var dispatchReceiver = composableLambda(tmp_2, 416129552, true, ContactCard$lambda$lambda($colorMode));
+        var dispatchReceiver = composableLambda(tmp_2, 416129552, true, ContactCard$lambda$lambda_0($colorMode));
         // Inline function 'androidx.compose.runtime.remember' call
         var $composer_1 = $composer_0;
         $composer_1.startReplaceableGroup_ip860b_k$(1157296644);
@@ -1979,7 +2013,7 @@
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function ContactCard$lambda_5($colorMode, $$changed, $$default) {
+  function ContactCard$lambda_6($colorMode, $$changed, $$default) {
     return function ($composer, $force) {
       ContactCard($colorMode._v, $composer, updateChangedFlags($$changed | 1), $$default);
       return Unit_getInstance();
