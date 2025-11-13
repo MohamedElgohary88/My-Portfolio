@@ -88,7 +88,7 @@ fun ContactCard(
     var isHovered by remember { mutableStateOf(false) }
     val palette = ColorMode.current.toPalette()
     val bp = rememberBreakpoint()
-    val horizontalTextMargin = if (bp < Breakpoint.MD) 1.2.em else 0.6.em
+    val horizontalTextMargin = if (bp < Breakpoint.MD) 1.2.em else 1.em
     Column(
         modifier = ContactCardStyle.toModifier()
             .onMouseEnter { isHovered = true }

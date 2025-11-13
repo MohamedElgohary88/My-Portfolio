@@ -1597,9 +1597,9 @@
       var isHovered$delegate = tmp0_group;
       var palette = toPalette(Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 8));
       var bp = rememberBreakpoint($composer_0, 0);
-      var horizontalTextMargin = bp.compareTo_30rs7w_k$(Breakpoint_MD_getInstance()) < 0 ? get_em(1.2) : get_em(0.6);
+      var horizontalTextMargin = bp.compareTo_30rs7w_k$(Breakpoint_MD_getInstance()) < 0 ? get_em(1.2) : get_em(1);
       var tmp_1 = toModifier_0(get_ContactCardStyle(), [], $composer_0, 64);
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351678);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351680);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1619,7 +1619,7 @@
       var tmp1_group = (tmp_3 == null ? true : !(tmp_3 == null)) ? tmp_3 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var tmp_4 = onMouseEnter(tmp_1, tmp1_group);
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351631);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351633);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_2 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1639,7 +1639,7 @@
       var tmp2_group = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var tmp_7 = onMouseLeave(tmp_4, tmp2_group);
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351588);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351590);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_3 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -1661,7 +1661,7 @@
       var tmp_10 = onClick(tmp_7, tmp3_group);
       var tmp_11 = ContactCard$lambda(isHovered$delegate);
       var tmp_12 = Companion_getInstance_3();
-      $composer_0.startReplaceableGroup_ip860b_k$(-446351286);
+      $composer_0.startReplaceableGroup_ip860b_k$(-446351288);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_4 = $composer_0;
       // Inline function 'kotlin.let' call
