@@ -41,6 +41,7 @@ import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Text
 import org.jetbrains.compose.web.css.s // correct time unit import
+import com.varabyte.kobweb.silk.theme.breakpoint.rememberBreakpoint
 
 val ContactCardStyle by ComponentStyle(
     extraModifiers = {
@@ -85,6 +86,8 @@ fun ContactCard(
 ) {
     var isHovered by remember { mutableStateOf(false) }
     val palette = ColorMode.current.toPalette()
+    val bp = rememberBreakpoint()
+    val horizontalTextMargin = if (bp < Breakpoint.MD) 1.2.em else 0.6.em
     Column(
         modifier = ContactCardStyle.toModifier()
             .onMouseEnter { isHovered = true }
@@ -104,13 +107,14 @@ fun ContactCard(
     ) {
         SpanText(
             modifier = TextStyle.toModifier(DisplayTextStyle, TextStylePrimaryColor)
-                .textAlign(TextAlign.Center),
+                .textAlign(TextAlign.Center)
+                .margin(leftRight = horizontalTextMargin),
             text = Res.Strings.CONTACT_SECTION_TITLE
         )
         P(
             attrs = TextStyle.toModifier(BodyLargeTextStyle, TextStyleSecondaryColor)
                 .textAlign(TextAlign.Center)
-                .margin(top = 0.6.em, leftRight = 0.6.em)
+                .margin(top = 0.6.em, leftRight = horizontalTextMargin)
                 .lineHeight(1.6.em)
                 .toAttrs(),
         ) {
