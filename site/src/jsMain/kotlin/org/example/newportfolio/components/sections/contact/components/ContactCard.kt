@@ -42,6 +42,7 @@ import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Text
 import org.jetbrains.compose.web.css.s // correct time unit import
 import com.varabyte.kobweb.silk.theme.breakpoint.rememberBreakpoint
+import kotlinx.browser.window
 
 val ContactCardStyle by ComponentStyle(
     extraModifiers = {
@@ -92,6 +93,11 @@ fun ContactCard(
         modifier = ContactCardStyle.toModifier()
             .onMouseEnter { isHovered = true }
             .onMouseLeave { isHovered = false }
+            .onClick {
+                // Provide a quick tap feedback on mobile where hover is not available
+                isHovered = true
+                window.setTimeout({ isHovered = false }, 220)
+            }
             .thenIf(
                 isHovered,
                 Modifier
