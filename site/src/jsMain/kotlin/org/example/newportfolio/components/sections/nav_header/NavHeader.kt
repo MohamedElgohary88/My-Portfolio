@@ -25,6 +25,7 @@ import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
 import com.varabyte.kobweb.silk.components.style.common.SmoothColorStyle
 import com.varabyte.kobweb.silk.components.style.toAttrs
 import com.varabyte.kobweb.silk.components.style.toModifier
+import com.varabyte.kobweb.silk.theme.breakpoint.rememberBreakpoint
 import com.varabyte.kobweb.silk.theme.colors.ColorMode
 import com.varabyte.kobweb.silk.theme.colors.palette.background
 import com.varabyte.kobweb.silk.theme.colors.palette.overlay
@@ -52,10 +53,14 @@ val NavHeaderStyle by ComponentStyle(extraModifiers = { SmoothColorStyle.toModif
             .zIndex(1)
     }
     Breakpoint.ZERO {
-        Modifier.padding(left = 8.px, right = 8.px, top = 4.px, bottom = 4.px) // tightened
+        Modifier
+            .padding(left = 12.px, right = 12.px, top = 10.px, bottom = 10.px)
+            .height(64.px) // taller mobile header
     }
     Breakpoint.SM {
-        Modifier.padding(left = 16.px, right = 16.px, top = 8.px, bottom = 8.px) // tightened
+        Modifier
+            .padding(left = 16.px, right = 16.px, top = 12.px, bottom = 12.px)
+            .height(68.px) // slightly taller on small tablets
     }
     Breakpoint.MD {
         Modifier
@@ -83,6 +88,7 @@ fun NavHeader() {
 
     val sections = remember { document.getElementsByClassName("section-container").asList() }
     var selectedSectionId by remember { mutableStateOf(Section.Start.id) }
+    val bp = rememberBreakpoint()
 
     // Use UpdateEffect to avoid unnecessary scrolling to the StartSection when the site is first visited
     UpdateEffect(selectedSectionId) {
@@ -127,11 +133,12 @@ fun NavHeader() {
                 )
             }
             Box(modifier = Modifier.flex(1), contentAlignment = Alignment.CenterStart) {
+                val menuIconSize = if (bp < Breakpoint.SM) 2.cssRem else 1.65.cssRem
                 IconButton(
                     modifier = Modifier.padding(0.25.cssRem),
                     onClick = { sideMenuState = SideMenuState.OPEN }
                 ) {
-                    HamburgerIcon(modifier = IconStyle.toModifier(SmallIconSize))
+                    HamburgerIcon(modifier = IconStyle.toModifier().size(menuIconSize))
                 }
             }
             Box(modifier = Modifier.flex(1), contentAlignment = Alignment.Center) {

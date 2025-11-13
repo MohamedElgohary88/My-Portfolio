@@ -352,7 +352,6 @@
   setMetadataFor(CertificationEntry, 'CertificationEntry', classMeta);
   setMetadataFor(ComposableSingletons$EducationKt, 'ComposableSingletons$EducationKt', objectMeta);
   setMetadataFor(ComposableSingletons$FooterKt, 'ComposableSingletons$FooterKt', objectMeta);
-  setMetadataFor(ComposableSingletons$NavHeaderKt, 'ComposableSingletons$NavHeaderKt', objectMeta);
   setMetadataFor(NavHeader$slambda, 'NavHeader$slambda', classMeta, CoroutineImpl, [CoroutineImpl], VOID, VOID, VOID, [1]);
   setMetadataFor(ComposableSingletons$NavBarKt, 'ComposableSingletons$NavBarKt', objectMeta);
   setMetadataFor(NavBar$NavRect, 'NavRect', classMeta);
@@ -4852,10 +4851,10 @@
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1201099721);
     if (!($changed === 0) ? true : !$composer_0.get_skipping_3owdve_k$()) {
       if (isTraceInProgress()) {
-        traceEventStart(1201099721, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader (NavHeader.kt:80)');
+        traceEventStart(1201099721, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader (NavHeader.kt:85)');
       }
       var colorMode$delegate = Companion_getInstance_1().get_currentState_dmzs7c_k$($composer_0, 8);
-      $composer_0.startReplaceableGroup_ip860b_k$(592409909);
+      $composer_0.startReplaceableGroup_ip860b_k$(592410097);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_0 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4875,7 +4874,7 @@
       var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var sections = tmp0_group;
-      $composer_0.startReplaceableGroup_ip860b_k$(592410013);
+      $composer_0.startReplaceableGroup_ip860b_k$(592410201);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4895,8 +4894,9 @@
       var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var selectedSectionId$delegate = tmp1_group;
+      var bp = rememberBreakpoint($composer_0, 0);
       var tmp_3 = NavHeader$lambda_1(selectedSectionId$delegate);
-      $composer_0.startReplaceableGroup_ip860b_k$(592410202);
+      $composer_0.startReplaceableGroup_ip860b_k$(592410424);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_2 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -4924,7 +4924,7 @@
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>' call
       var tmp_9 = $composer_0;
-      var dispatchReceiver = composableLambda(tmp_9, 583831786, true, NavHeader$lambda_4(selectedSectionId$delegate, colorMode$delegate));
+      var dispatchReceiver = composableLambda(tmp_9, 583831786, true, NavHeader$lambda_4(selectedSectionId$delegate, bp, colorMode$delegate));
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       $composer_1.startReplaceableGroup_ip860b_k$(1157296644);
@@ -4960,41 +4960,6 @@
     else {
       tmp3_safe_receiver.updateScope_t8jcf_k$(NavHeader$lambda_5($changed));
     }
-  }
-  function ComposableLambda$invoke$ref_40($boundThis) {
-    return function (p0, p1) {
-      return $boundThis.invoke_z8di7s_k$(p0, p1);
-    };
-  }
-  function ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm($composer, $changed) {
-    var $composer_0 = $composer;
-    if (!(($changed & 11) === 2) ? true : !$composer_0.get_skipping_3owdve_k$()) {
-      if (isTraceInProgress()) {
-        traceEventStart(1292896966, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.ComposableSingletons$NavHeaderKt.lambda-1.<anonymous> (NavHeader.kt:133)');
-      }
-      var tmp = toModifier_0(get_IconStyle(), [get_SmallIconSize()], $composer_0, 0);
-      HamburgerIcon(tmp, null, $composer_0, 8, 2);
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-    } else {
-      $composer_0.skipToGroupEnd_lh3zi2_k$();
-    }
-    return Unit_getInstance();
-  }
-  function ComposableSingletons$NavHeaderKt() {
-    ComposableSingletons$NavHeaderKt_instance = this;
-    var tmp = this;
-    tmp.lambda_1_r8sbbp_1 = ComposableLambda$invoke$ref_40(composableLambdaInstance(1292896966, false, ComposableSingletons$NavHeaderKt$lambda_1$lambda_vv16hm));
-  }
-  protoOf(ComposableSingletons$NavHeaderKt).get_lambda_1_bzdzzo_k$ = function () {
-    return this.lambda_1_r8sbbp_1;
-  };
-  var ComposableSingletons$NavHeaderKt_instance;
-  function ComposableSingletons$NavHeaderKt_getInstance() {
-    if (ComposableSingletons$NavHeaderKt_instance == null)
-      new ComposableSingletons$NavHeaderKt();
-    return ComposableSingletons$NavHeaderKt_instance;
   }
   function NavHeader$lambda($colorMode$delegate) {
     _init_properties_NavHeader_kt__vdotjy();
@@ -5049,7 +5014,7 @@
     var $composer_0 = $composer;
     $composer_0.startReplaceableGroup_ip860b_k$(-241747717);
     if (isTraceInProgress()) {
-      traceEventStart(-241747717, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeaderStyle$delegate.<anonymous> (NavHeader.kt:38)');
+      traceEventStart(-241747717, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeaderStyle$delegate.<anonymous> (NavHeader.kt:39)');
     }
     var tmp0 = toModifier(get_SmoothColorStyle(), $composer_0, 0);
     if (isTraceInProgress()) {
@@ -5100,20 +5065,20 @@
   function NavHeaderStyle$delegate$lambda$lambda_0() {
     _init_properties_NavHeader_kt__vdotjy();
     var tmp0_$receiver = Companion_getInstance_3();
-    var tmp1_left = get_px(8);
-    var tmp2_right = get_px(8);
-    var tmp3_top = get_px(4);
-    var tmp4_bottom = get_px(4);
-    return padding_0(tmp0_$receiver, tmp3_top, tmp2_right, tmp4_bottom, tmp1_left);
+    var tmp1_left = get_px(12);
+    var tmp2_right = get_px(12);
+    var tmp3_top = get_px(10);
+    var tmp4_bottom = get_px(10);
+    return height(padding_0(tmp0_$receiver, tmp3_top, tmp2_right, tmp4_bottom, tmp1_left), get_px(64));
   }
   function NavHeaderStyle$delegate$lambda$lambda_1() {
     _init_properties_NavHeader_kt__vdotjy();
     var tmp0_$receiver = Companion_getInstance_3();
     var tmp1_left = get_px(16);
     var tmp2_right = get_px(16);
-    var tmp3_top = get_px(8);
-    var tmp4_bottom = get_px(8);
-    return padding_0(tmp0_$receiver, tmp3_top, tmp2_right, tmp4_bottom, tmp1_left);
+    var tmp3_top = get_px(12);
+    var tmp4_bottom = get_px(12);
+    return height(padding_0(tmp0_$receiver, tmp3_top, tmp2_right, tmp4_bottom, tmp1_left), get_px(68));
   }
   function NavHeaderStyle$delegate$lambda$lambda_2() {
     _init_properties_NavHeader_kt__vdotjy();
@@ -5229,16 +5194,45 @@
       return Unit_getInstance();
     };
   }
-  function NavHeader$lambda$lambda$lambda_1($sideMenuState$delegate) {
+  function NavHeader$lambda$lambda$lambda$lambda_0($menuIconSize) {
+    return function ($composer, $changed) {
+      var $composer_0 = $composer;
+      var tmp;
+      if (!(($changed & 11) === 2) ? true : !$composer_0.get_skipping_3owdve_k$()) {
+        if (isTraceInProgress()) {
+          traceEventStart(1292896966, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:140)');
+        }
+        var tmp_0 = size(toModifier_0(get_IconStyle(), [], $composer_0, 64), $menuIconSize);
+        HamburgerIcon(tmp_0, null, $composer_0, 8, 2);
+        var tmp_1;
+        if (isTraceInProgress()) {
+          traceEventEnd();
+          tmp_1 = Unit_getInstance();
+        }
+        tmp = tmp_1;
+      } else {
+        $composer_0.skipToGroupEnd_lh3zi2_k$();
+        tmp = Unit_getInstance();
+      }
+      return Unit_getInstance();
+    };
+  }
+  function ComposableLambda$invoke$ref_40($boundThis) {
+    return function (p0, p1) {
+      return $boundThis.invoke_z8di7s_k$(p0, p1);
+    };
+  }
+  function NavHeader$lambda$lambda$lambda_1($bp, $sideMenuState$delegate) {
     return function ($this$Box, $composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(-665658815, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:129)');
+          traceEventStart(-665658815, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:135)');
         }
+        var menuIconSize = $bp.compareTo_30rs7w_k$(Breakpoint_SM_getInstance()) < 0 ? get_cssRem(2) : get_cssRem(1.65);
         var tmp_0 = padding_2(Companion_getInstance_3(), get_cssRem(0.25));
-        $composer_0.startReplaceableGroup_ip860b_k$(-170516382);
+        $composer_0.startReplaceableGroup_ip860b_k$(-170516075);
         // Inline function 'androidx.compose.runtime.cache' call
         // Inline function 'kotlin.let' call
         // Inline function 'kotlin.contracts.contract' call
@@ -5256,13 +5250,40 @@
         var tmp_2 = tmp_1;
         var tmp0_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
         $composer_0.endReplaceableGroup_ern0ak_k$();
-        IconButton(tmp_0, null, tmp0_group, ComposableSingletons$NavHeaderKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 3464, 2);
-        var tmp_3;
+        // Inline function 'kotlin.run' call
+        // Inline function 'kotlin.contracts.contract' call
+        // Inline function 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+        var tmp_3 = $composer_0;
+        var dispatchReceiver = composableLambda(tmp_3, 1292896966, true, NavHeader$lambda$lambda$lambda$lambda_0(menuIconSize));
+        // Inline function 'androidx.compose.runtime.remember' call
+        var $composer_1 = $composer_0;
+        $composer_1.startReplaceableGroup_ip860b_k$(1157296644);
+        sourceInformation($composer_1, 'CC(remember)P(1):Composables.kt#9igjgp');
+        // Inline function 'androidx.compose.runtime.cache' call
+        var invalid = $composer_1.changed_ga7h3f_k$(dispatchReceiver);
+        // Inline function 'kotlin.let' call
+        // Inline function 'kotlin.contracts.contract' call
+        // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+        var it_0 = $composer_1.rememberedValue_4dg93v_k$();
+        var tmp_4;
+        if (invalid ? true : it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          // Inline function 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
+          var value_0 = ComposableLambda$invoke$ref_40(dispatchReceiver);
+          $composer_1.updateRememberedValue_l1wh71_k$(value_0);
+          tmp_4 = value_0;
+        } else {
+          tmp_4 = it_0;
+        }
+        var tmp_5 = tmp_4;
+        var tmp0 = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
+        $composer_1.endReplaceableGroup_ern0ak_k$();
+        IconButton(tmp_0, null, tmp0_group, tmp0, $composer_0, 3464, 2);
+        var tmp_6;
         if (isTraceInProgress()) {
           traceEventEnd();
-          tmp_3 = Unit_getInstance();
+          tmp_6 = Unit_getInstance();
         }
-        tmp = tmp_3;
+        tmp = tmp_6;
       } else {
         $composer_0.skipToGroupEnd_lh3zi2_k$();
         tmp = Unit_getInstance();
@@ -5281,7 +5302,7 @@
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(-1406013782, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:137)');
+          traceEventStart(-1406013782, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:144)');
         }
         var tmp_0 = NavHeader$lambda($colorMode$delegate);
         AppLogo(tmp_0, null, $composer_0, 0, 2);
@@ -5303,7 +5324,7 @@
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function NavHeader$lambda$lambda$lambda$lambda_0($colorMode$delegate) {
+  function NavHeader$lambda$lambda$lambda$lambda_1($colorMode$delegate) {
     return function () {
       NavHeader$lambda_0($colorMode$delegate, NavHeader$lambda($colorMode$delegate).get_opposite_ywslzk_k$());
       return Unit_getInstance();
@@ -5315,10 +5336,10 @@
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(-223781047, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:140)');
+          traceEventStart(-223781047, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:147)');
         }
         var tmp_0 = NavHeader$lambda($colorMode$delegate);
-        $composer_0.startReplaceableGroup_ip860b_k$(-170515871);
+        $composer_0.startReplaceableGroup_ip860b_k$(-170515558);
         // Inline function 'androidx.compose.runtime.cache' call
         var invalid = $composer_0.changed_ga7h3f_k$($colorMode$delegate);
         // Inline function 'kotlin.let' call
@@ -5328,7 +5349,7 @@
         var tmp_1;
         if (invalid ? true : it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = NavHeader$lambda$lambda$lambda$lambda_0($colorMode$delegate);
+          var value = NavHeader$lambda$lambda$lambda$lambda_1($colorMode$delegate);
           $composer_0.updateRememberedValue_l1wh71_k$(value);
           tmp_1 = value;
         } else {
@@ -5356,15 +5377,15 @@
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function NavHeader$lambda$lambda($selectedSectionId$delegate, $colorMode$delegate) {
+  function NavHeader$lambda$lambda($selectedSectionId$delegate, $bp, $colorMode$delegate) {
     return function ($this$Row, $composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(1198116615, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous> (NavHeader.kt:115)');
+          traceEventStart(1198116615, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous> (NavHeader.kt:121)');
         }
-        $composer_0.startReplaceableGroup_ip860b_k$(-1449155149);
+        $composer_0.startReplaceableGroup_ip860b_k$(-1449154927);
         // Inline function 'androidx.compose.runtime.cache' call
         // Inline function 'kotlin.let' call
         // Inline function 'kotlin.contracts.contract' call
@@ -5383,11 +5404,11 @@
         var tmp0_group = (tmp_1 == null ? true : !(tmp_1 == null)) ? tmp_1 : THROW_CCE();
         $composer_0.endReplaceableGroup_ern0ak_k$();
         var sideMenuState$delegate = tmp0_group;
-        $composer_0.startReplaceableGroup_ip860b_k$(-1449155087);
+        $composer_0.startReplaceableGroup_ip860b_k$(-1449154865);
         if (!NavHeader$_anonymous_$_anonymous_$_anonymous_$_anonymous_$lambda$0_u6jfs3(sideMenuState$delegate).equals(SideMenuState_CLOSED_getInstance())) {
           var tmp_2 = NavHeader$_anonymous_$_anonymous_$_anonymous_$_anonymous_$lambda$0_u6jfs3(sideMenuState$delegate);
           var tmp_3 = NavHeader$lambda_1($selectedSectionId$delegate);
-          $composer_0.startReplaceableGroup_ip860b_k$(-1449154873);
+          $composer_0.startReplaceableGroup_ip860b_k$(-1449154651);
           // Inline function 'androidx.compose.runtime.cache' call
           // Inline function 'kotlin.let' call
           // Inline function 'kotlin.contracts.contract' call
@@ -5405,7 +5426,7 @@
           var tmp_5 = tmp_4;
           var tmp1_group = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
           $composer_0.endReplaceableGroup_ern0ak_k$();
-          $composer_0.startReplaceableGroup_ip860b_k$(-1449154793);
+          $composer_0.startReplaceableGroup_ip860b_k$(-1449154571);
           // Inline function 'androidx.compose.runtime.cache' call
           // Inline function 'kotlin.let' call
           // Inline function 'kotlin.contracts.contract' call
@@ -5432,7 +5453,7 @@
         // Inline function 'kotlin.contracts.contract' call
         // Inline function 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
         var tmp_10 = $composer_0;
-        var dispatchReceiver = composableLambda(tmp_10, -665658815, true, NavHeader$lambda$lambda$lambda_1(sideMenuState$delegate));
+        var dispatchReceiver = composableLambda(tmp_10, -665658815, true, NavHeader$lambda$lambda$lambda_1($bp, sideMenuState$delegate));
         // Inline function 'androidx.compose.runtime.remember' call
         var $composer_1 = $composer_0;
         $composer_1.startReplaceableGroup_ip860b_k$(1157296644);
@@ -5540,7 +5561,7 @@
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(2077039402, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:154)');
+          traceEventStart(2077039402, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:161)');
         }
         var tmp_0 = NavHeader$lambda($colorMode$delegate);
         AppLogo(tmp_0, null, $composer_0, 0, 2);
@@ -5562,7 +5583,7 @@
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function NavHeader$lambda$lambda$lambda$lambda_1($colorMode$delegate) {
+  function NavHeader$lambda$lambda$lambda$lambda_2($colorMode$delegate) {
     return function () {
       NavHeader$lambda_0($colorMode$delegate, NavHeader$lambda($colorMode$delegate).get_opposite_ywslzk_k$());
       return Unit_getInstance();
@@ -5574,10 +5595,10 @@
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(-734480045, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:158)');
+          traceEventStart(-734480045, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous> (NavHeader.kt:165)');
         }
         var tmp_0 = NavHeader$lambda($colorMode$delegate);
-        $composer_0.startReplaceableGroup_ip860b_k$(-170515194);
+        $composer_0.startReplaceableGroup_ip860b_k$(-170514881);
         // Inline function 'androidx.compose.runtime.cache' call
         var invalid = $composer_0.changed_ga7h3f_k$($colorMode$delegate);
         // Inline function 'kotlin.let' call
@@ -5587,7 +5608,7 @@
         var tmp_1;
         if (invalid ? true : it === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
           // Inline function 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-          var value = NavHeader$lambda$lambda$lambda$lambda_1($colorMode$delegate);
+          var value = NavHeader$lambda$lambda$lambda$lambda_2($colorMode$delegate);
           $composer_0.updateRememberedValue_l1wh71_k$(value);
           tmp_1 = value;
         } else {
@@ -5621,7 +5642,7 @@
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(-2131102096, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous> (NavHeader.kt:153)');
+          traceEventStart(-2131102096, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous> (NavHeader.kt:160)');
         }
         var tmp_0 = flex(Companion_getInstance_3(), 1);
         var tmp_1 = CenterStart_getInstance();
@@ -5702,11 +5723,11 @@
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function NavHeader$lambda_4($selectedSectionId$delegate, $colorMode$delegate) {
+  function NavHeader$lambda_4($selectedSectionId$delegate, $bp, $colorMode$delegate) {
     return function ($this$Header, $composer, $changed) {
       var $composer_0 = $composer;
       if (isTraceInProgress()) {
-        traceEventStart(583831786, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous> (NavHeader.kt:108)');
+        traceEventStart(583831786, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous> (NavHeader.kt:114)');
       }
       var tmp0_modifier = displayUntil(fillMaxWidth(Companion_getInstance_3()), Breakpoint_LG_getInstance());
       var tmp1_verticalAlignment = CenterVertically_getInstance();
@@ -5715,7 +5736,7 @@
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'org.example.newportfolio.components.sections.nav_header.NavHeader.<anonymous>.<anonymous>.<anonymous>' call
       var tmp = $composer_0;
-      var dispatchReceiver = composableLambda(tmp, 1198116615, true, NavHeader$lambda$lambda($selectedSectionId$delegate, $colorMode$delegate));
+      var dispatchReceiver = composableLambda(tmp, 1198116615, true, NavHeader$lambda$lambda($selectedSectionId$delegate, $bp, $colorMode$delegate));
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       $composer_1.startReplaceableGroup_ip860b_k$(1157296644);
