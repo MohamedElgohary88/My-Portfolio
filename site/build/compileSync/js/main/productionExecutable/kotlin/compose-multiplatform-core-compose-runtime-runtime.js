@@ -230,9 +230,9 @@
   setMetadataFor(DerivedState, 'DerivedState', interfaceMeta, VOID, [State_0]);
   setMetadataFor(DisposableEffectScope, 'DisposableEffectScope', classMeta, VOID, VOID, DisposableEffectScope);
   setMetadataFor(LaunchedEffectImpl, 'LaunchedEffectImpl', classMeta, VOID, [RememberObserver]);
+  setMetadataFor(DisposableEffectImpl, 'DisposableEffectImpl', classMeta, VOID, [RememberObserver]);
   setMetadataFor(PlatformOptimizedCancellationException, 'PlatformOptimizedCancellationException', classMeta, CancellationException);
   setMetadataFor(LeftCompositionCancellationException, 'LeftCompositionCancellationException', classMeta, PlatformOptimizedCancellationException, VOID, LeftCompositionCancellationException);
-  setMetadataFor(DisposableEffectImpl, 'DisposableEffectImpl', classMeta, VOID, [RememberObserver]);
   setMetadataFor(JoinedKey, 'JoinedKey', classMeta);
   setMetadataFor(Key, 'Key', objectMeta);
   setMetadataFor(OpaqueKey, 'OpaqueKey', classMeta);
@@ -337,10 +337,10 @@
   setMetadataFor(ScopeMap, 'ScopeMap', classMeta, VOID, VOID, ScopeMap);
   setMetadataFor(AbstractListIterator, 'AbstractListIterator', classMeta);
   setMetadataFor(SingleElementListIterator, 'SingleElementListIterator', classMeta, AbstractListIterator);
-  setMetadataFor(AbstractPersistentList, 'AbstractPersistentList', classMeta, AbstractList, [Collection, List, AbstractList]);
+  setMetadataFor(AbstractPersistentList, 'AbstractPersistentList', classMeta, AbstractList, [List, Collection, AbstractList]);
   setMetadataFor(BufferIterator, 'BufferIterator', classMeta, AbstractListIterator);
-  setMetadataFor(PersistentVector, 'PersistentVector', classMeta, AbstractPersistentList, [Collection, List, AbstractPersistentList]);
-  setMetadataFor(PersistentVectorBuilder, 'PersistentVectorBuilder', classMeta, AbstractMutableList, [AbstractMutableList, MutableCollection, List]);
+  setMetadataFor(PersistentVector, 'PersistentVector', classMeta, AbstractPersistentList, [List, Collection, AbstractPersistentList]);
+  setMetadataFor(PersistentVectorBuilder, 'PersistentVectorBuilder', classMeta, AbstractMutableList, [AbstractMutableList, List, MutableCollection]);
   setMetadataFor(PersistentVectorIterator, 'PersistentVectorIterator', classMeta, AbstractListIterator);
   setMetadataFor(PersistentVectorMutableIterator, 'PersistentVectorMutableIterator', classMeta, AbstractListIterator);
   setMetadataFor(Companion_6, 'Companion', objectMeta);
@@ -365,7 +365,7 @@
   setMetadataFor(Companion_8, 'Companion', objectMeta);
   setMetadataFor(TrieNode, 'TrieNode', classMeta);
   setMetadataFor(Companion_9, 'Companion', objectMeta);
-  setMetadataFor(PersistentOrderedSet, 'PersistentOrderedSet', classMeta, AbstractSet, [AbstractSet, Collection, Set]);
+  setMetadataFor(PersistentOrderedSet, 'PersistentOrderedSet', classMeta, AbstractSet, [AbstractSet, Set, Collection]);
   setMetadataFor(Links, 'Links', classMeta, VOID, VOID, Links_init_$Create$);
   setMetadataFor(PersistentOrderedSetIterator, 'PersistentOrderedSetIterator', classMeta);
   setMetadataFor(EndOfChain, 'EndOfChain', objectMeta);
@@ -5239,6 +5239,39 @@
       traceEventEnd();
     }
   }
+  function DisposableEffect(key1, effect, $composer, $changed) {
+    _init_properties_Effects_kt__be5lps();
+    var $composer_0 = $composer;
+    $composer_0.s1n(-1371986847);
+    sourceInformation($composer_0, 'C(DisposableEffect)P(1)155@6197L47:Effects.kt#9igjgp');
+    if (isTraceInProgress()) {
+      traceEventStart(-1371986847, $changed, -1, 'androidx.compose.runtime.DisposableEffect (Effects.kt:154)');
+    }
+    $composer_0.s1n(592131181);
+    sourceInformation($composer_0, 'CC(remember):Effects.kt#9igjgp');
+    // Inline function 'androidx.compose.runtime.cache' call
+    var invalid = $composer_0.l1f(key1);
+    // Inline function 'kotlin.let' call
+    // Inline function 'kotlin.contracts.contract' call
+    // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
+    var it = $composer_0.y1o();
+    var tmp;
+    if (invalid ? true : it === Companion_getInstance_0().k1i_1) {
+      // Inline function 'androidx.compose.runtime.DisposableEffect.<anonymous>' call
+      var value = new DisposableEffectImpl(effect);
+      $composer_0.e1p(value);
+      tmp = value;
+    } else {
+      tmp = it;
+    }
+    var tmp_0 = tmp;
+    (tmp_0 == null ? true : !(tmp_0 == null)) || THROW_CCE();
+    $composer_0.t1n();
+    if (isTraceInProgress()) {
+      traceEventEnd();
+    }
+    $composer_0.t1n();
+  }
   function LaunchedEffect_0(key1, key2, key3, block, $composer, $changed) {
     _init_properties_Effects_kt__be5lps();
     var $composer_0 = $composer;
@@ -5305,42 +5338,27 @@
     }
     this.u1u_1 = null;
   };
+  function DisposableEffectImpl(effect) {
+    this.v1u_1 = effect;
+    this.w1u_1 = null;
+  }
+  protoOf(DisposableEffectImpl).u1s = function () {
+    this.w1u_1 = this.v1u_1(get_InternalDisposableEffectScope());
+  };
+  protoOf(DisposableEffectImpl).t1s = function () {
+    var tmp0_safe_receiver = this.w1u_1;
+    if (tmp0_safe_receiver == null)
+      null;
+    else {
+      tmp0_safe_receiver.yl();
+    }
+    this.w1u_1 = null;
+  };
+  protoOf(DisposableEffectImpl).v1s = function () {
+  };
   function LeftCompositionCancellationException() {
     PlatformOptimizedCancellationException.call(this, 'The coroutine scope left the composition');
     captureStack(this, LeftCompositionCancellationException);
-  }
-  function DisposableEffect(key1, effect, $composer, $changed) {
-    _init_properties_Effects_kt__be5lps();
-    var $composer_0 = $composer;
-    $composer_0.s1n(-1371986847);
-    sourceInformation($composer_0, 'C(DisposableEffect)P(1)155@6197L47:Effects.kt#9igjgp');
-    if (isTraceInProgress()) {
-      traceEventStart(-1371986847, $changed, -1, 'androidx.compose.runtime.DisposableEffect (Effects.kt:154)');
-    }
-    $composer_0.s1n(592131181);
-    sourceInformation($composer_0, 'CC(remember):Effects.kt#9igjgp');
-    // Inline function 'androidx.compose.runtime.cache' call
-    var invalid = $composer_0.l1f(key1);
-    // Inline function 'kotlin.let' call
-    // Inline function 'kotlin.contracts.contract' call
-    // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-    var it = $composer_0.y1o();
-    var tmp;
-    if (invalid ? true : it === Companion_getInstance_0().k1i_1) {
-      // Inline function 'androidx.compose.runtime.DisposableEffect.<anonymous>' call
-      var value = new DisposableEffectImpl(effect);
-      $composer_0.e1p(value);
-      tmp = value;
-    } else {
-      tmp = it;
-    }
-    var tmp_0 = tmp;
-    (tmp_0 == null ? true : !(tmp_0 == null)) || THROW_CCE();
-    $composer_0.t1n();
-    if (isTraceInProgress()) {
-      traceEventEnd();
-    }
-    $composer_0.t1n();
   }
   function DisposableEffect_0(keys, effect, $composer, $changed) {
     _init_properties_Effects_kt__be5lps();
@@ -5386,24 +5404,6 @@
     }
     $composer_0.t1n();
   }
-  function DisposableEffectImpl(effect) {
-    this.v1u_1 = effect;
-    this.w1u_1 = null;
-  }
-  protoOf(DisposableEffectImpl).u1s = function () {
-    this.w1u_1 = this.v1u_1(get_InternalDisposableEffectScope());
-  };
-  protoOf(DisposableEffectImpl).t1s = function () {
-    var tmp0_safe_receiver = this.w1u_1;
-    if (tmp0_safe_receiver == null)
-      null;
-    else {
-      tmp0_safe_receiver.yl();
-    }
-    this.w1u_1 = null;
-  };
-  protoOf(DisposableEffectImpl).v1s = function () {
-  };
   function DisposableEffect_1(key1, key2, effect, $composer, $changed) {
     _init_properties_Effects_kt__be5lps();
     var $composer_0 = $composer;

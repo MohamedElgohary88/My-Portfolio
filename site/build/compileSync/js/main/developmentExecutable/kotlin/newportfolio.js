@@ -254,12 +254,14 @@
   var Img = kotlin_org_jetbrains_compose_html_html_core.$_$.c6;
   var toList = kotlin_kotlin.$_$.x8;
   var emptyMap = kotlin_kotlin.$_$.u6;
+  var DisposableEffect = kotlin_org_jetbrains_compose_runtime_runtime.$_$.j;
   var LaunchedEffect_0 = kotlin_org_jetbrains_compose_runtime_runtime.$_$.l;
   var Companion_getInstance_15 = kotlin_com_varabyte_kobweb_compose_html_ext.$_$.l4;
   var overflow = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.w2;
   var LinkedHashMap_init_$Create$ = kotlin_kotlin.$_$.u;
   var getNumberHashCode = kotlin_kotlin.$_$.ra;
   var equals = kotlin_kotlin.$_$.na;
+  var DisposableEffectResult = kotlin_org_jetbrains_compose_runtime_runtime.$_$.g;
   var Div = kotlin_org_jetbrains_compose_html_html_core.$_$.z5;
   var get_color = kotlin_com_varabyte_kobweb_silk_widgets.$_$.v;
   var color = kotlin_com_varabyte_kobweb_kobweb_compose.$_$.f1;
@@ -357,6 +359,7 @@
   setMetadataFor(ComposableSingletons$NavBarKt, 'ComposableSingletons$NavBarKt', objectMeta);
   setMetadataFor(NavBar$NavRect, 'NavRect', classMeta);
   setMetadataFor(NavBar$slambda, 'NavBar$slambda', classMeta, CoroutineImpl, [CoroutineImpl], VOID, VOID, VOID, [1]);
+  setMetadataFor(_no_name_provided__qut3iv, VOID, classMeta, VOID, [DisposableEffectResult]);
   setMetadataFor(NavBar$slambda_1, 'NavBar$slambda', classMeta, CoroutineImpl, [CoroutineImpl], VOID, VOID, VOID, [1]);
   setMetadataFor(SideMenuState, 'SideMenuState', classMeta, Enum);
   setMetadataFor(ComposableSingletons$SideMenuKt, 'ComposableSingletons$SideMenuKt', objectMeta);
@@ -6044,9 +6047,9 @@
       $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(selectedSectionId) ? 4 : 2);
     if (!(($dirty & 11) === 2) ? true : !$composer_0.get_skipping_3owdve_k$()) {
       if (isTraceInProgress()) {
-        traceEventStart(-128473716, $dirty, -1, 'org.example.newportfolio.components.sections.nav_header.components.NavBar (NavBar.kt:29)');
+        traceEventStart(-128473716, $dirty, -1, 'org.example.newportfolio.components.sections.nav_header.components.NavBar (NavBar.kt:30)');
       }
-      $composer_0.startReplaceableGroup_ip860b_k$(-417502733);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417502702);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_0 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6068,7 +6071,7 @@
       var sections = tmp0_group;
       var colorPalette = toPalette(Companion_getInstance_1().get_current_2iudd5_k$($composer_0, 8));
       var accentColor = get_brand(colorPalette).get_primary_3xuktj_k$();
-      $composer_0.startReplaceableGroup_ip860b_k$(-417502439);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417502408);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_1 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6088,7 +6091,7 @@
       var tmp1_group = (tmp_2 == null ? true : !(tmp_2 == null)) ? tmp_2 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var navRects$delegate = tmp1_group;
-      $composer_0.startReplaceableGroup_ip860b_k$(-417502352);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417502321);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_2 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6108,7 +6111,7 @@
       var tmp2_group = (tmp_4 == null ? true : !(tmp_4 == null)) ? tmp_4 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var containerRect$delegate = tmp2_group;
-      $composer_0.startReplaceableGroup_ip860b_k$(-417502200);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417502169);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_3 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6128,7 +6131,7 @@
       var tmp3_group = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var orbLeft$delegate = tmp3_group;
-      $composer_0.startReplaceableGroup_ip860b_k$(-417502149);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417502118);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_4 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6148,7 +6151,7 @@
       var tmp4_group = (tmp_8 == null ? true : !(tmp_8 == null)) ? tmp_8 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var orbTop$delegate = tmp4_group;
-      $composer_0.startReplaceableGroup_ip860b_k$(-417502096);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417502065);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_5 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6168,7 +6171,7 @@
       var tmp5_group = (tmp_10 == null ? true : !(tmp_10 == null)) ? tmp_10 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var orbWidth$delegate = tmp5_group;
-      $composer_0.startReplaceableGroup_ip860b_k$(-417502042);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417502011);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_6 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6188,7 +6191,7 @@
       var tmp6_group = (tmp_12 == null ? true : !(tmp_12 == null)) ? tmp_12 : THROW_CCE();
       $composer_0.endReplaceableGroup_ern0ak_k$();
       var orbHeight$delegate = tmp6_group;
-      $composer_0.startReplaceableGroup_ip860b_k$(-417501992);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417501961);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_7 = $composer_0;
       // Inline function 'kotlin.let' call
@@ -6211,9 +6214,10 @@
       var padX = 18.0;
       var padY = 10.0;
       LaunchedEffect(sections, NavBar$slambda_0(sections, containerRect$delegate, navRects$delegate, ready$delegate, null), $composer_0, 72);
+      DisposableEffect(Unit_getInstance(), NavBar$lambda_13(sections, containerRect$delegate, navRects$delegate), $composer_0, 6);
       var tmp_15 = NavBar$lambda(navRects$delegate);
       var tmp_16 = NavBar$lambda_1(containerRect$delegate);
-      $composer_0.startReplaceableGroup_ip860b_k$(-417500951);
+      $composer_0.startReplaceableGroup_ip860b_k$(-417499201);
       // Inline function 'androidx.compose.runtime.cache' call
       var this_8 = $composer_0;
       var invalid = ($dirty & 14) === 4;
@@ -6224,7 +6228,7 @@
       var tmp_17;
       if (invalid ? true : it_7 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
         // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>' call
-        var value_7 = NavBar$slambda_2(selectedSectionId, padX, padY, containerRect$delegate, navRects$delegate, orbLeft$delegate, orbTop$delegate, orbWidth$delegate, orbHeight$delegate, null);
+        var value_7 = NavBar$slambda_2(selectedSectionId, padX, padY, orbLeft$delegate, orbTop$delegate, orbWidth$delegate, orbHeight$delegate, null);
         this_8.updateRememberedValue_l1wh71_k$(value_7);
         tmp_17 = value_7;
       } else {
@@ -6332,7 +6336,7 @@
       // Inline function 'kotlin.contracts.contract' call
       // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>' call
       var tmp_45 = $composer_0;
-      var dispatchReceiver = composableLambda(tmp_45, -630052887, true, NavBar$lambda_13(orbModifier, sections, selectedSectionId, accentColor, colorPalette, ready$delegate, orbWidth$delegate));
+      var dispatchReceiver = composableLambda(tmp_45, -630052887, true, NavBar$lambda_14(orbModifier, sections, selectedSectionId, accentColor, colorPalette, orbWidth$delegate, containerRect$delegate, navRects$delegate));
       // Inline function 'androidx.compose.runtime.remember' call
       var $composer_1 = $composer_0;
       $composer_1.startReplaceableGroup_ip860b_k$(1157296644);
@@ -6366,7 +6370,7 @@
     if (tmp9_safe_receiver == null)
       null;
     else {
-      tmp9_safe_receiver.updateScope_t8jcf_k$(NavBar$lambda_14(selectedSectionId, $changed));
+      tmp9_safe_receiver.updateScope_t8jcf_k$(NavBar$lambda_15(selectedSectionId, $changed));
     }
   }
   function ComposableLambda$invoke$ref_50($boundThis) {
@@ -6377,7 +6381,7 @@
   function ComposableSingletons$NavBarKt$lambda_1$lambda_jdlpdw($this$Div, $composer, $changed) {
     var $composer_0 = $composer;
     if (isTraceInProgress()) {
-      traceEventStart(-1864405169, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.components.ComposableSingletons$NavBarKt.lambda-1.<anonymous> (NavBar.kt:123)');
+      traceEventStart(-1864405169, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.components.ComposableSingletons$NavBarKt.lambda-1.<anonymous> (NavBar.kt:160)');
     }
     if (isTraceInProgress()) {
       traceEventEnd();
@@ -6497,16 +6501,17 @@
     return Unit_getInstance();
   }
   function NavBar$measure(sections, containerRect$delegate, navRects$delegate) {
-    var tmp0_elvis_lhs = document.getElementById('nav-bar-container');
-    var tmp;
+    var tmp = document.getElementById('nav-bar-container');
+    var tmp0_elvis_lhs = tmp instanceof HTMLElement ? tmp : null;
+    var tmp_0;
     if (tmp0_elvis_lhs == null) {
       return Unit_getInstance();
     } else {
-      tmp = tmp0_elvis_lhs;
+      tmp_0 = tmp0_elvis_lhs;
     }
-    var containerEl = tmp;
+    var containerEl = tmp_0;
     var cRect = containerEl.getBoundingClientRect();
-    NavBar$lambda_2(containerRect$delegate, new NavBar$NavRect(cRect.left, cRect.top, cRect.width, cRect.height));
+    NavBar$lambda_2(containerRect$delegate, new NavBar$NavRect(0.0, 0.0, cRect.width, cRect.height));
     // Inline function 'kotlin.collections.mutableMapOf' call
     var newRects = LinkedHashMap_init_$Create$();
     // Inline function 'kotlin.collections.forEach' call
@@ -6515,22 +6520,57 @@
       var element = tmp0_iterator.next_20eer_k$();
       $l$block: {
         // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.measure.<anonymous>' call
-        var tmp0_elvis_lhs_0 = document.getElementById('nav-' + element.get_id_kntnx8_k$());
-        var tmp_0;
+        var tmp_1 = document.getElementById('nav-' + element.get_id_kntnx8_k$());
+        var tmp0_elvis_lhs_0 = tmp_1 instanceof HTMLElement ? tmp_1 : null;
+        var tmp_2;
         if (tmp0_elvis_lhs_0 == null) {
           break $l$block;
         } else {
-          tmp_0 = tmp0_elvis_lhs_0;
+          tmp_2 = tmp0_elvis_lhs_0;
         }
-        var el = tmp_0;
+        var el = tmp_2;
         var r = el.getBoundingClientRect();
+        var left = r.left - cRect.left;
+        var top = r.top - cRect.top;
         // Inline function 'kotlin.collections.set' call
         var key = element.get_id_kntnx8_k$();
-        var value = new NavBar$NavRect(r.left, r.top, r.width, r.height);
+        var value = new NavBar$NavRect(left, top, r.width, r.height);
         newRects.put_4fpzoq_k$(key, value);
       }
     }
     NavBar$lambda_0(navRects$delegate, newRects);
+  }
+  function NavBar$updateOrbFor(padX, padY, orbLeft$delegate, orbTop$delegate, orbWidth$delegate, orbHeight$delegate, id) {
+    var tmp = document.getElementById('nav-bar-container');
+    var tmp0_elvis_lhs = tmp instanceof HTMLElement ? tmp : null;
+    var tmp_0;
+    if (tmp0_elvis_lhs == null) {
+      return Unit_getInstance();
+    } else {
+      tmp_0 = tmp0_elvis_lhs;
+    }
+    var containerEl = tmp_0;
+    var cRect = containerEl.getBoundingClientRect();
+    var tmp_1 = document.getElementById('nav-' + id);
+    var tmp1_elvis_lhs = tmp_1 instanceof HTMLElement ? tmp_1 : null;
+    var tmp_2;
+    if (tmp1_elvis_lhs == null) {
+      return Unit_getInstance();
+    } else {
+      tmp_2 = tmp1_elvis_lhs;
+    }
+    var el = tmp_2;
+    var r = el.getBoundingClientRect();
+    var left = r.left - cRect.left - padX / 2;
+    var top = r.top - cRect.top - padY / 2;
+    NavBar$lambda_4(orbLeft$delegate, left);
+    NavBar$lambda_6(orbTop$delegate, top);
+    NavBar$lambda_8(orbWidth$delegate, r.width + padX);
+    NavBar$lambda_10(orbHeight$delegate, r.height + padY);
+  }
+  function NavBar$measureNextFrame(sections, containerRect$delegate, navRects$delegate) {
+    var tmp = window;
+    tmp.requestAnimationFrame(NavBar$measureNextFrame$lambda(sections, containerRect$delegate, navRects$delegate));
   }
   function NavBar$_anonymous_$_anonymous_$_anonymous_$lambda$0_adipw4($hovered$delegate) {
     // Inline function 'androidx.compose.runtime.getValue' call
@@ -6612,16 +6652,22 @@
       return false;
     return true;
   };
-  function NavBar$slambda$lambda($sections, $containerRect$delegate, $navRects$delegate, $ready$delegate) {
+  function NavBar$slambda$lambda($sections, $containerRect$delegate, $navRects$delegate) {
     return function () {
-      NavBar$measure($sections, $containerRect$delegate, $navRects$delegate);
+      NavBar$measureNextFrame($sections, $containerRect$delegate, $navRects$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function NavBar$slambda$lambda_0($sections, $containerRect$delegate, $navRects$delegate, $ready$delegate) {
+    return function () {
+      NavBar$measureNextFrame($sections, $containerRect$delegate, $navRects$delegate);
       NavBar$lambda_12($ready$delegate, true);
       return Unit_getInstance();
     };
   }
-  function NavBar$slambda$lambda_0($sections, $containerRect$delegate, $navRects$delegate) {
-    return function (it) {
-      NavBar$measure($sections, $containerRect$delegate, $navRects$delegate);
+  function NavBar$slambda$lambda_1($sections, $containerRect$delegate, $navRects$delegate) {
+    return function (_anonymous_parameter_0__qggqh8) {
+      NavBar$measureNextFrame($sections, $containerRect$delegate, $navRects$delegate);
       return Unit_getInstance();
     };
   }
@@ -6648,11 +6694,15 @@
         var tmp = this.get_state_iypx7s_k$();
         if (tmp === 0) {
           this.set_exceptionState_fex74n_k$(1);
-          NavBar$measure(this.$sections_1, this.$containerRect$delegate_1, this.$navRects$delegate_1);
+          NavBar$measureNextFrame(this.$sections_1, this.$containerRect$delegate_1, this.$navRects$delegate_1);
           var tmp_0 = window;
-          tmp_0.setTimeout(NavBar$slambda$lambda(this.$sections_1, this.$containerRect$delegate_1, this.$navRects$delegate_1, this.$ready$delegate_1), 50);
+          tmp_0.setTimeout(NavBar$slambda$lambda(this.$sections_1, this.$containerRect$delegate_1, this.$navRects$delegate_1), 50);
           var tmp_1 = window;
-          tmp_1.addEventListener('resize', NavBar$slambda$lambda_0(this.$sections_1, this.$containerRect$delegate_1, this.$navRects$delegate_1));
+          tmp_1.setTimeout(NavBar$slambda$lambda_0(this.$sections_1, this.$containerRect$delegate_1, this.$navRects$delegate_1, this.$ready$delegate_1), 120);
+          var fonts = document.fonts;
+          if (fonts != undefined ? fonts.ready != undefined : false) {
+            fonts.ready.then(NavBar$slambda$lambda_1(this.$sections_1, this.$containerRect$delegate_1, this.$navRects$delegate_1));
+          }
           return Unit_getInstance();
         } else if (tmp === 1) {
           throw this.get_exception_x0n6w6_k$();
@@ -6679,12 +6729,39 @@
     l.$arity = 1;
     return l;
   }
-  function NavBar$slambda_1($selectedSectionId, $padX, $padY, $containerRect$delegate, $navRects$delegate, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate, resultContinuation) {
+  function NavBar$lambda$lambda($sections, $containerRect$delegate, $navRects$delegate) {
+    return function (it) {
+      NavBar$measureNextFrame($sections, $containerRect$delegate, $navRects$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided__qut3iv($onResize) {
+    this.$onResize_1 = $onResize;
+  }
+  protoOf(_no_name_provided__qut3iv).dispose_3nnxhr_k$ = function () {
+    // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>.<anonymous>' call
+    window.removeEventListener('resize', this.$onResize_1);
+    window.removeEventListener('orientationchange', this.$onResize_1);
+  };
+  function NavBar$lambda_13($sections, $containerRect$delegate, $navRects$delegate) {
+    return function ($this$DisposableEffect) {
+      var onResize = NavBar$lambda$lambda($sections, $containerRect$delegate, $navRects$delegate);
+      window.addEventListener('resize', onResize);
+      window.addEventListener('orientationchange', onResize);
+      // Inline function 'androidx.compose.runtime.DisposableEffectScope.onDispose' call
+      return new _no_name_provided__qut3iv(onResize);
+    };
+  }
+  function NavBar$slambda$lambda_2($selectedSectionId, $padX, $padY, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate) {
+    return function (it) {
+      NavBar$updateOrbFor($padX, $padY, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate, $selectedSectionId);
+      return Unit_getInstance();
+    };
+  }
+  function NavBar$slambda_1($selectedSectionId, $padX, $padY, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate, resultContinuation) {
     this.$selectedSectionId_1 = $selectedSectionId;
     this.$padX_1 = $padX;
     this.$padY_1 = $padY;
-    this.$containerRect$delegate_1 = $containerRect$delegate;
-    this.$navRects$delegate_1 = $navRects$delegate;
     this.$orbLeft$delegate_1 = $orbLeft$delegate;
     this.$orbTop$delegate_1 = $orbTop$delegate;
     this.$orbWidth$delegate_1 = $orbWidth$delegate;
@@ -6707,28 +6784,8 @@
         var tmp = this.get_state_iypx7s_k$();
         if (tmp === 0) {
           this.set_exceptionState_fex74n_k$(1);
-          var tmp0_elvis_lhs = NavBar$lambda_1(this.$containerRect$delegate_1);
-          var tmp_0;
-          if (tmp0_elvis_lhs == null) {
-            return Unit_getInstance();
-          } else {
-            tmp_0 = tmp0_elvis_lhs;
-          }
-          var cRect = tmp_0;
-          var tmp1_elvis_lhs = NavBar$lambda(this.$navRects$delegate_1).get_wei43m_k$(this.$selectedSectionId_1);
-          var tmp_1;
-          if (tmp1_elvis_lhs == null) {
-            return Unit_getInstance();
-          } else {
-            tmp_1 = tmp1_elvis_lhs;
-          }
-          var target = tmp_1;
-          var left = target.left_1 - cRect.left_1 - this.$padX_1 / 2;
-          var top = target.top_1 - cRect.top_1 - this.$padY_1 / 2;
-          NavBar$lambda_4(this.$orbLeft$delegate_1, left);
-          NavBar$lambda_6(this.$orbTop$delegate_1, top);
-          NavBar$lambda_8(this.$orbWidth$delegate_1, target.width_1 + this.$padX_1);
-          NavBar$lambda_10(this.$orbHeight$delegate_1, target.height_1 + this.$padY_1);
+          var tmp_0 = window;
+          tmp_0.requestAnimationFrame(NavBar$slambda$lambda_2(this.$selectedSectionId_1, this.$padX_1, this.$padY_1, this.$orbLeft$delegate_1, this.$orbTop$delegate_1, this.$orbWidth$delegate_1, this.$orbHeight$delegate_1));
           return Unit_getInstance();
         } else if (tmp === 1) {
           throw this.get_exception_x0n6w6_k$();
@@ -6740,22 +6797,28 @@
      while (true);
   };
   protoOf(NavBar$slambda_1).create_rcuf4x_k$ = function ($this$LaunchedEffect, completion) {
-    var i = new NavBar$slambda_1(this.$selectedSectionId_1, this.$padX_1, this.$padY_1, this.$containerRect$delegate_1, this.$navRects$delegate_1, this.$orbLeft$delegate_1, this.$orbTop$delegate_1, this.$orbWidth$delegate_1, this.$orbHeight$delegate_1, completion);
+    var i = new NavBar$slambda_1(this.$selectedSectionId_1, this.$padX_1, this.$padY_1, this.$orbLeft$delegate_1, this.$orbTop$delegate_1, this.$orbWidth$delegate_1, this.$orbHeight$delegate_1, completion);
     i.$this$LaunchedEffect_1 = $this$LaunchedEffect;
     return i;
   };
   protoOf(NavBar$slambda_1).create_wyq9v6_k$ = function (value, completion) {
     return this.create_rcuf4x_k$((!(value == null) ? isInterface(value, CoroutineScope) : false) ? value : THROW_CCE(), completion);
   };
-  function NavBar$slambda_2($selectedSectionId, $padX, $padY, $containerRect$delegate, $navRects$delegate, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate, resultContinuation) {
-    var i = new NavBar$slambda_1($selectedSectionId, $padX, $padY, $containerRect$delegate, $navRects$delegate, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate, resultContinuation);
+  function NavBar$slambda_2($selectedSectionId, $padX, $padY, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate, resultContinuation) {
+    var i = new NavBar$slambda_1($selectedSectionId, $padX, $padY, $orbLeft$delegate, $orbTop$delegate, $orbWidth$delegate, $orbHeight$delegate, resultContinuation);
     var l = function ($this$LaunchedEffect, $completion) {
       return i.invoke_d9fzmj_k$($this$LaunchedEffect, $completion);
     };
     l.$arity = 1;
     return l;
   }
-  function NavBar$lambda$lambda($sec) {
+  function NavBar$lambda$lambda$lambda($sections, $containerRect$delegate, $navRects$delegate) {
+    return function () {
+      NavBar$measureNextFrame($sections, $containerRect$delegate, $navRects$delegate);
+      return Unit_getInstance();
+    };
+  }
+  function NavBar$lambda$lambda_0($sec, $sections, $containerRect$delegate, $navRects$delegate) {
     return function (it) {
       var tmp0_safe_receiver = document.getElementById($sec.get_id_kntnx8_k$());
       var tmp;
@@ -6770,22 +6833,24 @@
         null;
       else
         tmp1_safe_receiver.scrollIntoView({behavior: 'smooth'});
-      return Unit_getInstance();
-    };
-  }
-  function NavBar$lambda$lambda_0($hovered$delegate) {
-    return function (it) {
-      NavBar$_anonymous_$_anonymous_$_anonymous_$lambda$1_adipw3($hovered$delegate, true);
+      var tmp_0 = window;
+      tmp_0.setTimeout(NavBar$lambda$lambda$lambda($sections, $containerRect$delegate, $navRects$delegate), 80);
       return Unit_getInstance();
     };
   }
   function NavBar$lambda$lambda_1($hovered$delegate) {
     return function (it) {
+      NavBar$_anonymous_$_anonymous_$_anonymous_$lambda$1_adipw3($hovered$delegate, true);
+      return Unit_getInstance();
+    };
+  }
+  function NavBar$lambda$lambda_2($hovered$delegate) {
+    return function (it) {
       NavBar$_anonymous_$_anonymous_$_anonymous_$lambda$1_adipw3($hovered$delegate, false);
       return Unit_getInstance();
     };
   }
-  function NavBar$lambda$lambda_2($isSelected, $hovered$delegate) {
+  function NavBar$lambda$lambda_3($isSelected, $hovered$delegate) {
     return function ($this$transform) {
       var tmp;
       if ($isSelected) {
@@ -6801,16 +6866,16 @@
       return Unit_getInstance();
     };
   }
-  function NavBar$lambda_13($orbModifier, $sections, $selectedSectionId, $accentColor, $colorPalette, $ready$delegate, $orbWidth$delegate) {
+  function NavBar$lambda_14($orbModifier, $sections, $selectedSectionId, $accentColor, $colorPalette, $orbWidth$delegate, $containerRect$delegate, $navRects$delegate) {
     return function ($this$Row, $composer, $changed) {
       var $composer_0 = $composer;
       var tmp;
       if (!(($changed & 81) === 16) ? true : !$composer_0.get_skipping_3owdve_k$()) {
         if (isTraceInProgress()) {
-          traceEventStart(-630052887, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous> (NavBar.kt:121)');
+          traceEventStart(-630052887, $changed, -1, 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous> (NavBar.kt:159)');
         }
-        $composer_0.startReplaceableGroup_ip860b_k$(1366915169);
-        if (NavBar$lambda_11($ready$delegate) ? NavBar$lambda_7($orbWidth$delegate) > 0.0 : false) {
+        $composer_0.startReplaceableGroup_ip860b_k$(1366916712);
+        if (NavBar$lambda_7($orbWidth$delegate) > 0.0) {
           Div(toAttrs($orbModifier), ComposableSingletons$NavBarKt_getInstance().lambda_1_r8sbbp_1, $composer_0, 48, 0);
         }
         $composer_0.endReplaceableGroup_ern0ak_k$();
@@ -6821,7 +6886,7 @@
           // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>.<anonymous>.<anonymous>' call
           var isSelected = element.get_id_kntnx8_k$() === $selectedSectionId;
           var tmp0_remember$arg$0 = element.get_id_kntnx8_k$();
-          $composer_0.startReplaceableGroup_ip860b_k$(204443267);
+          $composer_0.startReplaceableGroup_ip860b_k$(204444754);
           // Inline function 'androidx.compose.runtime.cache' call
           var invalid = $composer_0.changed_ga7h3f_k$(tmp0_remember$arg$0);
           // Inline function 'kotlin.let' call
@@ -6855,113 +6920,94 @@
           // Inline function 'kotlin.js.asDynamic' call
           var tmp$ret$7 = 'relative';
           var tmp_3 = color(zIndex(position(tmp_2, tmp$ret$7), 1), labelColor);
-          $composer_0.startReplaceableGroup_ip860b_k$(204443770);
+          var tmp_4 = onClick(tmp_3, NavBar$lambda$lambda_0(element, $sections, $containerRect$delegate, $navRects$delegate));
+          $composer_0.startReplaceableGroup_ip860b_k$(204445572);
           // Inline function 'androidx.compose.runtime.cache' call
-          var invalid_0 = $composer_0.changed_ga7h3f_k$(element);
+          var invalid_0 = $composer_0.changed_ga7h3f_k$(hovered$delegate);
           // Inline function 'kotlin.let' call
           // Inline function 'kotlin.contracts.contract' call
           // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
           var it_0 = $composer_0.rememberedValue_4dg93v_k$();
-          var tmp_4;
+          var tmp_5;
           if (invalid_0 ? true : it_0 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
             // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-            var value_0 = NavBar$lambda$lambda(element);
+            var value_0 = NavBar$lambda$lambda_1(hovered$delegate);
             $composer_0.updateRememberedValue_l1wh71_k$(value_0);
-            tmp_4 = value_0;
+            tmp_5 = value_0;
           } else {
-            tmp_4 = it_0;
+            tmp_5 = it_0;
           }
-          var tmp_5 = tmp_4;
-          var tmp2_group = (tmp_5 == null ? true : !(tmp_5 == null)) ? tmp_5 : THROW_CCE();
+          var tmp_6 = tmp_5;
+          var tmp2_group = (tmp_6 == null ? true : !(tmp_6 == null)) ? tmp_6 : THROW_CCE();
           $composer_0.endReplaceableGroup_ern0ak_k$();
-          var tmp_6 = onClick(tmp_3, tmp2_group);
-          $composer_0.startReplaceableGroup_ip860b_k$(204443931);
+          var tmp_7 = onMouseEnter(tmp_4, tmp2_group);
+          $composer_0.startReplaceableGroup_ip860b_k$(204445621);
           // Inline function 'androidx.compose.runtime.cache' call
           var invalid_1 = $composer_0.changed_ga7h3f_k$(hovered$delegate);
           // Inline function 'kotlin.let' call
           // Inline function 'kotlin.contracts.contract' call
           // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
           var it_1 = $composer_0.rememberedValue_4dg93v_k$();
-          var tmp_7;
+          var tmp_8;
           if (invalid_1 ? true : it_1 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
             // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-            var value_1 = NavBar$lambda$lambda_0(hovered$delegate);
+            var value_1 = NavBar$lambda$lambda_2(hovered$delegate);
             $composer_0.updateRememberedValue_l1wh71_k$(value_1);
-            tmp_7 = value_1;
+            tmp_8 = value_1;
           } else {
-            tmp_7 = it_1;
+            tmp_8 = it_1;
           }
-          var tmp_8 = tmp_7;
-          var tmp3_group = (tmp_8 == null ? true : !(tmp_8 == null)) ? tmp_8 : THROW_CCE();
+          var tmp_9 = tmp_8;
+          var tmp3_group = (tmp_9 == null ? true : !(tmp_9 == null)) ? tmp_9 : THROW_CCE();
           $composer_0.endReplaceableGroup_ern0ak_k$();
-          var tmp_9 = onMouseEnter(tmp_6, tmp3_group);
-          $composer_0.startReplaceableGroup_ip860b_k$(204443980);
-          // Inline function 'androidx.compose.runtime.cache' call
-          var invalid_2 = $composer_0.changed_ga7h3f_k$(hovered$delegate);
-          // Inline function 'kotlin.let' call
-          // Inline function 'kotlin.contracts.contract' call
-          // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-          var it_2 = $composer_0.rememberedValue_4dg93v_k$();
-          var tmp_10;
-          if (invalid_2 ? true : it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
-            // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-            var value_2 = NavBar$lambda$lambda_1(hovered$delegate);
-            $composer_0.updateRememberedValue_l1wh71_k$(value_2);
-            tmp_10 = value_2;
-          } else {
-            tmp_10 = it_2;
-          }
-          var tmp_11 = tmp_10;
-          var tmp4_group = (tmp_11 == null ? true : !(tmp_11 == null)) ? tmp_11 : THROW_CCE();
-          $composer_0.endReplaceableGroup_ern0ak_k$();
-          var tmp_12 = onMouseLeave(tmp_9, tmp4_group);
-          var tmp_13 = Companion_getInstance_7();
-          var tmp_14 = get_s(0.25);
+          var tmp_10 = onMouseLeave(tmp_7, tmp3_group);
+          var tmp_11 = Companion_getInstance_7();
+          var tmp_12 = get_s(0.25);
+          // Inline function 'org.jetbrains.compose.web.css.Companion.EaseInOut' call
+          Companion_getInstance_6();
+          // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
+          // Inline function 'kotlin.js.unsafeCast' call
+          // Inline function 'kotlin.js.asDynamic' call
+          var tmp$ret$19 = 'ease-in-out';
+          var tmp_13 = tmp_11.of$default_tua0if_k$('color', tmp_12, tmp$ret$19);
+          var tmp_14 = Companion_getInstance_7();
+          var tmp_15 = get_s(0.3);
           // Inline function 'org.jetbrains.compose.web.css.Companion.EaseInOut' call
           Companion_getInstance_6();
           // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
           // Inline function 'kotlin.js.unsafeCast' call
           // Inline function 'kotlin.js.asDynamic' call
           var tmp$ret$23 = 'ease-in-out';
-          var tmp_15 = tmp_13.of$default_tua0if_k$('color', tmp_14, tmp$ret$23);
-          var tmp_16 = Companion_getInstance_7();
-          var tmp_17 = get_s(0.3);
-          // Inline function 'org.jetbrains.compose.web.css.Companion.EaseInOut' call
-          Companion_getInstance_6();
-          // Inline function 'org.jetbrains.compose.web.css.AnimationTimingFunction' call
-          // Inline function 'kotlin.js.unsafeCast' call
-          // Inline function 'kotlin.js.asDynamic' call
-          var tmp$ret$27 = 'ease-in-out';
-          var tmp_18 = transition_0(tmp_12, [tmp_15, tmp_16.of$default_tua0if_k$('transform', tmp_17, tmp$ret$27)]);
-          $composer_0.startReplaceableGroup_ip860b_k$(204444253);
+          var tmp_16 = transition_0(tmp_10, [tmp_13, tmp_14.of$default_tua0if_k$('transform', tmp_15, tmp$ret$23)]);
+          $composer_0.startReplaceableGroup_ip860b_k$(204445894);
           // Inline function 'androidx.compose.runtime.cache' call
-          var invalid_3 = !!($composer_0.changed_jpyyrz_k$(isSelected) | $composer_0.changed_ga7h3f_k$(hovered$delegate));
+          var invalid_2 = !!($composer_0.changed_jpyyrz_k$(isSelected) | $composer_0.changed_ga7h3f_k$(hovered$delegate));
           // Inline function 'kotlin.let' call
           // Inline function 'kotlin.contracts.contract' call
           // Inline function 'androidx.compose.runtime.cache.<anonymous>' call
-          var it_3 = $composer_0.rememberedValue_4dg93v_k$();
-          var tmp_19;
-          if (invalid_3 ? true : it_3 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
+          var it_2 = $composer_0.rememberedValue_4dg93v_k$();
+          var tmp_17;
+          if (invalid_2 ? true : it_2 === Companion_getInstance_0().get_Empty_i9b85g_k$()) {
             // Inline function 'org.example.newportfolio.components.sections.nav_header.components.NavBar.<anonymous>.<anonymous>.<anonymous>.<anonymous>' call
-            var value_3 = NavBar$lambda$lambda_2(isSelected, hovered$delegate);
-            $composer_0.updateRememberedValue_l1wh71_k$(value_3);
-            tmp_19 = value_3;
+            var value_2 = NavBar$lambda$lambda_3(isSelected, hovered$delegate);
+            $composer_0.updateRememberedValue_l1wh71_k$(value_2);
+            tmp_17 = value_2;
           } else {
-            tmp_19 = it_3;
+            tmp_17 = it_2;
           }
-          var tmp_20 = tmp_19;
-          var tmp5_group = (tmp_20 == null ? true : !(tmp_20 == null)) ? tmp_20 : THROW_CCE();
+          var tmp_18 = tmp_17;
+          var tmp4_group = (tmp_18 == null ? true : !(tmp_18 == null)) ? tmp_18 : THROW_CCE();
           $composer_0.endReplaceableGroup_ern0ak_k$();
-          var textModifier = transform(tmp_18, tmp5_group);
-          var tmp_21 = element.get_text_wouvsm_k$();
-          SpanText(tmp_21, textModifier, null, null, $composer_0, 64, 12);
+          var textModifier = transform(tmp_16, tmp4_group);
+          var tmp_19 = element.get_text_wouvsm_k$();
+          SpanText(tmp_19, textModifier, null, null, $composer_0, 64, 12);
         }
-        var tmp_22;
+        var tmp_20;
         if (isTraceInProgress()) {
           traceEventEnd();
-          tmp_22 = Unit_getInstance();
+          tmp_20 = Unit_getInstance();
         }
-        tmp = tmp_22;
+        tmp = tmp_20;
       } else {
         $composer_0.skipToGroupEnd_lh3zi2_k$();
         tmp = Unit_getInstance();
@@ -6974,9 +7020,15 @@
       return $boundThis.invoke_c9vvnb_k$(p0, p1, p2);
     };
   }
-  function NavBar$lambda_14($selectedSectionId, $$changed) {
+  function NavBar$lambda_15($selectedSectionId, $$changed) {
     return function ($composer, $force) {
       NavBar($selectedSectionId, $composer, updateChangedFlags($$changed | 1));
+      return Unit_getInstance();
+    };
+  }
+  function NavBar$measureNextFrame$lambda($sections, $containerRect$delegate, $navRects$delegate) {
+    return function (it) {
+      NavBar$measure($sections, $containerRect$delegate, $navRects$delegate);
       return Unit_getInstance();
     };
   }
