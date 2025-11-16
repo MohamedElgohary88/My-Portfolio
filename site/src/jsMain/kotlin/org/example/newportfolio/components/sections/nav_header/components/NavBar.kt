@@ -55,18 +55,44 @@ fun NavBar(selectedSectionId: String) {
         containerRect = NavRect(cRect.left, cRect.top, cRect.width, cRect.height)
         val newRects = mutableMapOf<String, NavRect>()
         sections.forEach { sec ->
-            val el = document.getElementById("nav-${sec.id}") ?: return@forEach
+            val el = document.getElementById("nav-${'$'}{sec.id}") ?: return@forEach
             val r = el.getBoundingClientRect()
             newRects[sec.id] = NavRect(r.left, r.top, r.width, r.height)
         }
         navRects = newRects
     }
 
-    // Initial + resize measurement
+    // Helper: measure on next animation frame (more reliable after layout / font changes)
+    fun measureNextFrame() {
+        window.requestAnimationFrame { measure() }
+    }
+
+    // On first composition, measure; then re-measure after fonts load and a couple of frames
     LaunchedEffect(sections) {
-        measure()
-        window.setTimeout({ measure(); ready = true }, 50)
-        window.addEventListener("resize", { measure() })
+        // Initial measurement
+        measureNextFrame()
+        // A small staged warm-up to let dynamic fonts settle
+        window.setTimeout({ measureNextFrame() }, 50)
+        window.setTimeout({ measureNextFrame(); ready = true }, 120)
+
+        // If browser supports Font Loading API, measure when fonts are ready
+        val fonts = document.asDynamic().fonts
+        if (fonts != undefined && fonts.ready != undefined) {
+            fonts.ready.then({ _: dynamic ->
+                measureNextFrame()
+            })
+        }
+    }
+
+    // Add and clean up resize/orientation listeners which can affect layout
+    DisposableEffect(Unit) {
+        val onResize: (dynamic) -> Unit = { measureNextFrame() }
+        window.addEventListener("resize", onResize)
+        window.addEventListener("orientationchange", onResize)
+        onDispose {
+            window.removeEventListener("resize", onResize)
+            window.removeEventListener("orientationchange", onResize)
+        }
     }
 
     // Update orb target when selection changes or when rects change
@@ -131,12 +157,14 @@ fun NavBar(selectedSectionId: String) {
             val textModifier = Modifier
                 .padding(left = 12.px, right = 12.px, top = 6.px, bottom = 6.px)
                 .cursor(Cursor.Pointer)
-                .id("nav-${sec.id}")
+                .id("nav-${'$'}{sec.id}")
                 .position(Position.Relative) // ensure height measured correctly
                 .zIndex(1) // above orb
                 .color(labelColor)
                 .onClick {
                     document.getElementById(sec.id)?.asDynamic()?.scrollIntoView(js("{ behavior: 'smooth' }"))
+                    // Re-measure shortly after initiating scroll in case layout shifts
+                    window.setTimeout({ measureNextFrame() }, 80)
                 }
                 .onMouseEnter { hovered = true }
                 .onMouseLeave { hovered = false }

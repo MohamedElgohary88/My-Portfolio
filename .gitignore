@@ -23,3 +23,10 @@ kotlin-js-store
 
 # Gradle ignores
 .gradle
+
+# Ensure exported site is tracked
+!site/build/
+!site/build/kobweb/
+!site/build/kobweb/site/
+!site/build/kobweb/site/**
+

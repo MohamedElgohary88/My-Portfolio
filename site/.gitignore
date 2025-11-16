@@ -3,3 +3,9 @@
 !.kobweb/conf.yaml
 !.kobweb/site
 !.kobweb/site/**
+
+# Ensure exported site is tracked
+!build/
+!build/kobweb/
+!build/kobweb/site/
+!build/kobweb/site/**
