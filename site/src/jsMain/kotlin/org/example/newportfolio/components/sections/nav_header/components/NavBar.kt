@@ -50,28 +50,13 @@ fun NavBar(selectedSectionId: String) {
     val padX = 18.0 // px
     val padY = 10.0 // px
 
-    // Helper to compute element position relative to a given container using offsetParent chain
-    fun relativeRectToContainer(el: HTMLElement, container: HTMLElement): NavRect {
-        var left = 0.0
-        var top = 0.0
-        var cur: dynamic = el
-        while (cur != null && cur != container) {
-            left += (cur.offsetLeft as Double? ?: 0.0)
-            top += (cur.offsetTop as Double? ?: 0.0)
-            cur = cur.offsetParent
-        }
-        val width = (el.offsetWidth as Int).toDouble()
-        val height = (el.offsetHeight as Int).toDouble()
-        return NavRect(left, top, width, height)
-    }
-
     fun measure() {
         val containerEl = document.getElementById("nav-bar-container") as? HTMLElement ?: return
         val cRect = containerEl.getBoundingClientRect()
         containerRect = NavRect(0.0, 0.0, cRect.width, cRect.height)
         val newRects = mutableMapOf<String, NavRect>()
         sections.forEach { sec ->
-            val el = document.getElementById("nav-${'$'}{sec.id}") as? HTMLElement ?: return@forEach
+            val el = document.getElementById("nav-${sec.id}") as? HTMLElement ?: return@forEach
             val r = el.getBoundingClientRect()
             val left = r.left - cRect.left
             val top = r.top - cRect.top
@@ -83,7 +68,7 @@ fun NavBar(selectedSectionId: String) {
     fun updateOrbFor(id: String) {
         val containerEl = document.getElementById("nav-bar-container") as? HTMLElement ?: return
         val cRect = containerEl.getBoundingClientRect()
-        val el = document.getElementById("nav-${'$'}id") as? HTMLElement ?: return
+        val el = document.getElementById("nav-$id") as? HTMLElement ?: return
         val r = el.getBoundingClientRect()
         val left = (r.left - cRect.left) - padX / 2
         val top = (r.top - cRect.top) - padY / 2
@@ -171,9 +156,8 @@ fun NavBar(selectedSectionId: String) {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center
     ) {
-        // Orb sits behind text (after measurement). Render only when ready and size computed.
-        if (ready && orbWidth > 0.0) {
-            // Absolutely positioned glass orb
+        // Render orb as soon as we have a size (no need to wait for 'ready')
+        if (orbWidth > 0.0) {
             Div(attrs = orbModifier.toAttrs()) {}
         }
 
@@ -184,7 +168,7 @@ fun NavBar(selectedSectionId: String) {
             val textModifier = Modifier
                 .padding(left = 12.px, right = 12.px, top = 6.px, bottom = 6.px)
                 .cursor(Cursor.Pointer)
-                .id("nav-${'$'}{sec.id}")
+                .id("nav-${sec.id}")
                 .position(Position.Relative) // ensure height measured correctly
                 .zIndex(1) // above orb
                 .color(labelColor)
