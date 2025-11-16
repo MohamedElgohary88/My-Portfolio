@@ -24,6 +24,7 @@ import com.varabyte.kobweb.compose.css.Overflow
 import com.varabyte.kobweb.compose.css.functions.blur
 import com.varabyte.kobweb.compose.css.functions.saturate
 import org.jetbrains.compose.web.dom.Div
+import org.w3c.dom.HTMLElement
 
 // Glass orb animated nav bar
 @Composable
@@ -49,17 +50,47 @@ fun NavBar(selectedSectionId: String) {
     val padX = 18.0 // px
     val padY = 10.0 // px
 
+    // Helper to compute element position relative to a given container using offsetParent chain
+    fun relativeRectToContainer(el: HTMLElement, container: HTMLElement): NavRect {
+        var left = 0.0
+        var top = 0.0
+        var cur: dynamic = el
+        while (cur != null && cur != container) {
+            left += (cur.offsetLeft as Double? ?: 0.0)
+            top += (cur.offsetTop as Double? ?: 0.0)
+            cur = cur.offsetParent
+        }
+        val width = (el.offsetWidth as Int).toDouble()
+        val height = (el.offsetHeight as Int).toDouble()
+        return NavRect(left, top, width, height)
+    }
+
     fun measure() {
-        val containerEl = document.getElementById("nav-bar-container") ?: return
+        val containerEl = document.getElementById("nav-bar-container") as? HTMLElement ?: return
         val cRect = containerEl.getBoundingClientRect()
-        containerRect = NavRect(cRect.left, cRect.top, cRect.width, cRect.height)
+        containerRect = NavRect(0.0, 0.0, cRect.width, cRect.height)
         val newRects = mutableMapOf<String, NavRect>()
         sections.forEach { sec ->
-            val el = document.getElementById("nav-${'$'}{sec.id}") ?: return@forEach
+            val el = document.getElementById("nav-${'$'}{sec.id}") as? HTMLElement ?: return@forEach
             val r = el.getBoundingClientRect()
-            newRects[sec.id] = NavRect(r.left, r.top, r.width, r.height)
+            val left = r.left - cRect.left
+            val top = r.top - cRect.top
+            newRects[sec.id] = NavRect(left, top, r.width, r.height)
         }
         navRects = newRects
+    }
+
+    fun updateOrbFor(id: String) {
+        val containerEl = document.getElementById("nav-bar-container") as? HTMLElement ?: return
+        val cRect = containerEl.getBoundingClientRect()
+        val el = document.getElementById("nav-${'$'}id") as? HTMLElement ?: return
+        val r = el.getBoundingClientRect()
+        val left = (r.left - cRect.left) - padX / 2
+        val top = (r.top - cRect.top) - padY / 2
+        orbLeft = left
+        orbTop = top
+        orbWidth = r.width + padX
+        orbHeight = r.height + padY
     }
 
     // Helper: measure on next animation frame (more reliable after layout / font changes)
@@ -97,14 +128,10 @@ fun NavBar(selectedSectionId: String) {
 
     // Update orb target when selection changes or when rects change
     LaunchedEffect(selectedSectionId, navRects, containerRect) {
-        val cRect = containerRect ?: return@LaunchedEffect
-        val target = navRects[selectedSectionId] ?: return@LaunchedEffect
-        val left = target.left - cRect.left - padX / 2
-        val top = target.top - cRect.top - padY / 2
-        orbLeft = left
-        orbTop = top
-        orbWidth = target.width + padX
-        orbHeight = target.height + padY
+        // Recompute on next frame to ensure the DOM reflects any recent changes
+        window.requestAnimationFrame {
+            updateOrbFor(selectedSectionId)
+        }
     }
 
     // Orb modifier (glassmorphism pill)
